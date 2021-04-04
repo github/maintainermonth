@@ -11,17 +11,17 @@ Maintainer week is a reminder for the ecosystem to support, celebrate, and compe
 
 Maintainer week is an opportunity for maintainers to gather and share knowledge and experiences. It’s a time to see how other projects are tackling similar problems. And it’s a time to reflect collectively that the challenges faced aren’t all technical, and the burden on maintainers can come with a lack of boundaries, vacations, or emotional support. And it definitely doesn’t come with dental.
 
-**What’s going on this week? How do I get involved?
-**
+**What’s going on during Maintainer Week? How do I get involved?**
+
 This is an open source initiative to bookmark a week to collectively contemplate open source maintainership, whatever form that takes. Various organizations, projects, and companies will be running activities, events, and distributing resources. Submit a PR to list what you’re planning, so that folks can come participate. Anyone can plan or add something. No-one owns Maintainer Week - it’s for everyone.
 
 Some examples of what folks are doing:
-Recording special Podcast episodes
-Organizing special-edition open working group meetings
-Streaming live on Twitch
-Hosting mini-events
-Convening tool-specific maintainer summits
-Pledging to to donate to support Open Source
+- Recording special Podcast episodes
+- Organizing special-edition open working group meetings
+- Streaming live on Twitch
+- Hosting mini-events
+- Convening tool-specific maintainer summits
+- Pledging to to donate to support Open Source
 
 And next - enjoy! See the list below to plan your week.
 
