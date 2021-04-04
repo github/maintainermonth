@@ -39,13 +39,3 @@ June 8-9 time-time
 Conference entirely for, and by, open source maintainers. Two days of talks from a wide variety of projects on how they approached - and sometimes even solved! - common difficulties in OS project maintenance. All are welcome.
 
 
-
-
-
-
-
-
-
-_Meta
-Lightly stewarded by GitHub. We posted it, and we’ll enforce the CoC, but we don’t own it - this is a community effort. Thank you to everyone who has already been a part of this effort, and thank you to everyone who will be!_
-
