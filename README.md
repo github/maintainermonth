@@ -29,9 +29,10 @@ And next - enjoy! See the list below to plan your week.
 # Maintainer Week Activities
 
 ### Upstream
-Upstream link
-June 7 time-time
-Tidelift’s conference with a line here
+https://upstream.live
+June 7 all day
+A one-day celebration of open source, the developers who use it, and the maintainers who create it.
+This 100% virtual, completely free event brings together like-minded application developers, open source project maintainers, and the extended network of people who care most about their work.
 
 ### Global Maintainer Summit
 https://globalmaintainersummit.github.com/
