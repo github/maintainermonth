@@ -9,7 +9,7 @@ Open Source runs the world. But who holds the reins? Who is there, day by day, t
 
 Maintainer week is a reminder for the ecosystem to support, celebrate, and compensate open source maintainers.
 
-Maintainer week is an opportunity for maintainers to gather and share knowledge and experiences. It’s a time to see how other projects are tackling similar problems. And it’s a time to reflect collectively that the challenges faced aren’t all technical, and the burden on maintainers can come with a lack of boundaries, vacations, or emotional support. And it definitely doesn’t come with dental.
+Maintainer week is an opportunity for maintainers to gather and share knowledge and experiences. It’s a time to see how other projects are tackling similar problems. And it’s a time to reflect collectively that the challenges faced aren’t all technical, and the burden on maintainers can come with a lack of boundaries, vacations, or emotional support. Whether you’re celebrating contributions to open source, or reflecting on the particular pains of this line of labor, this is a week to come together.
 
 **What’s going on during Maintainer Week? How do I get involved?**
 
@@ -23,7 +23,7 @@ Some examples of what folks are doing:
 - Convening tool-specific maintainer summits
 - Pledging to to donate to support Open Source
 
-And next - enjoy! See the list below to plan your week.
+And next - enjoy! See the list below to plan your week. 
 
 
 # Maintainer Week Activities
