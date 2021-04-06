@@ -36,7 +36,7 @@ This 100% virtual, completely free event brings together like-minded application
 
 ### Global Maintainer Summit
 https://globalmaintainersummit.github.com/
-June 8-9 all day
+June 8-9 time-time
 Conference entirely for, and by, open source maintainers. Two days of talks from a wide variety of projects on how they approached - and sometimes even solved! - common difficulties in OS project maintenance. All are welcome.
 
 
