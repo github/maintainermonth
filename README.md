@@ -40,6 +40,11 @@ https://globalmaintainersummit.github.com/ <br/>
 **June 8-9. All day** <br/><br/>
 Conference entirely for, and by, open source maintainers. Two days of talks from a wide variety of projects on how they approached - and sometimes even solved! - common difficulties in OS project maintenance. All are welcome.
 
+### FundOSS Launch Party
+https://fundoss.org/ <br/>
+**June 11. 9am PST (4pm UTC)** <br/><br/>
+Join us for [90 minutes of chillin' and shillin'](https://zoom.us/j/96351835746?pwd=LzdiLytndlQ0ZHFGTzR4enlDMTRuUT09
+) with 60 projects participating in the pilot of FundOSS: a new model for funding Open Source we're calling [Democratic Funding](https://fundoss.org/blog/get-ready/). 
 
 ### The Changelog: Maintainer Spotlight
 https://changelog.com/podcast <br/>
