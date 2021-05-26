@@ -41,3 +41,7 @@ https://globalmaintainersummit.github.com/ <br/>
 Conference entirely for, and by, open source maintainers. Two days of talks from a wide variety of projects on how they approached - and sometimes even solved! - common difficulties in OS project maintenance. All are welcome.
 
 
+### The Changelog: Maintainer Spotlight
+https://changelog.com/podcast <br/>
+**June 10. 8AM US Eastern** <br/><br/>
+The Changelog continues their "Maintainer Spotlight" podcast series with a **_very_ secret**, and very special guest. Stay tuned for more details and subscribe to the podcast at [changelog.com/podcast](https://changelog.com/podcast).
