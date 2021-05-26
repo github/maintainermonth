@@ -45,3 +45,8 @@ https://fundoss.org/ <br/>
 **June 11. 9am PST (4pm UTC)** <br/><br/>
 Join us for [90 minutes of chillin' and shillin'](https://zoom.us/j/96351835746?pwd=LzdiLytndlQ0ZHFGTzR4enlDMTRuUT09
 ) with 60 projects participating in the pilot of FundOSS: a new model for funding Open Source we're calling [Democratic Funding](https://fundoss.org/blog/get-ready/). 
+
+### The Changelog: Maintainer Spotlight
+https://changelog.com/podcast <br/>
+**June 10. 8AM US Eastern** <br/><br/>
+The Changelog continues their "Maintainer Spotlight" podcast series with a **_very_ secret**, and very special guest. Stay tuned for more details and subscribe to the podcast at [changelog.com/podcast](https://changelog.com/podcast).
