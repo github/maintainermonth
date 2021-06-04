@@ -48,7 +48,7 @@ The Changelog continues their "Maintainer Spotlight" podcast series with a **_ve
 ### 🎉 FundOSS Launch Party
 https://fundoss.org/ <br/>
 **June 11. 9am PDT/16:00 UTC** <br/><br/>
-Join us for [90 minutes of chillin' and shillin'](https://zoom.us/j/96351835746?pwd=LzdiLytndlQ0ZHFGTzR4enlDMTRuUT09
+Join us for [90 minutes of chillin' and shillin'](https://www.airmeet.com/e/6102cb30-ba5d-11eb-8132-9b664a75dbb2
 ) with 60 projects participating in the pilot of FundOSS: a new model for funding Open Source we're calling [Democratic Funding](https://fundoss.org/blog/get-ready/).
 
 ## 📺 Live Streams
