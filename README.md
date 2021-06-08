@@ -75,4 +75,4 @@ https://go.indeed.com/FOSS-Foundations-Roundtable <br/>
 **June 10 17:00 UTC** <br/><br/>
 Foundations sit at the center of the free and open source communities. But no two foundations are alike! Join us for a roundtable discussion with representatives from several different FOSS Foundations. We will be talking about the kinds of things that Foundations do for their member projects, the differences between some of the foundations, and some indicators that it may be time to think about bringing your project to a foundation.
 
-Ewa (Python Software Foundation), Leah (NumFOCUS), Rachel (Drupal Association), Karen (Software Freedom Conservancy), Jory (OpenJS Foundation), and Ben (Open Collective) will be hosted by Duane O'Brien (Indeed). Richard Littauer will collect all your questions for the panel.
+Ewa (Python Software Foundation), Leah (NumFOCUS), Rachel (Drupal Association), Karen (Software Freedom Conservancy), Jory (OpenJS Foundation), and Ben (Open Collective) will be hosted by Duane O'Brien (Indeed). Richard Littauer (Sustain) will collect all your questions for the panel.
