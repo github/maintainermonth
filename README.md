@@ -62,7 +62,7 @@ just to hang out!
 
 ### Open Source Friday
 https://twitch.tv/github <br/>
-**June 8 & June 10. 13:00 UTC** <br/><br/>
+** June 11. 17:00 UTC** <br/><br/>
 Interested in learning about Firebase and Flutter? Join @mikediarmid
 and @bdougie as they review a collection of Firebase plugins for Flutter apps. at 10am PDT (1800 UTC).
 
