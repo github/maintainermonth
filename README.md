@@ -60,3 +60,12 @@ Join David, Head of Open Source at [BrowserStack](https://www.browserstack.com),
 browser automation tools & open source testing frameworks. Come ask questions about quality software development, how to automate testing in your projects or
 just to hang out!
 
+### Open Source Friday
+https://twitch.tv/github <br/>
+**June 8 & June 10. 13:00 UTC** <br/><br/>
+Interested in learning about Firebase and Flutter? Join @mikediarmid
+and @bdougie as they review a collection of Firebase plugins for Flutter apps. at 10am PDT (1800 UTC).
+
+
+
+
