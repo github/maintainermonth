@@ -68,4 +68,11 @@ and @bdougie as they review a collection of Firebase plugins for Flutter apps. a
 
 We will also be joined by the maintainer of [Docz](https://github.com/pedronauck/docz) to chat about their recent experience [coming back to a project after a needed break](https://github.com/pedronauck/docz/issues/1634). 
 
+## 👩‍🏫🧑‍🏫👨‍🏫 Panels
 
+### Foundations Roundtable: From Maintain to Sustain
+https://go.indeed.com/FOSS-Foundations-Roundtable <br/>
+**June 10 17:00 UTC** <br/><br/>
+Foundations sit at the center of the free and open source communities. But no two foundations are alike! Join us for a roundtable discussion with representatives from several different FOSS Foundations. We will be talking about the kinds of things that Foundations do for their member projects, the differences between some of the foundations, and some indicators that it may be time to think about bringing your project to a foundation.
+
+Ewa ([Python Software Foundation](https://www.python.org/psf-landing/)), Leah ([NumFOCUS](https://numfocus.org)), Rachel ([Drupal Association](http://www.drupal.org/association)), Karen ([Software Freedom Conservancy](https://sfconservancy.org)), Jory ([OpenJS Foundation](https://openjsf.org/)), and Ben ([Open Collective](https://opencollective.com/foundation)) will be hosted by Duane O'Brien ([Indeed](https://www.indeed.com/)). Richard Littauer ([Sustain](https://SustainOSS.org)) will collect all your questions for the panel.
