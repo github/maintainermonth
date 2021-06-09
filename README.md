@@ -62,11 +62,8 @@ just to hang out!
 
 ### Open Source Friday
 https://twitch.tv/github <br/>
-** June 11 17:00 UTC** <br/><br/>
-Interested in learning about Firebase and Flutter? Join @mikediarmid
-and @bdougie as they review a collection of Firebase plugins for Flutter apps. at 10am PDT (1800 UTC).
-
-We will also be joined by the maintainer of [Docz](https://github.com/pedronauck/docz) to chat about their recent experience [coming back to a project after a needed break](https://github.com/pedronauck/docz/issues/1634). 
+**June 11 17:00 UTC** <br/><br/>
+Interested in learning about Firebase and Flutter? Join @mikediarmid and @bdougie as they review a collection of Firebase plugins for Flutter apps. at 10am PDT (1800 UTC). We will also be joined by the maintainer of [Docz](https://github.com/pedronauck/docz) to chat about their recent experience [coming back to a project after a needed break](https://github.com/pedronauck/docz/issues/1634). 
 
 ## 👩‍🏫🧑‍🏫👨‍🏫 Panels
 
