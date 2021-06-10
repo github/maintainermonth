@@ -40,10 +40,15 @@ https://globalmaintainersummit.github.com/ <br/>
 **June 8-9. All day 16:00-21:30 UTC** <br/><br/>
 Conference entirely for, and by, open source maintainers. Two days of talks from a wide variety of projects on how they approached - and sometimes even solved! - common difficulties in OS project maintenance. All are welcome.
 
-### 🎤 The Changelog: Maintainer Spotlight
-https://changelog.com/podcast <br/>
+### 🎤 The Changelog: Every commit is a gift
+https://changelog.fm/444 <br/>
 **June 10. 8am EDT/12:00 UTC** <br/><br/>
-The Changelog continues their "Maintainer Spotlight" podcast series with a **_very_ secret**, and very special guest. Stay tuned for more details and subscribe to the podcast at [changelog.com/podcast](https://changelog.com/podcast).
+The Changelog welcomes Brett Cannon to discuss his [post about the social contract of open source](https://snarky.ca/the-social-contract-of-open-source/).
+
+### 🗓 Thank a Maintainer (on Changelog)
+https://changelog.com/posts/thank-a-maintainer-on-us <br/>
+**June 10. All day** <br/><br/>
+The Changelog team has developed a limited-run t-shirt that they will send to the maintainer(s) you thank, as a bonus “thank you” alongside your appreciation.
 
 ### 🎉 FundOSS Launch Party
 https://fundoss.org/ <br/>
