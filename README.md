@@ -27,7 +27,7 @@ Some examples of what folks are doing:
 
 And next - enjoy! See the list below to plan your week.
 
-# Maintainer Month Activities 2021
+# Maintainer Month Activities 2022
 
 TBD - Add yours here!
 
