@@ -1,20 +1,20 @@
-# Maintainer Week
+# Maintainer Month
 
-## A week for open source maintainers to gather, share, and be celebrated. 🥳
+## A month for open source maintainers to gather, share, and be celebrated. 🥳
 
-**<p align="center"> ❇️ Week of June 7, 2021 ❇️ </p>**
+**<p align="center"> ❇️ June 2022 ❇️ </p>**
 
-**Welcome to Maintainer Week!**
+**Welcome to Maintainer Month!**
 
 Open Source runs the world. But who runs open source? Who is there, day by day, to keeping it all running? Open Source project maintainers make the software we use possible. But project maintenance is intense work - and it doesn’t happen in a vacuum.
 
-Maintainer week is a reminder for the ecosystem to support, celebrate, and compensate open source maintainers.
+Maintainer Month is a reminder for the ecosystem to support, celebrate, and compensate open source maintainers.
 
-Maintainer week is an opportunity for maintainers to gather and share knowledge and experiences. It’s a time to see how other projects are tackling similar problems. And it’s a time to reflect collectively that the challenges faced aren’t all technical, and the burden on maintainers can come with a lack of boundaries, vacations, or emotional support. Whether you’re celebrating contributions to open source, or reflecting on the particular pains of this line of labor, this is a week to come together.
+Maintainer Month is an opportunity for maintainers to gather and share knowledge and experiences. It’s a time to see how other projects are tackling similar problems. And it’s a time to reflect collectively that the challenges faced aren’t all technical, and the burden on maintainers can come with a lack of boundaries, vacations, or emotional support. Whether you’re celebrating contributions to open source, or reflecting on the particular pains of this line of labor, this is a week to come together.
 
-### What’s going on during Maintainer Week? How do I get involved?
+### What’s going on during Maintainer Month? How do I get involved?
 
-This is an open source initiative to bookmark a week to collectively contemplate open source maintainership, whatever form that takes. Various organizations, projects, and companies will be running activities, events, and distributing resources. Submit a PR to list what you’re planning, so that folks can come participate. Anyone can plan or add something. No-one owns Maintainer Week - it’s for _everyone_.
+This is an open source initiative to bookmark a week to collectively contemplate open source maintainership, whatever form that takes. Various organizations, projects, and companies will be running activities, events, and distributing resources. Submit a PR to list what you’re planning, so that folks can come participate. Anyone can plan or add something. No-one owns Maintainer Month - it’s for _everyone_.
 
 Some examples of what folks are doing:
 - Posting on social media to thank the maintainers of their favorite open source projects
@@ -27,7 +27,12 @@ Some examples of what folks are doing:
 
 And next - enjoy! See the list below to plan your week.
 
-# Maintainer Week Activities
+# Maintainer Month Activities 2021
+
+TBD - Add yours here!
+
+
+# Maintainer Week Activities 2021
 
 ### 🗓 Upstream
 https://upstream.live <br/>
