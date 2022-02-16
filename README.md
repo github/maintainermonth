@@ -25,7 +25,7 @@ Some examples of what folks are doing:
 - Convening tool-specific maintainer summits
 - Pledging to to donate to support Open Source
 
-And next - enjoy! See the list below to plan your week.
+And next - enjoy! See the list below to plan your month.
 
 # Maintainer Month Activities 2022
 
