@@ -1,8 +1,27 @@
 {
     "footer:text": "Made with ❤️ by GitHub",
+    "footer:email": "opensource@github.com",
+    "footer:terms-title": "Terms",
+    "footer:terms-link": "#",
+    "footer:privacy-title": "Privacy",
+    "footer:privacy-link": "#",
+    "footer:repository-title": "Repository",
+    "footer:repository-link": "#",
+    "footer:coc-title": "Code of Conduct",
+    "footer:coc-link": "#",
 
     "meta:title": "Maintainer Month",
-
+    "meta:description": "Maintainer Month Description",
+    
     "navigation:schedule": "Schedule",
-    "navigation:resources": "Resources"
+    "navigation:resources": "Resources",
+
+    "page:title": "Maintainer Month",
+    "page:date": "June 2022",
+
+    "resources:title": "Resources",
+    "resources:description": "Resources description",
+
+    "schedule:title": "Schedule",
+    "schedule:description": "Schedule description"
 }

@@ -3,9 +3,9 @@ import matter from "gray-matter"
 import md from "markdown-it"
 import Link from "next/link"
 
-export default function EventPage({ frontmatter, content }) {
+export default function EventDetail({ frontmatter, content }) {
   return (
-    <div className="prose mx-auto">
+    <div>
       <h1>{frontmatter.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
       <Link href="/">Back to home</Link>
@@ -24,11 +24,12 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback: false,
+    fallback: false, // TODO: check fallback
   }
 }
 
 export async function getStaticProps({ params: { slug } }) {
+  // TODO: refactor and rename
   const fileName = fs.readFileSync(`content/events/${slug}.md`, "utf-8")
   const { data: frontmatter, content } = matter(fileName)
   return {

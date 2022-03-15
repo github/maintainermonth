@@ -2,10 +2,12 @@
 title: "Event title with long text"
 metaTitle: "Event title with long text"
 metaDesc: "(Description)This is an open source initiative to bookmark a week to collectively contemplate open source maintainership, whatever form that takes. Various organizations, projects, and companies will be running"
-type: images/22-09-2021.jpg
-owner: "2021-09-22"
-linkTitle: "2021-09-22"
-linkUrl: "2021-09-22"
+date: "06/12"
+hour: "10 am - 13 am"
+type: "stream"
+user: "github"
+linkTitle: "External link"
+linkUrl: "#"
 ---
 
 (Description)This is an open source initiative to bookmark a week to collectively contemplate open source maintainership, whatever form that takes. Various organizations, projects, and companies will be running
