@@ -12,7 +12,7 @@ export default function Home({ hero, events }) {
       <Head>
         <title>{getLiteral('meta:title')}</title>
         <meta name="description" content={getLiteral('meta:description')} />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
 
       <main>

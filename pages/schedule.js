@@ -12,7 +12,7 @@ export default function Schedule({ events }) {
       <Head>
         <title>{getLiteral('schedule:title')}</title>
         <meta name="description" content={getLiteral('schedule:description')} />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
 
       <main>
