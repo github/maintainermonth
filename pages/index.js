@@ -1,17 +1,17 @@
-import Head from "next/head"
-import fs from "fs"
-import matter from "gray-matter"
-import Link from "next/link"
+import Head from 'next/head'
+import fs from 'fs'
+import matter from 'gray-matter'
+import Link from 'next/link'
 
-import { t } from "../common/i18n"
-import { getRelativeURL } from "../common/routes"
+import { t } from '../common/i18n'
+import { getRelativeURL } from '../common/routes'
 
 export default function Home({ hero, events }) {
   return (
     <div>
       <Head>
-        <title>{t("meta:title")}</title>
-        <meta name="description" content={t("meta:description")} />
+        <title>{t('meta:title')}</title>
+        <meta name="description" content={t('meta:description')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -35,16 +35,16 @@ export default function Home({ hero, events }) {
 
 export async function getStaticProps() {
   // TODO: refactor
-  const heroMD = fs.readFileSync("content/home/1-hero.md", "utf-8")
+  const heroMD = fs.readFileSync('content/home/1-hero.md', 'utf-8')
   const { data: frontmatter, content } = matter(heroMD)
   const hero = { ...frontmatter, content }
 
-  const eventFiles = fs.readdirSync("content/events")
+  const eventFiles = fs.readdirSync('content/events')
 
   const events = eventFiles.map((fileName) => {
     // TODO: rename
-    const slug = fileName.replace(".md", "")
-    const readFile = fs.readFileSync(`content/events/${fileName}`, "utf-8")
+    const slug = fileName.replace('.md', '')
+    const readFile = fs.readFileSync(`content/events/${fileName}`, 'utf-8')
     const { data: frontmatter } = matter(readFile)
 
     return {

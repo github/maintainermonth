@@ -1,7 +1,5 @@
-import "../styles/globals.css"
-import MainLayout from "../ui/layout/MainLayout"
-
-import "../public/stylesheets/style.scss"
+import '../public/stylesheets/style.scss'
+import MainLayout from '../ui/layout/MainLayout'
 
 function App({ Component, pageProps }) {
   return (
