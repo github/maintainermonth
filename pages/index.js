@@ -1,10 +1,10 @@
-import Head from 'next/head'
 import fs from 'fs'
-import matter from 'gray-matter'
+import Head from 'next/head'
 import Link from 'next/link'
 
 import { t } from '../common/i18n'
 import { getRelativeURL } from '../common/routes'
+import { getDataFromMD } from '../common/data'
 
 export default function Home({ hero, events }) {
   return (
@@ -20,10 +20,10 @@ export default function Home({ hero, events }) {
           <h1>{hero.title}</h1>
         </section>
         <section>
-          {events.map(({ slug, frontmatter }) => (
-            <div key={slug}>
-              <Link href={getRelativeURL(`/events/${slug}`)}>
-                {frontmatter.title}
+          {events.map((event) => (
+            <div key={event.slug}>
+              <Link href={getRelativeURL(`/events/${event.slug}`)}>
+                {event.title}
               </Link>
             </div>
           ))}
@@ -34,32 +34,31 @@ export default function Home({ hero, events }) {
 }
 
 export async function getStaticProps() {
-  // TODO: refactor
-  const heroMD = fs.readFileSync('content/home/1-hero.md', 'utf-8')
-  const { data: frontmatter, content } = matter(heroMD)
-  const hero = { ...frontmatter, content }
+  const hero = getDataFromMD('content/home/1-hero.md')
+  const about = getDataFromMD('content/home/2-about.md')
+  const getInvolved = getDataFromMD('content/home/3-get-involved.md')
+  const schedule = getDataFromMD('content/home/4-schedule.md')
+  const connection = getDataFromMD('content/home/5-connection.md')
 
   const eventFiles = fs.readdirSync('content/events')
 
   const events = eventFiles.map((fileName) => {
-    // TODO: rename
     const slug = fileName.replace('.md', '')
-    const readFile = fs.readFileSync(`content/events/${fileName}`, 'utf-8')
-    const { data: frontmatter } = matter(readFile)
+    const event = getDataFromMD(`content/events/${fileName}`)
 
     return {
       slug,
-      frontmatter,
+      ...event,
     }
   })
 
   return {
     props: {
       hero,
-      // about,
-      // getInvolved,
-      // schedule,
-      // connection,
+      about,
+      getInvolved,
+      schedule,
+      connection,
       events,
     },
   }
