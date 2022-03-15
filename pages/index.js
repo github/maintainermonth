@@ -4,6 +4,7 @@ import matter from "gray-matter"
 import Link from "next/link"
 
 import { t } from "../common/i18n"
+import { getRelativeURL } from "../common/routes"
 
 export default function Home({ hero, events }) {
   return (
@@ -21,7 +22,9 @@ export default function Home({ hero, events }) {
         <section>
           {events.map(({ slug, frontmatter }) => (
             <div key={slug}>
-              <Link href={`/events/${slug}`}>{frontmatter.title}</Link>
+              <Link href={getRelativeURL(`/events/${slug}`)}>
+                {frontmatter.title}
+              </Link>
             </div>
           ))}
         </section>
