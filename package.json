@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint",
-    "static-build": "next build && next export"
+    "lint": "next lint"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
