@@ -1,4 +1,5 @@
-import '../public/stylesheets/style.scss'
+import '../styles/styles.scss'
+
 import MainLayout from '../ui/layout/MainLayout'
 
 function App({ Component, pageProps }) {
