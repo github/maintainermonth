@@ -1,7 +1,9 @@
 import "../styles/globals.css"
 import MainLayout from "../ui/layout/MainLayout"
 
-function MyApp({ Component, pageProps }) {
+import "../public/stylesheets/style.scss"
+
+function App({ Component, pageProps }) {
   return (
     <MainLayout>
       <Component {...pageProps} />
@@ -9,4 +11,4 @@ function MyApp({ Component, pageProps }) {
   )
 }
 
-export default MyApp
+export default App
