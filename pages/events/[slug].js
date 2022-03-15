@@ -2,8 +2,8 @@ import fs from 'fs'
 import md from 'markdown-it'
 import Link from 'next/link'
 
-import { getRelativeURL } from '../common/routes'
-import { getDataFromMD } from '../common/data'
+import { getRelativeURL } from '../../common/routes'
+import { getDataFromMD } from '../../common/data'
 
 export default function EventDetail({ event }) {
   return (
