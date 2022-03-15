@@ -15,7 +15,7 @@ export default function Resources() {
           name="description"
           content={getLiteral('resources:description')}
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
 
       <main>
