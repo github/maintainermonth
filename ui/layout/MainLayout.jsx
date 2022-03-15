@@ -1,50 +1,62 @@
 import Link from 'next/link'
 
 import { getRelativeURL } from '../../common/routes'
-import { t } from '../../common/i18n'
+import { getLiteral } from '../../common/i18n'
 
 const MainLayout = ({ children }) => {
   return (
     <>
-      <Link href={getRelativeURL('/')}>{`${t('page:title')} ${t(
-        'page:date',
-      )}`}</Link>
+      <Link href={getRelativeURL('/')}>{`${getLiteral(
+        'page:title',
+      )} ${getLiteral('page:date')}`}</Link>
       <nav>
         <ul>
           <li>
             <Link href={getRelativeURL('/schedule')}>
-              {t('navigation:schedule')}
+              {getLiteral('navigation:schedule')}
             </Link>
           </li>
           <li>
             <Link href={getRelativeURL('/resources')}>
-              {t('navigation:resources')}
+              {getLiteral('navigation:resources')}
             </Link>
           </li>
         </ul>
       </nav>
       <main>{children}</main>
       <footer>
-        <p>{t('footer:copyright')}</p>
+        <p>{getLiteral('footer:copyright')}</p>
 
-        <a href={t('footer:terms-url')} target="_blank" rel="noreferrer">
-          {t('footer:terms-title')}
-        </a>
-        <a href={t('footer:privacy-url')} target="_blank" rel="noreferrer">
-          {t('footer:privacy-title')}
-        </a>
         <a
-          href={`mailto:${t('footer:email')}`}
+          href={getLiteral('footer:terms-url')}
           target="_blank"
           rel="noreferrer"
         >
-          {t('footer:email')}
+          {getLiteral('footer:terms-title')}
         </a>
-        <a href={t('footer:repository-url')} target="_blank" rel="noreferrer">
-          {t('footer:repository-title')}
+        <a
+          href={getLiteral('footer:privacy-url')}
+          target="_blank"
+          rel="noreferrer"
+        >
+          {getLiteral('footer:privacy-title')}
         </a>
-        <a href={t('footer:coc-url')} target="_blank" rel="noreferrer">
-          {t('footer:coc-title')}
+        <a
+          href={`mailto:${getLiteral('footer:email')}`}
+          target="_blank"
+          rel="noreferrer"
+        >
+          {getLiteral('footer:email')}
+        </a>
+        <a
+          href={getLiteral('footer:repository-url')}
+          target="_blank"
+          rel="noreferrer"
+        >
+          {getLiteral('footer:repository-title')}
+        </a>
+        <a href={getLiteral('footer:coc-url')} target="_blank" rel="noreferrer">
+          {getLiteral('footer:coc-title')}
         </a>
       </footer>
     </>

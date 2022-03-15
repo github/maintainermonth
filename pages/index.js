@@ -2,7 +2,7 @@ import fs from 'fs'
 import Head from 'next/head'
 import Link from 'next/link'
 
-import { t } from '../common/i18n'
+import { getLiteral } from '../common/i18n'
 import { getRelativeURL } from '../common/routes'
 import { getDataFromMD } from '../common/data'
 
@@ -10,8 +10,8 @@ export default function Home({ hero, events }) {
   return (
     <div>
       <Head>
-        <title>{t('meta:title')}</title>
-        <meta name="description" content={t('meta:description')} />
+        <title>{getLiteral('meta:title')}</title>
+        <meta name="description" content={getLiteral('meta:description')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

@@ -2,7 +2,7 @@ import fs from 'fs'
 import Head from 'next/head'
 import Link from 'next/link'
 
-import { t } from '../common/i18n'
+import { getLiteral } from '../common/i18n'
 import { getRelativeURL } from '../common/routes'
 import { getDataFromMD } from '../common/data'
 
@@ -10,13 +10,13 @@ export default function Schedule({ events }) {
   return (
     <div>
       <Head>
-        <title>{t('schedule:title')}</title>
-        <meta name="description" content={t('schedule:description')} />
+        <title>{getLiteral('schedule:title')}</title>
+        <meta name="description" content={getLiteral('schedule:description')} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <h1>{t('schedule:title')}</h1>
+        <h1>{getLiteral('schedule:title')}</h1>
 
         <section>
           {events.map((event) => (
