@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
-import { t } from '../common/i18n'
+import { getLiteral } from '../common/i18n'
 import resourcesJSON from '../content/resources/resources.json'
 
 const { resources } = resourcesJSON
@@ -10,13 +10,16 @@ export default function Resources() {
   return (
     <div>
       <Head>
-        <title>{t('resources:title')}</title>
-        <meta name="description" content={t('resources:description')} />
+        <title>{getLiteral('resources:title')}</title>
+        <meta
+          name="description"
+          content={getLiteral('resources:description')}
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <h1>{t('resources:title')}</h1>
+        <h1>{getLiteral('resources:title')}</h1>
 
         {resources.map((resource) => (
           <div key={resource.title}>
