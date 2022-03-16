@@ -1,4 +1,4 @@
-import { getLiteral } from '../../../common/i18n'
+import { getLiteral } from '../../common/i18n'
 
 const Footer = () => {
   return (

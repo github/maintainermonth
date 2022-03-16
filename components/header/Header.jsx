@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
-import { getRelativeURL } from '../../../common/routes'
-import { getLiteral } from '../../../common/i18n'
+import { getRelativeURL } from '../../common/routes'
+import { getLiteral } from '../../common/i18n'
 
 const Header = () => {
   return (

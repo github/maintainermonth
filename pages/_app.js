@@ -1,12 +1,12 @@
 import '../styles/styles.scss'
 
-import MainLayout from '../ui/layout/MainLayout'
+import Layout from '../components/layout/Layout'
 
 function App({ Component, pageProps }) {
   return (
-    <MainLayout>
+    <Layout>
       <Component {...pageProps} />
-    </MainLayout>
+    </Layout>
   )
 }
 
