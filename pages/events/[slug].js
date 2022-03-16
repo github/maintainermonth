@@ -3,7 +3,7 @@ import md from 'markdown-it'
 import Link from 'next/link'
 
 import { getRelativeURL } from '../../common/routes'
-import { getDataFromMD } from '../../common/data'
+import { getDataFromMD } from '../../common/api'
 
 export default function EventDetail({ event }) {
   return (
