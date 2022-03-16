@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 import { getLiteral } from '../common/i18n'
 import { getRelativeURL } from '../common/routes'
-import { getDataFromMD } from '../common/data'
+import { getDataFromMD } from '../common/api'
 
 export default function Schedule({ events }) {
   return (
