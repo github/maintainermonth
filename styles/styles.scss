@@ -1,7 +1,10 @@
 // Global
 @import './reset';
-@import './settings';
+@import './tokens';
 @import './typography';
+@import './helpers';
 @import './base';
 
 // Components
+@import '../ui/components/footer/footer';
+@import '../ui/components/header/header';

@@ -1,0 +1,3 @@
+@function spacing($factor) {
+  @return $spacer * $factor;
+}
