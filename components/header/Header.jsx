@@ -3,14 +3,21 @@ import Link from 'next/link'
 import { getRelativeURL } from '../../common/routes'
 import { getLiteral } from '../../common/i18n'
 
+import GitHubLogo from '../../public/icons/github-logo'
+
 const Header = () => {
   return (
     <header className="header">
-      <Link href={getRelativeURL('/')}>
-        <a className="header__logo">{`${getLiteral('page:title')} ${getLiteral(
-          'page:date',
-        )}`}</a>
-      </Link>
+      <div className="header__logo">
+        <Link href={getRelativeURL('/')}>
+          <a className="header__link">
+            <GitHubLogo />
+            {getLiteral('page:title')}
+          </a>
+        </Link>
+
+        <p className="header__chip">{getLiteral('page:date')}</p>
+      </div>
 
       <nav className="header__navigation">
         <ul className="header__list">

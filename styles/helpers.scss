@@ -1,3 +1,11 @@
 @function spacing($factor) {
   @return $spacer * $factor;
 }
+
+%grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: spacing(3);
+  max-width: 1400px;
+  margin: 0 auto;
+}
