@@ -7,3 +7,11 @@ export const getDataFromMD = (path) => {
 
   return { ...frontmatter, content }
 }
+
+export const parseGetInvolvedData = (data) => {
+  const examples = data.examples.map((example) => {
+    const [{ title }, { image }] = Object.values(example)[0]
+    return { title, image }
+  })
+  return { ...data, examples }
+}
