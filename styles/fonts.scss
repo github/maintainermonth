@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=JetBrains+Mono&display=swap');
+
+// Base
+$font-base: 16;
+$inter: 'Inter', sans-serif;
+$jetbrains: 'JetBrains Mono', monospace;
+
+// Weights
+$regular: 5400;
+$medium: 500;
+$semibold: 600;
+
+// Styles
+%header-1 {
+  font-family: $jetbrains;
+  font-weight: $regular;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+%header-2 {
+  font-family: $jetbrains;
+  font-weight: $regular;
+  font-size: 2.25rem;
+  line-height: 1.6;
+}
+
+%header-3 {
+  font-family: $inter;
+  font-weight: $semibold;
+  font-size: 2.25rem;
+  line-height: 1.21;
+}
+
+%header-3 {
+  font-family: $inter;
+  font-weight: $semibold;
+  font-size: 1.25rem;
+  line-height: 1.21;
+}
+
+%body-1 {
+  font-family: $inter;
+  font-weight: $medium;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+%subtitle-1 {
+  font-family: $inter;
+  font-weight: $semibold;
+  font-size: 0.75rem;
+  line-height: 1.21;
+
+  @media (min-width: $md) {
+    font-size: 1rem;
+  }
+}
