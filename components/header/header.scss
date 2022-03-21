@@ -1,22 +1,40 @@
 .header {
-  @extend %grid;
-  align-items: center;
+  position: sticky;
+  top: 0;
 
-  padding: spacing(3) 0;
-  border-bottom: 1px solid $white;
+  padding: 0 spacing(2);
+
+  backdrop-filter: blur(60px);
+
+  @media (min-width: $lg) {
+    padding: 0 spacing(4);
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    padding: spacing(2) 0;
+
+    border-bottom: 1px solid $white;
+
+    @media (min-width: $lg) {
+      padding: spacing(2) 0;
+    }
+  }
 
   &__logo {
-    grid-column: 1 / 4;
-
     display: flex;
     align-items: center;
     column-gap: spacing(2);
   }
 
-  &__link {
+  &__home-link {
     display: flex;
     align-items: center;
     column-gap: spacing(2);
+
+    @extend %header-3;
 
     .github-logo {
       height: spacing(4);
@@ -30,20 +48,77 @@
 
   &__chip {
     padding: spacing(1) spacing(1.5);
+    margin-right: spacing(2);
 
     border: 1px solid $white;
     box-sizing: border-box;
     border-radius: 27px;
 
+    @extend %subtitle-1;
+
     cursor: default;
   }
 
   &__navigation {
-    grid-column: 11 / 13;
+    display: flex;
+    align-items: center;
   }
 
   &__list {
     display: flex;
-    column-gap: spacing(5);
+    column-gap: spacing(2);
+
+    @media (min-width: $lg) {
+      column-gap: spacing(4);
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: spacing(1);
+
+    height: spacing(5);
+    width: spacing(5);
+
+    @media (min-width: $md) {
+      height: spacing(6);
+      width: spacing(6);
+    }
+
+    @media (min-width: $lg) {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .icon-calendar,
+  .icon-books {
+    height: spacing(3);
+    width: spacing(3);
+
+    rect,
+    line {
+      stroke: $white;
+    }
+
+    @media (min-width: $md) {
+      height: spacing(4);
+      width: spacing(4);
+    }
+
+    @media (min-width: $lg) {
+      height: spacing(3);
+      width: spacing(3);
+    }
+  }
+
+  &__link-text {
+    display: none;
+
+    @media (min-width: $lg) {
+      display: initial;
+    }
   }
 }

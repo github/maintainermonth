@@ -1,2 +1,27 @@
 .hero {
+  min-height: 100vh;
+
+  @extend %grid;
+
+  &__content {
+    grid-column: 3 / 9;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__chip {
+    @extend %header-2;
+    padding: spacing(2) spacing(4);
+    margin-bottom: spacing(4);
+
+    border: 1px solid $white;
+    border-radius: 83px;
+  }
+
+  &__title {
+    @extend %header-1;
+  }
 }
