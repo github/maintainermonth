@@ -32,6 +32,7 @@ export default function Home({ hero, about, getInvolved, events, connection }) {
         />
         <GetInvolved
           title={getInvolved.title}
+          content={getInvolved.content}
           examplesTitle={getInvolved.examplesTitle}
           examples={getInvolved.examples}
         />

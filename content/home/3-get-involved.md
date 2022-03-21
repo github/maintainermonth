@@ -1,7 +1,7 @@
 ---
 anchorNavSection: 'Get involved'
-title: 'What’s going on during Maintainer Month? How do I get involved?'
-examplesTitle: 'Examples'
+title: 'What’s going on during Maintainer Month?'
+examplesTitle: 'How do I get involved?'
 examples:
   - socialMedia:
       - title: 'Posting on social media to thank the maintainers of their'
