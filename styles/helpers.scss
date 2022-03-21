@@ -19,3 +19,7 @@
     padding: 0 spacing(4);
   }
 }
+
+%background-filter {
+  backdrop-filter: blur(60px);
+}
