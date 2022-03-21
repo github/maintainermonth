@@ -6,6 +6,17 @@ $sm: 460px;
 $md: 700px;
 $lg: 920px;
 
+// Sizing
+$nav-height: 73px;
+
+@media (min-width: $md) {
+  $nav-height: 81px;
+}
+
+@media (min-width: $lg) {
+  $nav-height: 70px;
+}
+
 // Colors
 $white: #fff;
 $blue: #0a03d6;

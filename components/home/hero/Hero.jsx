@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 import { getRelativeURL } from '../../../common/routes'
+import ButtonLink from '../../button-link/ButtonLink'
 
 const Hero = ({ date, title, buttonText }) => {
   return (
@@ -9,7 +10,7 @@ const Hero = ({ date, title, buttonText }) => {
         <p className="hero__chip">{date}</p>
         <h1 className="hero__title">{title}</h1>
 
-        <Link href={getRelativeURL('/schedule')}>{buttonText}</Link>
+        <ButtonLink href={getRelativeURL('/schedule')}>{buttonText}</ButtonLink>
       </div>
     </section>
   )

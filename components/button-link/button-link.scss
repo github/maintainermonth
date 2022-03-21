@@ -1,0 +1,18 @@
+.button-link {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 10px;
+
+  height: spacing(7);
+  padding: 0 spacing(3);
+
+  @extend %body-1;
+  color: $purple;
+
+  background: $white;
+  border-radius: 131px;
+
+  .icon-arrow-right path {
+    fill: $purple;
+  }
+}
