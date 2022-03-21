@@ -1,6 +1,6 @@
 import ButtonLink from '../../button-link/ButtonLink'
 
-import { getRelativeURL } from '../../../common/routes'
+import * as ROUTES from '../../../common/routes'
 
 const Hero = ({ date, title, buttonText }) => {
   return (
@@ -9,7 +9,7 @@ const Hero = ({ date, title, buttonText }) => {
         <p className="hero__chip">{date}</p>
         <h1 className="hero__title">{title}</h1>
 
-        <ButtonLink href={getRelativeURL('/schedule')}>{buttonText}</ButtonLink>
+        <ButtonLink href={ROUTES.SCHEDULE.path}>{buttonText}</ButtonLink>
       </div>
     </section>
   )

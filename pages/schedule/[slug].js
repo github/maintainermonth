@@ -2,7 +2,8 @@ import fs from 'fs'
 import md from 'markdown-it'
 import Link from 'next/link'
 
-import { getRelativeURL } from '../../common/routes'
+import * as ROUTES from '../../common/routes'
+
 import { getDataFromMD } from '../../common/api'
 
 export default function EventDetail({ event }) {
@@ -10,7 +11,7 @@ export default function EventDetail({ event }) {
     <div>
       <h1>{event.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: md().render(event.content) }} />
-      <Link href={getRelativeURL('/')}>Back to home</Link>
+      <Link href={ROUTES.HOME.path}>Back to home</Link>
     </div>
   )
 }
