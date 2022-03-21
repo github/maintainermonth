@@ -1,19 +1,25 @@
 .hero {
-  min-height: 100vh;
+  min-height: calc(100vh - $nav-height);
 
   @extend %grid;
 
   &__content {
-    grid-column: 3 / 9;
+    grid-column: 1 / 3;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    padding-top: spacing(16);
+
+    @media (min-width: $md) {
+      grid-column: 2 / 7;
+    }
+
+    @media (min-width: $lg) {
+      grid-column: 3 / 10;
+    }
   }
 
   &__chip {
-    @extend %header-2;
+    display: inline-block;
+    @extend %header-3;
     padding: spacing(2) spacing(4);
     margin-bottom: spacing(4);
 
@@ -22,6 +28,8 @@
   }
 
   &__title {
+    margin-bottom: spacing(4);
+
     @extend %header-1;
   }
 }
