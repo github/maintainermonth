@@ -2,9 +2,10 @@ import fs from 'fs'
 import Head from 'next/head'
 import Link from 'next/link'
 
-import { getLiteral } from '../common/i18n'
-import { getRelativeURL } from '../common/routes'
-import { getDataFromMD } from '../common/api'
+import { getLiteral } from '../../common/i18n'
+import * as ROUTES from '../../common/routes'
+
+import { getDataFromMD } from '../../common/api'
 
 export default function Schedule({ events }) {
   return (
@@ -21,7 +22,7 @@ export default function Schedule({ events }) {
         <section>
           {events.map((event) => (
             <div key={event.slug}>
-              <Link href={getRelativeURL(`/events/${event.slug}`)}>
+              <Link href={ROUTES.EVENT.linkTo({ slug: event.slug })}>
                 {event.title}
               </Link>
             </div>

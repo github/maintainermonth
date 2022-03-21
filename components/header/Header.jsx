@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 import Link from 'next/link'
 
-import { getRelativeURL } from '../../common/routes'
+import * as ROUTES from '../../common/routes'
 import { getLiteral } from '../../common/i18n'
 import useWindowSize from '../../hooks/useWindowSize'
 
@@ -21,7 +21,7 @@ const Header = () => {
     <header className="header">
       <div className="header__content">
         <div className="header__logo">
-          <Link href={getRelativeURL('/')}>
+          <Link href={ROUTES.HOME.path}>
             <a className="header__home-link">
               <GitHubLogo />
               {getLiteral(isMobile ? 'page:title-mobile' : 'page:title')}
@@ -35,7 +35,7 @@ const Header = () => {
           <ul className="header__list">
             <li>
               <Link
-                href={getRelativeURL('/schedule')}
+                href={ROUTES.SCHEDULE.path}
                 aria-label={getLiteral('navigation:schedule')}
               >
                 <a className="header__link">
@@ -48,7 +48,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                href={getRelativeURL('/resources')}
+                href={ROUTES.RESOURCES.path}
                 aria-label={getLiteral('navigation:resources')}
               >
                 <a className="header__link">

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { getRelativeURL } from '../../../common/routes'
+import * as ROUTES from '../../../common/routes'
 
 const Events = ({ title, ctaTitle, ctaButtonText, todayEvents }) => {
   return (
@@ -9,14 +9,14 @@ const Events = ({ title, ctaTitle, ctaButtonText, todayEvents }) => {
 
       {todayEvents.map((event) => (
         <div key={event.slug}>
-          <Link href={getRelativeURL(`/events/${event.slug}`)}>
+          <Link href={ROUTES.EVENT.linkTo({ slug: event.slug })}>
             {event.title}
           </Link>
         </div>
       ))}
 
       <p>{ctaTitle}</p>
-      <Link href={getRelativeURL('/schedule')}>{ctaButtonText}</Link>
+      <Link href={ROUTES.SCHEDULE.path}>{ctaButtonText}</Link>
     </section>
   )
 }

@@ -1,5 +1,20 @@
-// TODO: provisional
-const PRODUCTION_PATH = '/tmp-maintainermonth'
+const makePath = (path, { parent = HOME } = {}) => ({
+  path,
+  parent,
+  linkTo: (params) => ({
+    pathname: path,
+    query: params,
+  }),
+})
 
-export const getRelativeURL = (url) =>
-  process.env.NODE_ENV === 'development' ? url : `${PRODUCTION_PATH}${url}`
+export const HOME = makePath('/', {
+  parent: null,
+})
+
+export const SCHEDULE = makePath('/schedule')
+
+export const EVENT = makePath(`${SCHEDULE.path}/[slug]`, {
+  parent: SCHEDULE,
+})
+
+export const RESOURCES = makePath('/resources')
