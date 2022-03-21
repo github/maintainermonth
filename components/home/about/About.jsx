@@ -3,10 +3,15 @@ import md from 'markdown-it'
 const About = ({ title, image, content }) => {
   return (
     <section className="about">
-      <h2>{title}</h2>
-      {/* image */}
+      <div className="about__content">
+        <h2 className="about__title">{title}</h2>
+        {/* TODO: add image */}
 
-      <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
+        <div
+          className="about__text"
+          dangerouslySetInnerHTML={{ __html: md().render(content) }}
+        />
+      </div>
     </section>
   )
 }

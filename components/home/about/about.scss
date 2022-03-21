@@ -1,2 +1,41 @@
 .about {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  &__content {
+    @extend %grid;
+  }
+
+  &__title {
+    grid-column: 1 / 4;
+
+    @extend %header-2;
+
+    @media (min-width: $md) {
+      grid-column: 2 / 7;
+    }
+
+    @media (min-width: $lg) {
+      grid-column: 3 / 7;
+    }
+  }
+
+  &__text {
+    @extend %body-1;
+
+    grid-column: 1 / 4;
+
+    @media (min-width: $md) {
+      grid-column: 2 / 7;
+    }
+
+    @media (min-width: $lg) {
+      grid-column: 8 / 12;
+    }
+
+    p {
+      margin-bottom: spacing(2);
+    }
+  }
 }
