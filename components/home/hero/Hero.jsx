@@ -1,7 +1,6 @@
-import Link from 'next/link'
+import ButtonLink from '../../button-link/ButtonLink'
 
 import { getRelativeURL } from '../../../common/routes'
-import ButtonLink from '../../button-link/ButtonLink'
 
 const Hero = ({ date, title, buttonText }) => {
   return (
