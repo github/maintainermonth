@@ -1,18 +1,20 @@
 html {
-  font-family: 'Inter', sans-serif;
   font-size: $font-base;
-  color: $white;
 }
 
 body {
   min-height: 100vh;
   overflow-x: hidden;
 
+  font-family: $inter;
+  @extend %body-1;
+  color: $white;
+
   background: linear-gradient(
     116.27deg,
-    #0366d6 -13.85%,
-    #59359a 31.49%,
-    #d73a49 107.36%
+    $blue -13.85%,
+    $purple 31.49%,
+    $red 107.36%
   );
 }
 
