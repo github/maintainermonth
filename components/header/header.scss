@@ -4,7 +4,7 @@
 
   padding: 0 spacing(2);
 
-  backdrop-filter: blur(60px);
+  @extend %background-filter;
 
   @media (min-width: $lg) {
     padding: 0 spacing(4);
