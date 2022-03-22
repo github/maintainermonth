@@ -1,4 +1,10 @@
 {
+    "anchor-nav:hero": "Maintainer Month",
+    "anchor-nav:about": "About",
+    "anchor-nav:get-involved": "Get involved",
+    "anchor-nav:events": "Schedule",
+    "anchor-nav:connection": "Connection",
+
     "footer:copyright": "Made with ❤️ by GitHub",
     "footer:email": "opensource@github.com",
     "footer:terms-title": "Terms",
