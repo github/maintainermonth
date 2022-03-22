@@ -9,19 +9,19 @@
     "footer:repository-url": "#",
     "footer:coc-title": "Code of Conduct",
     "footer:coc-url": "#",
+    
+    "library:title": "Library",
+    "library:description": "Library description",
 
     "meta:title": "Maintainer Month",
     "meta:description": "Maintainer Month Description",
     
     "navigation:schedule": "Schedule",
-    "navigation:resources": "Resources",
+    "navigation:library": "Library",
 
     "page:title": "Maintainer Month",
     "page:title-mobile": "MM",
     "page:date": "June 2022",
-
-    "resources:title": "Resources",
-    "resources:description": "Resources description",
 
     "schedule:title": "Schedule",
     "schedule:description": "Schedule description"
