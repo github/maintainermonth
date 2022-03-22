@@ -1,0 +1,77 @@
+.anchor-navigation {
+  $self: &;
+
+  position: fixed;
+  left: spacing(4);
+  top: 0;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: spacing(1);
+
+  &__button {
+    position: relative;
+    height: spacing(4);
+    padding-left: spacing(4);
+
+    border: none;
+    background: unset;
+
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 6px;
+      top: 6px;
+      height: 20px;
+      width: 20px;
+
+      border-radius: 50%;
+      outline: 2px solid $white;
+
+      opacity: 0;
+      transition: opacity $simple-fade;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 12px;
+      top: 12px;
+      height: 8px;
+      width: 8px;
+
+      background: $white;
+      border-radius: 50%;
+
+      opacity: 0.5;
+      transition: opacity $simple-fade;
+    }
+
+    &:hover {
+      #{ $self }__text {
+        opacity: 0.5;
+      }
+    }
+
+    &.active {
+      &::before,
+      &::after,
+      #{ $self }__text {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__text {
+    @extend %subtitle-1;
+    color: $white;
+
+    opacity: 0;
+    transition: opacity $simple-fade;
+  }
+}
