@@ -4,6 +4,9 @@
   align-items: center;
   justify-content: center;
 
+  // TODO: provisional
+  margin-top: 200px;
+
   &__header {
     @extend %grid;
   }
