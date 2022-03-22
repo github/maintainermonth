@@ -48,13 +48,13 @@ const Header = () => {
             </li>
             <li>
               <Link
-                href={ROUTES.RESOURCES.path}
-                aria-label={getLiteral('navigation:resources')}
+                href={ROUTES.LIBRARY.path}
+                aria-label={getLiteral('navigation:library')}
               >
                 <a className="header__link">
                   <IconBooks />
                   <span className="header__link-text">
-                    {getLiteral('navigation:resources')}
+                    {getLiteral('navigation:library')}
                   </span>
                 </a>
               </Link>

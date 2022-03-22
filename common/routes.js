@@ -17,4 +17,4 @@ export const EVENT = makePath(`${SCHEDULE.path}/[slug]`, {
   parent: SCHEDULE,
 })
 
-export const RESOURCES = makePath('/resources')
+export const LIBRARY = makePath('/library')
