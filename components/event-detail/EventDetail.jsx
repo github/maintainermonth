@@ -1,6 +1,8 @@
 import md from 'markdown-it'
 import clsx from 'clsx'
 
+import EventTypeChip from '../event-type-chip/EventTypeChip'
+
 import IconVideo from '../../public/icons/video'
 
 // TODO: title heading for SEO (titleComponent?)
@@ -13,7 +15,7 @@ const EventDetail = ({ event, reverseColumns }) => {
   return (
     <article className={classes}>
       <div className="event-detail__info">
-        <p>{event.type}</p>
+        <EventTypeChip type={event.type} />
         <p>{event.date}</p>
         <p>{event.UTCEndTime}</p>
         <p>{event.UTCStartTime}</p>

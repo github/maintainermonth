@@ -1,0 +1,36 @@
+.chip {
+  padding: spacing(1) spacing(1.5);
+
+  display: inline-flex;
+  align-items: center;
+  column-gap: 6px;
+
+  background-color: $white;
+  @extend %subtitle-1;
+  color: $purple;
+
+  border-radius: 27px;
+  cursor: default;
+
+  &__icon {
+    height: 18px;
+    width: 18px;
+
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+
+    path {
+      fill: $purple;
+    }
+  }
+
+  &.custom-color {
+    color: $white;
+
+    path {
+      fill: $white;
+    }
+  }
+}

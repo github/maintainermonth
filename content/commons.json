@@ -5,6 +5,14 @@
     "anchor-nav:events": "Schedule",
     "anchor-nav:connection": "Connection",
 
+    "event-type:podcast": "Podcast",
+    "event-type:stream": "Stream",
+    "event-type:talk": "Talk",
+    "event-type:meetup": "Meetup",
+    "event-type:fundraising": "Fundraising",
+    "event-type:conference": "Conference",
+    "event-type:misc": "Misc",
+
     "footer:copyright": "Made with ❤️ by GitHub",
     "footer:email": "opensource@github.com",
     "footer:terms-title": "Terms",
