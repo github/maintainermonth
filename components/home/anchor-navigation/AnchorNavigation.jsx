@@ -63,7 +63,7 @@ const AnchorNavigation = ({ containerRef }) => {
 
   return (
     <div className="anchor-navigation">
-      {Object.keys(sections).map((elementName) => (
+      {Object.keys(sections).map((elementName, index) => (
         <button
           key={`anchor-${elementName}`}
           className={clsx('anchor-navigation__button', {
