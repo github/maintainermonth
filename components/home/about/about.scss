@@ -23,6 +23,7 @@
 
   &__text {
     @extend %body-1;
+    color: $white-soft;
 
     grid-column: 1 / 4;
 
