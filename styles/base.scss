@@ -9,13 +9,6 @@ body {
   font-family: $inter;
   @extend %body-1;
   color: $white;
-
-  background: linear-gradient(
-    116.27deg,
-    $blue -13.85%,
-    $purple 31.49%,
-    $red 107.36%
-  );
 }
 
 a {

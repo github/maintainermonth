@@ -1,6 +1,7 @@
 import { useEffect, useCallback, useState } from 'react'
 import clsx from 'clsx'
 
+import { useBackground } from '../../../contexts/BackgroundContext'
 import { getLiteral } from '../../../common/i18n'
 
 import { OBSERVER_OPTIONS, Y_OFFSET } from './constants'
@@ -8,6 +9,8 @@ import { OBSERVER_OPTIONS, Y_OFFSET } from './constants'
 const AnchorNavigation = ({ containerRef }) => {
   const [sections, setSections] = useState({})
   const [activeSection, setActiveSection] = useState('')
+
+  const { setAnimationStep } = useBackground()
 
   const observerCallback = useCallback((entries) => {
     entries.forEach((entry) => {
@@ -28,6 +31,11 @@ const AnchorNavigation = ({ containerRef }) => {
     },
     [sections],
   )
+
+  useEffect(() => {
+    const index = Object.keys(sections).indexOf(activeSection)
+    setAnimationStep(index)
+  }, [activeSection, sections, setAnimationStep])
 
   useEffect(() => {
     const sectionNodes = containerRef.current.childNodes
@@ -61,7 +69,7 @@ const AnchorNavigation = ({ containerRef }) => {
           className={clsx('anchor-navigation__button', {
             active: activeSection === elementName,
           })}
-          onClick={() => handleClick(elementName)}
+          onClick={() => handleClick(elementName, index)}
         >
           <span className="anchor-navigation__text">
             {getLiteral(`anchor-nav:${elementName}`)}
