@@ -1,3 +1,37 @@
 .events {
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__header {
+    @extend %grid;
+  }
+
+  &__title {
+    margin-bottom: spacing(8);
+
+    grid-column: 1 / 4;
+
+    @extend %header-2;
+
+    @media (min-width: $md) {
+      grid-column: 2 / 7;
+    }
+
+    @media (min-width: $lg) {
+      grid-column: 3 / 10;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: spacing(20);
+  }
+
+  &__cta {
+    margin-top: spacing(30);
+  }
 }
