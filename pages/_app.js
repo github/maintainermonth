@@ -1,12 +1,15 @@
 import '../styles/styles.scss'
 
 import Layout from '../components/layout/Layout'
+import { BackgroundProvider } from '../contexts/BackgroundContext'
 
 function App({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <BackgroundProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </BackgroundProvider>
   )
 }
 
