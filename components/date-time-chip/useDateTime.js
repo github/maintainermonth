@@ -8,40 +8,61 @@ import timezone from 'dayjs/plugin/timezone'
 dayjs.extend(utc)
 dayjs.extend(timezone)
 
-const useDateTime = (date, startTime, endTime) => {
+// TODO: refactor and move stuff to constants
+const useDateTime = (date = dayjs.utc(), startTime, endTime) => {
   const formattedTime = useMemo(() => {
     // Date
     const UTCDate = dayjs.utc(date)
     const formattedDate = UTCDate.format('MMM D')
 
     // Start time
-    const [startHour, startMinute] = startTime.split(':')
+    let formattedStartTime = {}
 
-    const UTCStartTime = UTCDate.hour(startHour).minute(startMinute)
-    const PTStartTime = UTCStartTime.tz('America/Los_Angeles')
+    if (startTime) {
+      const [startHour, startMinute] = startTime.split(':')
 
-    const formattedUTCStartTime = UTCStartTime.format('H:mm a')
-    const formattedPTStartTime = PTStartTime.format('H:mm a')
+      const UTCStartTime = UTCDate.hour(startHour).minute(startMinute)
+      const PTStartTime = UTCStartTime.tz('America/Los_Angeles')
+
+      const formattedUTCStartTime = UTCStartTime.format(
+        UTCStartTime.minute() !== 0 ? 'H:mm a' : 'H a',
+      )
+      const formattedPTStartTime = PTStartTime.format(
+        UTCStartTime.minute() !== 0 ? 'H:mm a' : 'H a',
+      )
+
+      formattedStartTime = {
+        utc: formattedUTCStartTime,
+        pt: formattedPTStartTime,
+      }
+    }
 
     // End time
-    const [endHour, endMinute] = endTime.split(':')
+    let formattedEndTime = {}
 
-    const UTCEndTime = UTCDate.hour(endHour).minute(endMinute)
-    const PTEndTime = UTCStartTime.tz('America/Los_Angeles')
+    if (endTime) {
+      const [endHour, endMinute] = endTime.split(':')
 
-    const formattedUTCEndTime = UTCEndTime.format('H:mm a')
-    const formattedPTEndTime = PTEndTime.format('H:mm a')
+      const UTCEndTime = UTCDate.hour(endHour).minute(endMinute)
+      const PTEndTime = UTCEndTime.tz('America/Los_Angeles')
+
+      const formattedUTCEndTime = UTCEndTime.format(
+        UTCEndTime.minute() !== 0 ? 'H:mm a' : 'H a',
+      )
+      const formattedPTEndTime = PTEndTime.format(
+        UTCEndTime.minute() !== 0 ? 'H:mm a' : 'H a',
+      )
+
+      formattedEndTime = {
+        utc: formattedUTCEndTime,
+        pt: formattedPTEndTime,
+      }
+    }
 
     return {
       date: formattedDate,
-      startTime: {
-        utc: formattedUTCStartTime,
-        pt: formattedPTStartTime,
-      },
-      endTime: {
-        utc: formattedUTCEndTime,
-        pt: formattedPTEndTime,
-      },
+      startTime: formattedStartTime,
+      endTime: formattedEndTime,
     }
   }, [date, endTime, startTime])
 

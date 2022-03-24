@@ -1,0 +1,51 @@
+.events-list {
+  padding: spacing(8) spacing(5);
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  &__card {
+    position: relative;
+  }
+
+  &__date {
+    width: 100%;
+    padding-bottom: spacing(3);
+
+    border-bottom: 2px solid $white;
+  }
+
+  &__event {
+    padding: spacing(3);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: spacing(4);
+  }
+
+  &__link {
+    @extend %header-4;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  &__text {
+    @extend %body-1;
+    color: $white-soft;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    line-clamp: 7;
+    -webkit-box-orient: vertical;
+  }
+}

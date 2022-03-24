@@ -7,25 +7,33 @@ const DateTimeChip = ({ date, startTime, endTime }) => {
 
   return (
     <div className="datetime-chip">
-      <p className="datetime-chip__date">
-        <span>{formattedDateTime.date}</span>
-      </p>
+      {date ? (
+        <p className="datetime-chip__date">
+          <span>{formattedDateTime.date}</span>
+        </p>
+      ) : null}
 
-      <p className="datetime-chip__time">
-        {formattedDateTime.startTime.utc} - {formattedDateTime.endTime.utc}
-        <span className="datetime-chip__timezone">
-          {getLiteral('timezone:utc')}
-        </span>
-      </p>
+      {startTime ? (
+        <p className="datetime-chip__time">
+          {formattedDateTime.startTime.utc} - {formattedDateTime.endTime.utc}
+          <span className="datetime-chip__timezone">
+            {getLiteral('timezone:utc')}
+          </span>
+        </p>
+      ) : null}
 
-      <div className="datetime-chip__divider" />
+      {endTime ? (
+        <>
+          <div className="datetime-chip__divider" />
 
-      <p className="datetime-chip__time">
-        {formattedDateTime.startTime.pt} - {formattedDateTime.endTime.pt}
-        <span className="datetime-chip__timezone">
-          {getLiteral('timezone:pt')}
-        </span>
-      </p>
+          <p className="datetime-chip__time">
+            {formattedDateTime.startTime.pt} - {formattedDateTime.endTime.pt}
+            <span className="datetime-chip__timezone">
+              {getLiteral('timezone:pt')}
+            </span>
+          </p>
+        </>
+      ) : null}
     </div>
   )
 }
