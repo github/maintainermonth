@@ -1,10 +1,14 @@
 .footer {
+  padding: spacing(4) 0;
+  margin: 0 spacing(3);
+
   display: flex;
   flex-direction: column;
   align-items: center;
   column-gap: spacing(5);
   row-gap: spacing(2);
-  padding: spacing(4) spacing(2);
+
+  border-top: 1px solid $white;
 
   @media (min-width: $lg) {
     flex-direction: row;
