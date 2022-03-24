@@ -1,18 +1,14 @@
 import fs from 'fs'
-import md from 'markdown-it'
-import Link from 'next/link'
-
-import * as ROUTES from '../../common/routes'
 
 import { getDataFromMD } from '../../common/api'
+import EventDetail from '../../components/event-detail/EventDetail'
+import EventDetailWrapper from '../../components/event-detail/EventDetailWrapper'
 
-export default function EventDetail({ event }) {
+export default function EventDetailPage({ event }) {
   return (
-    <div>
-      <h1>{event.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: md().render(event.content) }} />
-      <Link href={ROUTES.HOME.path}>Back to home</Link>
-    </div>
+    <EventDetailWrapper>
+      <EventDetail event={event} isFullPage />
+    </EventDetailWrapper>
   )
 }
 

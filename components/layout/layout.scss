@@ -63,6 +63,13 @@
   }
 
   &__content {
+    min-height: 100vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    flex-grow: 1;
   }
 }
