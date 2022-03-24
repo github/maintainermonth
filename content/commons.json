@@ -38,5 +38,8 @@
     "page:date": "June 2022",
 
     "schedule:title": "Schedule",
-    "schedule:description": "Schedule description"
+    "schedule:description": "Schedule description",
+
+    "timezone:utc": "UTC",
+    "timezone:pt": "PT"
 }

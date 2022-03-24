@@ -1,0 +1,54 @@
+.datetime-chip {
+  display: inline-flex;
+
+  outline: 1px solid $white-soft;
+  border-radius: 27px;
+
+  @extend %subtitle-1;
+
+  &__date {
+    padding: spacing(1) spacing(1.5);
+    background: $white;
+    color: $purple;
+
+    outline: 1px solid $white;
+    border-radius: 27px;
+
+    box-sizing: border-box;
+  }
+
+  &__time {
+    padding: spacing(1) spacing(1.5);
+
+    border-radius: 27px;
+
+    position: relative;
+  }
+
+  &__timezone {
+    margin-left: spacing(1);
+
+    font-weight: $medium;
+    font-size: 12px;
+    line-height: 1.6;
+
+    color: $white-soft;
+  }
+
+  &__divider {
+    width: 4px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: calc(50% - 2px);
+
+      height: 4px;
+      width: 4px;
+      background: $white;
+
+      border-radius: 50%;
+    }
+  }
+}

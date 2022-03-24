@@ -4,12 +4,15 @@
   @extend %grid;
 
   &__title {
-    margin-bottom: spacing(4);
-
     @extend %header-2;
   }
 
   &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: spacing(4);
+
     grid-column: 1 / 4;
 
     @media (min-width: $md) {

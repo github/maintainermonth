@@ -4,6 +4,7 @@ import clsx from 'clsx'
 import EventTypeChip from '../event-type-chip/EventTypeChip'
 
 import IconVideo from '../../public/icons/video'
+import DateTimeChip from '../date-time-chip/DateTimeChip'
 
 // TODO: title heading for SEO (titleComponent?)
 
@@ -16,9 +17,11 @@ const EventDetail = ({ event, reverseColumns }) => {
     <article className={classes}>
       <div className="event-detail__info">
         <EventTypeChip type={event.type} />
-        <p>{event.date}</p>
-        <p>{event.UTCEndTime}</p>
-        <p>{event.UTCStartTime}</p>
+        <DateTimeChip
+          date={event.date}
+          startTime={event.UTCStartTime}
+          endTime={event.UTCEndTime}
+        />
         <p className="event-detail__title">{event.title}</p>
         <div
           className="event-detail__text"
