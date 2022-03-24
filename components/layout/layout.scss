@@ -15,10 +15,10 @@
     content: '';
 
     position: fixed;
-    width: 2898px;
-    height: 2898px;
-    left: -1458px;
-    top: -549px;
+    width: 200vw;
+    height: 200vw;
+    left: -100vw;
+    top: 0;
 
     background: linear-gradient(
       116.27deg,
@@ -29,36 +29,27 @@
 
     border-radius: 50%;
 
-    transition: left $simple-fade, top $simple-fade, transform $simple-fade;
+    transition: left $background-fade, top $background-fade,
+      transform $background-fade;
   }
 
   &.step-1::before {
-    left: -9px;
-    top: -1149.2px;
     transform: rotate(45deg);
   }
 
   &.step-2::before {
-    left: 1440px;
-    top: -549px;
     transform: rotate(90deg);
   }
 
   &.step-3::before {
-    left: -35.22px;
-    top: -1149.03px;
     transform: rotate(44.27deg);
   }
 
   &.step-4::before {
-    left: -1033.59px;
-    top: 2674.65px;
     transform: rotate(-105deg);
   }
 
   &.step-5::before {
-    left: 1765.66px;
-    top: -124.6px;
     transform: rotate(105deg);
   }
 

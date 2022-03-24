@@ -18,4 +18,7 @@ $red: #e32e40;
 // Transitions
 $bezier-default: cubic-bezier(0.25, 0.1, 0.25, 1);
 $duration-default: 0.3s;
+$duration-long: 2s;
+
 $simple-fade: $duration-default $bezier-default;
+$background-fade: $duration-long $bezier-default;
