@@ -1,3 +1,38 @@
 .connection {
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  &__content {
+    @extend %grid;
+  }
+
+  &__title {
+    grid-column: 1 / 4;
+
+    @extend %header-2;
+
+    @media (min-width: $md) {
+      grid-column: 2 / 7;
+    }
+
+    @media (min-width: $lg) {
+      grid-column: 3 / 9;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+
+    grid-column: 1 / 4;
+
+    @media (min-width: $md) {
+      grid-column: 2 / 7;
+    }
+
+    @media (min-width: $lg) {
+      grid-column: 9 / 12;
+    }
+  }
 }

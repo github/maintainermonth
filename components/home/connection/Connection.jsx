@@ -1,11 +1,15 @@
-import Link from 'next/link'
+import ButtonLink from '../../button-link/ButtonLink'
 
 const Connection = ({ title, buttonText, buttonLink }) => {
   return (
     <section className="connection">
-      <h2>{title}</h2>
+      <div className="connection__content">
+        <h2 className="connection__title">{title}</h2>
 
-      <Link href={buttonLink}>{buttonText}</Link>
+        <div className="connection__button">
+          <ButtonLink href={buttonLink}>{buttonText}</ButtonLink>
+        </div>
+      </div>
     </section>
   )
 }
