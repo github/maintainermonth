@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "clsx": "^1.1.1",
+    "dayjs": "^1.11.0",
     "gray-matter": "^4.0.3",
     "markdown-it": "^12.3.2",
     "next": "12.1.0",
