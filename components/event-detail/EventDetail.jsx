@@ -8,9 +8,10 @@ import DateTimeChip from '../date-time-chip/DateTimeChip'
 
 // TODO: title heading for SEO (titleComponent?)
 
-const EventDetail = ({ event, reverseColumns }) => {
+const EventDetail = ({ event, reverseColumns, isFullPage }) => {
   const classes = clsx('event-detail', {
     'reverse-columns': reverseColumns,
+    'full-page': isFullPage,
   })
 
   return (

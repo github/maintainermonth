@@ -44,6 +44,10 @@
 
     @media (min-width: $lg) {
       grid-column: 8 / 11;
+
+      #{ $self }.full-page & {
+        grid-column: 10 / 12;
+      }
     }
   }
 
