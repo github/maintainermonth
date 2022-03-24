@@ -98,9 +98,8 @@
     height: spacing(3);
     width: spacing(3);
 
-    rect,
-    line {
-      stroke: $white;
+    path {
+      fill: $white;
     }
 
     @media (min-width: $md) {

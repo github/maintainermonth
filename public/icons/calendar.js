@@ -2,54 +2,16 @@ const IconCalendar = () => {
   return (
     <svg
       className="icon-calendar"
-      width="192"
-      height="192"
-      viewBox="0 0 256 256"
+      width="24"
+      height="24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <rect
-        x="40"
-        y="40"
-        width="176"
-        height="176"
-        rx="8"
-        fill="none"
-        stroke="#000"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="16"
-      />
-      <line
-        x1="176"
-        y1="24"
-        x2="176"
-        y2="56"
-        fill="none"
-        stroke="#000"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="16"
-      />
-      <line
-        x1="80"
-        y1="24"
-        x2="80"
-        y2="56"
-        fill="none"
-        stroke="#000"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="16"
-      />
-      <line
-        x1="40"
-        y1="88"
-        x2="216"
-        y2="88"
-        fill="none"
-        stroke="#000"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="16"
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M9.75 3.75C9.75 3.33579 9.41421 3 9 3C8.58579 3 8.25 3.33579 8.25 3.75V5.25H6C4.75736 5.25 3.75 6.25736 3.75 7.5V18C3.75 19.2426 4.75736 20.25 6 20.25H18C19.2426 20.25 20.25 19.2426 20.25 18V7.5C20.25 6.25736 19.2426 5.25 18 5.25H15.75V3.75C15.75 3.33579 15.4142 3 15 3C14.5858 3 14.25 3.33579 14.25 3.75V5.25H9.75V3.75ZM5.25 10.5V18C5.25 18.4142 5.58579 18.75 6 18.75H18C18.4142 18.75 18.75 18.4142 18.75 18V10.5L5.25 10.5ZM18.75 9L5.25 9V7.5C5.25 7.08579 5.58579 6.75 6 6.75H18C18.4142 6.75 18.75 7.08579 18.75 7.5V9Z"
+        fill="#000"
       />
     </svg>
   )
