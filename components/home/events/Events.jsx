@@ -1,6 +1,5 @@
-import Link from 'next/link'
-
 import * as ROUTES from '../../../common/routes'
+import ButtonLink from '../../button-link/ButtonLink'
 
 import EventDetail from '../../event-detail/EventDetail'
 
@@ -24,8 +23,9 @@ const Events = ({ title, ctaTitle, ctaButtonText, todayEvents }) => {
       </div>
 
       <div className="events__cta">
-        <p>{ctaTitle}</p>
-        <Link href={ROUTES.SCHEDULE.path}>{ctaButtonText}</Link>
+        <p className="events__cta-title">{ctaTitle}</p>
+
+        <ButtonLink href={ROUTES.SCHEDULE.path}>{ctaButtonText}</ButtonLink>
       </div>
     </section>
   )
