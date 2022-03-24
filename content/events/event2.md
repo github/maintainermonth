@@ -5,7 +5,7 @@ metaDesc: '(Description)This is an open source initiative to bookmark a week to 
 date: '01/15'
 UTCStartTime: '14:00'
 UTCEndTime: '22:00'
-type: 'stream'
+type: 'podcast'
 user: 'github'
 linkTitle: 'External link'
 linkUrl: '#'
