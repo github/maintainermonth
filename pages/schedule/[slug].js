@@ -10,7 +10,28 @@ export default function EventDetailPage({ event, ogImage }) {
   return (
     <>
       <Head>
-        <meta name="og:image" content={ogImage} />
+        <title>{event.title}</title>
+        <meta
+          name="description"
+          content="Check out this GitHub Maintainers Month event"
+        />
+
+        {/* <!-- Facebook Meta Tags --> */}
+        <meta property="og:title" content={event.title} />
+        <meta
+          property="og:description"
+          content="Check out this GitHub Maintainers Month event"
+        />
+        <meta property="og:image" content={ogImage} />
+
+        {/* <!-- Twitter Meta Tags --> */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={event.title} />
+        <meta
+          name="twitter:description"
+          content="Check out this GitHub maintainers Month event"
+        />
+        <meta name="twitter:image" content={ogImage} />
       </Head>
 
       <EventDetailWrapper>
