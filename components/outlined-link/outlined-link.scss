@@ -1,0 +1,37 @@
+.outlined-link {
+  padding: spacing(2);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: spacing(1);
+
+  @extend %body-1;
+  text-decoration: underline;
+
+  border: 1px solid $white;
+  border-radius: 82px;
+
+  &__icon {
+    position: relative;
+    display: inline-block;
+    height: spacing(4);
+    width: spacing(4);
+    background: #ffffff50;
+
+    border-radius: 50%;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: calc(50% - 7px);
+      left: calc(50% - 4px);
+
+      height: 14px;
+      width: 10px;
+      background: $white;
+
+      clip-path: polygon(100% 50%, 0 0, 0 100%);
+    }
+  }
+}

@@ -4,8 +4,10 @@ import clsx from 'clsx'
 import Link from 'next/link'
 
 import * as ROUTES from '../../common/routes'
+
 import DateTimeChip from '../date-time-chip/DateTimeChip'
 import EventTypeChip from '../event-type-chip/EventTypeChip'
+import OutlinedLink from '../outlined-link/OutlinedLink'
 
 const EventsList = ({ events }) => {
   return (
@@ -39,7 +41,7 @@ const EventsList = ({ events }) => {
               }}
             />
 
-            {/* TODO: add custom button */}
+            <OutlinedLink href={event.linkUrl}>{event.linkTitle}</OutlinedLink>
           </div>
         </div>
       ))}
