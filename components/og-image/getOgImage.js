@@ -23,7 +23,7 @@ async function getOgImage(title) {
       })
   })
 
-  return `/images/og/event-${hash}.png`
+  return `/tmp-maintainermonth/images/og/event-${hash}.png`
 }
 
 export default getOgImage
