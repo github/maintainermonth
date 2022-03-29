@@ -15,3 +15,29 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+// Background filter
+#noise-filter-wrapper {
+  display: none;
+}
+
+body::before {
+  position: fixed;
+  left: 0;
+  top: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  mix-blend-mode: darken;
+  // mix-blend-mode: difference;
+  // mix-blend-mode: exclusion;
+  // mix-blend-mode: multiply;
+  opacity: 0.5;
+}
+
+body::before {
+  background: #fff;
+  filter: url(#noise-filter);
+  z-index: $index-filter;
+}
