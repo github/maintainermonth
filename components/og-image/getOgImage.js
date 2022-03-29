@@ -3,6 +3,7 @@ const { createHash } = require('crypto')
 var Jimp = require('jimp')
 
 async function getOgImage(title) {
+  // TODO: turn this on
   //   if (process.env.NODE_ENV === 'development') {
   //     return 'og image will be generated in production'
   //   }
@@ -23,7 +24,8 @@ async function getOgImage(title) {
       })
   })
 
-  return `/tmp-maintainermonth/images/og/event-${hash}.png`
+  // TODO: generate absolute url
+  return `https://redradix.github.io/tmp-maintainermonth/images/og/event-${hash}.png`
 }
 
 export default getOgImage
