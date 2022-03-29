@@ -3,10 +3,9 @@ const { createHash } = require('crypto')
 var Jimp = require('jimp')
 
 async function getOgImage(title) {
-  // TODO: turn this on
-  //   if (process.env.NODE_ENV === 'development') {
-  //     return 'og image will be generated in production'
-  //   }
+  if (process.env.NODE_ENV === 'development') {
+    return 'og image will be generated in production'
+  }
 
   const hash = createHash('md5').update(title).digest('hex')
 
