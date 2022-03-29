@@ -1,4 +1,6 @@
 .events-list {
+  $self: &;
+
   padding: spacing(8) spacing(5);
 
   display: grid;
@@ -6,6 +8,15 @@
 
   &__card {
     position: relative;
+    margin-left: spacing(2);
+
+    &.same-date {
+      margin-left: 0;
+
+      #{ $self }__date > * {
+        opacity: 0;
+      }
+    }
   }
 
   &__date {

@@ -1,4 +1,6 @@
 import md from 'markdown-it'
+import clsx from 'clsx'
+
 import Link from 'next/link'
 
 import * as ROUTES from '../../common/routes'
@@ -8,9 +10,13 @@ import EventTypeChip from '../event-type-chip/EventTypeChip'
 const EventsList = ({ events }) => {
   return (
     <section className="events-list">
-      {events.map((event) => (
-        <div key={event.slug} className="events-list__card">
-          {/* TODO: add only when prev event has different date */}
+      {events.map((event, index) => (
+        <div
+          key={event.slug}
+          className={clsx('events-list__card', {
+            'same-date': index > 0 && event.date === events[index - 1].date,
+          })}
+        >
           <div className="events-list__date">
             <DateTimeChip date={event.date} />
           </div>
