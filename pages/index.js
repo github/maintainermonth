@@ -1,10 +1,10 @@
 import { useRef } from 'react'
 
-import fs from 'fs'
 import Head from 'next/head'
 
 import { getLiteral } from '../common/i18n'
 import { getDataFromMD, parseGetInvolvedData } from '../common/api'
+import { getTodayEvents } from '../api/events'
 
 import Hero from '../components/home/hero/Hero'
 import About from '../components/home/about/About'
@@ -12,7 +12,6 @@ import GetInvolved from '../components/home/get-involved/GetInvolved'
 import Events from '../components/home/events/Events'
 import Connection from '../components/home/connection/Connection'
 import AnchorNavigation from '../components/home/anchor-navigation/AnchorNavigation'
-import { formatEventDateTime } from '../common/dates'
 
 export default function Home({ hero, about, getInvolved, events, connection }) {
   const containerRef = useRef(null)
@@ -71,25 +70,7 @@ export async function getStaticProps() {
   const events = getDataFromMD('content/home/4-events.md')
   const connection = getDataFromMD('content/home/5-connection.md')
 
-  const eventFiles = fs.readdirSync('content/events')
-
-  const todayEvents = eventFiles.map((fileName) => {
-    const slug = fileName.replace('.md', '')
-    const event = getDataFromMD(`content/events/${fileName}`)
-
-    const formattedDate = formatEventDateTime(
-      event.date,
-      event.UTCStartTime,
-      event.UTCEndTime,
-    )
-
-    // TODO: filter events by current day
-    return {
-      slug,
-      formattedDate,
-      ...event,
-    }
-  })
+  const todayEvents = getTodayEvents()
 
   return {
     props: {
