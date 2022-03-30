@@ -24,6 +24,11 @@
   backdrop-filter: blur(60px);
 }
 
+%background-filter-white {
+  background: $white-20;
+  @extend %background-filter;
+}
+
 %markdown {
   p {
     margin-bottom: spacing(2);
