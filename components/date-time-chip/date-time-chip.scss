@@ -1,7 +1,7 @@
 .datetime-chip {
   display: inline-flex;
 
-  outline: 1px solid $white-soft;
+  outline: 1px solid $white-80;
   border-radius: 27px;
 
   @extend %subtitle-1;
@@ -32,7 +32,7 @@
     font-size: 12px;
     line-height: 1.6;
 
-    color: $white-soft;
+    color: $white-80;
   }
 
   &__divider {
