@@ -4,7 +4,13 @@
 
   padding: 0 spacing(2);
 
-  @extend %background-filter;
+  background: linear-gradient(
+    180deg,
+    rgba(107, 0, 207, 0.4) 0%,
+    rgba(107, 0, 207, 0) 100%
+  );
+
+  z-index: 99;
 
   @media (min-width: $lg) {
     padding: 0 spacing(4);
@@ -15,8 +21,6 @@
     justify-content: space-between;
 
     padding: spacing(2.5) 0 spacing(2);
-
-    border-bottom: 1px solid $white;
 
     @media (min-width: $lg) {
       padding: spacing(2) 0;
@@ -50,11 +54,12 @@
     padding: spacing(1) spacing(1.5);
     margin-right: spacing(2);
 
-    border: 1px solid $white;
+    background: $white;
     box-sizing: border-box;
     border-radius: 27px;
 
     @extend %subtitle-1;
+    color: $purple;
 
     cursor: default;
   }
@@ -82,34 +87,19 @@
     height: spacing(5);
     width: spacing(5);
 
-    @media (min-width: $md) {
-      height: spacing(6);
-      width: spacing(6);
-    }
+    @extend %background-filter-white;
+    border-radius: 155px;
 
     @media (min-width: $lg) {
       width: auto;
-      height: auto;
+      padding: 0 spacing(2);
     }
   }
 
   .icon-calendar,
   .icon-books {
-    height: spacing(3);
-    width: spacing(3);
-
     path {
       fill: $white;
-    }
-
-    @media (min-width: $md) {
-      height: spacing(4);
-      width: spacing(4);
-    }
-
-    @media (min-width: $lg) {
-      height: spacing(3);
-      width: spacing(3);
     }
   }
 
