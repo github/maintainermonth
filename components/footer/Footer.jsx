@@ -1,37 +1,96 @@
 import { getLiteral } from '../../common/i18n'
 
+import IconTwitter from '../../public/icons/twitter'
+import IconFacebook from '../../public/icons/facebook'
+import IconYouTube from '../../public/icons/youtube'
+import IconLinkedIn from '../../public/icons/linkedin'
+import IconGitHub from '../../public/icons/github'
+
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>{getLiteral('footer:copyright')}</p>
+      <div className="footer__copyright">
+        <a
+          className="footer__link"
+          href={getLiteral('footer:repository-url')}
+          target="_blank"
+          rel="noreferrer"
+        >
+          {getLiteral('footer:repository-title')}
+        </a>
+        <span className="footer__divider" />
 
-      <a href={getLiteral('footer:terms-url')} target="_blank" rel="noreferrer">
-        {getLiteral('footer:terms-title')}
-      </a>
-      <a
-        href={getLiteral('footer:privacy-url')}
-        target="_blank"
-        rel="noreferrer"
-      >
-        {getLiteral('footer:privacy-title')}
-      </a>
-      <a
-        href={`mailto:${getLiteral('footer:email')}`}
-        target="_blank"
-        rel="noreferrer"
-      >
-        {getLiteral('footer:email')}
-      </a>
-      <a
-        href={getLiteral('footer:repository-url')}
-        target="_blank"
-        rel="noreferrer"
-      >
-        {getLiteral('footer:repository-title')}
-      </a>
-      <a href={getLiteral('footer:coc-url')} target="_blank" rel="noreferrer">
-        {getLiteral('footer:coc-title')}
-      </a>
+        <p>{getLiteral('footer:copyright')}</p>
+      </div>
+
+      <div className="footer__links">
+        <div className="footer__social">
+          <a
+            className="footer__button"
+            href={getLiteral('footer:twitter-url')}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={getLiteral('footer:twitter-label')}
+          >
+            <span aria-hidden="true">
+              <IconTwitter />
+            </span>
+          </a>
+          <a
+            className="footer__button"
+            href={getLiteral('footer:facebook-url')}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={getLiteral('footer:facebook-label')}
+          >
+            <span aria-hidden="true">
+              <IconFacebook />
+            </span>
+          </a>
+          <a
+            className="footer__button"
+            href={getLiteral('footer:youtube-url')}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={getLiteral('footer:youtube-label')}
+          >
+            <span aria-hidden="true">
+              <IconYouTube />
+            </span>
+          </a>
+          <a
+            className="footer__button"
+            href={getLiteral('footer:linkedin-url')}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={getLiteral('footer:linkedin-label')}
+          >
+            <span aria-hidden="true">
+              <IconLinkedIn />
+            </span>
+          </a>
+          <a
+            className="footer__button"
+            href={getLiteral('footer:github-url')}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={getLiteral('footer:github-label')}
+          >
+            <span aria-hidden="true">
+              <IconGitHub />
+            </span>
+          </a>
+        </div>
+
+        <a
+          className="footer__link"
+          href={getLiteral('footer:privacy-url')}
+          target="_blank"
+          rel="noreferrer"
+        >
+          {getLiteral('footer:privacy-title')}
+        </a>
+      </div>
     </footer>
   )
 }
