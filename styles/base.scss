@@ -18,7 +18,8 @@ a {
 
 // Background filter
 #noise-filter-wrapper {
-  display: none;
+  position: absolute;
+  height: 0;
 }
 
 body::before {
@@ -33,11 +34,9 @@ body::before {
   // mix-blend-mode: difference;
   // mix-blend-mode: exclusion;
   // mix-blend-mode: multiply;
-  opacity: 0.5;
 }
 
 body::before {
-  background: #fff;
   filter: url(#noise-filter);
   z-index: $index-filter;
 }
