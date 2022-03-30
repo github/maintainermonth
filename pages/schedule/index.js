@@ -5,6 +5,7 @@ import { getLiteral } from '../../common/i18n'
 import { getDataFromMD } from '../../common/api'
 
 import EventsList from '../../components/events-list/EventsList'
+import { formatEventDateTime } from '../../common/dates'
 
 export default function Schedule({ events }) {
   return (
@@ -27,8 +28,15 @@ export async function getStaticProps() {
     const slug = fileName.replace('.md', '')
     const event = getDataFromMD(`content/events/${fileName}`)
 
+    const formattedDate = formatEventDateTime(
+      event.date,
+      event.UTCStartTime,
+      event.UTCEndTime,
+    )
+
     return {
       slug,
+      formattedDate,
       ...event,
     }
   })

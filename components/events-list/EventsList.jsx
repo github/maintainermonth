@@ -26,8 +26,8 @@ const EventsList = ({ events }) => {
           <div className="events-list__event">
             <EventTypeChip type={event.type} />
             <DateTimeChip
-              startTime={event.UTCStartTime}
-              endTime={event.UTCEndTime}
+              startTime={event.formattedDate.startTime}
+              endTime={event.formattedDate.endTime}
             />
 
             <Link href={ROUTES.EVENT.linkTo({ slug: event.slug })}>
