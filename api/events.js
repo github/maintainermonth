@@ -1,13 +1,61 @@
+import fs from 'fs'
+
 import dayjs from 'dayjs'
 
 import utc from 'dayjs/plugin/utc'
 import timezone from 'dayjs/plugin/timezone'
 
+import { getDataFromMD } from '../common/api'
+
 dayjs.extend(utc)
 dayjs.extend(timezone)
 
-// TODO: refactor and move stuff to constants
-export const formatEventDateTime = (date = dayjs.utc(), startTime, endTime) => {
+export const getEvents = () => {
+  const eventFiles = fs.readdirSync('content/events')
+
+  const events = eventFiles.map((fileName) => {
+    const slug = fileName.replace('.md', '')
+    const event = getEventBySlug(slug)
+
+    return event
+  })
+
+  return events
+}
+
+export const getTodayEvents = () => {
+  const events = getEvents()
+
+  // TODO: filter by current day
+
+  return events
+}
+
+export const getEventBySlug = (slug) => {
+  const event = getDataFromMD(`content/events/${slug}.md`)
+
+  const parsedEvent = parseEvent(event)
+
+  return {
+    slug,
+    ...parsedEvent,
+  }
+}
+
+const parseEvent = (event) => {
+  const formattedDate = formatEventDateTime(
+    event.date,
+    event.UTCStartTime,
+    event.UTCEndTime,
+  )
+
+  return {
+    formattedDate,
+    ...event,
+  }
+}
+
+const formatEventDateTime = (date = dayjs.utc(), startTime, endTime) => {
   // Date
   const UTCDate = dayjs.utc(date)
   const formattedDate = UTCDate.format('MMM D')

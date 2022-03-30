@@ -1,11 +1,9 @@
-import fs from 'fs'
 import Head from 'next/head'
 
 import { getLiteral } from '../../common/i18n'
-import { getDataFromMD } from '../../common/api'
+import { getEvents } from '../../api/events'
 
 import EventsList from '../../components/events-list/EventsList'
-import { formatEventDateTime } from '../../common/dates'
 
 export default function Schedule({ events }) {
   return (
@@ -22,24 +20,7 @@ export default function Schedule({ events }) {
 }
 
 export async function getStaticProps() {
-  const eventFiles = fs.readdirSync('content/events')
-
-  const events = eventFiles.map((fileName) => {
-    const slug = fileName.replace('.md', '')
-    const event = getDataFromMD(`content/events/${fileName}`)
-
-    const formattedDate = formatEventDateTime(
-      event.date,
-      event.UTCStartTime,
-      event.UTCEndTime,
-    )
-
-    return {
-      slug,
-      formattedDate,
-      ...event,
-    }
-  })
+  const events = getEvents()
 
   return {
     props: {
