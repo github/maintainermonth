@@ -12,6 +12,7 @@ import GetInvolved from '../components/home/get-involved/GetInvolved'
 import Events from '../components/home/events/Events'
 import Connection from '../components/home/connection/Connection'
 import AnchorNavigation from '../components/home/anchor-navigation/AnchorNavigation'
+import { formatEventDateTime } from '../common/dates'
 
 export default function Home({ hero, about, getInvolved, events, connection }) {
   const containerRef = useRef(null)
@@ -76,10 +77,16 @@ export async function getStaticProps() {
     const slug = fileName.replace('.md', '')
     const event = getDataFromMD(`content/events/${fileName}`)
 
-    // TODO: filter events by current day
+    const formattedDate = formatEventDateTime(
+      event.date,
+      event.UTCStartTime,
+      event.UTCEndTime,
+    )
 
+    // TODO: filter events by current day
     return {
       slug,
+      formattedDate,
       ...event,
     }
   })

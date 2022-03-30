@@ -7,7 +7,6 @@ import IconVideo from '../../public/icons/video'
 import DateTimeChip from '../date-time-chip/DateTimeChip'
 
 // TODO: title heading for SEO (titleComponent?)
-
 const EventDetail = ({ event, reverseColumns, isFullPage }) => {
   const classes = clsx('event-detail', {
     'reverse-columns': reverseColumns,
@@ -19,9 +18,9 @@ const EventDetail = ({ event, reverseColumns, isFullPage }) => {
       <div className="event-detail__info">
         <EventTypeChip type={event.type} />
         <DateTimeChip
-          date={event.date}
-          startTime={event.UTCStartTime}
-          endTime={event.UTCEndTime}
+          date={event.formattedDate.date}
+          startTime={event.formattedDate.startTime}
+          endTime={event.formattedDate.endTime}
         />
         <p className="event-detail__title">{event.title}</p>
         <div

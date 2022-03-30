@@ -1,21 +1,17 @@
 import { getLiteral } from '../../common/i18n'
 
-import useDateTime from './useDateTime'
-
 const DateTimeChip = ({ date, startTime, endTime }) => {
-  const formattedDateTime = useDateTime(date, startTime, endTime)
-
   return (
     <div className="datetime-chip">
       {date ? (
         <p className="datetime-chip__date">
-          <span>{formattedDateTime.date}</span>
+          <span>{date}</span>
         </p>
       ) : null}
 
       {startTime ? (
         <p className="datetime-chip__time">
-          {formattedDateTime.startTime.utc} - {formattedDateTime.endTime.utc}
+          {startTime.utc} - {endTime.utc}
           <span className="datetime-chip__timezone">
             {getLiteral('timezone:utc')}
           </span>
@@ -27,7 +23,7 @@ const DateTimeChip = ({ date, startTime, endTime }) => {
           <div className="datetime-chip__divider" />
 
           <p className="datetime-chip__time">
-            {formattedDateTime.startTime.pt} - {formattedDateTime.endTime.pt}
+            {startTime.pt} - {endTime.pt}
             <span className="datetime-chip__timezone">
               {getLiteral('timezone:pt')}
             </span>

@@ -2,6 +2,7 @@ import fs from 'fs'
 import Head from 'next/head'
 
 import { getDataFromMD } from '../../common/api'
+import { formatEventDateTime } from '../../common/dates'
 import EventDetail from '../../components/event-detail/EventDetail'
 import EventDetailWrapper from '../../components/event-detail/EventDetailWrapper'
 import getOgImage from '../../components/og-image/getOgImage'
@@ -59,12 +60,18 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params: { slug } }) {
   const event = getDataFromMD(`content/events/${slug}.md`)
 
+  const formattedDate = formatEventDateTime(
+    event.date,
+    event.UTCStartTime,
+    event.UTCEndTime,
+  )
+
   // TODO: refactor
   const ogImage = await getOgImage(event.title)
 
   return {
     props: {
-      event,
+      event: { ...event, formattedDate },
       ogImage,
     },
   }
