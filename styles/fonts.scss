@@ -14,22 +14,38 @@ $semibold: 600;
 %header-1 {
   font-family: $jetbrains;
   font-weight: $regular;
-  font-size: 3rem;
-  line-height: 1.5;
+  font-size: 1.375rem;
+  line-height: 1.6;
+
+  @media (min-width: $md) {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
 }
 
 %header-2 {
   font-family: $jetbrains;
   font-weight: $regular;
-  font-size: 2.25rem;
+  font-size: 1.125rem;
   line-height: 1.6;
+
+  letter-spacing: 0.02em;
+
+  @media (min-width: $md) {
+    font-size: 2.25rem;
+    letter-spacing: initial;
+  }
 }
 
 %header-3 {
   font-family: $inter;
   font-weight: $semibold;
-  font-size: 2.25rem;
-  line-height: 1.21;
+  font-size: 1.25rem;
+  line-height: 1.4;
+
+  @media (min-width: $md) {
+    font-size: 2.25rem;
+  }
 }
 
 %header-4 {
@@ -37,19 +53,38 @@ $semibold: 600;
   font-weight: $semibold;
   font-size: 1.25rem;
   line-height: 1.21;
+
+  @media (min-width: $md) {
+    font-size: 1rem;
+  }
 }
 
 %body-1 {
   font-family: $inter;
   font-weight: $medium;
-  font-size: 1rem;
+  font-size: 0.875rem;
   line-height: 1.6;
+
+  @media (min-width: $md) {
+    font-size: 1rem;
+  }
 }
 
 %subtitle-1 {
   font-family: $inter;
   font-weight: $semibold;
   font-size: 0.75rem;
+  line-height: 1.21;
+
+  @media (min-width: $md) {
+    font-size: 1rem;
+  }
+}
+
+%subtitle-2 {
+  font-family: $inter;
+  font-weight: $semibold;
+  font-size: 0.875rem;
   line-height: 1.21;
 
   @media (min-width: $md) {
