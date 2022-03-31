@@ -1,6 +1,5 @@
 ---
 anchorNavSection: 'Connection'
-title: 'Stay up to date with events and updates'
-buttonText: 'Repository'
-buttonLink: '#'
+title: 'We have a full month of activities'
+buttonText: 'Schedule'
 ---

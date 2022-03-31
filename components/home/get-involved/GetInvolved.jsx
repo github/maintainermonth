@@ -17,14 +17,12 @@ const GetInvolved = ({ title, examplesTitle, examples, content }) => {
           <h3 className="get-involved__examples-title">{examplesTitle}</h3>
 
           <div className="get-involved__list">
-            <div className="get-involved__list-content">
-              {examples.map(({ title, image }) => (
-                <div key={`example-${title}`} className="get-involved__example">
-                  <p>{title}</p>
-                  {/* TODO: image */}
-                </div>
-              ))}
-            </div>
+            {examples.map(({ title, image }) => (
+              <div key={`example-${title}`} className="get-involved__example">
+                <p>{title}</p>
+                {/* TODO: image */}
+              </div>
+            ))}
           </div>
         </div>
       </div>

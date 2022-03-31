@@ -1,42 +1,53 @@
 .get-involved {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-top: $module-divider-md;
+  padding-bottom: $module-divider-md;
 
-  // TODO: provisional
-  margin-top: 200px;
+  @media (min-width: $md) {
+    padding-top: $module-divider-lg;
+    padding-bottom: $module-divider-lg;
+  }
 
   &__header {
     @extend %grid;
   }
 
   &__title {
-    grid-column: 1 / 4;
+    padding-left: spacing(5);
+    margin-bottom: spacing(5);
+
+    grid-column: 1 / 5;
 
     @extend %header-2;
 
     @media (min-width: $md) {
-      grid-column: 2 / 7;
+      padding-left: 0;
+
+      grid-column: 2 / 8;
     }
 
     @media (min-width: $lg) {
+      margin-bottom: 0;
+
       grid-column: 3 / 7;
     }
   }
 
   &__text {
+    padding-left: spacing(5);
+
     @extend %body-1;
     color: $white-80;
 
-    grid-column: 1 / 4;
+    grid-column: 1 / 5;
 
     @media (min-width: $md) {
-      grid-column: 2 / 7;
+      padding-left: 0;
+
+      grid-column: 2 / 8;
     }
 
     @media (min-width: $lg) {
-      grid-column: 8 / 12;
+      grid-column: 7 / 11;
     }
 
     p {
@@ -45,23 +56,32 @@
   }
 
   &__examples {
-    margin: spacing(13) 0;
+    margin-top: $module-divider-md;
 
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    @media (min-width: $md) {
+      margin-top: $module-divider-lg;
+    }
   }
 
   &__examples-title {
-    padding: spacing(2) spacing(7);
-    margin-bottom: spacing(12);
+    padding: spacing(3) spacing(4);
+    margin-bottom: $module-divider-md;
 
-    @extend %header-2;
+    @extend %header-4;
+    color: $purple;
 
-    border: 1px solid $white;
+    background-color: $white;
     border-radius: 83px;
 
     @extend %background-filter;
+
+    @media (min-width: $md) {
+      margin-bottom: $module-divider-lg;
+    }
   }
 
   &__list {
@@ -72,29 +92,42 @@
     display: flex;
     flex-direction: column;
 
-    grid-column: 1 / 4;
+    grid-column: 1 / 5;
 
     @media (min-width: $md) {
-      grid-column: 2 / 7;
+      grid-column: 2 / 8;
     }
 
     @media (min-width: $lg) {
-      grid-column: 3 / 12;
+      grid-column: 4 / 11;
     }
   }
 
   &__example {
-    padding: spacing(4);
-    max-width: 75%;
+    padding: spacing(2);
+    grid-column: 1 / 5;
 
-    @extend %header-4;
+    @extend %header-3;
+    text-align: center;
 
-    &:nth-child(odd) {
-      align-self: flex-start;
+    &:not(:last-child) {
+      margin-bottom: spacing(1);
     }
 
-    &:nth-child(even) {
-      align-self: flex-end;
+    @media (min-width: $md) {
+      grid-column: 2 / 8;
+    }
+
+    @media (min-width: $lg) {
+      text-align: left;
+
+      &:nth-child(odd) {
+        grid-column: 4 / 10;
+      }
+
+      &:nth-child(even) {
+        grid-column: 6 / 11;
+      }
     }
   }
 }
