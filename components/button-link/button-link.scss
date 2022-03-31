@@ -7,12 +7,11 @@
   padding: 0 spacing(3);
 
   @extend %body-1;
-  color: $purple;
 
-  background: $white;
+  @extend %background-filter-white;
   border-radius: 131px;
 
   .icon-arrow-right path {
-    fill: $purple;
+    fill: $white;
   }
 }
