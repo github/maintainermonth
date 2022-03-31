@@ -3,4 +3,4 @@ export const OBSERVER_OPTIONS = {
   threshold: 0,
 }
 
-export const Y_OFFSET = -200
+export const Y_OFFSET = -20

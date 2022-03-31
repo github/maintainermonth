@@ -2,7 +2,7 @@
   $self: &;
 
   position: fixed;
-  left: spacing(4);
+  left: spacing(1.5);
   top: 0;
   bottom: 0;
 
@@ -12,21 +12,29 @@
   justify-content: center;
   row-gap: spacing(1);
 
+  @media (min-width: $lg) {
+    left: spacing(4);
+  }
+
   &__button {
     position: relative;
-    height: spacing(4);
-    padding-left: spacing(4);
 
     border: none;
     background: unset;
 
     cursor: pointer;
 
+    @media (min-width: $lg) {
+      height: spacing(4);
+      padding-left: spacing(4);
+      padding-left: spacing(4);
+    }
+
     &::before {
       content: '';
       position: absolute;
       left: 6px;
-      top: 6px;
+      bottom: 6px;
       height: 20px;
       width: 20px;
 
@@ -35,13 +43,18 @@
 
       opacity: 0;
       transition: opacity $simple-fade;
+
+      @media (min-width: $lg) {
+        top: 6px;
+        bottom: 0;
+      }
     }
 
     &::after {
       content: '';
       position: absolute;
       left: 12px;
-      top: 12px;
+      bottom: 12px;
       height: 8px;
       width: 8px;
 
@@ -50,6 +63,11 @@
 
       opacity: 0.5;
       transition: opacity $simple-fade;
+
+      @media (min-width: $lg) {
+        top: 12px;
+        bottom: 0;
+      }
     }
 
     &:hover {
@@ -64,6 +82,25 @@
       #{ $self }__text {
         opacity: 1;
       }
+
+      #{ $self }__text {
+        padding-right: spacing(0.5);
+        padding-top: spacing(4);
+        max-height: spacing(20);
+      }
+
+      @media (min-width: $md) {
+        #{ $self }__text {
+          padding-right: initial;
+        }
+      }
+
+      @media (min-width: $lg) {
+        #{ $self }__text {
+          padding-top: initial;
+          max-height: initial;
+        }
+      }
     }
   }
 
@@ -71,7 +108,18 @@
     @extend %subtitle-1;
     color: $white;
 
-    opacity: 0;
-    transition: opacity $simple-fade;
+    max-height: 0;
+    writing-mode: vertical-rl;
+    transform: scale(-1);
+    overflow: hidden;
+
+    transition: opacity $simple-fade, max-height $navigation-fade;
+
+    @media (min-width: $lg) {
+      opacity: 0;
+      max-height: initial;
+      writing-mode: initial;
+      transform: initial;
+    }
   }
 }
