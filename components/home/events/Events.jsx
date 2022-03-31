@@ -1,15 +1,10 @@
-import * as ROUTES from '../../../common/routes'
-import ButtonLink from '../../button-link/ButtonLink'
-
 import EventDetail from '../../event-detail/EventDetail'
 
-const Events = ({ title, ctaTitle, ctaButtonText, todayEvents }) => {
+const Events = ({ title, todayEvents }) => {
   return (
     <section className="events">
       <div className="events__content">
-        <div className="events__header">
-          <h2 className="events__title">{title}</h2>
-        </div>
+        <h2 className="events__title">{title}</h2>
 
         <div className="events__list">
           {todayEvents.map((event, index) => (
@@ -20,12 +15,6 @@ const Events = ({ title, ctaTitle, ctaButtonText, todayEvents }) => {
             />
           ))}
         </div>
-      </div>
-
-      <div className="events__cta">
-        <p className="events__cta-title">{ctaTitle}</p>
-
-        <ButtonLink href={ROUTES.SCHEDULE.path}>{ctaButtonText}</ButtonLink>
       </div>
     </section>
   )

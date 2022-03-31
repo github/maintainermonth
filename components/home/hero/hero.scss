@@ -1,30 +1,45 @@
 .hero {
-  min-height: 100vh;
+  min-height: calc(100vh - $header-height);
 
   @extend %grid;
 
   &__content {
-    grid-column: 1 / 4;
+    padding-top: $module-divider-md;
+    padding-bottom: $module-divider-md;
+    padding-left: spacing(5);
 
-    padding-top: spacing(16);
+    grid-column: 1 / 5;
 
     @media (min-width: $md) {
-      grid-column: 2 / 7;
+      padding-top: $module-divider-lg;
+      padding-bottom: $module-divider-lg;
+      padding-left: 0;
+
+      grid-column: 2 / 8;
     }
 
     @media (min-width: $lg) {
-      grid-column: 3 / 10;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      grid-column: 4 / 11;
     }
   }
 
   &__chip {
     display: inline-block;
-    @extend %header-3;
-    padding: spacing(2) spacing(4);
     margin-bottom: spacing(4);
 
-    border: 1px solid $white;
-    border-radius: 83px;
+    padding: spacing(1) spacing(1.5);
+
+    background: $white;
+    box-sizing: border-box;
+    border-radius: 27px;
+
+    @extend %subtitle-1;
+    color: $purple;
   }
 
   &__title {

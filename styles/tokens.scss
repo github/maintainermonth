@@ -1,5 +1,10 @@
-// Spacer
+// Spacing
 $spacer: 8px;
+
+$header-height: 76px;
+
+$module-divider-md: 80px;
+$module-divider-lg: 140px;
 
 // Breakpoints
 $sm: 460px;
@@ -24,4 +29,5 @@ $duration-default: 0.3s;
 $duration-long: 2s;
 
 $simple-fade: $duration-default $bezier-default;
+$navigation-fade: $duration-default $bezier-default;
 $background-fade: $duration-long $bezier-default;

@@ -44,16 +44,10 @@ export default function Home({ hero, about, getInvolved, events, connection }) {
             examplesTitle={getInvolved.examplesTitle}
             examples={getInvolved.examples}
           />
-          <Events
-            title={events.title}
-            ctaTitle={events.ctaTitle}
-            ctaButtonText={events.ctaButtonText}
-            todayEvents={events.todayEvents}
-          />
+          <Events title={events.title} todayEvents={events.todayEvents} />
           <Connection
             title={connection.title}
             buttonText={connection.buttonText}
-            buttonLink={connection.buttonLink}
           />
         </div>
       </main>

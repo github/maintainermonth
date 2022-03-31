@@ -1,18 +1,26 @@
 .connection {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
+  padding-top: $module-divider-md;
+  padding-bottom: $module-divider-md;
+
+  @media (min-width: $md) {
+    padding-top: $module-divider-lg;
+    padding-bottom: $module-divider-lg;
+  }
 
   &__content {
     @extend %grid;
   }
 
   &__title {
-    grid-column: 1 / 4;
+    padding-left: spacing(5);
+    margin-bottom: spacing(4);
+    grid-column: 1 / 5;
 
     @extend %header-2;
 
     @media (min-width: $md) {
+      margin-bottom: 0;
+      padding-left: 0;
       grid-column: 2 / 7;
     }
 
@@ -22,17 +30,28 @@
   }
 
   &__button {
+    padding-left: spacing(5);
     display: flex;
     align-items: center;
+    justify-content: center;
 
-    grid-column: 1 / 4;
+    grid-column: 1 / 5;
 
     @media (min-width: $md) {
+      padding-left: 0;
+      justify-content: flex-start;
+
       grid-column: 2 / 7;
     }
 
     @media (min-width: $lg) {
       grid-column: 9 / 12;
+    }
+
+    a {
+      height: 100%;
+      aspect-ratio: 1 / 1;
+      box-sizing: border-box;
     }
   }
 }
