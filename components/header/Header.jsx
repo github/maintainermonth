@@ -1,5 +1,7 @@
-import { useMemo } from 'react'
+import { useMemo, useEffect, useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
+import clsx from 'clsx'
 
 import * as ROUTES from '../../common/routes'
 import { getLiteral } from '../../common/i18n'
@@ -11,11 +13,44 @@ import IconBooks from '../../public/icons/books'
 import { BREAKPOINTS } from '../../common/constants'
 
 const Header = () => {
+  const router = useRouter()
   const { width } = useWindowSize()
 
-  const isMobile = useMemo(() => {
-    return width < BREAKPOINTS.MD
-  }, [width])
+  const isHome = useMemo(
+    () => router.pathname === ROUTES.HOME.path,
+    [router.pathname],
+  )
+  const [hideYear, setHideYear] = useState(isHome)
+
+  const yearClasses = clsx('header__chip', { hide: hideYear })
+
+  const isMobile = useMemo(() => width < BREAKPOINTS.MD, [width])
+
+  useEffect(() => {
+    if (!isHome) {
+      setHideYear(false)
+      return
+    }
+
+    setHideYear(true)
+
+    const handleScroll = (event) => {
+      const clientHeight = event.target.scrollingElement.clientHeight
+      const scrollTop = event.target.scrollingElement.scrollTop
+
+      const ifHalfScreenOrMore = scrollTop > clientHeight / 2
+
+      setHideYear(!ifHalfScreenOrMore)
+    }
+
+    setHideYear(true)
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isHome])
 
   return (
     <header className="header">
@@ -28,7 +63,7 @@ const Header = () => {
             </a>
           </Link>
 
-          <p className="header__chip">{getLiteral('page:date')}</p>
+          <p className={yearClasses}>{getLiteral('page:date')}</p>
         </div>
 
         <nav className="header__navigation">
