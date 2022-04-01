@@ -62,6 +62,10 @@
     color: $purple;
 
     cursor: default;
+
+    &.hide {
+      transform: translateY(-200%);
+    }
   }
 
   &__navigation {
