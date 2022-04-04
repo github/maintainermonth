@@ -7,7 +7,7 @@ import EventTypeChip from '../event-type-chip/EventTypeChip'
 
 import { useBackground } from '../../contexts/BackgroundContext'
 
-import IconVideo from '../../public/icons/video'
+import IconArrowRight from '../../public/icons/arrow-right'
 import DateTimeChip from '../date-time-chip/DateTimeChip'
 import Chip from '../chip/Chip'
 import PlayLink from '../play-link/PlayLink'
@@ -55,7 +55,7 @@ const EventDetail = ({ event, reverseColumns, isFullPage }) => {
       {isFullPage ? (
         <div className="event-detail__link-wrapper">
           <a className="event-detail__link" href={event.linkUrl}>
-            {event.linkTitle} <IconVideo />
+            {event.linkTitle} <IconArrowRight />
           </a>
         </div>
       ) : null}
