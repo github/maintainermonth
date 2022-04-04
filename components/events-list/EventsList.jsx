@@ -7,7 +7,8 @@ import * as ROUTES from '../../common/routes'
 
 import DateTimeChip from '../date-time-chip/DateTimeChip'
 import EventTypeChip from '../event-type-chip/EventTypeChip'
-import OutlinedLink from '../outlined-link/OutlinedLink'
+import PlayLink from '../play-link/PlayLink'
+import Chip from '../chip/Chip'
 
 const EventsList = ({ events }) => {
   return (
@@ -20,7 +21,7 @@ const EventsList = ({ events }) => {
           })}
         >
           <div className="events-list__date">
-            <DateTimeChip date={event.date} />
+            <Chip label={event.formattedDate.date} />
           </div>
 
           <div className="events-list__event">
@@ -41,7 +42,7 @@ const EventsList = ({ events }) => {
               }}
             />
 
-            <OutlinedLink href={event.linkUrl}>{event.linkTitle}</OutlinedLink>
+            <PlayLink href={event.linkUrl}>{event.linkTitle}</PlayLink>
           </div>
         </div>
       ))}

@@ -5,6 +5,7 @@ import EventTypeChip from '../event-type-chip/EventTypeChip'
 
 import IconVideo from '../../public/icons/video'
 import DateTimeChip from '../date-time-chip/DateTimeChip'
+import Chip from '../chip/Chip'
 
 // TODO: title heading for SEO (titleComponent?)
 const EventDetail = ({ event, reverseColumns, isFullPage }) => {
@@ -16,12 +17,17 @@ const EventDetail = ({ event, reverseColumns, isFullPage }) => {
   return (
     <article className={classes}>
       <div className="event-detail__info">
-        <EventTypeChip type={event.type} />
-        <DateTimeChip
-          date={event.formattedDate.date}
-          startTime={event.formattedDate.startTime}
-          endTime={event.formattedDate.endTime}
-        />
+        <div className="event-detail__meta">
+          <div className="event-detail__column">
+            <Chip label={event.formattedDate.date} />
+            <EventTypeChip type={event.type} />
+          </div>
+          <DateTimeChip
+            date={event.formattedDate.date}
+            startTime={event.formattedDate.startTime}
+            endTime={event.formattedDate.endTime}
+          />
+        </div>
         <p className="event-detail__title">{event.title}</p>
         <div
           className="event-detail__text"

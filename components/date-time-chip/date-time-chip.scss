@@ -1,28 +1,13 @@
 .datetime-chip {
-  display: inline-flex;
-
-  outline: 1px solid $white-80;
-  border-radius: 27px;
-
   @extend %subtitle-1;
 
-  &__date {
-    padding: spacing(1) spacing(1.5);
-    background: $white;
-    color: $purple;
-
-    outline: 1px solid $white;
-    border-radius: 27px;
-
-    box-sizing: border-box;
-  }
 
   &__time {
-    padding: spacing(1) spacing(1.5);
-
-    border-radius: 27px;
-
     position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: spacing(1.5)
+    }
   }
 
   &__timezone {
@@ -33,22 +18,5 @@
     line-height: 1.6;
 
     color: $white-80;
-  }
-
-  &__divider {
-    width: 4px;
-    position: relative;
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: calc(50% - 2px);
-
-      height: 4px;
-      width: 4px;
-      background: $white;
-
-      border-radius: 50%;
-    }
   }
 }
