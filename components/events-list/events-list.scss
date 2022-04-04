@@ -4,7 +4,15 @@
   padding: spacing(8) spacing(5);
 
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+
+  @media (min-width: $md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $lg) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
   &__card {
     position: relative;
