@@ -3,6 +3,8 @@
 
   @extend %grid;
 
+  position: relative;
+
   &__title {
     @extend %header-2;
   }
@@ -11,7 +13,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
     row-gap: spacing(4);
+
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
 
     grid-column: 1 / 4;
 
@@ -22,6 +29,27 @@
     @media (min-width: $lg) {
       grid-column: 3 / 8;
     }
+  }
+
+  &:not(.full-page) #{ $self }__info {
+      padding: spacing(3);
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        height: 100%;
+        width: auto;
+        aspect-ratio: 1 / 1;
+
+        background: linear-gradient(116.27deg, rgba(10, 3, 214, 0.4) -13.85%, rgba(107, 0, 207, 0.4) 30.72%, rgba(227, 46, 64, 0.4) 107.36%);
+        border-radius: 50%;
+
+        z-index: -1;
+      }
   }
 
   &__meta {
@@ -52,10 +80,6 @@
 
     grid-column: 1 / 4;
 
-    @media (min-width: $md) {
-      grid-column: 2 / 7;
-    }
-
     @media (min-width: $lg) {
       grid-column: 8 / 11;
 
@@ -66,8 +90,8 @@
   }
 
   &__link {
-    height: 231px;
-    width: 231px;
+    height: 182px;
+    width: 182px;
 
     display: flex;
     align-items: center;
