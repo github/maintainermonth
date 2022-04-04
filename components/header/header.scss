@@ -94,9 +94,23 @@
     @extend %background-filter-white;
     border-radius: 155px;
 
+    transition: background $simple-fade, color $simple-fade;
+
     @media (min-width: $lg) {
       width: auto;
       padding: 0 spacing(2);
+    }
+
+    &:hover {
+      background: $white;
+      color: $purple;
+
+      .icon-calendar,
+      .icon-books {
+        path {
+          fill: $purple;
+        }
+      }
     }
   }
 
@@ -104,6 +118,7 @@
   .icon-books {
     path {
       fill: $white;
+      transition: fill $simple-fade;
     }
   }
 

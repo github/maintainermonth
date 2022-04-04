@@ -34,7 +34,7 @@
     justify-content: flex-start;
 
     @media (min-width: $md) {
-      grid-column: 2 / 8;
+      grid-column: 3 / 8;
     }
   }
 
@@ -88,13 +88,13 @@
     align-items: center;
     justify-content: center;
 
-    grid-column: 1 / 5;
+    grid-column: 1 / 9;
 
     @media (min-width: $lg) {
       grid-column: 8 / 11;
 
       #{ $self }.full-page & {
-        grid-column: 10 / 12;
+        grid-column: 9 / 12;
       }
     }
   }
@@ -114,10 +114,23 @@
     color: $white;
 
     border-radius: 50%;
+    transition: background $simple-fade, color $simple-fade;
 
     .icon-arrow-right path {
       fill: $white;
+
+      transition: fill $simple-fade;
     }
+
+    &:hover {
+      background: $white;
+      color: $purple;
+
+      svg path {
+        fill: $purple;
+      }
+    }
+
   }
 
   &.reverse-columns {
