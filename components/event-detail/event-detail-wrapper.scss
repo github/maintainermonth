@@ -1,3 +1,7 @@
 .event-detail-wrapper {
-  margin: spacing(11) 0;
+  margin: spacing(5) 0;
+
+  @media (min-width: $lg) {
+    margin: spacing(11) 0;
+  }
 }
