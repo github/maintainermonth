@@ -1,5 +1,6 @@
-.outlined-link {
-  padding: spacing(2);
+.play-link {
+  height: spacing(7);
+  padding-right: spacing(3);
 
   display: flex;
   align-items: center;
@@ -7,16 +8,17 @@
   column-gap: spacing(1);
 
   @extend %body-1;
-  text-decoration: underline;
 
-  border: 1px solid $white;
   border-radius: 82px;
+
+  background: $white-20;
 
   &__icon {
     position: relative;
     display: inline-block;
-    height: spacing(4);
-    width: spacing(4);
+    height: spacing(7);
+    width: spacing(7);
+    margin-right: spacing(2);
     background: #ffffff50;
 
     border-radius: 50%;

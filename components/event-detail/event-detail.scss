@@ -24,6 +24,20 @@
     }
   }
 
+  &__meta {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__column {    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: spacing(2);
+  }
+
   &__text {
     @extend %body-1;
     color: $white-80;

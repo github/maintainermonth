@@ -55,6 +55,7 @@ const parseEvent = (event) => {
   }
 }
 
+// TODO: refactor
 const formatEventDateTime = (date = dayjs.utc(), startTime, endTime) => {
   // Date
   const UTCDate = dayjs.utc(date)
@@ -69,12 +70,8 @@ const formatEventDateTime = (date = dayjs.utc(), startTime, endTime) => {
     const UTCStartTime = UTCDate.hour(startHour).minute(startMinute)
     const PTStartTime = UTCStartTime.tz('America/Los_Angeles')
 
-    const formattedUTCStartTime = UTCStartTime.format(
-      UTCStartTime.minute() !== 0 ? 'H:mm a' : 'H a',
-    )
-    const formattedPTStartTime = PTStartTime.format(
-      UTCStartTime.minute() !== 0 ? 'H:mm a' : 'H a',
-    )
+    const formattedUTCStartTime = UTCStartTime.format('HH:mm a')
+    const formattedPTStartTime = PTStartTime.format('HH:mm a')
 
     formattedStartTime = {
       utc: formattedUTCStartTime,
@@ -91,12 +88,8 @@ const formatEventDateTime = (date = dayjs.utc(), startTime, endTime) => {
     const UTCEndTime = UTCDate.hour(endHour).minute(endMinute)
     const PTEndTime = UTCEndTime.tz('America/Los_Angeles')
 
-    const formattedUTCEndTime = UTCEndTime.format(
-      UTCEndTime.minute() !== 0 ? 'H:mm a' : 'H a',
-    )
-    const formattedPTEndTime = PTEndTime.format(
-      UTCEndTime.minute() !== 0 ? 'H:mm a' : 'H a',
-    )
+    const formattedUTCEndTime = UTCEndTime.format('HH:mm a')
+    const formattedPTEndTime = PTEndTime.format('HH:mm a')
 
     formattedEndTime = {
       utc: formattedUTCEndTime,
