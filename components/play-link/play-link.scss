@@ -1,4 +1,6 @@
 .play-link {
+  $self: &;
+
   height: spacing(7);
   padding-right: spacing(3);
 
@@ -13,6 +15,22 @@
 
   background: $white-20;
 
+  transition: background $simple-fade, color $simple-fade;
+
+  &:hover {
+    background: $white-90;
+    color: $purple;
+
+    #{ $self }__icon {
+      background: $white;
+      color: $purple;
+
+      &::after {
+        background: $purple;
+      }
+    }
+  }
+
   &__icon {
     position: relative;
     display: inline-block;
@@ -22,6 +40,8 @@
     background: #ffffff50;
 
     border-radius: 50%;
+
+    transition: background $simple-fade, color $simple-fade;
 
     &::after {
       content: '';
@@ -34,6 +54,8 @@
       background: $white;
 
       clip-path: polygon(100% 50%, 0 0, 0 100%);
+
+      transition: background $simple-fade;
     }
   }
 }

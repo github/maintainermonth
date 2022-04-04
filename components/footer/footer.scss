@@ -73,6 +73,13 @@
 
     @extend %background-filter-white;
     border-radius: 155px;
+
+    transition: background $simple-fade, color $simple-fade;
+
+    &:hover {
+      background: $white;
+      color: $purple;
+    }
   }
 
   &__social {
@@ -92,8 +99,21 @@
 
     border-radius: 50%;
 
+    transition: background $simple-fade, color $simple-fade;
+
     svg path {
       fill: $white;
+
+      transition: fill $simple-fade;
+    }
+
+    &:hover {
+      background: $white;
+      color: $purple;
+
+      svg path {
+        fill: $purple;
+      }
     }
   }
 }

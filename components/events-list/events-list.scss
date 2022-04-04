@@ -5,6 +5,7 @@
 
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+  row-gap: spacing(3);
 
   @media (min-width: $md) {
     grid-template-columns: repeat(2, 1fr);
@@ -41,6 +42,15 @@
     flex-direction: column;
     align-items: flex-start;
     row-gap: spacing(4);
+
+    a {
+      z-index: $index-event-link;
+    }
+
+    &:hover {
+      background: $white-20;
+      transition: background $simple-fade;
+    }
   }
 
   &__link {

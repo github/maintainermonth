@@ -11,7 +11,20 @@
   @extend %background-filter-white;
   border-radius: 131px;
 
+  transition: color $simple-fade, background $simple-fade;
+
   .icon-arrow-right path {
     fill: $white;
+
+    transition: fill $simple-fade;
+  }
+
+  &:hover {
+    background: $white;
+    color: $purple;
+
+    .icon-arrow-right path {
+      fill: $purple;
+    }
   }
 }
