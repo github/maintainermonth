@@ -5,6 +5,17 @@
 
   position: relative;
 
+  &__user {
+    margin-bottom: spacing(2);
+    display: block;
+
+    @extend %header-4;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   &__title {
     @extend %header-2;
   }

@@ -53,6 +53,16 @@
     }
   }
 
+  &__user {
+    margin-bottom: spacing(2);
+    display: block;
+    @extend %header-4;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   &__link {
     @extend %header-4;
 

@@ -31,9 +31,20 @@ const EventsList = ({ events }) => {
               endTime={event.formattedDate.endTime}
             />
 
-            <Link href={ROUTES.EVENT.linkTo({ slug: event.slug })}>
-              <a className="events-list__link">{event.title}</a>
-            </Link>
+            <div>
+              <a
+                className="event-detail__user"
+                href={event.userLink}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {event.userName}
+              </a>
+
+              <Link href={ROUTES.EVENT.linkTo({ slug: event.slug })}>
+                <a className="events-list__link">{event.title}</a>
+              </Link>
+            </div>
 
             <div
               className="events-list__text"

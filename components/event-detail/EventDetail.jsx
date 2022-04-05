@@ -39,15 +39,25 @@ const EventDetail = ({ event, reverseColumns, isFullPage }) => {
             endTime={event.formattedDate.endTime}
           />
         </div>
-        <p className="event-detail__title">{event.title}</p>
-        {isFullPage ? (
-          <div
-            className="event-detail__text"
-            dangerouslySetInnerHTML={{
-              __html: md().render(event.content),
-            }}
-          />
-        ) : null}
+        <div>
+          <a
+            className="event-detail__user"
+            href={event.userLink}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {event.userName}
+          </a>
+          <p className="event-detail__title">{event.title}</p>
+          {isFullPage ? (
+            <div
+              className="event-detail__text"
+              dangerouslySetInnerHTML={{
+                __html: md().render(event.content),
+              }}
+            />
+          ) : null}
+        </div>
         {!isFullPage ? (
           <PlayLink href={event.linkUrl}>{event.linkTitle}</PlayLink>
         ) : null}
