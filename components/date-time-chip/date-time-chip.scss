@@ -4,6 +4,8 @@
 
   &__time {
     position: relative;
+    display: flex;
+    align-items: center;
 
     &:not(:last-child) {
       margin-bottom: spacing(1.5)
@@ -18,5 +20,9 @@
     line-height: 1.6;
 
     color: $white-80;
+  }
+
+  &__icon {
+    margin-right: spacing(1);
   }
 }

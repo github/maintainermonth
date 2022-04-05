@@ -10,6 +10,8 @@ import { getDataFromMD } from '../common/api'
 dayjs.extend(utc)
 dayjs.extend(timezone)
 
+const TBD = 'TBD'
+
 export const getEvents = () => {
   const eventFiles = fs.readdirSync('content/events')
 
@@ -62,7 +64,7 @@ const formatEventDateTime = (date = dayjs.utc(), startTime, endTime) => {
   // Start time
   let formattedStartTime = {}
 
-  if (startTime) {
+  if (startTime && startTime !== TBD) {
     const [startHour, startMinute] = startTime.split(':')
 
     const UTCStartTime = UTCDate.hour(startHour).minute(startMinute)
@@ -80,7 +82,7 @@ const formatEventDateTime = (date = dayjs.utc(), startTime, endTime) => {
   // End time
   let formattedEndTime = {}
 
-  if (endTime) {
+  if (endTime && endTime !== TBD) {
     const [endHour, endMinute] = endTime.split(':')
 
     const UTCEndTime = UTCDate.hour(endHour).minute(endMinute)
