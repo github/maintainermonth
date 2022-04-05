@@ -1,5 +1,5 @@
 export const OBSERVER_OPTIONS = {
-  rootMargin: '0px',
+  rootMargin: '-76px',
   threshold: 0,
 }
 

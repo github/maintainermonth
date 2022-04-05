@@ -1,6 +1,12 @@
 import EventDetail from '../../event-detail/EventDetail'
+import Connection from '../connection/Connection'
 
-const Events = ({ title, todayEvents }) => {
+const Events = ({
+  title,
+  todayEvents,
+  connectionTitle,
+  connectionButtonText,
+}) => {
   return (
     <section className="events">
       <div className="events__content">
@@ -16,6 +22,7 @@ const Events = ({ title, todayEvents }) => {
           ))}
         </div>
       </div>
+      <Connection title={connectionTitle} buttonText={connectionButtonText} />
     </section>
   )
 }

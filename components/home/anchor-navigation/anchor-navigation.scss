@@ -107,6 +107,7 @@
   &__text {
     @extend %subtitle-1;
     color: $white;
+    white-space: nowrap;
 
     max-height: 0;
     writing-mode: vertical-rl;

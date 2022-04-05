@@ -1,4 +1,6 @@
 .get-involved {
+  min-height: calc(100vh - $header-height);
+
   padding-top: $module-divider-md;
   padding-bottom: $module-divider-md;
 

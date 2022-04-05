@@ -1,4 +1,6 @@
 .about {
+  min-height: calc(100vh - $header-height);
+
   display: flex;
   align-items: center;
 

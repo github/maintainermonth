@@ -1,8 +1,20 @@
 .events {
+  min-height: calc(100vh - $header-height);
+
+  padding-top: $module-divider-md;
   padding-bottom: $module-divider-md;
 
   @media (min-width: $md) {
+    padding-top: $module-divider-lg;
     padding-bottom: $module-divider-lg;
+  }
+
+  &__content {
+    padding-bottom: $module-divider-md;
+
+    @media (min-width: $md) {
+      padding-bottom: $module-divider-lg;
+    }
   }
 
   &__title {
@@ -16,10 +28,6 @@
 
     background-color: $white;
     border-radius: 83px;
-
-    @media (min-width: $md) {
-      margin-bottom: $module-divider-lg;
-    }
   }
 
   &__list {

@@ -58,8 +58,7 @@ const AnchorNavigation = ({ containerRef }) => {
         observer.unobserve(section)
       })
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [containerRef])
+  }, [containerRef, observerCallback])
 
   return (
     <div className="anchor-navigation">
