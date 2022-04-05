@@ -82,7 +82,7 @@ const Header = () => {
                 </a>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 href={ROUTES.LIBRARY.path}
                 aria-label={getLiteral('navigation:library')}
@@ -98,7 +98,7 @@ const Header = () => {
                   </span>
                 </a>
               </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>
