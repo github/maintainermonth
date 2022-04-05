@@ -18,6 +18,15 @@
 
   &__title {
     @extend %header-2;
+
+    &[href]::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
   }
 
   &__info {
@@ -39,6 +48,10 @@
 
     @media (min-width: $lg) {
       grid-column: 3 / 8;
+    }
+
+    a {
+      z-index: $index-event-link;
     }
   }
 
@@ -87,6 +100,8 @@
   }
 
   &__text {
+    margin-top: spacing(2.5);
+
     @extend %body-1;
     color: $white-80;
 

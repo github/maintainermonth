@@ -1,18 +1,18 @@
 import { useEffect } from 'react'
+import Link from 'next/link'
 
 import md from 'markdown-it'
 import clsx from 'clsx'
 
-import EventTypeChip from '../event-type-chip/EventTypeChip'
-
 import { useBackground } from '../../contexts/BackgroundContext'
+import * as ROUTES from '../../common/routes'
 
+import EventTypeChip from '../event-type-chip/EventTypeChip'
 import IconArrowRight from '../../public/icons/arrow-right'
 import DateTimeChip from '../date-time-chip/DateTimeChip'
 import Chip from '../chip/Chip'
 import PlayLink from '../play-link/PlayLink'
 
-// TODO: title heading for SEO (titleComponent?)
 const EventDetail = ({ event, reverseColumns, isFullPage }) => {
   const { setAnimationStep } = useBackground()
 
@@ -48,7 +48,14 @@ const EventDetail = ({ event, reverseColumns, isFullPage }) => {
           >
             {event.userName}
           </a>
-          <p className="event-detail__title">{event.title}</p>
+          {isFullPage ? (
+            <h1 className="event-detail__title">{event.title}</h1>
+          ) : (
+            <Link href={ROUTES.EVENT.linkTo({ slug: event.slug })}>
+              <a className="event-detail__title">{event.title}</a>
+            </Link>
+          )}
+
           {isFullPage ? (
             <div
               className="event-detail__text"
