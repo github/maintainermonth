@@ -101,7 +101,7 @@
       padding: 0 spacing(2);
     }
 
-    &:hover {
+    &:hover, &.is-active {
       background: $white;
       color: $purple;
 

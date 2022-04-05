@@ -13,13 +13,10 @@ import IconBooks from '../../public/icons/books'
 import { BREAKPOINTS } from '../../common/constants'
 
 const Header = () => {
-  const router = useRouter()
+  const { pathname } = useRouter()
   const { width } = useWindowSize()
 
-  const isHome = useMemo(
-    () => router.pathname === ROUTES.HOME.path,
-    [router.pathname],
-  )
+  const isHome = useMemo(() => pathname === ROUTES.HOME.path, [pathname])
   const [hideYear, setHideYear] = useState(isHome)
 
   const yearClasses = clsx('header__chip', { hide: hideYear })
@@ -73,7 +70,11 @@ const Header = () => {
                 href={ROUTES.SCHEDULE.path}
                 aria-label={getLiteral('navigation:schedule')}
               >
-                <a className="header__link">
+                <a
+                  className={clsx('header__link', {
+                    ['is-active']: pathname === ROUTES.SCHEDULE.path,
+                  })}
+                >
                   <IconCalendar />
                   <span className="header__link-text">
                     {getLiteral('navigation:schedule')}
@@ -86,7 +87,11 @@ const Header = () => {
                 href={ROUTES.LIBRARY.path}
                 aria-label={getLiteral('navigation:library')}
               >
-                <a className="header__link">
+                <a
+                  className={clsx('header__link', {
+                    ['is-active']: pathname === ROUTES.LIBRARY.path,
+                  })}
+                >
                   <IconBooks />
                   <span className="header__link-text">
                     {getLiteral('navigation:library')}
