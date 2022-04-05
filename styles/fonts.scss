@@ -28,7 +28,6 @@ $semibold: 600;
   font-weight: $regular;
   font-size: 1.125rem;
   line-height: 1.6;
-
   letter-spacing: 0.02em;
 
   @media (min-width: $md) {
@@ -38,6 +37,21 @@ $semibold: 600;
 }
 
 %header-3 {
+  font-family: $jetbrains;
+  font-weight: $regular;
+  font-size: 1.375rem;
+  line-height: 1.6;
+
+  letter-spacing: 0.02em;
+
+  @media (min-width: $md) {
+    font-size: 1.5rem;
+    line-height: 1.64;
+    letter-spacing: initial;
+  }
+}
+
+%header-4 {
   font-family: $inter;
   font-weight: $semibold;
   font-size: 1.25rem;
@@ -48,14 +62,14 @@ $semibold: 600;
   }
 }
 
-%header-4 {
+%header-5 {
   font-family: $inter;
   font-weight: $semibold;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.21;
 
   @media (min-width: $md) {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 }
 

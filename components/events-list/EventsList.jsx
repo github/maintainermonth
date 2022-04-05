@@ -33,7 +33,7 @@ const EventsList = ({ events }) => {
 
             <div>
               <a
-                className="event-detail__user"
+                className="events-list__user"
                 href={event.userLink}
                 target="_blank"
                 rel="noreferrer"

@@ -9,7 +9,10 @@
     margin-bottom: spacing(2);
     display: block;
 
-    @extend %header-4;
+    font-family: $inter;
+    font-weight: $semibold;
+    font-size: 1.25rem;
+    line-height: 1.4;
 
     &:hover {
       text-decoration: underline;

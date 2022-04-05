@@ -19,8 +19,8 @@ const GetInvolved = ({ title, examplesTitle, examples, content }) => {
           <div className="get-involved__list">
             {examples.map(({ title, image }) => (
               <div key={`example-${title}`} className="get-involved__example">
+                <span className="get-involved__image" />
                 <p>{title}</p>
-                {/* TODO: image */}
               </div>
             ))}
           </div>

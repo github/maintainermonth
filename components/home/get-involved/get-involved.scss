@@ -73,7 +73,7 @@
     padding: spacing(3) spacing(4);
     margin-bottom: $module-divider-md;
 
-    @extend %header-4;
+    @extend %header-5;
     color: $purple;
 
     background-color: $white;
@@ -88,6 +88,7 @@
 
   &__list {
     @extend %grid;
+    row-gap: spacing(4);
   }
 
   &__list-content {
@@ -105,11 +106,31 @@
     }
   }
 
+  &__image {
+    height: 160px;
+    width: 160px;
+    display: block;
+
+    background: linear-gradient(116.27deg, #0A03D6 -13.85%, #6B00CF 30.72%, #E32E40 107.36%);
+    border-radius: 50%;
+
+    @media (min-width: $md) {
+      height: 200px;
+      width: 200px;
+    }
+  }
+
   &__example {
     padding: spacing(2);
     grid-column: 1 / 5;
 
-    @extend %header-3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: spacing(1);
+
+    @extend %header-4;
     text-align: center;
 
     &:not(:last-child) {
@@ -118,6 +139,8 @@
 
     @media (min-width: $md) {
       grid-column: 2 / 8;
+      flex-direction: row;
+      column-gap: spacing(5);
     }
 
     @media (min-width: $lg) {
@@ -130,6 +153,10 @@
       &:nth-child(even) {
         grid-column: 6 / 11;
       }
+    }
+
+    p {
+      flex: 1;
     }
   }
 }
