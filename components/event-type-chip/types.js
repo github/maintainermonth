@@ -12,22 +12,22 @@ const TYPES = {
   podcast: {
     label: getLiteral('event-type:podcast'),
     icon: <IconPodcast />,
-    color: '#FF008A',
+    color: '#FA0087',
   },
   stream: {
     label: getLiteral('event-type:stream'),
     icon: <IconStream />,
-    color: '#6F42C1',
+    color: '#7A3FF8',
   },
   talk: {
     label: getLiteral('event-type:talk'),
     icon: <IconTalk />,
-    color: '#31E0AF',
+    color: '#1FD19F',
   },
   meetup: {
     label: getLiteral('event-type:meetup'),
     icon: <IconMeetup />,
-    color: '#FB5454',
+    color: '#F42F36',
   },
   fundraising: {
     label: getLiteral('event-type:fundraising'),
@@ -37,12 +37,12 @@ const TYPES = {
   conference: {
     label: getLiteral('event-type:conference'),
     icon: <IconConference />,
-    color: '#135AFF',
+    color: '#1352F1',
   },
   misc: {
     label: getLiteral('event-type:misc'),
     icon: <IconMisc />,
-    color: '#F000CA',
+    color: '#0107B6',
   },
 }
 
