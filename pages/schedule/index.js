@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 import { getLiteral } from '../../common/i18n'
-import { getEvents } from '../../api/events'
+import { getEvents, parseEvents } from '../../api/events'
 
 import EventsList from '../../components/events-list/EventsList'
 
@@ -20,7 +20,7 @@ export default function Schedule({ events }) {
 }
 
 export async function getStaticProps() {
-  const events = getEvents()
+  const events = parseEvents(getEvents())
 
   return {
     props: {

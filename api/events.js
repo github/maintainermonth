@@ -13,20 +13,14 @@ dayjs.extend(timezone)
 export const getEvents = () => {
   const eventFiles = fs.readdirSync('content/events')
 
-  const events = eventFiles.map((fileName) => {
-    const slug = fileName.replace('.md', '')
-    const event = getEventBySlug(slug)
+  const events = eventFiles
+    .map((fileName) => {
+      const slug = fileName.replace('.md', '')
+      const event = getEventBySlug(slug)
 
-    return event
-  })
-
-  return events
-}
-
-export const getTodayEvents = () => {
-  const events = getEvents()
-
-  // TODO: filter by current day
+      return event
+    })
+    .sort((event1, event2) => new Date(event1.date) - new Date(event2.date))
 
   return events
 }
@@ -34,15 +28,15 @@ export const getTodayEvents = () => {
 export const getEventBySlug = (slug) => {
   const event = getDataFromMD(`content/events/${slug}.md`)
 
-  const parsedEvent = parseEvent(event)
-
   return {
     slug,
-    ...parsedEvent,
+    ...event,
   }
 }
 
-const parseEvent = (event) => {
+export const parseEvents = (events) => events.map(parseEvent)
+
+export const parseEvent = (event) => {
   const formattedDate = formatEventDateTime(
     event.date,
     event.UTCStartTime,
@@ -58,7 +52,11 @@ const parseEvent = (event) => {
 // TODO: refactor
 const formatEventDateTime = (date = dayjs.utc(), startTime, endTime) => {
   // Date
-  const UTCDate = dayjs.utc(date)
+  const [month, day] = date.split('/')
+  const UTCDate = dayjs
+    .utc()
+    .date(day)
+    .month(month - 1)
   const formattedDate = UTCDate.format('MMM D')
 
   // Start time

@@ -1,6 +1,6 @@
 import fs from 'fs'
 import Head from 'next/head'
-import { getEventBySlug } from '../../api/events'
+import { getEventBySlug, parseEvent } from '../../api/events'
 
 import EventDetail from '../../components/event-detail/EventDetail'
 import EventDetailWrapper from '../../components/event-detail/EventDetailWrapper'
@@ -58,13 +58,14 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params: { slug } }) {
   const event = getEventBySlug(slug)
+  const parsedEvent = parseEvent(event)
 
   // TODO: refactor
   const ogImage = await getOgImage(event.title)
 
   return {
     props: {
-      event,
+      event: parsedEvent,
       ogImage,
     },
   }

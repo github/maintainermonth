@@ -4,13 +4,12 @@ import Head from 'next/head'
 
 import { getLiteral } from '../common/i18n'
 import { getDataFromMD, parseGetInvolvedData } from '../common/api'
-import { getTodayEvents } from '../api/events'
+import { getEvents, parseEvents } from '../api/events'
 
 import Hero from '../components/home/hero/Hero'
 import About from '../components/home/about/About'
 import GetInvolved from '../components/home/get-involved/GetInvolved'
 import Events from '../components/home/events/Events'
-import Connection from '../components/home/connection/Connection'
 import AnchorNavigation from '../components/home/anchor-navigation/AnchorNavigation'
 
 export default function Home({ hero, about, getInvolved, events, connection }) {
@@ -46,7 +45,7 @@ export default function Home({ hero, about, getInvolved, events, connection }) {
           />
           <Events
             title={events.title}
-            todayEvents={events.todayEvents}
+            list={events.list}
             connectionTitle={connection.title}
             connectionButtonText={connection.buttonText}
           />
@@ -65,7 +64,7 @@ export async function getStaticProps() {
   const events = getDataFromMD('content/home/4-events.md')
   const connection = getDataFromMD('content/home/5-connection.md')
 
-  const todayEvents = getTodayEvents()
+  const eventsList = parseEvents(getEvents())
 
   return {
     props: {
@@ -74,7 +73,7 @@ export async function getStaticProps() {
       getInvolved,
       events: {
         ...events,
-        todayEvents,
+        list: eventsList,
       },
       connection,
     },
