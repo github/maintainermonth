@@ -60,8 +60,14 @@ export async function getStaticProps({ params: { slug } }) {
   const event = getEventBySlug(slug)
   const parsedEvent = parseEvent(event)
 
-  // TODO: refactor
-  const ogImage = await getOgImage(event.title)
+  const ogImage = await getOgImage({
+    title: parsedEvent.title,
+    user: parsedEvent.userName,
+    type: parsedEvent.type,
+    date: parsedEvent.formattedDate.date,
+    startTime: parsedEvent.formattedDate.startTime,
+    endTime: parsedEvent.formattedDate.endTime,
+  })
 
   return {
     props: {
