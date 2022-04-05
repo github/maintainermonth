@@ -20,7 +20,7 @@ export default function Library() {
 
         {resources.map((resource) => (
           <div key={resource.title}>
-            <Link href={resource.url}>{resource.title}</Link>
+            <Link href={resource.link}>{resource.title}</Link>
           </div>
         ))}
       </main>

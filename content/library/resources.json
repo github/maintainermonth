@@ -1,12 +1,25 @@
 {
     "resources": [
         {
-            "title": "Link",
-            "url": "#"
+            "title": "Link 1",
+            "author": "Author",
+            "link": "#",
+            "type": "video",
+            "topics": "video"
         },
         {
             "title": "Link 2",
-            "url": "#"
+            "author": "Author",
+            "link": "#",
+            "type": "video",
+            "topics": "video"
+        },
+        {
+            "title": "Link 3",
+            "author": "Author",
+            "link": "#",
+            "type": "video",
+            "topics": "video"
         }
     ]
 }
