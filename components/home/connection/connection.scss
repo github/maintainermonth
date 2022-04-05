@@ -17,12 +17,12 @@
     @extend %header-2;
 
     @media (min-width: $md) {
-      margin-bottom: 0;
       padding-left: 0;
       grid-column: 2 / 7;
     }
-
+    
     @media (min-width: $lg) {
+      margin-bottom: 0;
       grid-column: 3 / 9;
     }
   }
