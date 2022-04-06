@@ -1,6 +1,5 @@
 ---
 title: 'GitHub Virtual Meetup: Africa'
-title: 'GitHub Virtual Meetup: Africa'
 metaTitle: 'GitHub Virtual Meetup: Africa'
 metaDesc: 'Join GitHub users across Africa to talk about open source project maintainership!'
 date: '06/16'
