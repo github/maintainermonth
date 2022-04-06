@@ -132,19 +132,27 @@
   &__link {
     height: 182px;
     width: 182px;
-
+    padding: spacing(2);
+    
     display: flex;
     align-items: center;
     justify-content: center;
     column-gap: spacing(1);
-
+    
     background: $white-20;
+
+    box-sizing: border-box;
+    overflow: visible;
 
     @extend %body-1;
     color: $white;
 
     border-radius: 50%;
     transition: background $simple-fade, color $simple-fade;
+
+    svg {
+      overflow: visible;
+    }
 
     .icon-arrow-right path {
       fill: $white;
