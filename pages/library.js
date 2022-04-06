@@ -4,6 +4,8 @@ import Link from 'next/link'
 import { getLiteral } from '../common/i18n'
 import resourcesJSON from '../content/library/resources.json'
 
+import ogImage from '../public/images/og/generic.png'
+
 const { resources } = resourcesJSON
 
 export default function Library() {
@@ -12,7 +14,23 @@ export default function Library() {
       <Head>
         <title>{getLiteral('library:title')}</title>
         <meta name="description" content={getLiteral('library:description')} />
-        <link rel="icon" href="/favicon.svg" />
+
+        {/* <!-- Facebook Meta Tags --> */}
+        <meta property="og:title" content={getLiteral('library:title')} />
+        <meta
+          property="og:description"
+          content={getLiteral('library:description')}
+        />
+        <meta property="og:image" content={ogImage} />
+
+        {/* <!-- Twitter Meta Tags --> */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={getLiteral('library:title')} />
+        <meta
+          name="twitter:description"
+          content={getLiteral('library:description')}
+        />
+        <meta name="twitter:image" content={ogImage} />
       </Head>
 
       <main>

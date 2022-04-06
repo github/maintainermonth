@@ -62,9 +62,6 @@ export async function getStaticProps({ params: { slug } }) {
     title: parsedEvent.title,
     user: parsedEvent.userName,
     type: parsedEvent.type,
-    date: parsedEvent.formattedDate.date,
-    startTime: parsedEvent.formattedDate.startTime,
-    endTime: parsedEvent.formattedDate.endTime,
   })
 
   return {
