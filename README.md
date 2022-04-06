@@ -57,4 +57,4 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 ## License
 
 Copyright © 2022 [GitHub](https://github.com/github).<br />
-This project is [MIT](LICENSE.md) licensed.
+This project is [MIT](LICENSE) licensed.
