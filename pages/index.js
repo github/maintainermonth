@@ -23,7 +23,7 @@ export default function Home({ hero, about, getInvolved, events, connection }) {
         <link rel="icon" href="/favicon.svg" />
       </Head>
 
-      <main>
+      <div>
         <AnchorNavigation containerRef={containerRef} />
 
         <div ref={containerRef}>
@@ -50,7 +50,7 @@ export default function Home({ hero, about, getInvolved, events, connection }) {
             connectionButtonText={connection.buttonText}
           />
         </div>
-      </main>
+      </div>
     </div>
   )
 }
