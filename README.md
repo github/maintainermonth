@@ -1,34 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# GitHub Maintainers Month
+
+> A month for open source maintainers to gather, share, and be celebrated. 🥳
+
+> Repository for the official GitHub Maintainers Month website. You can access the website through [this link](https://maintainermonth.github.com/)
+
+> Add your event! See the [contributing guide](CONTRIBUTING.md) for more details.
+
+**<p align="center"> ❇️ June 2022 ❇️ </p>**
+
+## Table of Contents
+
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Build](#build)
+- [Contributing](#contributing)
+- [Code of Conduct](#code-of-conduct)
+- [Copyright](#copyright)
 
 ## Getting Started
 
-First, run the development server:
+### Installation
 
-```bash
-npm run dev
-# or
-yarn dev
+Run the following command before any other to install all the project's dependencies.
+
+```
+yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Usage
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+To start application in development mode at [http://localhost:3000](http://localhost:3000) run the following command.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```
+yarn start
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Build
 
-## Learn More
+To generate the application build run the following command
 
-To learn more about Next.js, take a look at the following resources:
+```
+yarn build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This will create an `out` folder in the repository root with the static files.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+See the [contributing guide](CONTRIBUTING.md) for more details.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Code of Conduct
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
+
+## 📝 License
+
+Copyright © 2022 [GitHub](https://github.com/github).<br />
+This project is [MIT](LICENSE.md) licensed.
