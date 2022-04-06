@@ -5,8 +5,6 @@ import { getEvents, parseEvents } from '../../api/events'
 
 import EventsList from '../../components/events-list/EventsList'
 
-import ogImage from '../../public/images/og/generic.png'
-
 export default function Schedule({ events }) {
   return (
     <div>
@@ -22,7 +20,7 @@ export default function Schedule({ events }) {
           property="og:description"
           content={getLiteral('schedule:description')}
         />
-        <meta property="og:image" content={ogImage} />
+        <meta property="og:image" content="/images/og/generic.png" />
 
         {/* <!-- Twitter Meta Tags --> */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -31,7 +29,7 @@ export default function Schedule({ events }) {
           name="twitter:description"
           content={getLiteral('schedule:description')}
         />
-        <meta name="twitter:image" content={ogImage} />
+        <meta name="twitter:image" content="/images/og/generic.png" />
       </Head>
 
       <EventsList events={events} />

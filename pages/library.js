@@ -4,8 +4,6 @@ import Link from 'next/link'
 import { getLiteral } from '../common/i18n'
 import resourcesJSON from '../content/library/resources.json'
 
-import ogImage from '../public/images/og/generic.png'
-
 const { resources } = resourcesJSON
 
 export default function Library() {
@@ -21,7 +19,7 @@ export default function Library() {
           property="og:description"
           content={getLiteral('library:description')}
         />
-        <meta property="og:image" content={ogImage} />
+        <meta property="og:image" content="/images/og/generic.png" />
 
         {/* <!-- Twitter Meta Tags --> */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -30,7 +28,7 @@ export default function Library() {
           name="twitter:description"
           content={getLiteral('library:description')}
         />
-        <meta name="twitter:image" content={ogImage} />
+        <meta name="twitter:image" content="/images/og/generic.png" />
       </Head>
 
       <main>

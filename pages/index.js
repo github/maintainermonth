@@ -12,8 +12,6 @@ import GetInvolved from '../components/home/get-involved/GetInvolved'
 import Events from '../components/home/events/Events'
 import AnchorNavigation from '../components/home/anchor-navigation/AnchorNavigation'
 
-import ogImage from '../public/images/og/generic.png'
-
 export default function Home({ hero, about, getInvolved, events, connection }) {
   const containerRef = useRef(null)
 
@@ -30,7 +28,7 @@ export default function Home({ hero, about, getInvolved, events, connection }) {
           property="og:description"
           content={getLiteral('meta:description')}
         />
-        <meta property="og:image" content={ogImage} />
+        <meta property="og:image" content="/images/og/generic.png" />
 
         {/* <!-- Twitter Meta Tags --> */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -39,7 +37,7 @@ export default function Home({ hero, about, getInvolved, events, connection }) {
           name="twitter:description"
           content={getLiteral('meta:description')}
         />
-        <meta name="twitter:image" content={ogImage} />
+        <meta name="twitter:image" content="/images/og/generic.png" />
       </Head>
 
       <div>
