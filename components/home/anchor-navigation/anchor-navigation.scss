@@ -12,6 +12,8 @@
   justify-content: center;
   row-gap: spacing(3.5);
 
+  z-index: $index-anchor-navigation;
+
   @media (min-width: $lg) {
     left: spacing(4);
     row-gap: spacing(1.5);

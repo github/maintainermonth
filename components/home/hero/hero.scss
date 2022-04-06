@@ -1,7 +1,27 @@
 .hero {
   min-height: calc(100vh - $header-height);
+  position: relative;
 
   @extend %grid;
+
+  &__background {
+    height: 340px;
+    width: 340px;
+
+    background: linear-gradient(116.27deg, #0A03D6 -13.85%, #6B00CF 30.72%, #E32E40 107.36%);
+
+    position: absolute;
+    right: spacing(3);
+    top: calc(50% - 170px);
+
+    @media (min-width: $md) {
+      height: 680px;
+      width: 680px;
+
+      top: calc(50% - 340px);
+    }
+
+  }
 
   &__content {
     padding-top: $module-divider-md;
@@ -9,6 +29,8 @@
     padding-left: spacing(5);
 
     grid-column: 1 / 5;
+
+    z-index: $index-content;
 
     @media (min-width: $md) {
       padding-bottom: $module-divider-lg;
