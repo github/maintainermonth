@@ -54,7 +54,7 @@ See the [contributing guide](CONTRIBUTING.md) for more details.
 
 Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
 
-## 📝 License
+## License
 
 Copyright © 2022 [GitHub](https://github.com/github).<br />
 This project is [MIT](LICENSE.md) licensed.
