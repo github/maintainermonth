@@ -16,7 +16,7 @@
   - [Build](#build)
 - [Contributing](#contributing)
 - [Code of Conduct](#code-of-conduct)
-- [Copyright](#copyright)
+- [License](#license)
 
 ## Getting Started
 
