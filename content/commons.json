@@ -17,7 +17,7 @@
     "footer:privacy-title": "Privacy terms and conditions",
     "footer:privacy-url": "#",
     "footer:repository-title": "Repository",
-    "footer:repository-url": "#",
+    "footer:repository-url": "https://github.com/github/maintainermonth",
     "footer:twitter-label": "Follow us on Twitter",
     "footer:twitter-url": "https://twitter.com/github",
     "footer:facebook-label": "Follow us on Facebook",
@@ -30,11 +30,11 @@
     "footer:github-url": "https://github.com/",
     
     "library:title": "Library",
-    "library:description": "List of all the resources that will be useful during GitHub Maintainers Month.",
+    "library:description": "List of all the resources that will be useful during GitHub Maintainer Month.",
 
     "meta:title": "Maintainer Month",
     "meta:description": "Maintainer Month Description",
-    "meta:event-description": "Check out this GitHub Maintainers Month event",
+    "meta:event-description": "Check out this GitHub Maintainer Month event",
 
     "message:tbd": "TBD",
     
@@ -46,9 +46,9 @@
     "page:date": "June 2022",
 
     "schedule:title": "Schedule",
-    "schedule:description": "List of all events to be organized during GitHub Maintainers Month",
+    "schedule:description": "List of all events to be organized during GitHub Maintainer Month",
 
-    "share:event": "Check out this GitHub Maintainers Month event",
+    "share:event": "Check out this GitHub Maintainer Month event",
 
     "timezone:utc": "UTC",
     "timezone:pt": "PT"
