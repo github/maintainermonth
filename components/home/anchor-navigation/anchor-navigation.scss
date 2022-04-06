@@ -10,14 +10,16 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  row-gap: spacing(1);
+  row-gap: spacing(3.5);
 
   @media (min-width: $lg) {
     left: spacing(4);
+    row-gap: spacing(1.5);
   }
 
   &__button {
     position: relative;
+    width: 32px;
 
     border: none;
     background: unset;
@@ -26,25 +28,29 @@
 
     @media (min-width: $lg) {
       height: spacing(4);
-      padding-left: spacing(4);
-      padding-left: spacing(4);
+      padding-left: spacing(4.5);
     }
 
     &::before {
       content: '';
       position: absolute;
-      left: 6px;
-      bottom: 6px;
-      height: 20px;
-      width: 20px;
+      left: 8px;
+      bottom: 8px;
+      height: 16px;
+      width: 16px;
 
       border-radius: 50%;
-      outline: 2px solid $white;
+      background: $white;
+      box-sizing: border-box;
 
       opacity: 0;
       transition: opacity $simple-fade;
 
       @media (min-width: $lg) {
+        height: 20px;
+        width: 20px;
+
+        left: 6px;
         top: 6px;
         bottom: 0;
       }
@@ -77,14 +83,17 @@
     }
 
     &.active {
-      &::before,
+      &::before {
+        opacity: 0.2;
+      }
+
       &::after,
       #{ $self }__text {
         opacity: 1;
       }
 
       #{ $self }__text {
-        padding-right: spacing(0.5);
+        // padding-right: spacing(0.5);
         padding-top: spacing(4);
         max-height: spacing(20);
       }

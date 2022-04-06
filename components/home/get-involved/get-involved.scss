@@ -58,6 +58,7 @@
   }
 
   &__examples {
+    padding-left: spacing(5);
     margin-top: $module-divider-md;
 
     display: flex;
@@ -65,6 +66,7 @@
     flex-direction: column;
 
     @media (min-width: $md) {
+      padding-left: 0;
       margin-top: $module-divider-lg;
     }
   }
