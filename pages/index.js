@@ -28,7 +28,10 @@ export default function Home({ hero, about, getInvolved, events, connection }) {
           property="og:description"
           content={getLiteral('meta:description')}
         />
-        <meta property="og:image" content="/images/og/generic.png" />
+        <meta
+          property="og:image"
+          content="https://maintainermonth.github.com/images/og/generic.png"
+        />
 
         {/* <!-- Twitter Meta Tags --> */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -37,7 +40,10 @@ export default function Home({ hero, about, getInvolved, events, connection }) {
           name="twitter:description"
           content={getLiteral('meta:description')}
         />
-        <meta name="twitter:image" content="/images/og/generic.png" />
+        <meta
+          name="twitter:image"
+          content="https://maintainermonth.github.com/images/og/generic.png"
+        />
       </Head>
 
       <div>

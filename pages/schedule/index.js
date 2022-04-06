@@ -20,7 +20,10 @@ export default function Schedule({ events }) {
           property="og:description"
           content={getLiteral('schedule:description')}
         />
-        <meta property="og:image" content="/images/og/generic.png" />
+        <meta
+          property="og:image"
+          content="https://maintainermonth.github.com/images/og/generic.png"
+        />
 
         {/* <!-- Twitter Meta Tags --> */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -29,7 +32,10 @@ export default function Schedule({ events }) {
           name="twitter:description"
           content={getLiteral('schedule:description')}
         />
-        <meta name="twitter:image" content="/images/og/generic.png" />
+        <meta
+          name="twitter:image"
+          content="https://maintainermonth.github.com/images/og/generic.png"
+        />
       </Head>
 
       <EventsList events={events} />
