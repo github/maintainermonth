@@ -1,6 +1,8 @@
 import fs from 'fs'
 import Head from 'next/head'
+
 import { getEventBySlug, parseEvent } from '../../api/events'
+import { getLiteral } from '../../common/i18n'
 
 import EventDetail from '../../components/event-detail/EventDetail'
 import EventDetailWrapper from '../../components/event-detail/EventDetailWrapper'
@@ -10,27 +12,23 @@ export default function EventDetailPage({ event, ogImage }) {
   return (
     <>
       <Head>
-        <title>{event.title}</title>
+        <title>
+          {event.title} - {getLiteral('meta:title')}
+        </title>
         <meta
           name="description"
-          content="Check out this GitHub Maintainers Month event"
+          content={getLiteral('meta:event-description')}
         />
 
         {/* <!-- Facebook Meta Tags --> */}
         <meta property="og:title" content={event.title} />
-        <meta
-          property="og:description"
-          content="Check out this GitHub Maintainers Month event"
-        />
+        <meta property="og:description" content={getLiteral('share:event')} />
         <meta property="og:image" content={ogImage} />
 
         {/* <!-- Twitter Meta Tags --> */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={event.title} />
-        <meta
-          name="twitter:description"
-          content="Check out this GitHub maintainers Month event"
-        />
+        <meta name="twitter:description" content={getLiteral('share:event')} />
         <meta name="twitter:image" content={ogImage} />
       </Head>
 

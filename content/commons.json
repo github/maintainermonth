@@ -30,10 +30,11 @@
     "footer:github-url": "https://github.com/",
     
     "library:title": "Library",
-    "library:description": "Library description",
+    "library:description": "List of all the resources that will be useful during GitHub Maintainers Month.",
 
     "meta:title": "Maintainer Month",
     "meta:description": "Maintainer Month Description",
+    "meta:event-description": "Check out this GitHub Maintainers Month event",
 
     "message:tbd": "TBD",
     
@@ -45,7 +46,9 @@
     "page:date": "June 2022",
 
     "schedule:title": "Schedule",
-    "schedule:description": "Schedule description",
+    "schedule:description": "List of all events to be organized during GitHub Maintainers Month",
+
+    "share:event": "Check out this GitHub Maintainers Month event",
 
     "timezone:utc": "UTC",
     "timezone:pt": "PT"
