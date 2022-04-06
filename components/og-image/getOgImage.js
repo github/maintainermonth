@@ -47,8 +47,7 @@ async function getOgImage({ title, user, type, date, startTime, endTime }) {
       })
   })
 
-  // TODO: generate absolute url
-  return `https://redradix.github.io/tmp-maintainermonth/images/og/event-${hash}.png`
+  return `https://maintainermonth.github.com/images/og/event-${hash}.png`
 }
 
 export default getOgImage
