@@ -34,9 +34,11 @@
   &__icon {
     position: relative;
     display: inline-block;
-    height: spacing(7);
-    width: spacing(7);
+    height: 100%;
+    width: 100%;
     margin-right: spacing(2);
+    flex: 0 0 spacing(7);
+
     background: #ffffff50;
 
     border-radius: 50%;
