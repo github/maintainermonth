@@ -41,8 +41,6 @@
   &__date {
     width: 100%;
     padding-bottom: spacing(3);
-
-    border-bottom: 2px solid $white;
   }
 
   &__event {
@@ -53,6 +51,9 @@
     flex-direction: column;
     align-items: flex-start;
     row-gap: spacing(4);
+
+    @extend %background-filter;
+    border-top: 1px solid $white-50;
 
     a {
       z-index: $index-event-link;
