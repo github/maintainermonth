@@ -64,6 +64,31 @@
     }
   }
 
+  &__chips {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__more {
+      padding: spacing(1) spacing(2);
+
+      display: flex;
+      align-items: center;
+  
+      @extend %subtitle-1;
+  
+      @extend %background-filter-white;
+      border-radius: 155px;
+  
+      transition: background $simple-fade, color $simple-fade;
+  
+      &:hover {
+        background: $white;
+        color: $purple;
+      }
+  }
+
   &__user {
     margin-bottom: spacing(2);
     display: block;

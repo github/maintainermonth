@@ -3,6 +3,7 @@ import clsx from 'clsx'
 
 import Link from 'next/link'
 
+import { getLiteral } from '../../common/i18n'
 import * as ROUTES from '../../common/routes'
 
 import DateTimeChip from '../date-time-chip/DateTimeChip'
@@ -25,7 +26,17 @@ const EventsList = ({ events }) => {
           </div>
 
           <div className="events-list__event">
-            <EventTypeChip type={event.type} />
+            <div className="events-list__chips">
+              <EventTypeChip type={event.type} />
+              <Link
+                href={ROUTES.EVENT.linkTo({ slug: event.slug })}
+                aria-label={getLiteral('navigation:schedule')}
+              >
+                <a className="events-list__more">
+                  {getLiteral('actions:view-more')}
+                </a>
+              </Link>
+            </div>
             <DateTimeChip
               startTime={event.formattedDate.startTime}
               endTime={event.formattedDate.endTime}
