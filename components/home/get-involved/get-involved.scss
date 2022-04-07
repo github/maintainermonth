@@ -109,6 +109,7 @@
   }
 
   &__image {
+    flex: 0 0 160px;
     height: 160px;
     width: 160px;
     display: block;
@@ -117,6 +118,7 @@
     border-radius: 50%;
 
     @media (min-width: $md) {
+      flex: 0 0 200px;
       height: 200px;
       width: 200px;
     }
