@@ -92,16 +92,17 @@ $semibold: 600;
 
   @media (min-width: $md) {
     font-size: 1rem;
+    letter-spacing: 0.02em;
   }
 }
 
 %subtitle-2 {
   font-family: $inter;
   font-weight: $semibold;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   line-height: 1.21;
 
   @media (min-width: $md) {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
 }

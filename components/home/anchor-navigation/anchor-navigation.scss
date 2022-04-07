@@ -21,7 +21,7 @@
 
   &__button {
     position: relative;
-    width: 32px;
+    width: 30px;
 
     border: none;
     background: unset;
@@ -95,7 +95,6 @@
       }
 
       #{ $self }__text {
-        // padding-right: spacing(0.5);
         padding-top: spacing(4);
         max-height: spacing(20);
       }
@@ -116,7 +115,7 @@
   }
 
   &__text {
-    @extend %subtitle-1;
+    @extend %subtitle-2;
     color: $white;
     white-space: nowrap;
 
