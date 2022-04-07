@@ -63,6 +63,8 @@
 
     cursor: default;
 
+    transition: transform $simple-fade;
+
     &.hide {
       transform: translateY(-200%);
     }
