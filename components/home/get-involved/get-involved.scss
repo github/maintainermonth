@@ -145,17 +145,19 @@
       grid-column: 2 / 8;
       flex-direction: row;
       column-gap: spacing(5);
+
+      text-align: left;
     }
 
     @media (min-width: $lg) {
       text-align: left;
 
       &:nth-child(odd) {
-        grid-column: 4 / 10;
+        grid-column: 4 / 11;
       }
 
       &:nth-child(even) {
-        grid-column: 6 / 11;
+        grid-column: 6 / 12;
       }
     }
 
