@@ -1,25 +1,18 @@
 {
     "resources": [
         {
-            "title": "Link 1",
-            "author": "Author",
-            "link": "#",
-            "type": "video",
-            "topics": "video"
+            "title": "Open Source Guides",
+            "author": "GitHub",
+            "link": "https://opensource.guide/",
+            "type": "Guide",
+            "topics": "GitHub, Open Source"
         },
         {
-            "title": "Link 2",
-            "author": "Author",
-            "link": "#",
-            "type": "video",
-            "topics": "video"
-        },
-        {
-            "title": "Link 3",
-            "author": "Author",
-            "link": "#",
-            "type": "video",
-            "topics": "video"
+            "title": "About pull requests",
+            "author": "GitHub",
+            "link": "https://docs.github.com/es/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests",
+            "type": "Docs",
+            "topics": "GitHub"
         }
     ]
 }

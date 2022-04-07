@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 import { getLiteral } from '../common/i18n'
+import LibraryLinks from '../components/library-links/LibraryLinks'
 import resourcesJSON from '../content/library/resources.json'
 
 const { resources } = resourcesJSON
@@ -37,15 +38,9 @@ export default function Library() {
         />
       </Head>
 
-      <main>
-        <h1>{getLiteral('library:title')}</h1>
-
-        {resources.map((resource) => (
-          <div key={resource.title}>
-            <Link href={resource.link}>{resource.title}</Link>
-          </div>
-        ))}
-      </main>
+      <div>
+        <LibraryLinks links={resources} />
+      </div>
     </div>
   )
 }

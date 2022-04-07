@@ -1,0 +1,71 @@
+.library-links {
+    padding: spacing(7) spacing(2);
+
+    @media (min-width: $lg) { 
+        padding-left: spacing(3);
+        padding-right: spacing(3);
+    }
+
+    &__item {
+        position: relative;
+        padding: spacing(3);
+
+        border-top: 1px solid $white-50;
+
+        @extend %background-filter;
+
+        &:hover {
+            background: $white-20;
+            transition: background $simple-fade;
+        }
+
+        @media (min-width: $md) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+
+    &__author {
+        margin-bottom: spacing(2);
+
+        @extend %header-5;
+    }
+
+    &__info {
+        max-width: 542px;
+        margin-bottom: spacing(1.5);
+
+        @extend %header-2;
+    }
+
+    &__link {
+        @extend %header-2;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+    &__chips {
+        display: flex;
+        align-items: center;
+        column-gap: spacing(2);
+
+        @media (min-width: $md) {
+            flex-direction: column;
+            align-items: flex-end;
+            row-gap: spacing(2);
+        }
+    }
+
+    &__topics {
+        @extend %subtitle-1;
+    }
+}
