@@ -20,6 +20,13 @@
             "link": "https://www.youtube.com/playlist?list=PL0lo9MOBetEEkOyAtPqiupGm91cu8QB0I",
             "type": "Talks",
             "topics": "Scaling, Contributor Relations, Metrics"
+        },
+         {
+            "title": "CNCF Maintainer Guide",
+            "author": "CNCF",
+            "link": "https://contribute.cncf.io/",
+            "type": "Guide",
+            "topics": "Open Source, Governance, Community"
         }
     ]
 }
