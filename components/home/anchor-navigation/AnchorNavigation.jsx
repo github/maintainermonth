@@ -10,15 +10,33 @@ const AnchorNavigation = ({ containerRef }) => {
   const [sections, setSections] = useState({})
   const [activeSection, setActiveSection] = useState('')
 
+  const [scrollDirection, setScrollDirection] = useState('down')
+  const [previousYPosition, setPreviousYPosition] = useState(0)
+
   const { setAnimationStep } = useBackground()
 
-  const observerCallback = useCallback((entries) => {
-    entries.forEach((entry) => {
-      if (entry.intersectionRatio > 0) {
-        setActiveSection(entry.target.classList[0])
-      }
-    })
-  }, [])
+  const handleScrollDirection = useCallback(() => {
+    if (window.scrollY > previousYPosition) {
+      setScrollDirection('down')
+    } else {
+      setScrollDirection('up')
+    }
+
+    setPreviousYPosition(window.scrollY)
+  }, [previousYPosition])
+
+  const observerCallback = useCallback(
+    (entries) => {
+      handleScrollDirection()
+
+      entries.forEach((entry) => {
+        if (entry.intersectionRatio > 0) {
+          setActiveSection(entry.target.classList[0])
+        }
+      })
+    },
+    [handleScrollDirection],
+  )
 
   const handleClick = useCallback(
     (target) => {
