@@ -8,11 +8,11 @@
             "topics": "GitHub, Open Source"
         },
         {
-            "title": "About pull requests",
+            "title": "The ReadME Project",
             "author": "GitHub",
-            "link": "https://docs.github.com/es/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests",
+            "link": "https://github.com/readme",
             "type": "Docs",
-            "topics": "GitHub"
+            "topics": "Open Source"
         }
     ]
 }
