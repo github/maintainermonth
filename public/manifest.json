@@ -1,0 +1,13 @@
+{
+    "name": "GitHub Maintainer Month",
+    "short_name": "GitHub Maintainer Month",
+    "start_url": "/",
+    "icons": [{
+        "src": "google-touch-icon.png",
+        "sizes": "512x512"
+    }],
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "display": "fullscreen",
+    "orientation": "portrait-primary"
+}

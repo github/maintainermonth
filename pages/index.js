@@ -20,7 +20,6 @@ export default function Home({ hero, about, getInvolved, events, connection }) {
       <Head>
         <title>{getLiteral('meta:title')}</title>
         <meta name="description" content={getLiteral('meta:description')} />
-        <link rel="icon" href="/favicon.svg" />
 
         {/* <!-- Facebook Meta Tags --> */}
         <meta property="og:title" content={getLiteral('meta:title')} />
