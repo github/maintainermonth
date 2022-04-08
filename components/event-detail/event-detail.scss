@@ -96,7 +96,7 @@
         z-index: -1;
         opacity: 0.4;
 
-        transition: opacity $simple-fade;
+        transition: opacity $simple-fade, transform $simple-fade;
 
         @media (min-width: $md) {
           height: 100%;
@@ -110,6 +110,10 @@
       &:hover {
         &::before {
           opacity: 1;
+
+          @media (min-width: $md) {
+            transform: scale(1.1);
+          }
         }
       }
   }

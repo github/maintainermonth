@@ -1,13 +1,21 @@
+import { useEffect } from 'react'
 import Head from 'next/head'
-import Link from 'next/link'
 
 import { getLiteral } from '../common/i18n'
 import LibraryLinks from '../components/library-links/LibraryLinks'
 import resourcesJSON from '../content/library/resources.json'
 
+import { useBackground } from '../contexts/BackgroundContext'
+
 const { resources } = resourcesJSON
 
 export default function Library() {
+  const { setAnimationStep } = useBackground()
+
+  useEffect(() => {
+    setAnimationStep(6)
+  }, [setAnimationStep])
+
   return (
     <div>
       <Head>

@@ -1,11 +1,19 @@
+import { useEffect } from 'react'
 import Head from 'next/head'
 
 import { getLiteral } from '../../common/i18n'
 import { getEvents, parseEvents } from '../../api/events'
+import { useBackground } from '../../contexts/BackgroundContext'
 
 import EventsList from '../../components/events-list/EventsList'
 
 export default function Schedule({ events }) {
+  const { setAnimationStep } = useBackground()
+
+  useEffect(() => {
+    setAnimationStep(6)
+  }, [setAnimationStep])
+
   return (
     <div>
       <Head>

@@ -27,13 +27,13 @@ const AnchorNavigation = ({ containerRef }) => {
 
   const observerCallback = useCallback(
     (entries) => {
-      handleScrollDirection()
-
       entries.forEach((entry) => {
         if (entry.intersectionRatio > 0) {
           setActiveSection(entry.target.classList[0])
         }
       })
+
+      handleScrollDirection()
     },
     [handleScrollDirection],
   )

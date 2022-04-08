@@ -11,16 +11,16 @@
 
   position: relative;
 
-  &::before {
+  &::after {
     content: '';
 
     position: fixed;
     width: 200vw;
     height: 200vw;
-    left: -100vw;
-    top: 0;
+    left: -90vw;
+    top: -20vh;
 
-    // clip-path: ellipse(50% 48% at 50% 50%);
+    clip-path: ellipse(50% 48% at 50% 50%);
 
     background: linear-gradient(
       116.27deg,
@@ -29,82 +29,133 @@
       $red 107.36%
     );
 
-    border-radius: 50%;
-    transition: transform $background-fade;
+    transition: transform $background-fade, width $background-fade, height $background-fade, left $background-fade, top $background-fade, clip-path $background-fade;
   }
 
-  // &::after {
-  //   content: '';
+  &::before {
+    content: '';
 
-  //   position: fixed;
-  //   width: 200vw;
-  //   height: 200vw;
-  //   right: -100vw;
-  //   top: 0;
+    position: fixed;
+    width: 300vw;
+    height: 300vw;
+    top: -10vh;
+    left: 0;
 
-  //   clip-path: ellipse(50% 48% at 50% 50%);
+    clip-path: ellipse(50% 48% at 50% 50%);
 
-  //   background: linear-gradient(
-  //     116.27deg,
-  //     $blue -13.85%,
-  //     $purple 30.72%,
-  //     $red 107.36%
-  //   );
+    background: linear-gradient(
+      116.27deg,
+      $blue -13.85%,
+      $purple 30.72%,
+      $red 107.36%
+    );
 
-  //   transition: transform $background-fade;
-  // }
+    transition: transform $background-fade, width $background-fade, height $background-fade, left $background-fade, top $background-fade;
+  }
 
+  &.step-0::after {
+    transform: rotate(-90deg);
+  }
+  &.step-0::before {
+    transform: rotate(0deg);
+  }
+
+
+  &.step-1::after {
+    transform: rotate(0deg);
+
+    width: 82vw;
+    height: 82vw;
+    left: 9vw;
+    top: calc(50vh - 41vw);
+  }
   &.step-1::before {
     transform: rotate(45deg);
+
+    width: 400vw;
+    height: 400vw;
+    top: -40vh;
+    left: -156vw;
   }
 
+
+  &.step-2::after {
+    transform: rotate(271deg);
+
+    width: 96vw;
+    height: 96vw;
+    left: 2vw;
+    top: calc(50vh - 48vw);
+
+    clip-path: ellipse(50% 49% at 50% 50%);
+
+
+    transition: transform 10s $bezier-default, width $background-fade, height $background-fade, left $background-fade, top $background-fade;
+  }
   &.step-2::before {
-    transform: rotate(90deg);
+    transform: rotate(180deg);
+
+    width: 400vw;
+    height: 400vw;
+    top: -40vh;
+    left: -156vw;
+  }
+
+
+  &.step-3::after {
+    transform: rotate(271deg);
+
+    width: 96vw;
+    height: 96vw;
+    left: 2vw;
+    top: -192vh;
+
+    clip-path: ellipse(50% 49% at 50% 50%);
+
+
+    transition: transform 10s $bezier-default, width $background-fade, height $background-fade, left $background-fade, top 3s cubic-bezier(0.48,-0.01,0.86,0.88);
   }
 
   &.step-3::before {
-    transform: rotate(44.27deg);
+    transform: rotate(90deg);
+
+    width: 400vw;
+    height: 400vw;
+    top: -40vh;
+    left: -156vw;
+
+    animation: background 6s infinite alternate-reverse;
+
   }
 
-  &.step-4::before {
-    transform: rotate(-105deg);
+  @keyframes background {
+    to    { transform: rotate(179deg); }
   }
 
-  &.step-5::before {
-    transform: rotate(105deg);
+  &.step-6::before, &.step-7::before {
+    opacity: 0;
   }
 
-  // &.step-1::after {
-  //   transform: rotate(45deg);
-  // }
-
-  // &.step-2::after {
-  //   transform: rotate(90deg);
-  // }
-
-  // &.step-3::after {
-  //   transform: rotate(44.27deg);
-  // }
-
-  // &.step-4::after {
-  //   transform: rotate(-105deg);
-  // }
-
-  // &.step-5::after {
-  //   transform: rotate(105deg);
-  // }
-
-  // &.step-6::after {
-  //   opacity: 0;
-  // }
-
-  &.step-6::before {
+  &.step-6::after {
     width: 120vh;
     height: 120vh;
     left: calc(50% - 60vh);
-    top: 0;
+    top: -10vh;
 
     background: linear-gradient(116.27deg, #0A03D6 -13.85%, #6B00CF 30.72%, #E32E40 107.36%);
+
+    animation: background 8s infinite alternate-reverse;
+  }
+
+  &.step-7::after {
+    width: 82vw;
+    height: 82vw;
+    left: 9vw;
+    top: calc(50vh - 41vw);
+
+    background: linear-gradient(116.27deg, #0A03D6 -13.85%, #6B00CF 30.72%, #E32E40 107.36%);
+
+    animation: background 8s infinite alternate-reverse;
   }
 
   &__content {

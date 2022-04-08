@@ -22,7 +22,7 @@ const EventDetail = ({ event, reverseColumns, isFullPage }) => {
   })
 
   useEffect(() => {
-    setAnimationStep(6)
+    setAnimationStep(7)
   }, [setAnimationStep])
 
   return (
