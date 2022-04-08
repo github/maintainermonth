@@ -85,6 +85,8 @@
     }
 
     &.active {
+      width: auto;
+      
       &::before {
         opacity: 0.2;
       }
