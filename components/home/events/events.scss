@@ -21,6 +21,8 @@
     display: block;
     padding: spacing(3) spacing(4);
     margin: 0 auto $module-divider-md;
+    position: relative;
+    left: spacing(2);
     width: fit-content;
 
     @extend %header-5;
@@ -28,12 +30,22 @@
 
     background-color: $white;
     border-radius: 83px;
+
+    @media (min-width: $lg) {
+      left: 0;
+    }
   }
 
   &__list {
+    margin-left: spacing(5);
+
     display: flex;
     flex-direction: column;
     row-gap: $module-divider-md;
+
+    @media (min-width: $lg) {
+      margin-left: 0;
+    }
 
     @media (min-width: $lg) {
       row-gap: 0;

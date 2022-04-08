@@ -77,7 +77,11 @@
 
   &__list {
     display: flex;
-    column-gap: spacing(2);
+    column-gap: spacing(1);
+
+    @media (min-width: $md) {
+      column-gap: spacing(2);
+    }
 
     @media (min-width: $lg) {
       column-gap: spacing(4);
@@ -103,7 +107,20 @@
       padding: 0 spacing(2);
     }
 
-    &:hover, &.is-active {
+    &.is-active {
+      background: $white-40;
+
+      color: $white;
+
+      .icon-calendar,
+      .icon-books {
+        path {
+          fill: $white;
+        }
+      }
+    }
+
+    &:hover {
       background: $white;
       color: $purple;
 
