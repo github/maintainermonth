@@ -20,7 +20,7 @@
   }
 
   &__title {
-    @extend %header-2;
+    @extend %header-1;
 
     &[href]::after {
       content: '';
@@ -29,6 +29,16 @@
       top: 0;
       right: 0;
       bottom: 0;
+    }
+
+    @media (min-width: $md) {
+      font-size: 1.375rem;
+      line-height: 1.6;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 3rem;
+      line-height: 1.5;
     }
   }
 
@@ -50,7 +60,7 @@
     }
 
     @media (min-width: $lg) {
-      grid-column: 3 / 8;
+      grid-column: 3 / 9;
     }
 
     a {
@@ -74,32 +84,60 @@
       &::before {
         content: '';
         position: absolute;
-        top: 0;
-        left: 0;
+        top: calc(50% - 160px);
+        left: calc(50% - 160px);
 
-        height: 100%;
-        width: auto;
-        aspect-ratio: 1 / 1;
+        height: 320px;
+        width: 320px;
 
-        background: linear-gradient(116.27deg, rgba(10, 3, 214, 0.4) -13.85%, rgba(107, 0, 207, 0.4) 30.72%, rgba(227, 46, 64, 0.4) 107.36%);
+        background: linear-gradient(116.27deg, $blue -13.85%, $purple 30.72%, $red 107.36%);
         border-radius: 50%;
 
         z-index: -1;
+        opacity: 0.4;
+
+        transition: opacity $simple-fade;
+
+        @media (min-width: $md) {
+          height: 100%;
+          width: auto;
+          aspect-ratio: 1 / 1;
+          left: 0;
+          top: 0;
+        }
+      }
+
+      &:hover {
+        &::before {
+          opacity: 1;
+        }
       }
   }
 
   &__meta {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
+    row-gap: spacing(2.5);
+
+    @media (min-width: $md) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
   }
 
-  &__column {    
+  &__column {
+    width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
     row-gap: spacing(2);
+    
+    @media (min-width: $md) {
+      flex-direction: column;
+    }
   }
 
   &__text {
@@ -175,7 +213,7 @@
     #{ $self }__link-wrapper {
       justify-content: flex-start;
 
-      grid-column: 1 / 4;
+      grid-column: 1 / 5;
 
       @media (min-width: $md) {
         grid-column: 2 / 7;
@@ -187,7 +225,7 @@
     }
 
     #{ $self }__info {
-      grid-column: 1 / 4;
+      grid-column: 1 / 5;
 
       @media (min-width: $md) {
         grid-column: 2 / 7;
