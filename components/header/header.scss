@@ -36,13 +36,22 @@
   &__home-link {
     display: flex;
     align-items: center;
-    column-gap: spacing(2);
+    column-gap: spacing(1);
 
     @extend %header-5;
 
+    @media (min-width: $md) {
+      column-gap: spacing(2);
+    }
+
     .github-logo {
-      height: spacing(4);
-      width: spacing(4);
+      height: spacing(3);
+      width: spacing(3);
+
+      @media (min-width: $sm) {
+        height: spacing(4);
+        width: spacing(4);
+      }
 
       path {
         fill: $white;

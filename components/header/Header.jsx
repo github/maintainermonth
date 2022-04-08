@@ -21,7 +21,7 @@ const Header = () => {
 
   const yearClasses = clsx('header__chip', { hide: hideYear })
 
-  const isMobile = useMemo(() => width < BREAKPOINTS.MD, [width])
+  const isMobile = useMemo(() => width < BREAKPOINTS.SM, [width])
 
   useEffect(() => {
     if (!isHome) {
