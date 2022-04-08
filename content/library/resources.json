@@ -11,8 +11,15 @@
             "title": "The ReadME Project",
             "author": "GitHub",
             "link": "https://github.com/readme",
-            "type": "Docs",
+            "type": "Interviews",
             "topics": "Open Source"
+        },
+        {
+            "title": "Global Maintainer Summit 2021 Talks",
+            "author": "GitHub",
+            "link": "https://www.youtube.com/playlist?list=PL0lo9MOBetEEkOyAtPqiupGm91cu8QB0I",
+            "type": "Talks",
+            "topics": "Scaling, Contributor Relations, Metrics"
         }
     ]
 }
