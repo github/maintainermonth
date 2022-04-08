@@ -1,5 +1,5 @@
 .events {
-  min-height: calc(100vh - $header-height);
+  min-height: calc((var(--vh, 1vh) * 100) - $header-height);
 
   padding-top: $module-divider-md;
   padding-bottom: $module-divider-md;
