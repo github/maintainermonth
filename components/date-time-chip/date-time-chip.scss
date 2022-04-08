@@ -8,6 +8,10 @@
     align-items: center;
 
     &:not(:last-child) {
+      margin-bottom: spacing(1)
+    }
+    
+    @media (min-width: $md) {
       margin-bottom: spacing(1.5)
     }
   }
