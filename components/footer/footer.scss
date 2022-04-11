@@ -14,7 +14,7 @@
     rgba(107, 0, 207, 0) 100%
   );
 
-  z-index: $index-header-footer;
+  z-index: $index-footer;
 
   @media (min-width: $sm) {
     row-gap: spacing(3);

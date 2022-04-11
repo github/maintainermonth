@@ -27,10 +27,11 @@ $red: #e32e40;
 $index-filter: 1;
 $index-content: 5;
 $index-event-link: 5;
-$index-anchor-navigation: 10;
-$index-header-footer: 15;
-$index-footer-image: 0;
-$index-footer-image-content: 20;
+$index-anchor-navigation: 20;
+$index-header: 20;
+$index-footer: 15;
+$index-footer-image: -1;
+$index-footer-image-content: 15;
 
 // Transitions
 $bezier-default: cubic-bezier(0.25, 0.1, 0.25, 1);

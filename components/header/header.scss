@@ -10,7 +10,7 @@
     rgba(107, 0, 207, 0) 100%
   );
 
-  z-index: $index-header-footer;
+  z-index: $index-header;
 
   @media (min-width: $lg) {
     padding: 0 spacing(4);
