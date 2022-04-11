@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { getLiteral } from '../../common/i18n'
 
 import IconTwitter from '../../public/icons/twitter'
@@ -9,6 +10,14 @@ import IconGitHub from '../../public/icons/github'
 const Footer = () => {
   return (
     <footer className="footer">
+      <div className="footer__background">
+        <img
+          className="footer__image"
+          src="/images/footer.jpg"
+          alt={getLiteral('footer:image-description')}
+        />
+      </div>
+
       <div className="footer__copyright">
         <a
           className="footer__link"

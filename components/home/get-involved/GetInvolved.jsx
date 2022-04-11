@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import md from 'markdown-it'
 
 const GetInvolved = ({ title, examplesTitle, examples, content }) => {
@@ -17,9 +18,13 @@ const GetInvolved = ({ title, examplesTitle, examples, content }) => {
           <h3 className="get-involved__examples-title">{examplesTitle}</h3>
 
           <div className="get-involved__list">
-            {examples.map(({ title, image }) => (
+            {examples.map(({ title, image, imageDescription }) => (
               <div key={`example-${title}`} className="get-involved__example">
-                <span className="get-involved__image" />
+                <img
+                  className="get-involved__image"
+                  src={image}
+                  alt={imageDescription}
+                />
                 <p>{title}</p>
               </div>
             ))}

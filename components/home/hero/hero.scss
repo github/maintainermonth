@@ -8,8 +8,6 @@
     height: 340px;
     width: 340px;
 
-    background: linear-gradient(116.27deg, #0A03D6 -13.85%, #6B00CF 30.72%, #E32E40 107.36%);
-
     position: absolute;
     right: spacing(3);
     top: calc(50% - 170px);
@@ -21,6 +19,9 @@
       top: calc(50% - 340px);
     }
 
+    img {
+      width: 100%;
+    }
   }
 
   &__content {
@@ -67,5 +68,6 @@
     margin-bottom: spacing(4);
 
     @extend %header-1;
+    text-shadow: 32px 4px 47px rgba(30, 0, 57, 0.61);
   }
 }

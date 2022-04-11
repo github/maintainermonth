@@ -54,11 +54,7 @@ export default function Home({ hero, about, getInvolved, events, connection }) {
             title={hero.title}
             buttonText={hero.buttonText}
           />
-          <About
-            title={about.title}
-            image={about.image}
-            content={about.content}
-          />
+          <About title={about.title} content={about.content} />
           <GetInvolved
             title={getInvolved.title}
             content={getInvolved.content}

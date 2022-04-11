@@ -16,13 +16,9 @@
     }
   }
 
-  &__title {
+  &__column {
     padding-left: spacing(5);
-    margin-bottom: spacing(5);
-
     grid-column: 1 / 5;
-
-    @extend %header-2;
 
     @media (min-width: $md) {
       padding-left: 0;
@@ -34,6 +30,17 @@
       margin-bottom: 0;
       grid-column: 3 / 7;
     }
+  }
+
+  &__title {    
+    margin-bottom: spacing(5);
+
+    @extend %header-2;
+  }
+
+  &__image {
+    max-width: 100%;
+    max-height: 100vh;
   }
 
   &__text {

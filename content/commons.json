@@ -15,6 +15,7 @@
     "event-type:conference": "Conference",
     "event-type:misc": "Misc",
 
+    "footer:image-description": "Footer illustration",
     "footer:copyright": "Made with ♥︎️ by GitHub",
     "footer:privacy-title": "Privacy terms and conditions",
     "footer:privacy-url": "https://docs.github.com/es/site-policy/privacy-policies/github-privacy-statement",
@@ -30,6 +31,8 @@
     "footer:linkedin-url": "https://www.linkedin.com/company/github",
     "footer:github-label": "Follow us on GitHub",
     "footer:github-url": "https://github.com/",
+
+    "hero:image-description": "Illustration inspired by M. C. Escher",
     
     "library:title": "Library",
     "library:description": "List of all the resources that will be useful during GitHub Maintainer Month.",

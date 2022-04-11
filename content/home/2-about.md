@@ -1,7 +1,6 @@
 ---
 anchorNavSection: 'About'
 title: 'Welcome to Maintainer Month!'
-image: ''
 ---
 
 Open Source runs the world. But who runs open source? Who is there, day by day, to keeping it all running? Open Source project maintainers make the software we use possible. But project maintenance is intense work - and it doesn’t happen in a vacuum.

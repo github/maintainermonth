@@ -114,13 +114,10 @@
     width: 160px;
     display: block;
 
-    background: linear-gradient(116.27deg, #0A03D6 -13.85%, #6B00CF 30.72%, #E32E40 107.36%);
-    border-radius: 50%;
-
     @media (min-width: $md) {
-      flex: 0 0 200px;
-      height: 200px;
-      width: 200px;
+      flex: 0 0 300px;
+      height: 300px;
+      width: 300px;
     }
   }
 

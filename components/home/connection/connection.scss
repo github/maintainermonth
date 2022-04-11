@@ -1,5 +1,7 @@
 .connection {
   padding-top: $module-divider-md;
+  position: relative;
+  z-index: $index-footer-image-content;
 
   @media (min-width: $md) {
     padding-top: $module-divider-lg;
