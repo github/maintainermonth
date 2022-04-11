@@ -6,6 +6,7 @@ import utc from 'dayjs/plugin/utc'
 import timezone from 'dayjs/plugin/timezone'
 
 import { getDataFromMD } from '../common/api'
+import TYPES from '../components/event-type-chip/types'
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
@@ -39,6 +40,18 @@ export const getEventBySlug = (slug) => {
 export const parseEvents = (events) => events.map(parseEvent)
 
 export const parseEvent = (event) => {
+  if (!event.title) {
+    throw new TypeError('Event must have a title.')
+  }
+
+  if (Object.keys(TYPES).indexOf(event.type) === -1) {
+    throw new TypeError(
+      `Event must be one of the following types: ${Object.keys(TYPES).join(
+        ', ',
+      )}`,
+    )
+  }
+
   const formattedDate = formatEventDateTime(
     event.date,
     event.UTCStartTime,
@@ -55,6 +68,11 @@ export const parseEvent = (event) => {
 const formatEventDateTime = (date = dayjs.utc(), startTime, endTime) => {
   // Date
   const [month, day] = date.split('/')
+
+  if (isNaN(month) || isNaN(day)) {
+    throw new TypeError('date must be in mm/dd format (e.g. 06/12).')
+  }
+
   const UTCDate = dayjs
     .utc()
     .date(day)
@@ -68,6 +86,13 @@ const formatEventDateTime = (date = dayjs.utc(), startTime, endTime) => {
     const [startHour, startMinute] = startTime.split(':')
 
     const UTCStartTime = UTCDate.hour(startHour).minute(startMinute)
+
+    if (isNaN(UTCStartTime)) {
+      throw new TypeError(
+        'UTCStartTime must be in hh:mm format (e.g. 12:30) or be "TDB".',
+      )
+    }
+
     const PTStartTime = UTCStartTime.tz('America/Los_Angeles')
 
     const formattedUTCStartTime = UTCStartTime.format('HH:mm a')
@@ -86,6 +111,13 @@ const formatEventDateTime = (date = dayjs.utc(), startTime, endTime) => {
     const [endHour, endMinute] = endTime.split(':')
 
     const UTCEndTime = UTCDate.hour(endHour).minute(endMinute)
+
+    if (isNaN(UTCStartTime)) {
+      throw new TypeError(
+        'UTCEndTime must be in hh:mm format (e.g. 12:30) or be "TDB".',
+      )
+    }
+
     const PTEndTime = UTCEndTime.tz('America/Los_Angeles')
 
     const formattedUTCEndTime = UTCEndTime.format('HH:mm a')

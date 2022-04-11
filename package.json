@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "NODE_ENV=production next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest"
   },
   "dependencies": {
     "clsx": "^1.1.1",
@@ -19,8 +20,14 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.0.0",
+    "babel-jest": "^27.5.1",
     "eslint": "8.11.0",
     "eslint-config-next": "12.1.0",
+    "jest": "^27.5.1",
+    "jest-css-modules": "^2.1.0",
     "sass": "^1.49.9",
     "sass-loader": "^12.6.0"
   }
