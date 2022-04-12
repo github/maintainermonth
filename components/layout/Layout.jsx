@@ -16,6 +16,11 @@ const Layout = ({ children }) => {
     <>
       <Filter />
       <div className={classes}>
+        <div className="layout__bubbles">
+          <span className="layout__back-bubble" />
+          <span className="layout__front-bubble" />
+        </div>
+
         <div className="layout__content">
           <Header />
           <main>{children}</main>

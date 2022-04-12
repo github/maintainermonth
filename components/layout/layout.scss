@@ -1,4 +1,6 @@
 .layout {
+  $self: &;
+
   min-height: calc(var(--vh, 1vh) * 100);
 
   background-image: linear-gradient(
@@ -11,37 +13,24 @@
 
   position: relative;
 
-  &::after {
-    content: '';
-
+  &__bubbles {
     position: fixed;
-    width: 200vw;
-    height: 200vw;
-    left: -90vw;
-    top: -20vh;
-
-    clip-path: ellipse(50% 48% at 50% 50%);
-
-    background: linear-gradient(
-      116.27deg,
-      $blue -13.85%,
-      $purple 30.72%,
-      $red 107.36%
-    );
-
-    transition: transform $background-fade, width $background-fade, height $background-fade, left $background-fade, top $background-fade, clip-path $background-fade;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  &::before {
-    content: '';
-
+  &__back-bubble {
     position: fixed;
-    width: 300vw;
-    height: 300vw;
-    top: -10vh;
+    width: 100vw;
+    height: 100vw;
+
+    top: 0;
     left: 0;
 
-    clip-path: ellipse(50% 48% at 50% 50%);
+    border-radius: 50%;
 
     background: linear-gradient(
       116.27deg,
@@ -50,112 +39,120 @@
       $red 107.36%
     );
 
-    transition: transform $background-fade, width $background-fade, height $background-fade, left $background-fade, top $background-fade;
+    transition: transform $background-fade, opacity $background-fade;
+
+    #{ $self }.step-0 & {
+      transform: scale(3) translateX(32vw) translateY(32vw) rotate(0deg);
+    }
+
+    #{ $self }.step-1 & {
+      transform: scale(4) translateX(0) translateY(0) rotate(45deg);
+    }
+
+    #{ $self }.step-2 & {
+      transform: scale(4) translateX(0) translateY(35vw) rotate(45deg);
+    }
+
+    #{ $self }.step-3 & {
+      transform: scale(2) translateX(0) translateY(0vw) rotate(271deg);
+    }
+
+    #{ $self }.step-6 &, #{ $self }.step-7 & {
+      opacity: 0;
+    }
   }
 
-  &.step-0::after {
-    transform: rotate(-90deg);
-  }
-  &.step-0::before {
-    transform: rotate(0deg);
-  }
+  &__front-bubble {
+    position: relative;
+    width: 100vmin;
+    height: 100vmin;
 
+    top: 0;
+    left: 0;
 
-  &.step-1::after {
-    transform: rotate(0deg);
+    transition: transform $background-fade, clip-path $background-fade, width $background-fade, height $background-fade;
 
-    width: 82vw;
-    height: 82vw;
-    left: 9vw;
-    top: calc(50vh - 41vw);
-  }
-  &.step-1::before {
-    transform: rotate(45deg);
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
 
-    width: 400vw;
-    height: 400vw;
-    top: -40vh;
-    left: -156vw;
-  }
+      background: linear-gradient(
+        116.27deg,
+        $blue -13.85%,
+        $purple 30.72%,
+        $red 107.36%
+      );
 
+      clip-path: ellipse(50% 48% at 50% 50%);
+      outline: 0;
 
-  &.step-2::after {
-    transform: rotate(271deg);
+      border-radius: 50%;
 
-    width: 96vw;
-    height: 96vw;
-    left: 2vw;
-    top: calc(50vh - 48vw);
+      transition: transform $background-fade;
+    }
 
-    clip-path: ellipse(50% 49% at 50% 50%);
+    #{ $self }.step-0 & {
+      transform: scale(2) translateX(-20vw) translateY(25vh);
 
+      &::after {
+        transform: rotate(-90deg);
+      }
+    }
 
-    transition: transform 10s $bezier-default, width $background-fade, height $background-fade, left $background-fade, top $background-fade;
-  }
-  &.step-2::before {
-    transform: rotate(180deg);
+    #{ $self }.step-1 & {
+      transform: scale(0.8) translateX(0vw) translateY(0);
 
-    width: 400vw;
-    height: 400vw;
-    top: -40vh;
-    left: -156vw;
-  }
+      &::after {
+        transform: rotate(0deg);
+      }
+    }
 
+    #{ $self }.step-2 & {
+      transform: scale(1) translateX(0vw) translateY(0);
 
-  &.step-3::after {
-    transform: rotate(271deg);
+      
+      &::after {
+        transform: rotate(271deg);
+        transition: transform 10s $bezier-default;
+      }
+    }
 
-    width: 96vw;
-    height: 96vw;
-    left: 2vw;
-    top: -192vh;
+    #{ $self }.step-3 & {
+      transform: scale(1) translateX(0vw) translateY(-100vw);
+      transition: transform 5s $bezier-default;
 
-    clip-path: ellipse(50% 49% at 50% 50%);
+      &::after {
+        transform: rotate(0deg);
+      }
+    }
 
+    @keyframes background {
+      to    { transform: rotate(364deg); }
+    }
 
-    transition: transform 10s $bezier-default, width $background-fade, height $background-fade, left $background-fade, top 3s cubic-bezier(0.48,-0.01,0.86,0.88);
-  }
+    #{ $self }.step-6 & {
+      transform: scale(1.2) translateX(0vh) translateY(0vh);
 
-  &.step-3::before {
-    transform: rotate(90deg);
+      &::after {
+        background: linear-gradient(116.27deg, $blue -13.85%, $purple 30.72%, $red 107.36%);
+        transform: rotate(0deg);
+        animation: background 16s infinite alternate-reverse;
+      }
+    }
 
-    width: 400vw;
-    height: 400vw;
-    top: -40vh;
-    left: -156vw;
+    #{ $self }.step-7 & {
+      transform: scale(0.8) translateX(0vh) translateY(0vh);
 
-    animation: background 6s infinite alternate-reverse;
-
-  }
-
-  @keyframes background {
-    to    { transform: rotate(179deg); }
-  }
-
-  &.step-6::before, &.step-7::before {
-    opacity: 0;
-  }
-
-  &.step-6::after {
-    width: 120vh;
-    height: 120vh;
-    left: calc(50% - 60vh);
-    top: -10vh;
-
-    background: linear-gradient(116.27deg, #0A03D6 -13.85%, #6B00CF 30.72%, #E32E40 107.36%);
-
-    animation: background 8s infinite alternate-reverse;
-  }
-
-  &.step-7::after {
-    width: 82vw;
-    height: 82vw;
-    left: 9vw;
-    top: calc(50vh - 41vw);
-
-    background: linear-gradient(116.27deg, #0A03D6 -13.85%, #6B00CF 30.72%, #E32E40 107.36%);
-
-    animation: background 8s infinite alternate-reverse;
+      &::after {
+        background: linear-gradient(116.27deg, $blue -13.85%, $purple 30.72%, $red 107.36%);
+        transform: rotate(0deg);
+        animation: background 16s infinite alternate-reverse;
+      }
+    }
   }
 
   &__content {
