@@ -2,7 +2,9 @@
 $spacer: 8px;
 
 $header-height: 76px;
+$footer-height: 166px;
 
+$module-divider-sm: 40px;
 $module-divider-md: 80px;
 $module-divider-lg: 140px;
 
@@ -34,7 +36,7 @@ $index-footer-image: -1;
 $index-footer-image-content: 15;
 
 // Transitions
-$bezier-default: cubic-bezier(0.25, 0.1, 0.25, 1);
+$bezier-default: cubic-bezier(0, 0.33, 0.66, 1);
 $duration-default: 0.3s;
 $duration-long: 2s;
 

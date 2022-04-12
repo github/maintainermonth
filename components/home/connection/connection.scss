@@ -3,20 +3,42 @@
   position: relative;
   z-index: $index-footer-image-content;
 
+  background-image: linear-gradient(177.63deg, rgba(10, 3, 214, 0) 1.99%, rgba(107, 0, 207, 0.354) 64.04%, rgba(227, 46, 64, 0.6) 109.9%), url('/images/footer.jpg');
+  background-position: center;
+  background-size: cover;
+
+  padding: spacing(5) spacing(2) spacing(5) spacing(5);
+  margin: 0 spacing(2);
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+    
+  @media (min-width: $lg) {
+    margin: 0 spacing(4);
+  }
+    
   @media (min-width: $md) {
-    padding-top: $module-divider-lg;
+    padding: 0;
+    margin-top: 0;
+
+    min-height: calc(100vh - $footer-height);
   }
 
   &__content {
     @extend %grid;
+    align-items: center;
+
   }
 
   &__title {
-    padding-left: spacing(5);
     margin-bottom: spacing(4);
     grid-column: 1 / 5;
 
-    @extend %header-2;
+    @extend %header-1;
 
     @media (min-width: $md) {
       padding-left: 0;
@@ -25,12 +47,11 @@
     
     @media (min-width: $lg) {
       margin-bottom: 0;
-      grid-column: 3 / 9;
+      grid-column: 3 / 8;
     }
   }
 
   &__button {
-    padding-left: spacing(5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,7 +59,6 @@
     grid-column: 1 / 5;
 
     @media (min-width: $md) {
-      padding-left: 0;
       justify-content: flex-start;
 
       grid-column: 2 / 7;

@@ -19,28 +19,48 @@
   &__column {
     padding-left: spacing(5);
     grid-column: 1 / 5;
+    margin-bottom: spacing(5);
+
+    @media (min-width: $sm) {
+      grid-column: 1 / 4;
+    }
 
     @media (min-width: $md) {
       padding-left: 0;
 
       grid-column: 2 / 8;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
     }
 
     @media (min-width: $lg) {
       margin-bottom: 0;
       grid-column: 3 / 7;
+      display: initial;
     }
   }
 
-  &__title {    
+  &__title {
+    max-width: 400px;
     margin-bottom: spacing(5);
 
-    @extend %header-2;
+    @extend %header-1;
+
+    @media (min-width: $md) {
+      font-size: 2.25rem;
+    }
   }
 
   &__image {
     max-width: 100%;
     max-height: 100vh;
+
+    @media (min-width: $lg) {
+      width: 100%;
+      max-width: 360px;
+    }
   }
 
   &__text {
