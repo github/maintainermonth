@@ -4,28 +4,69 @@
 
   @extend %grid;
 
+  padding-bottom: 22vmin;
+
+  @media (min-width: $lg) {
+    padding-bottom: 17vh;
+  }
+
+  @media (min-width: $xl) {
+    padding-bottom: $module-divider-md;
+  }
+
   &__background {
-    height: 340px;
-    width: 340px;
+    @extend %grid;
+    padding-top: 42vh;
 
     position: absolute;
-    right: spacing(3);
-    top: calc(50% - 170px);
+    top: 0;
+    left: 0;
 
-    @media (min-width: $md) {
-      height: 680px;
-      width: 680px;
+    
 
-      top: calc(50% - 340px);
+    @media (min-width: $lg) {
+      padding-top: 34vh;
     }
 
-    img {
-      width: 100%;
+    @media (min-width: $xl) {
+      padding-top: $module-divider-sm;
     }
   }
 
+  &__image-wrapper {
+    padding-left: spacing(5);
+
+    transition: transform 1s $bezier-default;
+    overflow: hidden;
+
+    grid-column: 1 / 5;
+
+    box-sizing: border-box;
+
+    @media (min-width: $md) {
+      padding-left: 0;
+      grid-column: 3 / 9;
+    }
+
+    @media (min-width: $lg) {
+      grid-column: 6 / 13;
+    }
+
+    @media (min-width: $xl) {
+      grid-column: 6 / 13;
+    }
+  }
+  
+  &__image {
+    width: 100%;
+
+    transform: scale(1.025);
+    transform-origin: bottom center;
+
+  }
+
   &__content {
-    padding-top: $module-divider-md;
+    padding-top: $module-divider-sm;
     padding-bottom: $module-divider-md;
     padding-left: spacing(5);
 
@@ -46,7 +87,7 @@
       align-items: flex-start;
       justify-content: center;
 
-      grid-column: 4 / 11;
+      grid-column: 3 / 10;
     }
   }
 
@@ -69,5 +110,18 @@
 
     @extend %header-1;
     text-shadow: 32px 4px 47px rgba(30, 0, 57, 0.61);
+
+    @media (min-width: $sm) {
+      font-family: $jetbrains;
+      font-weight: $regular;
+      font-size: 2.25rem;
+      letter-spacing: initial;
+      line-height: 1.6;
+    }
+
+    @media (min-width: $md) {
+      font-size: 3rem;
+      line-height: 1.5;
+    }
   }
 }
