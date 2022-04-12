@@ -16,6 +16,10 @@
 
   z-index: $index-footer;
 
+  &.is-home {
+    margin-top: 0;
+  }
+
   @media (min-width: $sm) {
     row-gap: spacing(3);
   }
@@ -25,7 +29,7 @@
     align-items: flex-end;
   }
 
-  @media (min-width: $lg) {
+  @media (min-width: 967px) {
     padding-left: spacing(4);
     flex-direction: row;
     justify-content: space-between;
@@ -35,7 +39,8 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100vw;
+    width: auto;
+    height: 100vh;
 
     z-index: $index-footer-image;
 
@@ -51,8 +56,8 @@
   }
 
   &__image {
-    width: 100%;
-    max-height: 100vh;
+    width: auto;
+    height: 100vh;
     display: block;
     position: relative;
     object-fit: cover;
