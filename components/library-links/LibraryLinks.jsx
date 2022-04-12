@@ -16,6 +16,7 @@ const LibraryLinks = ({ links }) => {
               {link.title}
             </a>
           </div>
+          <p className="library-links__description">{link.description}</p>
           <div className="library-links__chips">
             <Chip label={link.type} />
             <p className="library-links__topics">{link.topics}</p>

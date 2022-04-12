@@ -12,18 +12,13 @@
 
         border-top: 1px solid $white-50;
 
+        @extend %grid;
+
         @extend %background-filter;
 
         &:hover {
             background: $white-20;
             transition: background $simple-fade;
-        }
-
-        @media (min-width: $md) {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: flex-start;
         }
     }
 
@@ -35,9 +30,36 @@
 
     &__info {
         max-width: 542px;
-        margin-bottom: spacing(1.5);
+        margin-bottom: spacing(2.5);
 
         @extend %header-2;
+
+        grid-column: 1 / 5;
+
+        @media (min-width: $md) {
+            grid-column: 1 / 4;
+        }
+
+        @media (min-width: $lg) {
+            grid-column: 1 / 6;
+        }
+    }
+
+    &__description {
+        grid-column: 1 / 5;
+
+        margin-bottom: spacing(2.5);
+
+        @extend %body-1;
+        color: $white-80;
+
+        @media (min-width: $md) {
+            grid-column: 4 / 7;
+        }
+
+        @media (min-width: $lg) {
+            grid-column: 6 / 10;
+        }
     }
 
     &__link {
@@ -58,10 +80,18 @@
         align-items: center;
         column-gap: spacing(2);
 
+        grid-column: 1 / 5;
+
         @media (min-width: $md) {
             flex-direction: column;
             align-items: flex-end;
             row-gap: spacing(2);
+
+            grid-column: 7 / 9;
+        }
+
+        @media (min-width: $lg) {
+            grid-column: 10 / 13;
         }
     }
 

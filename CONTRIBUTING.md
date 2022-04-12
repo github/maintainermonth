@@ -69,6 +69,7 @@ _Library_ page links can be added and edited from the `content/library/resources
     {
       "title": "Link 1",
       "author": "Author",
+      "description": "A short description",
       "link": "https://github.com/",
       "type": "video",
       "topics": "video"
@@ -76,6 +77,7 @@ _Library_ page links can be added and edited from the `content/library/resources
     {
       "title": "Link 2",
       "author": "Author",
+      "description": "A short description",
       "link": "https://github.com/",
       "type": "video",
       "topics": "video"
@@ -83,6 +85,7 @@ _Library_ page links can be added and edited from the `content/library/resources
     {
       "title": "Link 3",
       "author": "Author",
+      "description": "A short description",
       "link": "https://github.com/",
       "type": "video",
       "topics": "video"
@@ -97,6 +100,7 @@ Each resource:
 {
   "title": "Link 3",
   "author": "Author",
+  "description": "A short description",
   "link": "https://github.com/",
   "type": "video",
   "topics": "video"
@@ -107,6 +111,7 @@ Where:
 
 - `title`: link title.
 - `author`: author or authors.
+- `description`: a short description (max. 200 characters).
 - `link`: resource link.
 - `type`: content type, such as `video`, `article`, etc.
 - `topics`: related topics.

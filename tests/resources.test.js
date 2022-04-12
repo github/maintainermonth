@@ -13,6 +13,13 @@ describe('Resources', () => {
     expect(areAllValid).toBe(true)
   })
 
+  test('Resources description no longer than 200 characters', () => {
+    const areAllValid = resources.every(
+      (resource) => resource.description.length <= 200,
+    )
+    expect(areAllValid).toBe(true)
+  })
+
   test('Resources must have a link', () => {
     const areAllValid = resources.every((resource) => resource.link)
     expect(areAllValid).toBe(true)

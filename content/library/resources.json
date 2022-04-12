@@ -3,6 +3,7 @@
         {
             "title": "Open Source Guides",
             "author": "GitHub",
+            "description": "",
             "link": "https://opensource.guide/",
             "type": "Guide",
             "topics": "GitHub, Open Source"
@@ -10,6 +11,7 @@
         {
             "title": "The ReadME Project",
             "author": "GitHub",
+            "description": "",
             "link": "https://github.com/readme",
             "type": "Interviews",
             "topics": "Open Source"
@@ -17,6 +19,7 @@
         {
             "title": "Global Maintainer Summit 2021 Talks",
             "author": "GitHub",
+            "description": "",
             "link": "https://www.youtube.com/playlist?list=PL0lo9MOBetEEkOyAtPqiupGm91cu8QB0I",
             "type": "Talks",
             "topics": "Scaling, Contributor Relations, Metrics"
@@ -24,6 +27,7 @@
          {
             "title": "CNCF Maintainer Guide",
             "author": "CNCF",
+            "description": "",
             "link": "https://contribute.cncf.io/",
             "type": "Guide",
             "topics": "Open Source, Governance, Community"
