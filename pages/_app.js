@@ -2,6 +2,8 @@ import '../styles/styles.scss'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 
+import smoothscroll from 'smoothscroll-polyfill'
+
 import Layout from '../components/layout/Layout'
 import { BackgroundProvider } from '../contexts/BackgroundContext'
 import useViewportHeight from '../hooks/useViewportHeight'
@@ -12,6 +14,8 @@ function App({ Component, pageProps }) {
   const router = useRouter()
 
   useEffect(() => {
+    smoothscroll.polyfill()
+
     const handleRouteChange = () => {
       window.scroll({
         top: 0,
