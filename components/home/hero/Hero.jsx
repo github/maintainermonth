@@ -20,29 +20,31 @@ const Hero = ({ date, title, buttonText }) => {
 
   return (
     <section className="hero">
-      <div className="hero__background">
-        <div
-          className="hero__image-wrapper"
-          ref={backgroundRef}
-          style={{ transform: `translateY(-${backgroundTranslateY}px)` }}
-        >
-          <img
-            className="hero__image"
-            ref={imageRef}
-            style={{
-              transform: `scale(1.025) translateY(${imageTranslateY}%)`,
-            }}
-            src="/images/opener.jpg"
-            alt={getLiteral('hero:image-description')}
-          />
+      <div className="hero__grid">
+        <div className="hero__background">
+          <div
+            className="hero__image-wrapper"
+            ref={backgroundRef}
+            style={{ transform: `translateY(-${backgroundTranslateY}px)` }}
+          >
+            <img
+              className="hero__image"
+              ref={imageRef}
+              style={{
+                transform: `scale(1.025) translateY(${imageTranslateY}%)`,
+              }}
+              src="/images/opener.jpg"
+              alt={getLiteral('hero:image-description')}
+            />
+          </div>
         </div>
-      </div>
 
-      <div className="hero__content">
-        <p className="hero__chip">{date}</p>
-        <h1 className="hero__title">{title}</h1>
+        <div className="hero__content">
+          <p className="hero__chip">{date}</p>
+          <h1 className="hero__title">{title}</h1>
 
-        <ButtonLink href={ROUTES.SCHEDULE.path}>{buttonText}</ButtonLink>
+          <ButtonLink href={ROUTES.SCHEDULE.path}>{buttonText}</ButtonLink>
+        </div>
       </div>
     </section>
   )
