@@ -74,6 +74,7 @@ const Header = () => {
                   className={clsx('header__link', {
                     ['is-active']: pathname === ROUTES.SCHEDULE.path,
                   })}
+                  aria-label={getLiteral('navigation:schedule')}
                 >
                   <IconCalendar />
                   <span className="header__link-text">
@@ -91,6 +92,7 @@ const Header = () => {
                   className={clsx('header__link', {
                     ['is-active']: pathname === ROUTES.LIBRARY.path,
                   })}
+                  aria-label={getLiteral('navigation:library')}
                 >
                   <IconBooks />
                   <span className="header__link-text">

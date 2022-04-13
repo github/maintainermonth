@@ -53,13 +53,31 @@
     }
   }
 
+  &__images {
+    position: relative;
+  }
+
   &__image {
+    position: relative;
+    top: 0;
+    left: 0;
     max-width: 100%;
     max-height: calc(var(--vh, 1vh) * 100);
+
+    transition: transform 1s $bezier-default;
 
     @media (min-width: $lg) {
       width: 100%;
       max-width: 360px;
+    }
+
+    &--layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+
+      transition: transform 1s $bezier-default;
     }
   }
 
