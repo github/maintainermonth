@@ -122,7 +122,7 @@
     flex-direction: column;
     row-gap: spacing(1);
 
-    @extend %header-4;
+    @extend %header-3;
     text-align: center;
 
     transition: transform 1s $bezier-default;
