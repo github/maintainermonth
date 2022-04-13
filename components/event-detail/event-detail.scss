@@ -81,7 +81,7 @@
       position: relative;
       aspect-ratio: 1 / 1;
 
-      &::before {
+      &::before, &::after {
         content: '';
         position: absolute;
         top: calc(50% - 160px);
@@ -90,11 +90,10 @@
         height: 320px;
         width: 320px;
 
-        background: linear-gradient(116.27deg, $blue -13.85%, $purple 30.72%, $red 107.36%);
+        background-image: $gradient;
         border-radius: 50%;
 
         z-index: -1;
-        opacity: 0.4;
 
         transition: opacity $simple-fade, transform $simple-fade;
 
@@ -107,10 +106,19 @@
         }
       }
 
-      &:hover {
-        &::before {
-          opacity: 1;
+      &::before {
+        background-image: $gradient;
+      }
 
+      &::after {
+        background-image: url('/images/noise.png');
+        background-size: 300px 300px;
+        mix-blend-mode: overlay;
+      }
+
+
+      &:hover {
+        &::before, &::after {
           @media (min-width: $md) {
             transform: scale(1.1);
           }
@@ -172,8 +180,9 @@
   }
 
   &__link {
-    height: 182px;
-    width: 182px;
+    min-height: 182px;
+    min-width: 182px;
+    aspect-ratio: 1 / 1;
     padding: spacing(2);
     
     display: flex;

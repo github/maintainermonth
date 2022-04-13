@@ -1,10 +1,16 @@
 html {
   font-size: $font-base;
-  scroll-behavior: smooth;
+
+  background-color: #9e139d;
+
+  height: calc(var(--vh, 1vh) * 100);
+
+  scrollbar-color: $purple transparent;
+  scrollbar-width: thin;
 }
 
 body {
-  min-height: calc(var(--vh, 1vh) * 100);
+  height: calc(var(--vh, 1vh) * 100);
   overflow-x: hidden;
 
   font-family: $inter;
@@ -17,12 +23,6 @@ a {
   text-decoration: none;
 }
 
-// Background filter
-#noise-filter-wrapper {
-  position: absolute;
-  height: 0;
-}
-
 body::before {
   position: fixed;
   left: 0;
@@ -31,13 +31,38 @@ body::before {
   width: 100%;
   height: 100%;
   z-index: -1;
-  mix-blend-mode: darken;
-  // mix-blend-mode: difference;
-  // mix-blend-mode: exclusion;
-  // mix-blend-mode: multiply;
+
+  background-image: url('/images/noise.png');
+  background-size: 300px 300px;
+  mix-blend-mode: overlay;
+
+  z-index: $index-filter;
 }
 
-body::before {
-  filter: url(#noise-filter);
-  z-index: $index-filter;
+::-moz-selection {
+  color: $white;
+  background: $green;
+}
+::selection {
+  color: $white;
+  background: $green;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: $purple;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $white-40;
+  border-radius: 20px;
+  border: 3px solid $purple;
+}
+
+:focus-visible {
+  outline: none;
+  outline: 2px solid $green;
 }

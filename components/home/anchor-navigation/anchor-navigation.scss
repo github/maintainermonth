@@ -29,8 +29,10 @@
     cursor: pointer;
 
     @media (min-width: $lg) {
+      width: 100%;
       height: spacing(4);
       padding-left: spacing(4.5);
+      text-align: left;
     }
 
     &::before {
@@ -78,7 +80,7 @@
       }
     }
 
-    &:hover {
+    &:hover, &:focus-within {
       #{ $self }__text {
         opacity: 0.5;
       }
@@ -101,12 +103,6 @@
         max-height: spacing(20);
       }
 
-      @media (min-width: $md) {
-        #{ $self }__text {
-          padding-right: initial;
-        }
-      }
-
       @media (min-width: $lg) {
         #{ $self }__text {
           padding-top: initial;
@@ -117,6 +113,8 @@
   }
 
   &__text {
+    padding-right: 3px;
+
     @extend %subtitle-2;
     color: $white;
     white-space: nowrap;
@@ -128,7 +126,12 @@
 
     transition: opacity $simple-fade, max-height $navigation-fade;
 
+    @media (min-width: $md) {
+      padding-right: 1px;
+    }
+
     @media (min-width: $lg) {
+      padding: spacing(2) 0;
       opacity: 0;
       max-height: initial;
       writing-mode: initial;

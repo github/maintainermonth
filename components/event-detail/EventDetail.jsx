@@ -74,7 +74,12 @@ const EventDetail = ({ event, reverseColumns, isFullPage }) => {
       </div>
       {isFullPage ? (
         <div className="event-detail__link-wrapper">
-          <a className="event-detail__link" href={event.linkUrl}>
+          <a
+            className="event-detail__link"
+            href={event.linkUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
             {getLiteral(`event-button:${event.type}`)} <IconArrowRight />
           </a>
         </div>

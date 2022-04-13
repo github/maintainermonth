@@ -4,7 +4,7 @@
   z-index: $index-footer-image-content;
 
   padding: spacing(5) spacing(2) spacing(5) spacing(5);
-  margin: 0 spacing(2);
+  margin: 0 spacing(2) 0 spacing(5);
 
   box-sizing: border-box;
 
@@ -26,7 +26,7 @@
 
   &__background {
     position: absolute;
-    width: 100%;
+    width: calc(100% - spacing(2));
     height: 100%;
 
     overflow: hidden;
@@ -79,6 +79,7 @@
   }
 
   &__button {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;

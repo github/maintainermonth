@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 
 import Head from 'next/head'
 
@@ -11,9 +11,17 @@ import About from '../components/home/about/About'
 import GetInvolved from '../components/home/get-involved/GetInvolved'
 import Events from '../components/home/events/Events'
 import AnchorNavigation from '../components/home/anchor-navigation/AnchorNavigation'
+import { useBackground } from '../contexts/BackgroundContext'
 
 export default function Home({ hero, about, getInvolved, events, connection }) {
   const containerRef = useRef(null)
+
+  const { setAnimationStep } = useBackground()
+
+  useEffect(() => {
+    setAnimationStep(0)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return (
     <div>

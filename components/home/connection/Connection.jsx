@@ -13,6 +13,7 @@ const Connection = ({ title, buttonText }) => {
   const { translateY: imageTranslateY } = useInnerParallax(
     backgroundRef,
     imageRef,
+    0.05,
   )
 
   return (
