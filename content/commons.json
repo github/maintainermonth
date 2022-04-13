@@ -27,7 +27,7 @@
 
     "footer:copyright": "Made with ♥︎️ by GitHub",
     "footer:privacy-title": "Privacy terms and conditions",
-    "footer:privacy-url": "https://docs.github.com/es/site-policy/privacy-policies/github-privacy-statement",
+    "footer:privacy-url": "https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement",
     "footer:repository-title": "Repository",
     "footer:repository-url": "https://github.com/github/maintainermonth",
     "footer:twitter-label": "Follow us on Twitter",
@@ -39,7 +39,7 @@
     "footer:linkedin-label": "Follow us on LinkedIn",
     "footer:linkedin-url": "https://www.linkedin.com/company/github",
     "footer:github-label": "Follow us on GitHub",
-    "footer:github-url": "https://github.com/",
+    "footer:github-url": "https://github.com/github/maintainermonth",
 
     "hero:image-description": "Illustration inspired by M. C. Escher",
     
