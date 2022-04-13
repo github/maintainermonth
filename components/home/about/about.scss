@@ -55,7 +55,7 @@
 
   &__image {
     max-width: 100%;
-    max-height: 100vh;
+    max-height: calc(var(--vh, 1vh) * 100);
 
     @media (min-width: $lg) {
       width: 100%;

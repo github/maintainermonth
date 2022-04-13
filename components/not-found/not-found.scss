@@ -19,7 +19,7 @@
     margin-top: 0;
 
     min-height: calc(
-      100vh - $footer-height - $header-height - $module-divider-md
+      var(--vh, 1vh) * 100 - $footer-height - $header-height - $module-divider-md
     );
   }
 

@@ -40,7 +40,7 @@
     bottom: 0;
     left: 0;
     width: auto;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
 
     z-index: $index-footer-image;
 
@@ -57,7 +57,7 @@
 
   &__image {
     width: auto;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     display: block;
     position: relative;
     object-fit: cover;

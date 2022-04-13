@@ -21,7 +21,7 @@
     padding: 0;
     margin-top: 0;
 
-    min-height: calc(100vh - $footer-height);
+    min-height: calc(var(--vh, 1vh) * 100 - $footer-height);
   }
 
   &__background {
