@@ -64,7 +64,9 @@ const EventsList = ({ events }) => {
               }}
             />
 
-            <PlayLink href={event.linkUrl}>{event.linkTitle}</PlayLink>
+            <PlayLink href={event.linkUrl}>
+              {getLiteral(`event-button:${event.type}`)}
+            </PlayLink>
           </div>
         </div>
       ))}
