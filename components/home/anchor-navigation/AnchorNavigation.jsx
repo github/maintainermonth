@@ -4,39 +4,13 @@ import clsx from 'clsx'
 import { useBackground } from '../../../contexts/BackgroundContext'
 import { getLiteral } from '../../../common/i18n'
 
-import { OBSERVER_OPTIONS, Y_OFFSET } from './constants'
+import { Y_OFFSET } from './constants'
+import getViewPercentage from './getViewPercentage'
 
 const AnchorNavigation = ({ containerRef }) => {
   const [sections, setSections] = useState({})
-  const [activeSection, setActiveSection] = useState('')
 
-  const [scrollDirection, setScrollDirection] = useState('down')
-  const [previousYPosition, setPreviousYPosition] = useState(0)
-
-  const { setAnimationStep } = useBackground()
-
-  const handleScrollDirection = useCallback(() => {
-    if (window.scrollY > previousYPosition) {
-      setScrollDirection('down')
-    } else {
-      setScrollDirection('up')
-    }
-
-    setPreviousYPosition(window.scrollY)
-  }, [previousYPosition])
-
-  const observerCallback = useCallback(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.intersectionRatio > 0) {
-          setActiveSection(entry.target.classList[0])
-        }
-      })
-
-      handleScrollDirection()
-    },
-    [handleScrollDirection],
-  )
+  const { setAnimationStep, animationStep } = useBackground()
 
   const handleClick = useCallback(
     (target) => {
@@ -51,32 +25,30 @@ const AnchorNavigation = ({ containerRef }) => {
   )
 
   useEffect(() => {
-    const index = Object.keys(sections).indexOf(activeSection)
-    setAnimationStep(index)
-  }, [activeSection, sections, setAnimationStep])
-
-  useEffect(() => {
     const sectionNodes = containerRef.current.childNodes
-    const observer = new IntersectionObserver(
-      observerCallback,
-      OBSERVER_OPTIONS,
-    )
-
     const formattedSections = {}
 
     sectionNodes.forEach((section) => {
-      observer.observe(section)
       formattedSections[section.classList[0]] = section
     })
 
     setSections(formattedSections)
 
-    return () => {
-      sectionNodes.forEach((section) => {
-        observer.unobserve(section)
-      })
+    const handleScroll = () => {
+      const percents = [...sectionNodes]
+        .map((node) => getViewPercentage(node))
+        .findIndex((percent) => percent >= 50)
+
+      setAnimationStep(percents)
     }
-  }, [containerRef, observerCallback])
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [containerRef])
 
   return (
     <div className="anchor-navigation">
@@ -84,7 +56,7 @@ const AnchorNavigation = ({ containerRef }) => {
         <button
           key={`anchor-${elementName}`}
           className={clsx('anchor-navigation__button', {
-            active: activeSection === elementName,
+            active: animationStep === index,
           })}
           onClick={() => handleClick(elementName, index)}
         >
