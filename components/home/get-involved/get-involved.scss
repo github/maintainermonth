@@ -73,23 +73,6 @@
     }
   }
 
-  &__examples-title {
-    padding: spacing(3) spacing(4);
-    margin-bottom: $module-divider-md;
-
-    @extend %header-5;
-    color: $purple;
-
-    background-color: $white;
-    border-radius: 83px;
-
-    @extend %background-filter;
-
-    @media (min-width: $md) {
-      margin-bottom: $module-divider-lg;
-    }
-  }
-
   &__list {
     @extend %grid;
     row-gap: spacing(4);

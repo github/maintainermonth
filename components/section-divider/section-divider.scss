@@ -1,0 +1,44 @@
+.section-divider {
+  margin-top: $module-divider-md;
+  margin-bottom: $module-divider-md;
+
+  @extend %grid;
+
+  @media (min-width: $lg) {
+    margin-top: $module-divider-lg;
+    margin-bottom: $module-divider-lg;
+  }
+
+  &__content {
+    padding: spacing(2);
+    margin-left: spacing(5);
+
+    border-bottom: 1px solid $white;
+    grid-column: 1 / 5;
+
+    display: flex;
+    column-gap: spacing(1.5);
+    align-items: center;
+
+    @media (min-width: $md) {
+      margin-left: 0;
+      grid-column: 2 / 8;
+    }
+
+    @media (min-width: $lg) {
+      grid-column: 3 / 11;
+    }
+  }
+
+  &__title {
+    @extend %header-5;
+  }
+
+  .icon-arrow-right {
+    transform: rotate(90deg);
+
+    path {
+      fill: $white;
+    }
+  }
+}

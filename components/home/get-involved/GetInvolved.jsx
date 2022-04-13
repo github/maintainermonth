@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import md from 'markdown-it'
+import SectionDivider from '../../section-divider/SectionDivider'
 import ExampleCard from './ExampleCard'
 
 const GetInvolved = ({ title, examplesTitle, examples, content }) => {
@@ -15,9 +16,9 @@ const GetInvolved = ({ title, examplesTitle, examples, content }) => {
           />
         </div>
 
-        <div className="get-involved__examples">
-          <h3 className="get-involved__examples-title">{examplesTitle}</h3>
+        <SectionDivider title={examplesTitle} />
 
+        <div className="get-involved__examples">
           <div className="get-involved__list">
             {examples.map(({ title, image, imageDescription }) => (
               <ExampleCard

@@ -1,4 +1,5 @@
 import EventDetail from '../../event-detail/EventDetail'
+import SectionDivider from '../../section-divider/SectionDivider'
 import Connection from '../connection/Connection'
 
 import useIncomingEvents from './useIncomingEvents'
@@ -9,7 +10,7 @@ const Events = ({ title, list, connectionTitle, connectionButtonText }) => {
   return (
     <section className="events">
       <div className="events__content">
-        <h2 className="events__title">{title}</h2>
+        <SectionDivider title={title} />
 
         <div className="events__list">
           {events.map((event, index) => (
