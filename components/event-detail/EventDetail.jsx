@@ -6,6 +6,7 @@ import clsx from 'clsx'
 
 import { useBackground } from '../../contexts/BackgroundContext'
 import * as ROUTES from '../../common/routes'
+import { getLiteral } from '../../common/i18n'
 
 import EventTypeChip from '../event-type-chip/EventTypeChip'
 import IconArrowRight from '../../public/icons/arrow-right'
@@ -66,13 +67,15 @@ const EventDetail = ({ event, reverseColumns, isFullPage }) => {
           ) : null}
         </div>
         {!isFullPage ? (
-          <PlayLink href={event.linkUrl}>{event.linkTitle}</PlayLink>
+          <PlayLink href={event.linkUrl}>
+            {getLiteral(`event-button:${event.type}`)}
+          </PlayLink>
         ) : null}
       </div>
       {isFullPage ? (
         <div className="event-detail__link-wrapper">
           <a className="event-detail__link" href={event.linkUrl}>
-            {event.linkTitle} <IconArrowRight />
+            {getLiteral(`event-button:${event.type}`)} <IconArrowRight />
           </a>
         </div>
       ) : null}

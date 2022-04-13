@@ -9,6 +9,14 @@
 
     "connection:image-description": "Connection illustration",
 
+    "event-button:podcast": "Listen to the podcast",
+    "event-button:stream": "Watch the stream",
+    "event-button:talk": "Watch the talk",
+    "event-button:meetup": "View the meetup",
+    "event-button:fundraising": "Help raise funds",
+    "event-button:conference": "View the conference",
+    "event-button:misc": "View the event",
+
     "event-type:podcast": "Podcast",
     "event-type:stream": "Stream",
     "event-type:talk": "Talk",

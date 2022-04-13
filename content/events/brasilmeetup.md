@@ -8,7 +8,6 @@ UTCEndTime: 'TBD'
 type: 'meetup'
 userName: 'github'
 userLink: 'https://www.meetup.com/GitHubBrasil/'
-linkTitle: 'GitHub Presente! : Em Português'
 linkUrl: 'https://www.meetup.com/GitHubBrasil/'
 ---
 

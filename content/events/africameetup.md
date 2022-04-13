@@ -8,7 +8,6 @@ UTCEndTime: 'TBD'
 type: 'meetup'
 userName: 'github'
 userLink: 'https://www.meetup.com/GitHub-Africa/'
-linkTitle: 'Join the GitHub Africa meetup'
 linkUrl: 'https://www.meetup.com/GitHub-Africa/'
 ---
 

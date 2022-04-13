@@ -34,7 +34,6 @@ UTCEndTime: '15:00'
 type: 'meetup'
 userName: 'github'
 userLink: 'https://www.meetup.com/GitHub-Africa/'
-linkTitle: 'Join the GitHub Africa meetup'
 linkUrl: 'https://www.meetup.com/GitHub-Africa/'
 ---
 
@@ -54,7 +53,6 @@ All fields included in the _frontmatter_ are mandatory:
 - `type`: one of the following `podcast`, `stream`, `talk`, `meetup`, `fundraising`, `conference`, `misc`.
 - `userName`: user name or organization organizing the event.
 - `userLink`: link to user or organization profile.
-- `linkTitle`: button text with external link to the event.
 - `linkUrl`: Button link with external link to the event.
 
 After these fields, on the line following `---`, you can add the event description, in markdown format.
