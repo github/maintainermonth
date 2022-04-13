@@ -4,7 +4,7 @@ title: 'What’s going on during Maintainer Month?'
 examplesTitle: 'How do I get involved?'
 examples:
   - socialMedia:
-      - title: 'Posting on social media to thank the maintainers of their'
+      - title: 'Posting on social media to thank the maintainers of their favorite open source projects'
       - image: '/images/thanks.png'
       - imageDescription: 'Illustration'
   - podcasts:
