@@ -43,6 +43,10 @@
     "meta:event-description": "Check out this GitHub Maintainer Month event",
 
     "message:tbd": "TBD",
+
+    "not-found:title": "Oops!",
+    "not-found:subtitle": "Page not found",
+    "not-found:button": "Go home",
     
     "navigation:schedule": "Schedule",
     "navigation:library": "Library",
