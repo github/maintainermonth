@@ -8,7 +8,7 @@ examples:
       - image: '/images/thanks.png'
       - imageDescription: 'Illustration'
   - podcasts:
-      - title: 'Recording special Podcast episodes'
+      - title: 'Recording special podcast episodes'
       - image: '/images/podcast.png'
       - imageDescription: 'Illustration'
   - meetings:
@@ -28,7 +28,7 @@ examples:
       - image: '/images/twitch.png'
       - imageDescription: 'Illustration'
   - donations:
-      - title: 'Pledging to to donate to support Open Source'
+      - title: 'Pledging to donate to support Open Source'
       - image: '/images/donate.png'
       - imageDescription: 'Illustration'
 ---
