@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import md from 'markdown-it'
+import ExampleCard from './ExampleCard'
 
 const GetInvolved = ({ title, examplesTitle, examples, content }) => {
   return (
@@ -19,14 +20,12 @@ const GetInvolved = ({ title, examplesTitle, examples, content }) => {
 
           <div className="get-involved__list">
             {examples.map(({ title, image, imageDescription }) => (
-              <div key={`example-${title}`} className="get-involved__example">
-                <img
-                  className="get-involved__image"
-                  src={image}
-                  alt={imageDescription}
-                />
-                <p>{title}</p>
-              </div>
+              <ExampleCard
+                key={`example-${title}`}
+                image={image}
+                imageDescription={imageDescription}
+                title={title}
+              />
             ))}
           </div>
         </div>

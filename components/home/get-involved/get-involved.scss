@@ -142,6 +142,8 @@
     @extend %header-4;
     text-align: center;
 
+    transition: transform 1s $bezier-default;
+
     &:not(:last-child) {
       margin-bottom: spacing(1);
     }

@@ -7,6 +7,8 @@
     "anchor-nav:events": "Schedule",
     "anchor-nav:connection": "Connection",
 
+    "connection:image-description": "Connection illustration",
+
     "event-type:podcast": "Podcast",
     "event-type:stream": "Stream",
     "event-type:talk": "Talk",
@@ -15,7 +17,6 @@
     "event-type:conference": "Conference",
     "event-type:misc": "Misc",
 
-    "footer:image-description": "Footer illustration",
     "footer:copyright": "Made with ♥︎️ by GitHub",
     "footer:privacy-title": "Privacy terms and conditions",
     "footer:privacy-url": "https://docs.github.com/es/site-policy/privacy-policies/github-privacy-statement",
