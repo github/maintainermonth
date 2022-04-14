@@ -1,10 +1,10 @@
 # GitHub Maintainer Month
 
-> A month for open source maintainers to gather, share, and be celebrated. 🥳
+A month for open source maintainers to gather, share, and be celebrated. 🥳
 
-> Repository for the official GitHub Maintainer Month website. You can access the website through [this link](https://maintainermonth.github.com/)
+Repository for the official GitHub Maintainer Month website. You can access the website through [this link](https://maintainermonth.github.com/)
 
-> Add your event! See the [contributing guide](CONTRIBUTING.md) for more details.
+**Add your event!** See the [contributing guide](CONTRIBUTING.md) for details on how.
 
 **<p align="center"> ❇️ June 2022 ❇️ </p>**
 
