@@ -47,6 +47,14 @@
             "link": "https://github.com/cncf/tag-contributor-strategy/blob/main/resources.md",
             "type": "Library",
             "topics": "Open Source, Contributor Relations"
+        },
+        {
+            "title": "Apply for Grants To Fund Open Source Work",
+            "author": "Changeset Consulting",
+            "description": "Sample foundations/funders, a case study, and key steps in figuring out a good project idea, budgeting, hiring, and submitting",
+            "link": "https://changeset.nyc/resources/quick-intro-to-grants.html",
+            "type": "Article",
+            "topics": "Open Source, Funding, Hiring, Grants, Budgeting"
         }
     ]
 }
