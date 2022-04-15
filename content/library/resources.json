@@ -31,6 +31,22 @@
             "link": "https://contribute.cncf.io/",
             "type": "Guide",
             "topics": "Open Source, Governance, Community"
+        },
+        {
+            "title": "Open Source Initiative: List of Licenses",
+            "author": "OSI",
+            "description": "Open Source licenses approved by the OSI",
+            "link": "https://opensource.org/licenses",
+            "type": "Guide",
+            "topics": "Open Source, Governance, Licenses"
+        },
+          {
+            "title": "Quick links on contributor strategies",
+            "author": "CNCF",
+            "description": "A series of links to resources frequently used by the Contributor Strategy TAG",
+            "link": "https://github.com/cncf/tag-contributor-strategy/blob/main/resources.md",
+            "type": "Library",
+            "topics": "Open Source, Contributor Relations"
         }
     ]
 }
