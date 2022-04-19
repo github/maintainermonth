@@ -1,5 +1,5 @@
 ---
-title: 'Upstrean'
+title: 'Upstream'
 metaTitle: 'Upstream'
 metaDesc: 'A one-day celebration of open source, the developers who use it, and the maintainers who make it.'
 date: '06/07'
