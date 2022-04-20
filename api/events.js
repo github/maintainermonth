@@ -112,7 +112,7 @@ const formatEventDateTime = (date = dayjs.utc(), startTime, endTime) => {
 
     const UTCEndTime = UTCDate.hour(endHour).minute(endMinute)
 
-    if (isNaN(UTCStartTime)) {
+    if (isNaN(UTCEndTime)) {
       throw new TypeError(
         'UTCEndTime must be in hh:mm format (e.g. 12:30) or be "TDB".',
       )
