@@ -33,4 +33,4 @@ examples:
       - imageDescription: 'Illustration'
 ---
 
-This is an open source initiative to bookmark a week to collectively contemplate open source maintainership, whatever form that takes. Various organizations, projects, and companies will be running activities, events, and distributing resources. Submit a PR to list what you’re planning, so that folks can come participate. Anyone can plan or add something. No-one owns Maintainer Month - it’s for everyone.
+This is an open source initiative to bookmark a month to collectively contemplate open source maintainership, whatever form that takes. Various organizations, projects, and companies will be running activities, events, and distributing resources. Submit a PR to list what you’re planning, so that folks can come participate. Anyone can plan or add something. No-one owns Maintainer Month - it’s for everyone.
