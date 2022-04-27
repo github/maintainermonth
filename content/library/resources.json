@@ -56,5 +56,21 @@
             "type": "Article",
             "topics": "Open Source, Funding, Hiring, Grants, Budgeting"
         }
+        {
+  "title": "The 2021 Tidelift open source maintainer survey",
+  "author": "Tidelift",
+  "description": "In early 2021, Tidelift fielded its first-ever comprehensive survey of open source maintainers.",
+  "link": "https://tidelift.com/subscription/the-tidelift-maintainer-survey",
+  "type": "Guide",
+  "topics": "Maintainers, Open Source, Survey, Data"
+}
+        {
+  "title": "The 2022 open source software supply chain survey ",
+  "author": "Tidelift",
+  "description": "In December of 2021, Tidelift fielded our annual survey of technologists—including software developers, engineering executives and managers, architects, and devops pros—who build applications with open source.",
+  "link": "https://tidelift.com/2022-open-source-software-supply-chain-survey",
+  "type": "Guide",
+  "topics": "Open Source, Survey, Data"
+}
     ]
 }
