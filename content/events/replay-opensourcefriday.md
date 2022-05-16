@@ -5,7 +5,7 @@ metaDesc: 'Join us for Open Source Friday as we learn how to debug web applicati
 date: '06/17'
 UTCStartTime: '17:00'
 UTCEndTime: '18:00'
-type: 'twitch stream'
+type: 'stream'
 userName: 'opensourcefriday'
 userLink: 'https://www.meetup.com/github/events/285944110?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link'
 linkUrl: 'https://www.loom.com/share/ae1677eec71e4b4b86d60556ec36e956'
