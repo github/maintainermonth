@@ -5,7 +5,7 @@ metaDesc: 'Open Source Summit June 21-24 is a conference umbrella, composed of a
 date: '06/21'
 UTCStartTime: 'All day'
 UTCEndTime: 'All day'
-type: 'Conference'
+type: 'conference'
 userName: 'The Linux Foundation'
 userLink: 'https://events.linuxfoundation.org/open-source-summit-north-america'
 linkUrl: 'https://events.linuxfoundation.org/open-source-summit-north-america'
