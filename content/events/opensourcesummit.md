@@ -1,6 +1,3 @@
-
-
-
 ---
 title: 'Open Source Summit North America'
 metaTitle: 'Open Source Summit North America'
