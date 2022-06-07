@@ -5,7 +5,7 @@ metaDesc: 'Join the Distribute Aid dev team to learn more about our open source 
 date: '06/09'
 UTCStartTime: '19:00'
 UTCEndTime: '23:00'
-type: 'stream'
+type: 'meetup'
 userName: 'distributeaid'
 userLink: 'https://opencollective.com/distribute-aid-usa/events/open-source-code-jam-1-distribute-aid-5ae237b8'
 linkUrl: 'https://opencollective.com/distribute-aid-usa/events/open-source-code-jam-1-distribute-aid-5ae237b8'
