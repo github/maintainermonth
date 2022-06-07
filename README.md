@@ -33,7 +33,7 @@ yarn install
 To start application in development mode at [http://localhost:3000](http://localhost:3000) run the following command.
 
 ```
-yarn start
+yarn dev
 ```
 
 ### Build
