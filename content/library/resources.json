@@ -1,6 +1,22 @@
 {
     "resources": [
         {
+            "title": "Github Africa Maintainers",
+            "author": "Github",
+            "description": "",
+            "link": "https://www.youtube.com/watch?v=2DsAPt75OQc",
+            "type": "video",
+            "topics": "video"
+        },
+        {
+            "title": "The Download: Maintainer Month",
+            "author": "Github",
+            "description": "",
+            "link": "https://youtu.be/FdkSTzp_NTY",
+            "type": "video",
+            "topics": "video"
+        },
+        {
             "title": "Open Source Guides",
             "author": "GitHub",
             "description": "",
