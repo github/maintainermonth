@@ -95,6 +95,14 @@
             "link": "https://github.com/1password/1password-teams-open-source",
             "type": "Resource",
             "topics": "Open Source, Software, Password Management"
+        },
+        {
+            "title": "Open Source Lost Quest with Christina Warren from GitHub",
+            "author": "1Password",
+            "description": "Christina Warren of GitHub joins 1Password's Random But Memorable podcast to discuss how for-profit companies can be stewards of open source and support maintainers in the best way.",
+            "link": "https://overcast.fm/+OftV2ooo4",
+            "type": "Podcast",
+            "topics": "Open Source, Software, Password Management"
         }
     ]
 }
