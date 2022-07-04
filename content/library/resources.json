@@ -107,6 +107,7 @@
         {
             "title": "GitHub Maintainer Month with Marie Kochsiek of drip and Hélène Martin of ODK",
             "author": "Sustain",
+            "description": "",
             "link": "https://podcast.sustainoss.org/127",
             "type": "Podcast",
             "topics": "Open Source, Software, Maintainers"
@@ -114,6 +115,7 @@
         {
             "title": "GitHub Maintainer Month with Mike McQuaid of Homebrew and Nina Breznik of DatDot ",
             "author": "Sustain",
+            "description": "",
             "link": "https://podcast.sustainoss.org/126",
             "type": "Podcast",
             "topics": "Open Source, Software, Maintainers"
