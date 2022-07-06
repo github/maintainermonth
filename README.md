@@ -11,6 +11,7 @@ Repository for the official GitHub Maintainer Month website. You can access the 
 ## Table of Contents
 
 - [Getting Started](#getting-started)
+  - [Clone](#clone)
   - [Installation](#installation)
   - [Usage](#usage)
   - [Build](#build)
@@ -20,9 +21,17 @@ Repository for the official GitHub Maintainer Month website. You can access the 
 
 ## Getting Started
 
+### Clone
+
+If you probably are curious to know how to clone a repository, and you didn't know it, below is how code it.
+
+```
+git clone https://github.com/github/maintainermonth.git
+```
+
 ### Installation
 
-Run the following command before any other to install all the project's dependencies.
+Then run the following command before any other to install all the project's dependencies.
 
 ```
 yarn install
@@ -38,7 +47,7 @@ yarn start
 
 ### Build
 
-To generate the application build run the following command
+To generate the application build run the following command.
 
 ```
 yarn build
@@ -57,7 +66,7 @@ yarn run cypress open
 #### Using the CLI
 
 
-Stop the app if you already have it running
+Stop the app if you already have it running.
 
 ```
 npm run build && npm run test:e2e
