@@ -62,7 +62,7 @@ export default function Home({ hero, about, getInvolved, events, connection }) {
             date={hero.date}
             title={hero.title}
             buttonText={hero.buttonText}
-            buttonLink={"/2022"+ROUTES.SCHEDULE.path}
+            buttonLink={ROUTES.SCHEDULE.getPath("2022")}
           />
           <About title={about.title} content={about.content} />
           <GetInvolved

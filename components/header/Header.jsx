@@ -15,7 +15,7 @@ import { BREAKPOINTS } from '../../common/constants'
 const Header = () => {
   const { pathname } = useRouter()
   const { width } = useWindowSize()
-  const year = Number(pathname.split('/')[1])
+  const year = Number(pathname.split('/')[1]) > 404 ? Number(pathname.split('/')[1]) : null
 
   const isHome = useMemo(() => pathname === ROUTES.HOME.path, [pathname])
   const [hideYear, setHideYear] = useState(isHome)
@@ -61,19 +61,19 @@ const Header = () => {
             </a>
           </Link>
 
-          <p className={yearClasses}>{year>0?year:getLiteral('page:date')}</p>
+          <p className={yearClasses}>{year||getLiteral('page:date')}</p>
         </div>
 
         <nav className="header__navigation">
           <ul className="header__list">
             <li>
               <Link
-                href={(year>0)?"/"+year+ROUTES.SCHEDULE.path:ROUTES.SCHEDULE.path}
+                href={ROUTES.SCHEDULE.getPath(year)}
                 aria-label={getLiteral('navigation:schedule')}
               >
                 <a
                   className={clsx('header__link', {
-                    ['is-active']: pathname === ROUTES.SCHEDULE.path,
+                    ['is-active']: pathname === ROUTES.SCHEDULE.getPath(year),
                   })}
                   aria-label={getLiteral('navigation:schedule')}
                 >
@@ -86,13 +86,12 @@ const Header = () => {
             </li>
             <li>
               <Link
-                // href={ROUTES.LIBRARY.path}
-                href={(year>0)?"/"+year+ROUTES.LIBRARY.path:ROUTES.LIBRARY.path}
+                href={ROUTES.LIBRARY.getPath(year)}
                 aria-label={getLiteral('navigation:library')}
               >
                 <a
                   className={clsx('header__link', {
-                    ['is-active']: pathname === ROUTES.LIBRARY.path,
+                    ['is-active']: pathname === ROUTES.LIBRARY.getPath(year),
                   })}
                   aria-label={getLiteral('navigation:library')}
                 >
