@@ -46,23 +46,6 @@ yarn build
 
 This will create an `out` folder in the repository root with the static files.
 
-### Run tests
-
-#### Using the UI
-
-```
-yarn run cypress open
-```
-
-#### Using the CLI
-
-
-Stop the app if you already have it running
-
-```
-npm run build && npm run test:e2e
-```
-
 ## Contributing
 
 See the [contributing guide](CONTRIBUTING.md) for more details.
