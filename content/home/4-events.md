@@ -1,4 +1,4 @@
 ---
 anchorNavSection: 'Schedule'
-title: 'Upcoming events 2022'
+title: 'Upcoming events 2023'
 ---
