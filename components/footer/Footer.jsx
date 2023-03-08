@@ -25,6 +25,12 @@ const Footer = () => {
       <div className="footer__copyright">
         <a
           className="footer__link"
+          href={ROUTES.Y2022.path}
+        >
+          2022
+        </a>
+        <a
+          className="footer__link"
           href={getLiteral('footer:repository-url')}
           target="_blank"
           rel="noreferrer"
