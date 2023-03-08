@@ -29,7 +29,7 @@ const EventsList = ({ events }) => {
             <div className="events-list__chips">
               <EventTypeChip type={event.type} />
               <Link
-                href={ROUTES.EVENT.linkTo({ slug: event.slug })}
+                href={{pathname: event.link}}
                 aria-label={getLiteral('navigation:schedule')}
               >
                 <a className="events-list__more">
@@ -52,7 +52,7 @@ const EventsList = ({ events }) => {
                 {event.userName}
               </a>
 
-              <Link href={ROUTES.EVENT.linkTo({ slug: event.slug })}>
+              <Link href={{pathname: event.link}}>
                 <a className="events-list__link">{event.title}</a>
               </Link>
             </div>

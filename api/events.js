@@ -13,13 +13,14 @@ dayjs.extend(timezone)
 
 const TBD = 'TBD'
 
-export const getEvents = () => {
-  const eventFiles = fs.readdirSync('content/events')
+export const getEvents = (year) => {
+  const events_path = year ? `content/${year}/events` : 'content/events';
+  const eventFiles = fs.readdirSync(events_path)
 
   const events = eventFiles
     .map((fileName) => {
       const slug = fileName.replace('.md', '')
-      const event = getEventBySlug(slug)
+      const event = getEventBySlug(slug, year)
 
       return event
     })
@@ -28,12 +29,14 @@ export const getEvents = () => {
   return events
 }
 
-export const getEventBySlug = (slug) => {
-  const event = getDataFromMD(`content/events/${slug}.md`)
+export const getEventBySlug = (slug, year) => {
+  const event = getDataFromMD(year?`content/${year}/events/${slug}.md`:`content/events/${slug}.md`)
+  const link = year? `/${year}/schedule/${slug}` : `/schedule/${slug}`;
 
   return {
     slug,
     ...event,
+    link
   }
 }
 

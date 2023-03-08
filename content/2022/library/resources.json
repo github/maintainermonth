@@ -1,6 +1,22 @@
 {
     "resources": [
         {
+            "title": "Github Africa Maintainers",
+            "author": "Github",
+            "description": "",
+            "link": "https://www.youtube.com/watch?v=2DsAPt75OQc",
+            "type": "video",
+            "topics": "video"
+        },
+        {
+            "title": "The Download: Maintainer Month",
+            "author": "Github",
+            "description": "",
+            "link": "https://youtu.be/FdkSTzp_NTY",
+            "type": "video",
+            "topics": "video"
+        },
+        {
             "title": "Open Source Guides",
             "author": "GitHub",
             "description": "",
@@ -79,6 +95,30 @@
             "link": "https://github.com/1password/1password-teams-open-source",
             "type": "Resource",
             "topics": "Open Source, Software, Password Management"
+        },
+        {
+            "title": "Open Source Lost Quest with Christina Warren from GitHub",
+            "author": "1Password",
+            "description": "Christina Warren of GitHub joins 1Password's Random But Memorable podcast to discuss how for-profit companies can be stewards of open source and support maintainers in the best way.",
+            "link": "https://overcast.fm/+OftV2ooo4",
+            "type": "Podcast",
+            "topics": "Open Source, Software, Password Management"
+        },
+        {
+            "title": "GitHub Maintainer Month with Marie Kochsiek of drip and Hélène Martin of ODK",
+            "author": "Sustain",
+            "description": "",
+            "link": "https://podcast.sustainoss.org/127",
+            "type": "Podcast",
+            "topics": "Open Source, Software, Maintainers"
+        },
+        {
+            "title": "GitHub Maintainer Month with Mike McQuaid of Homebrew and Nina Breznik of DatDot ",
+            "author": "Sustain",
+            "description": "",
+            "link": "https://podcast.sustainoss.org/126",
+            "type": "Podcast",
+            "topics": "Open Source, Software, Maintainers"
         }
     ]
 }

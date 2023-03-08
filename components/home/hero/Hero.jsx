@@ -8,7 +8,7 @@ import { getLiteral } from '../../../common/i18n'
 import useParallax from '../../../hooks/useParallax'
 import useInnerParallax from '../../../hooks/useInnerParallax'
 
-const Hero = ({ date, title, buttonText }) => {
+const Hero = ({ date, title, buttonText, buttonLink }) => {
   const imageRef = useRef(null)
   const backgroundRef = useRef(null)
 
@@ -43,7 +43,7 @@ const Hero = ({ date, title, buttonText }) => {
           <p className="hero__chip">{date}</p>
           <h1 className="hero__title">{title}</h1>
 
-          <ButtonLink href={ROUTES.SCHEDULE.path}>{buttonText}</ButtonLink>
+          <ButtonLink href={buttonLink}>{buttonText}</ButtonLink>
         </div>
       </div>
     </section>
