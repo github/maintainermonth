@@ -5,6 +5,9 @@ const makePath = (path, { parent = HOME } = {}) => ({
     pathname: path,
     query: params,
   }),
+  getPath: (year) => (
+    year?"/"+year+path:path
+  )
 })
 
 export const HOME = makePath('/', {
