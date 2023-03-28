@@ -33,3 +33,8 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# Ignore Yarn files
+.yarn/
+yarn.lock
+
