@@ -30,7 +30,7 @@ examples:
   - donations:
       - title: 'Pledging to donate to support Open Source'
       - image: '/images/donate.png'
-      - imageDescription: 'Illustration by Ariel Davis of making a donation to support open source'
+      - imageDescription: 'Illustration by Ariel Davis of a donation being made to support open source'
 ---
 
 This is an open source initiative to bookmark a month to collectively contemplate open source maintainership, whatever form that takes. Various organizations, projects, and companies will be running activities, events, and distributing resources. Submit a PR to list what you’re planning, so that folks can come participate. Anyone can plan or add something. No-one owns Maintainer Month - it’s for everyone.
