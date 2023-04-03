@@ -1,0 +1,96 @@
+name: 💁🏽‍♀️ Add an event for maintainers to the calendar 🎙
+description: Use this form to add an event for maitnainers or highlighting maintainers to the Maintainer Month calendar.
+title: "EVENT_NAME"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        :tada: Thanks for letting us know about an upcoming event! :tada:
+        
+        Use this form to add an event for maitnainers or highlighting maintainers to the Maintainer Month calendar.
+
+  - id: eventname
+    type: input
+    attributes:
+      label: Event Name
+    validations:
+      required: true
+      
+  - id: date
+    type: input
+    attributes:
+      label: Event Date
+      description: Event date
+      placeholder: MM/DD
+    validations:
+      required: true
+
+  - id: UTCStartTime
+    type: input
+    attributes:
+      label: Start time in UTC
+      description: Start time in UTC
+      placeholder: 14:00
+    validations:
+      required: true
+
+  - id: UTCEndTime
+    type: input
+    attributes:
+      label: End time in UTC
+      description: End time in UTC
+      placeholder: 15:00
+    validations:
+      required: true
+
+  - id: type
+    type: dropdown
+    attributes:
+      label: Event Type
+      description: "Type of event"
+      options:
+        - podcast
+        - stream
+        - talk
+        - meetup
+        - fundraising
+        - conference
+        - misc
+    validations:
+      required: true
+
+  - id: userName
+    type: input
+    attributes:
+      label: Organizer name
+      description: Organizer name
+    validations:
+      required: true
+
+  - id: linkUrl
+    type: input
+    attributes:
+      label: Event URL
+      description: "Web URL of event"
+      placeholder: "https://"
+
+  - id: eventdescription
+    type: input
+    attributes:
+      label: Event Description
+      description: "What is this event about?"
+  
+  - id: expectedparticipants
+    type: input
+    attributes:
+      label: Participants
+      description: "Expected number of participants"
+      placeholder: "###"
+  
+  - id: expectedmaintainers
+    type: input
+    attributes:
+      label: Maintainers
+      description: "Expected number of maintainers participating"
+      placeholder: "###"
