@@ -21,8 +21,7 @@ body:
     type: input
     attributes:
       label: Event Date
-      description: Event date
-      placeholder: MM/DD
+      placeholder: "MM/DD"
     validations:
       required: true
 
@@ -30,8 +29,7 @@ body:
     type: input
     attributes:
       label: Start time in UTC
-      description: Start time in UTC
-      placeholder: 14:00
+      placeholder: "14:00"
     validations:
       required: true
 
@@ -39,8 +37,7 @@ body:
     type: input
     attributes:
       label: End time in UTC
-      description: End time in UTC
-      placeholder: 15:00
+      placeholder: "15:00"
     validations:
       required: true
 

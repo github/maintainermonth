@@ -25,7 +25,7 @@ body:
       required: true
 
   - id: description
-    type: input
+    type: textarea
     attributes:
       label: Description
       description: a short description (max. 200 characters)
