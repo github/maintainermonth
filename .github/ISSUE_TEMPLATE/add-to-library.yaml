@@ -1,0 +1,54 @@
+name: 💁🏽‍♀️ Add a maintainer story to the library 📚
+description: Use this form to add a story highlighting maintainers to the Maintainer Month library.
+title: "TITLE"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        :tada: Thanks for letting us know a maintainer story! :tada:
+        
+        Use this form to add a story highlighting maintainers to the Maintainer Month library.
+
+  - id: title
+    type: input
+    attributes:
+      label: Title
+    validations:
+      required: true
+      
+  - id: author
+    type: input
+    attributes:
+      label: Author or authors
+    validations:
+      required: true
+
+  - id: description
+    type: input
+    attributes:
+      label: Description
+      description: a short description (max. 200 characters)
+    validations:
+      required: true
+
+  - id: link
+    type: input
+    attributes:
+      label: Resource link
+    validations:
+      required: true
+
+  - id: type
+    type: input
+    attributes:
+      label: Conent type
+    validations:
+      required: true
+
+  - id: topics
+    type: input
+    attributes:
+      label: Related topics
+    validations:
+      required: true
