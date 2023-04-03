@@ -9,4 +9,4 @@ Take a look at the [Maintainer Month activities on the calendar](/schedule) and 
 
 #### Join the Maintainer Community
 
-[Request an invitation to the Maintainer Community](https://maintainers.github.com), a private space for maintainers to connect with peers, preview GitHub features, and help us support the open source community.
+[Request an invitation to the Maintainer Community](https://maintainers.github.com), a private space for maintainers to connect with peers, preview GitHub features, and learn from each other.

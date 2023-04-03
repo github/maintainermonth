@@ -47,12 +47,12 @@ body:
       label: Event Type
       description: "Type of event"
       options:
+        - conference
         - podcast
         - stream
         - talk
         - meetup
         - fundraising
-        - conference
         - misc
     validations:
       required: true
