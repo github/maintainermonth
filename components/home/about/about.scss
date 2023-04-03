@@ -1,7 +1,6 @@
 .about {
   min-height: calc((var(--vh, 1vh) * 100) - $header-height);
 
-  display: flex;
   align-items: center;
 
   &__content {

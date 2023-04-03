@@ -3,6 +3,8 @@ import clsx from 'clsx'
 
 import Link from 'next/link'
 
+import ButtonLink from '../button-link/ButtonLink'
+
 import { getLiteral } from '../../common/i18n'
 import * as ROUTES from '../../common/routes'
 
@@ -70,6 +72,10 @@ const EventsList = ({ events }) => {
           </div>
         </div>
       ))}
+      < br / >
+      <div>
+        <ButtonLink href="/">Add your own activity</ButtonLink>
+      </div>
     </section>
   )
 }

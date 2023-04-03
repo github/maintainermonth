@@ -23,6 +23,10 @@ a {
   text-decoration: none;
 }
 
+strong {
+  font-weight: 700;
+}
+
 body::before {
   position: fixed;
   left: 0;
@@ -65,4 +69,8 @@ body::-webkit-scrollbar-thumb {
 :focus-visible {
   outline: none;
   outline: 2px solid $green;
+}
+
+.get-involved a {
+  text-decoration: underline;
 }

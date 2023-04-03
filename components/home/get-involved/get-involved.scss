@@ -11,6 +11,7 @@
 
   &__header {
     @extend %grid;
+    margin-bottom: 40px;
   }
 
   &__title {
@@ -32,7 +33,7 @@
     @media (min-width: $lg) {
       margin-bottom: 0;
 
-      grid-column: 3 / 7;
+      grid-column: 3 / 6;
     }
   }
 
@@ -51,11 +52,31 @@
     }
 
     @media (min-width: $lg) {
-      grid-column: 7 / 11;
+      grid-column: 6 / 11;
     }
 
     p {
       margin-bottom: spacing(2);
+    }
+  }
+
+  &__column {
+    padding-left: spacing(5);
+    margin-bottom: spacing(5);
+
+    grid-column: 1 / 5;
+
+    @media (min-width: $md) {
+      padding-left: 0;
+
+      grid-column: 2 / 8;
+
+    }
+
+    @media (min-width: $lg) {
+      margin-bottom: 0;
+
+      grid-column: 3 / 10;
     }
   }
 
@@ -154,5 +175,14 @@
     p {
       flex: 1;
     }
+  }
+
+  h4 {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 24px;
+  }
+
+  p {
+    margin-bottom: 40px;
   }
 }

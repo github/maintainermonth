@@ -43,31 +43,7 @@ const About = ({ title, content, theme1, theme2 }) => {
           className="about__text"
           dangerouslySetInnerHTML={{ __html: md().render(content) }}
         />
-        <div className="about__column">
-          <h2 className="about__title">Themes for 2023</h2>
-        </div>
       </div>
-
-        <div className="get-involved__examples">
-          <div className="get-involved__list">
-              <ExampleCard
-                key={`example-${theme1}`}
-                image='/images/events.png'
-                imageDescription='Illustration by Ariel Davis of people hosting a mini-event for open source maintainers'
-                title={theme1}
-                subtitle='For Maintainers'
-              />
-          </div>
-          <div className="get-involved__list">
-              <ExampleCard
-                key={`example-${theme2}`}
-                image='/images/donate.png'
-                imageDescription='Illustration by Ariel Davis of a donation being made to support open source'
-                title={theme2}
-                subtitle='For Companies'
-              />
-          </div>
-        </div>
     </section>
   )
 }
