@@ -9,6 +9,14 @@
             "topics": "GitHub, Open Source"
         },
         {
+            "title": "The Changelog podcast",
+            "author": "Changelog",
+            "description": "",
+            "link": "https://changelog.com/podcast",
+            "type": "Interviews",
+            "topics": "Open Source"
+        },
+        {
             "title": "The ReadME Project",
             "author": "GitHub",
             "description": "",
