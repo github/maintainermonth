@@ -1,5 +1,5 @@
 ---
-title: 'Onboarding new contributors & investing in new maintainers'
+title: 'Onboarding new contributors & investing in new maintainers: Option 1'
 metaTitle: 'Onboarding new contributors & investing in new maintainers'
 metaDesc: 'Open Source Workshops for Maintainers series'
 date: '05/01'
