@@ -8,7 +8,7 @@ import Header from '../header/Header'
 const Layout = ({ children }) => {
   const { animationStep } = useBackground()
 
-  const classes = clsx('layout', { [`step-${animationStep}`]: true })
+  const classes = clsx('layout', { [`step-${0}`]: true })
 
   return (
     <div className={classes}>
