@@ -44,6 +44,11 @@ const TYPES = {
     icon: <IconMisc />,
     color: '#0107B6',
   },
+  workshop: {
+    label: getLiteral('event-type:workshop'),
+    icon: <IconMisc />,
+    color: '#0107B6',
+  },
 }
 
 export default TYPES
