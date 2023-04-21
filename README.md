@@ -6,7 +6,7 @@ Repository for the official GitHub Maintainer Month website. You can access the 
 
 **Add your event!** See the [contributing guide](CONTRIBUTING.md) for details on how.
 
-**<p align="center"> ❇️ June 2022 ❇️ </p>**
+**<p align="center"> ❇️ May 2023 ❇️ </p>**
 
 ## Table of Contents
 
@@ -56,5 +56,5 @@ Please note that this project is released with a [Contributor Code of Conduct](C
 
 ## License
 
-Copyright © 2022 [GitHub](https://github.com/github).<br />
+Copyright © 2023 [GitHub](https://github.com/github).<br />
 This project is [MIT](LICENSE) licensed.
