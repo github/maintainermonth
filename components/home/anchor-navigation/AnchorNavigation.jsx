@@ -39,7 +39,7 @@ const AnchorNavigation = ({ containerRef }) => {
         .map((node) => getViewPercentage(node))
         .findIndex((percent) => percent >= 50)
 
-      setAnimationStep(percents)
+      //setAnimationStep(percents)
     }
 
     window.addEventListener('scroll', handleScroll)
