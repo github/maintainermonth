@@ -1,6 +1,7 @@
 import '../styles/styles.scss'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
+import * as Fathom from 'fathom-client';
 
 import smoothscroll from 'smoothscroll-polyfill'
 
@@ -14,9 +15,15 @@ function App({ Component, pageProps }) {
   const router = useRouter()
 
   useEffect(() => {
+    Fathom.load('GSJNLFML', {
+
+      includedDomains: ['maintainermonth.github.com'],
+
+    });
     smoothscroll.polyfill()
 
     const handleRouteChange = () => {
+      Fathom.trackPageview();
       window.scroll({
         top: 0,
         left: 0,
