@@ -16,6 +16,7 @@
     "event-button:fundraising": "Help raise funds",
     "event-button:conference": "View the conference",
     "event-button:misc": "View the event",
+    "event-button:workshop": "Register for the workshop",
 
     "event-type:podcast": "Podcast",
     "event-type:stream": "Stream",
@@ -24,6 +25,7 @@
     "event-type:fundraising": "Fundraising",
     "event-type:conference": "Conference",
     "event-type:misc": "Misc",
+    "event-type:workshop": "Workshop",
 
     "footer:copyright": "Made with ♥︎️ by GitHub",
     "footer:privacy-title": "Privacy terms and conditions",
