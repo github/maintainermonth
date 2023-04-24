@@ -15,4 +15,4 @@ Open Source Summit, May 10-12, is the premier event for open source developers, 
 
 Open Source Summit is a conference umbrella, composed of a collection of events covering the most important technologies, topics, and issues affecting open source today.
 
-Visit our Maintainer Month activation with live podcasting from the Changelog podcast in the expo hall. Use the Maintainer Month discount code OSSNA23GHMM for 20% for new registrants!
+Visit our Maintainer Month activation with live podcasting from the Changelog podcast in the expo hall. Use the Maintainer Month discount code OSSNA23GHMM for a 20% discount for new registrants!
