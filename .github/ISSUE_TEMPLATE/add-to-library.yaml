@@ -8,7 +8,7 @@ body:
       value: |
         :tada: Thanks for letting us know a maintainer story! :tada:
         
-        Use this form to add a story highlighting maintainers to the Maintainer Month library.
+        Use this form to add a story highlighting maintainers to the Maintainer Month library.  Your request will be reviewed within 72 hours.
 
   - id: title
     type: input
