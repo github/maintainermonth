@@ -159,6 +159,10 @@
     color: $white-80;
 
     @extend %markdown;
+    
+    a {
+      text-decoration: underline;
+    }
   }
 
   &__link-wrapper {
