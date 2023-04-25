@@ -1,6 +1,7 @@
 import EventDetail from '../../event-detail/EventDetail'
 import SectionDivider from '../../section-divider/SectionDivider'
 import Connection from '../connection/Connection'
+import Council from '../council/Council'
 
 import useIncomingEvents from './useIncomingEvents'
 
@@ -23,6 +24,7 @@ const Events = ({ title, list, connectionTitle, connectionButtonText }) => {
         </div>
       </div>
       <Connection title={connectionTitle} buttonText={connectionButtonText} />
+      <Council />
     </section>
   )
 }
