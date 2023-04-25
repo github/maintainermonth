@@ -11,7 +11,7 @@ userLink: 'https://events.linuxfoundation.org/open-source-summit-north-america/'
 linkUrl: 'https://events.linuxfoundation.org/open-source-summit-north-america/'
 ---
 
-Open Source Summit, May 10-12, is the premier event for open source developers, technologists, and community leaders to collaborate, share information, solve problems, and gain knowledge, furthering open source innovation and ensuring a sustainable open source ecosystem. It is the gathering place for open-source code and community contributors.
+Open Source Summit (May 10-12, Vancouver) is the premier event for open source developers, technologists, and community leaders to collaborate, share information, solve problems, and gain knowledge, furthering open source innovation and ensuring a sustainable open source ecosystem. It is the gathering place for open-source code and community contributors.
 
 Open Source Summit is a conference umbrella, composed of a collection of events covering the most important technologies, topics, and issues affecting open source today.
 
