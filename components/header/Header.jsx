@@ -68,6 +68,24 @@ const Header = () => {
           <ul className="header__list">
             <li>
               <Link
+                href={ROUTES.NEWS.getPath(year)}
+                aria-label={getLiteral('navigation:news')}
+              >
+                <a
+                  className={clsx('header__link', {
+                    ['is-active']: pathname === ROUTES.SCHEDULE.getPath(year),
+                  })}
+                  aria-label={getLiteral('navigation:news')}
+                >
+                  <IconCalendar />
+                  <span className="header__link-text">
+                    {getLiteral('navigation:news')}
+                  </span>
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link
                 href={ROUTES.SCHEDULE.getPath(year)}
                 aria-label={getLiteral('navigation:schedule')}
               >

@@ -23,3 +23,5 @@ export const EVENT = makePath(`${SCHEDULE.path}/[slug]`, {
 export const LIBRARY = makePath('/library')
 
 export const Y2022 = makePath('/2022')
+
+export const NEWS = makePath("/news")
