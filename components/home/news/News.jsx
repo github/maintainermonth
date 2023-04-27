@@ -17,14 +17,14 @@ const News = ({ title, news }) => {
                 <div className="news__items">
                     {news.map(({ title: newsTitle, description, link }, key) => (
                         <div className="news__item" key={key}>
-                            <a href={link} className="news__link">
+                            <a href={link} className="news__link" target="_blank" rel="noopener noreferrer">
                                 <h4 className="news__text">{newsTitle}</h4>
                             </a>
                             <p className="news__text">{description}</p>
                         </div>
                     ))}
                     <div className="news__item news__button">
-                        <ButtonLink children={"View all announcements"} href={ROUTES.NEWS.getPath(year)} />
+                        <ButtonLink children={"See more news"} href={ROUTES.NEWS.getPath(year)} />
                     </div>
                 </div>
             </div>

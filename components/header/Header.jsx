@@ -10,6 +10,7 @@ import useWindowSize from '../../hooks/useWindowSize'
 import GitHubLogo from '../../public/icons/github-logo'
 import IconCalendar from '../../public/icons/calendar'
 import IconBooks from '../../public/icons/books'
+import IconBell from '../../public/icons/bell'
 import { BREAKPOINTS } from '../../common/constants'
 
 const Header = () => {
@@ -77,7 +78,7 @@ const Header = () => {
                   })}
                   aria-label={getLiteral('navigation:news')}
                 >
-                  <IconCalendar />
+                  <IconBell />
                   <span className="header__link-text">
                     {getLiteral('navigation:news')}
                   </span>

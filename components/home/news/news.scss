@@ -1,5 +1,5 @@
 .news {
-    min-height: calc((var(--vh, 1vh) * 100) - $header-height);
+    // min-height: calc((var(--vh, 1vh) * 100) - $header-height);
   
     padding-top: $module-divider-md;
     padding-bottom: $module-divider-md;
@@ -43,10 +43,11 @@
     }
 
     &__button {
-        &:hover {
-            background: inherit;
-            transition: none;
-        }
+      &:hover {
+          background: inherit;
+          transition: none;
+      }
+      padding-bottom: 0;
     }
         
     &__link {
