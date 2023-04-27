@@ -13,8 +13,9 @@ import GetInvolved from '../components/home/get-involved/GetInvolved'
 import Events from '../components/home/events/Events'
 import AnchorNavigation from '../components/home/anchor-navigation/AnchorNavigation'
 import { useBackground } from '../contexts/BackgroundContext'
+import News from '../components/home/news/News'
 
-export default function Home({ hero, about, getInvolved, events, connection, maintainerOptions, partnerOptions }) {
+export default function Home({ hero, about, news, getInvolved, events, connection, maintainerOptions, partnerOptions }) {
   const containerRef = useRef(null)
 
   const { setAnimationStep } = useBackground()
@@ -65,6 +66,10 @@ export default function Home({ hero, about, getInvolved, events, connection, mai
             buttonLink={ROUTES.SCHEDULE.path}
           />
           <About title={about.title} content={about.content} theme1={about.theme1} theme2={about.theme2}/>
+          <News
+            news={news.news}
+            title={news.title}
+          />
           <GetInvolved
             title={getInvolved.title}
             content={getInvolved.content}
@@ -90,13 +95,14 @@ export default function Home({ hero, about, getInvolved, events, connection, mai
 export async function getStaticProps() {
   const hero = getDataFromMD('content/home/1-hero.md')
   const about = getDataFromMD('content/home/2-about.md')
+  const news = getDataFromMD('content/home/3-news.md')
   const getInvolved = parseGetInvolvedData(
-    getDataFromMD('content/home/3-get-involved.md'),
+    getDataFromMD('content/home/4-get-involved.md'),
   )
-  const maintainerOptions = getDataFromMD('content/home/3-1-get-involved-maintainers.md')
-  const partnerOptions = getDataFromMD('content/home/3-2-get-involved-partners.md')
-  const events = getDataFromMD('content/home/4-events.md')
-  const connection = getDataFromMD('content/home/5-connection.md')
+  const maintainerOptions = getDataFromMD('content/home/4-1-get-involved-maintainers.md')
+  const partnerOptions = getDataFromMD('content/home/4-2-get-involved-partners.md')
+  const events = getDataFromMD('content/home/5-events.md')
+  const connection = getDataFromMD('content/home/6-connection.md')
 
   const eventsList = parseEvents(getEvents())
 
@@ -111,7 +117,8 @@ export async function getStaticProps() {
       },
       connection,
       maintainerOptions,
-      partnerOptions
+      partnerOptions,
+      news
     },
   }
 }

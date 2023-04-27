@@ -10,6 +10,7 @@ import useWindowSize from '../../hooks/useWindowSize'
 import GitHubLogo from '../../public/icons/github-logo'
 import IconCalendar from '../../public/icons/calendar'
 import IconBooks from '../../public/icons/books'
+import IconBell from '../../public/icons/bell'
 import { BREAKPOINTS } from '../../common/constants'
 
 const Header = () => {
@@ -66,6 +67,24 @@ const Header = () => {
 
         <nav className="header__navigation">
           <ul className="header__list">
+            <li>
+              <Link
+                href={ROUTES.NEWS.getPath(year)}
+                aria-label={getLiteral('navigation:news')}
+              >
+                <a
+                  className={clsx('header__link', {
+                    ['is-active']: pathname === ROUTES.SCHEDULE.getPath(year),
+                  })}
+                  aria-label={getLiteral('navigation:news')}
+                >
+                  <IconBell />
+                  <span className="header__link-text">
+                    {getLiteral('navigation:news')}
+                  </span>
+                </a>
+              </Link>
+            </li>
             <li>
               <Link
                 href={ROUTES.SCHEDULE.getPath(year)}

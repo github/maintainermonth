@@ -3,6 +3,7 @@
 
     "anchor-nav:hero": "Maintainer Month",
     "anchor-nav:about": "About",
+    "anchor-nav:news": "Latest News",
     "anchor-nav:get-involved": "Get involved",
     "anchor-nav:events": "Schedule",
     "anchor-nav:connection": "Connection",
@@ -58,8 +59,13 @@
     "not-found:subtitle": "Page not found",
     "not-found:button": "Go home",
     
+    "navigation:news": "News",
     "navigation:schedule": "Schedule",
     "navigation:library": "Library",
+
+    "news:title": "News",
+    "news:description": "This is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+
 
     "page:title": "Maintainer Month",
     "page:title-mobile": "MM",
