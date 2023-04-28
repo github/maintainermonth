@@ -15,19 +15,17 @@ const News = ({ title, news }) => {
       <div className="news__content">
         <SectionDivider title={title} />
         <div className="news__items">
-          {news.map(({ title: newsTitle, description, link }, key) => (
-            <div className="news__item" key={key}>
+            <div className="news__item" key={news.title}>
               <a
-                href={link}
+                href={news.link}
                 className="news__link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <h4 className="news__text">{newsTitle}</h4>
+                <h4 className="news__text">{news.title}</h4>
               </a>
-              <p className="news__text">{description}</p>
+              <p className="news__text">{news.description}</p>
             </div>
-          ))}
           <div className="news__item news__button">
             <ButtonLink href={ROUTES.NEWS.getPath(year)}>
               See more news

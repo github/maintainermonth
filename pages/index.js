@@ -15,7 +15,7 @@ import AnchorNavigation from '../components/home/anchor-navigation/AnchorNavigat
 import { useBackground } from '../contexts/BackgroundContext'
 import News from '../components/home/news/News'
 
-export default function Home({ hero, about, news, getInvolved, events, connection, maintainerOptions, partnerOptions }) {
+export default function Home({ hero, about, news, getInvolved, events, connection, maintainerOptions, partnerOptions, newsList }) {
   const containerRef = useRef(null)
 
   const { setAnimationStep } = useBackground()
@@ -67,7 +67,7 @@ export default function Home({ hero, about, news, getInvolved, events, connectio
           />
           <About title={about.title} content={about.content} theme1={about.theme1} theme2={about.theme2}/>
           <News
-            news={news.news}
+            news={newsList.slice(-1)[0]}
             title={news.title}
           />
           <GetInvolved
@@ -96,6 +96,7 @@ export async function getStaticProps() {
   const hero = getDataFromMD('content/home/1-hero.md')
   const about = getDataFromMD('content/home/2-about.md')
   const news = getDataFromMD('content/home/3-news.md')
+  const newsList = getDataFromMD('content/news/index.md').news
   const getInvolved = parseGetInvolvedData(
     getDataFromMD('content/home/4-get-involved.md'),
   )
@@ -118,7 +119,8 @@ export async function getStaticProps() {
       connection,
       maintainerOptions,
       partnerOptions,
-      news
+      news,
+      newsList
     },
   }
 }
