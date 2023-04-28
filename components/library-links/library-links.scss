@@ -1,9 +1,18 @@
 .library-links {
     padding: spacing(7) spacing(2);
+    padding-bottom: 0;
 
     @media (min-width: $lg) { 
         padding-left: spacing(3);
         padding-right: spacing(3);
+    }
+
+    &__intro {
+        position: relative;
+        padding: spacing(3);
+    }
+    &__intro a {
+        text-decoration:underline;
     }
 
     &__item {
