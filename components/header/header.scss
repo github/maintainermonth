@@ -122,7 +122,8 @@
       color: $white;
 
       .icon-calendar,
-      .icon-books {
+      .icon-books,
+      .icon-bell {
         path {
           fill: $white;
         }
@@ -134,7 +135,8 @@
       color: $purple;
 
       .icon-calendar,
-      .icon-books {
+      .icon-books,
+      .icon-bell {
         path {
           fill: $purple;
         }
@@ -143,7 +145,8 @@
   }
 
   .icon-calendar,
-  .icon-books {
+  .icon-books,
+  .icon-bell {
     path {
       fill: $white;
       transition: fill $simple-fade;

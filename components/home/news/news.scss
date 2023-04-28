@@ -1,0 +1,90 @@
+.news {
+  padding-top: $module-divider-md;
+  padding-bottom: $module-divider-md;
+
+  @media (min-width: $md) {
+    padding-top: $module-divider-lg;
+    padding-bottom: $module-divider-lg;
+  }
+
+  &__items {
+    @extend %grid;
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: spacing(5);
+    margin-bottom: spacing(5);
+
+    grid-column: 1 / 5;
+
+    padding: spacing(3);
+
+    @extend %header-1;
+
+    @media (min-width: $md) {
+      font-size: 2rem;
+      grid-column: 2 / 8;
+    }
+
+    @media (min-width: $lg) {
+      margin-bottom: 0;
+      grid-column: 3 / 11;
+    }
+
+    &:hover {
+      background: $white-20;
+      transition: background $simple-fade;
+    }
+  }
+
+  &__button {
+    &:hover {
+      background: inherit;
+      transition: none;
+    }
+    padding-bottom: 0;
+  }
+
+  &__link {
+    @extend %header-2;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  &__text {
+    padding-left: spacing(5);
+
+    @extend %body-1;
+    color: $white-80;
+
+    grid-column: 1 / 5;
+
+    @media (min-width: $md) {
+      padding-left: 0;
+
+      grid-column: 2 / 8;
+    }
+
+    @media (min-width: $lg) {
+      grid-column: 6 / 11;
+    }
+
+    p {
+      margin-bottom: spacing(2);
+    }
+  }
+
+  h4 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+  }
+}
