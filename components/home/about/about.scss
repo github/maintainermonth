@@ -101,4 +101,13 @@
       margin-bottom: spacing(2);
     }
   }
+
+  &__themes {
+    h4 {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 24px;
+    }
+  }
+
+
 }
