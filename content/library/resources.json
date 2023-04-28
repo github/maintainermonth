@@ -1,14 +1,6 @@
 {
     "resources": [
         {
-            "title": "Open Source Guides",
-            "author": "GitHub",
-            "description": "",
-            "link": "https://opensource.guide/",
-            "type": "Guide",
-            "topics": "GitHub, Open Source"
-        },
-        {
             "title": "The Changelog podcast",
             "author": "Changelog",
             "description": "",
@@ -23,70 +15,6 @@
             "link": "https://github.com/readme",
             "type": "Interviews",
             "topics": "Open Source"
-        },
-        {
-            "title": "Global Maintainer Summit 2021 Talks",
-            "author": "GitHub",
-            "description": "",
-            "link": "https://www.youtube.com/playlist?list=PL0lo9MOBetEEkOyAtPqiupGm91cu8QB0I",
-            "type": "Talks",
-            "topics": "Scaling, Contributor Relations, Metrics"
-        },
-        {
-            "title": "CNCF Maintainer Guide",
-            "author": "CNCF",
-            "description": "",
-            "link": "https://contribute.cncf.io/",
-            "type": "Guide",
-            "topics": "Open Source, Governance, Community"
-        },
-        {
-            "title": "Open Source Initiative: List of Licenses",
-            "author": "OSI",
-            "description": "Open Source licenses approved by the OSI",
-            "link": "https://opensource.org/licenses",
-            "type": "Guide",
-            "topics": "Open Source, Governance, Licenses"
-        },
-        {
-            "title": "Quick links on contributor strategies",
-            "author": "CNCF",
-            "description": "A series of links to resources frequently used by the Contributor Strategy TAG",
-            "link": "https://github.com/cncf/tag-contributor-strategy/blob/main/resources.md",
-            "type": "Library",
-            "topics": "Open Source, Contributor Relations"
-        },
-        {
-            "title": "Apply for Grants To Fund Open Source Work",
-            "author": "Changeset Consulting",
-            "description": "Sample foundations/funders, a case study, and key steps in figuring out a good project idea, budgeting, hiring, and submitting",
-            "link": "https://changeset.nyc/resources/quick-intro-to-grants.html",
-            "type": "Article",
-            "topics": "Open Source, Funding, Hiring, Grants, Budgeting"
-        },
-        {
-            "title": "The 2021 Tidelift open source maintainer survey",
-            "author": "Tidelift",
-            "description": "In early 2021, Tidelift fielded its first-ever comprehensive survey of open source maintainers.",
-            "link": "https://tidelift.com/subscription/the-tidelift-maintainer-survey",
-            "type": "Guide",
-            "topics": "Maintainers, Open Source, Survey, Data"
-        },
-        {
-            "title": "The 2022 open source software supply chain survey ",
-            "author": "Tidelift",
-            "description": "In December of 2021, Tidelift fielded our annual survey of technologists—including software devs, engineering execs and managers, architects, and devops pros—who build applications with open source.",
-            "link": "https://tidelift.com/2022-open-source-software-supply-chain-survey",
-            "type": "Guide",
-            "topics": "Open Source, Survey, Data"
-        },
-        {
-            "title": "1Password Teams for Open Source",
-            "author": "1Password",
-            "description": "Get a free 1Password Teams membership for your open source project",
-            "link": "https://github.com/1password/1password-teams-open-source",
-            "type": "Resource",
-            "topics": "Open Source, Software, Password Management"
         }
     ]
 }
