@@ -1,21 +1,9 @@
 ---
 news:
-  - title: Lorem Ipsum Dolor 1
-    author: Lorem
-    description: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-    link: https://www.lipsum.com/
-    type: News
-    topics: Announcement, News
-  - title: Lorem Ipsum Dolor 2
-    author: Lorem
-    description: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-    link: https://www.lipsum.com/
-    type: News
-    topics: Announcement, News
-  - title: Lorem Ipsum Dolor 3
-    author: Lorem
-    description: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-    link: https://www.lipsum.com/
+  - title: Gearing up for Maintainer Month!
+    author: GitHub
+    description: Are you looking for ways to support open source maintainers? Maintainer Month is the perfect opportunity!
+    link: https://github.blog/2023-04-25-gearing-up-for-maintainer-month-this-may/
     type: News
     topics: Announcement, News
 ---
