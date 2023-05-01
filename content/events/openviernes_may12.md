@@ -11,5 +11,4 @@ userLink: 'https://www.meetup.com/githublatam/events/293238405/'
 linkUrl: 'https://www.meetup.com/githublatam/events/293238405/'
 ---
 
-Desarrolladora FullStack durante 3 años, en los cuales ha ayudado a clientes y empresas a maximizar su retorno de inversión en tecnología.
-Software Developer, UI Designer & Robotic enthusiast. Trans. She/Her, LGBT+
+Desarrolladora FullStack durante 3 años, en los cuales ha ayudado a clientes y empresas a maximizar su retorno de inversión en tecnología. Software Developer, UI Designer & Robotic enthusiast. Trans. She/Her, LGBT+
