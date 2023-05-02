@@ -6,7 +6,7 @@ date: '05/05'
 UTCStartTime: '17:00'
 UTCEndTime: '18:00'
 type: 'stream'
-userName: 'github'
+userName: 'GitHub'
 userLink: 'https://www.twitch.tv/github'
 linkUrl: 'https://www.twitch.tv/github'
 ---
