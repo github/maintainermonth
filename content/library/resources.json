@@ -5,28 +5,32 @@
             "author": "Changelog",
             "description": "",
             "link": "https://changelog.com/podcast",
-            "type": "Interviews"
+            "type": "Interviews",
+            "topics": "Open Source"
         },
         {
             "title": "The ReadME Project",
             "author": "GitHub",
             "description": "",
             "link": "https://github.com/readme",
-            "type": "Interviews"
+            "type": "Interviews",
+            "topics": "Open Source"
         },
         {
             "title": "Sarah Boyce (Django) & David Blass (ArkType)",
             "author": "Sustain OSS",
             "description": "",
             "link": "https://podcast.sustainoss.org/172",
-            "type": "Podcast"
+            "type": "Podcast",
+            "topics": "Open Source"
         },
         {
             "title": "Kaleb Luedtke (Windows Package Manager)",
             "author": "Open at Microsoft",
             "description": "",
             "link": "https://www.youtube.com/watch?v=zF3R3O2yzbs",
-            "type": "Interviews"
+            "type": "Interviews",
+            "topics": "Open Source"
         }
     ]
 }
