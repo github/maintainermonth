@@ -18,5 +18,3 @@ Open source runs the world, but who runs open source? Open source maintainers ar
 As a thank you for the great work you’re doing for the open source community, please enjoy some appetizers and have a drink on us. Bring your friends, connect with peers, and chat with GitHub on how we can best support the community.
 
 You must be registered for Open Source Summit North America to attend this happy hour. Use the Maintainer Month discount code OSSNA23GHMM for a 20% discount for new registrants!
-
-![](/images/ossna-happyhour.png)
