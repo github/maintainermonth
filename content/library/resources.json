@@ -17,20 +17,20 @@
             "topics": "Open Source"
         },
         {
-            "title": "Sarah Boyce (Django) & David Blass (ArkType)",
+            "title": "Sarah Boyce & David Blass",
             "author": "Sustain OSS",
             "description": "",
             "link": "https://podcast.sustainoss.org/172",
             "type": "Podcast",
-            "topics": "Open Source"
+            "topics": "Django, ArkType"
         },
         {
-            "title": "Kaleb Luedtke (Windows Package Manager)",
+            "title": "Kaleb Luedtke",
             "author": "Open at Microsoft",
             "description": "",
             "link": "https://www.youtube.com/watch?v=zF3R3O2yzbs",
             "type": "Interviews",
-            "topics": "Open Source"
+            "topics": "Windows Package Manager"
         }
     ]
 }
