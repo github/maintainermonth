@@ -6,7 +6,7 @@ date: '05/05'
 UTCStartTime: '16:00'
 UTCEndTime: '16:30'
 type: 'meetup'
-userName: 'github'
+userName: 'GitHub'
 userLink: 'https://www.meetup.com/githublatam/events/293238405/'
 linkUrl: 'https://www.meetup.com/githublatam/events/293238405/'
 ---
