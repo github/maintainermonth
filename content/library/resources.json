@@ -31,6 +31,31 @@
             "link": "https://www.youtube.com/watch?v=zF3R3O2yzbs",
             "type": "Interviews",
             "topics": "Windows Package Manager"
+        },
+        {
+            "title": "Alyssa Wright, Chad Whitacre, and Duane O’Brien",
+            "author": "The Changelog Podcast",
+            "description": "",
+            "link": "https://changelog.com/podcast/539",
+            "type": "Podcast",
+            "topics": "Companies sponsoring OSS"
+        },
+        {
+            "title": "Bob Killen & Navendu Pottekkat",
+            "author": "Sustain OSS",
+            "description": "",
+            "link": "https://podcast.sustaingitoss.org/174",
+            "type": "Podcast",
+            "topics": "Kubernetes, Apache APISIX"
+        },
+        {
+            "title": "Mark Fussell",
+            "author": "Open at Microsoft",
+            "description": "",
+            "link": "https://learn.microsoft.com/en-ca/shows/open-at-microsoft/how-to-get-involved-with-the-dapr-community",
+            "type": "Interviews",
+            "topics": "Dapr"
         }
+
     ]
 }
