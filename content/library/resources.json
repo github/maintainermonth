@@ -55,6 +55,14 @@
             "link": "https://learn.microsoft.com/en-ca/shows/open-at-microsoft/how-to-get-involved-with-the-dapr-community",
             "type": "Interviews",
             "topics": "Dapr"
+        },
+        {
+            "title": "Joff Tiquez",
+            "author": "OSSPH",
+            "description": "",
+            "link": "https://blog.ossph.org/the-story-of-open-source-software-ph-ossph/",
+            "type": "Blog",
+            "topics": "Open Source Software Philippines"
         }
 
     ]
