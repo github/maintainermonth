@@ -8,7 +8,7 @@ UTCEndTime: '18:00'
 type: 'stream'
 userName: 'Open at Microsoft'
 userLink: 'https://youtube.com/playlist?list=PLlrxD0HtieHg8On6t1l5_kj--7PMmyfGi'
-linkUrl: 'https://youtube.com/playlist?list=PLlrxD0HtieHg8On6t1l5_kj--7PMmyfGi'
+linkUrl: 'https://learn.microsoft.com/en-ca/shows/open-at-microsoft/how-to-get-involved-with-the-dapr-community'
 ---
 
 Join Mark Fussell (Co-founder of Dapr and CEO of Diagrid) and Aaron Crawfis (Azure OSS Incubations) to learn about the [Dapr](https://dapr.io) community. Learn about the latest Dapr trends, how to get started in the docs, ask questions in the Discord server, contribute to the Dapr project, and what's coming soon in upcoming Dapr releases.
