@@ -8,6 +8,6 @@ UTCEndTime: '17:40'
 type: 'podcast'
 userName: 'Open Source Stories'
 userLink: 'https://www.opensourcestories.org/'
-linkUrl: 'https://www.opensourcestories.org/stories/2023/duane-obrien/'
+linkUrl: 'https://www.opensourcestories.org/stories/2023/critical-human-infrastructure/'
 ---
 Open source is people and people are open source. Join a special Maintainer Month conversation with Duane O'Brien and [Open Source Stories](https://www.opensourcestories.org) about supporting, connecting with, and caring for the critical human infrastructure of open source.
