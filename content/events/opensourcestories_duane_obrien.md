@@ -1,7 +1,7 @@
 ---
-title: 'Open Source Stories: The critical human infrastructure of open source with Duane O'Brien'
-metaTitle: 'Open Source Stories: The critical human infrastructure of open source with Duane O'Brien'
-metaDesc: 'Open source is people and people are open source. Duane O'Brien talks with Open Source Stories about what he's learned about supporting, connecting with, and caring for the critical human infrastructure of open source.'
+title: "Open Source Stories: The critical human infrastructure of open source with Duane O'Brien"
+metaTitle: "Open Source Stories: The critical human infrastructure of open source with Duane O'Brien"
+metaDesc: "Open source is people and people are open source. Duane O'Brien talks with Open Source Stories about what he's learned about supporting, connecting with, and caring for the critical human infrastructure of open source."
 date: '05/15'
 UTCStartTime: '17:00'
 UTCEndTime: '17:40'
