@@ -2,7 +2,7 @@
 title: 'All In for Maintainers: Open Sourcing Diversity, Equity, and Inclusion'
 metaTitle: 'All In for Maintainers'
 metaDesc: 'Open Sourcing Diversity, Equity, and Inclusion'
-date: '05/24'
+date: '05/22'
 UTCStartTime: '17:00'
 UTCEndTime: '18:00'
 type: 'talk'
