@@ -15,4 +15,4 @@ When most people hear the word “governance” they think of formal documents l
 
 Workshop registration is available in the private Maintainer Community. Request an invitation here: [maintainers.github.com](https://maintainers.github.com)
 
-If you're part of the private Maintainer Community, you can [register here](https://github.com/community/maintainers/discussions/308).
+If you're part of the private Maintainer Community, you can [register here](https://github.com/community/maintainers/discussions/328).
