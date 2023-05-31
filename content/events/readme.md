@@ -1,14 +1,15 @@
 ---
-title: 'The ReadME Podcast'
-metaTitle: 'The ReadME Podcast'
-metaDesc: 'The ReadME Podcast honors open source maintainers by sharing their stories and contributions. Hosted by Neha Batra and Martin Woodward, episodes dive into technology history, expert perspectives, and updates from The ReadME Project. We investigate how open source technology revolutionizes science, improves accessibility, and harnesses the power of community for the greater good. We aim to uncover the hidden facets beyond lines of code, shining a light on the individuals crafting the inspiring technology that shapes our world.'
+title: 'Kelsey Hightower'
+metaTitle: 'Kelsey Hightower'
+metaDesc: 'In this bonus episode, we hear from Kubernetes superstar Kelsey Hightower. Diving into crucial elements like empathy in maintainership, succession planning, and the identification of future leaders, hosts Martin Woodward and Neha Batra explore Kelsey’s philosophy on fostering thriving open source communities—and his hopes for the future state of Kubernetes. Dedicated to GitHub’s Maintainer Month, the conversation focuses on the people behind the projects, highlighting their extraordinary effort and celebrating their impact on the community.
+'
 date: '05/09'
 UTCStartTime: '09:00'
 UTCEndTime: '12:00'
 type: 'podcast'
-userName: 'The ReadME Project'
+userName: 'The ReadME Podcast'
 userLink: 'https://github.com/readme'
-linkUrl: 'https://github.com/readme/podcast'
+linkUrl: 'https://github.com/readme/podcast/kelsey-hightower'
 ---
 
-The ReadME Podcast honors open source maintainers by sharing their stories and contributions. Hosted by Neha Batra and Martin Woodward, episodes dive into technology history, expert perspectives, and updates from The ReadME Project. We investigate how open source technology revolutionizes science, improves accessibility, and harnesses the power of community for the greater good. We aim to uncover the hidden facets beyond lines of code, shining a light on the individuals crafting the inspiring technology that shapes our world.
+In this bonus episode, we hear from Kubernetes superstar Kelsey Hightower. Diving into crucial elements like empathy in maintainership, succession planning, and the identification of future leaders, hosts Martin Woodward and Neha Batra explore Kelsey’s philosophy on fostering thriving open source communities—and his hopes for the future state of Kubernetes. Dedicated to GitHub’s Maintainer Month, the conversation focuses on the people behind the projects, highlighting their extraordinary effort and celebrating their impact on the community.
