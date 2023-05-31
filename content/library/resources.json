@@ -71,6 +71,14 @@
             "link": "https://surrealdb.com/blog/maintainer-month-2023-behind-the-scenes-with-rushmore-mushambi",
             "type": "Blog",
             "topics": "SurrealDB"
+        },
+        {
+            "title": "Chrissy Codes",
+            "author": "Chrissy Codes",
+            "description": "",
+            "link": "https://chrissycodes.hashnode.dev/4-tips-to-transition-from-contributorhood-to-maintainership",
+            "type": "Blog",
+            "topics": "Contributorhood to Maintainership"
         }
 
     ]
