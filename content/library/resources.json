@@ -63,6 +63,14 @@
             "link": "https://blog.ossph.org/the-story-of-open-source-software-ph-ossph/",
             "type": "Blog",
             "topics": "Open Source Software Philippines"
+        },
+        {
+            "title": "Rushmore Mushambi",
+            "author": "SurrealDB",
+            "description": "",
+            "link": "https://surrealdb.com/blog/maintainer-month-2023-behind-the-scenes-with-rushmore-mushambi",
+            "type": "Blog",
+            "topics": "SurrealDB"
         }
 
     ]
