@@ -79,6 +79,86 @@
             "link": "https://chrissycodes.hashnode.dev/4-tips-to-transition-from-contributorhood-to-maintainership",
             "type": "Blog",
             "topics": "Contributorhood to Maintainership"
+        },
+        {
+            "title": "Kelsey Hightower",
+            "author": "The ReadME Podcast",
+            "description": "",
+            "link": "https://github.com/readme/podcast/kelsey-hightower",
+            "type": "Podcast",
+            "topics": "Kubernetes"
+        },
+        {
+            "title": "Susan Spencer",
+            "author": "Open Source Friday",
+            "description": "",
+            "link": "https://www.youtube.com/watch?v=YQAzB11POQ0&list=PL0lo9MOBetEFmtstItnKlhJJVmMghxc0P&index=2",
+            "type": "Video",
+            "topics": "Seamly"
+        },
+        {
+            "title": "Duane O’Brien",
+            "author": "Open Source Stories",
+            "description": "",
+            "link": "https://www.opensourcestories.org/stories/2023/critical-human-infrastructure/",
+            "type": "Interviews",
+            "topics": "Critical Human Infrastructure"
+        },
+        {
+            "title": "Erik Ejlskov Jensen",
+            "author": "Open at Microsoft",
+            "description": "",
+            "link": "https://learn.microsoft.com/en-us/shows/open-at-microsoft/whats-next-for-entity-framework-core-power-tools",
+            "type": "Interviews",
+            "topics": "Entity Framework Core Power Tools"
+        },
+        {
+            "title": "Russell Keith-Magee & Uriel Ofir",
+            "author": "Sustain OSS",
+            "description": "",
+            "link": "https://learn.microsoft.com/en-us/shows/open-at-microsoft/whats-next-for-entity-framework-core-power-tools",
+            "type": "Podcast",
+            "topics": "BeeWare Project, Ma’akaf"
+        },
+        {
+            "title": "Jessica Tegner",
+            "author": "Open Source Stories",
+            "description": "",
+            "link": "https://www.opensourcestories.org/stories/2023/journey-to-maintainership/",
+            "type": "Interviews",
+            "topics": "pypandoc"
+        },
+        {
+            "title": "Roberto Perez",
+            "author": "Open at Microsoft",
+            "description": "",
+            "link": "https://learn.microsoft.com/shows/open-at-microsoft/introduction-to-azure-redis",
+            "type": "Interviews",
+            "topics": "Redis"
+        },
+        {
+            "title": "Predrag Gruevski & Kingsley Mkpandiok",
+            "author": "Sustain OSS",
+            "description": "",
+            "link": "https://podcast.sustainoss.org/178",
+            "type": "Podcast",
+            "topics": "Rust, Open Source Design"
+        },
+        {
+            "title": "Martin Woodward",
+            "author": "Sustain OSS",
+            "description": "",
+            "link": "https://podcast.sustainoss.org/179",
+            "type": "Podcast",
+            "topics": "Maintainer Month"
+        },
+        {
+            "title": "Ed Warnicke",
+            "author": "Open at Microsoft",
+            "description": "",
+            "link": "https://learn.microsoft.com/shows/open-at-microsoft/introduction-to-omnibor",
+            "type": "Interviews",
+            "topics": "OmniBOR"
         }
 
     ]
