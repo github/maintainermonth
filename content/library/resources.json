@@ -159,6 +159,14 @@
             "link": "https://learn.microsoft.com/shows/open-at-microsoft/introduction-to-omnibor",
             "type": "Interviews",
             "topics": "OmniBOR"
+        },
+        {
+            "title": "Yusuke Kuoka",
+            "author": "SurrealDB",
+            "description": "",
+            "link": "https://surrealdb.com/blog/maintainer-month-2023-behind-the-scenes-with-yusuke-kuoka",
+            "type": "Blog",
+            "topics": "SurrealDB"
         }
 
     ]
