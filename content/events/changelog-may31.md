@@ -2,7 +2,7 @@
 title: 'The Changelog Podcast: Maintainer Month Edition'
 metaTitle: 'The Changelog Podcast: Maintainer Month Edition'
 metaDesc: "Software's best weekly news brief, deep technical interviews & talk show."
-date: '05/24'
+date: '05/31'
 UTCStartTime: '17:00'
 UTCEndTime: '18:00'
 type: 'podcast'
