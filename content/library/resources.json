@@ -167,6 +167,14 @@
             "link": "https://surrealdb.com/blog/maintainer-month-2023-behind-the-scenes-with-yusuke-kuoka",
             "type": "Blog",
             "topics": "SurrealDB"
+        },
+        {
+            "title": "AStormy Peters, Dr. Dawn Foster, Angie Byron",
+            "author": "The Changelog Podcast",
+            "description": "",
+            "link": "https://changelog.com/podcast/542",
+            "type": "Podcast",
+            "topics": "Maintainer Maintainers"
         }
 
     ]
