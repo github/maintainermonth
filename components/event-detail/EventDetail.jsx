@@ -52,8 +52,8 @@ const EventDetail = ({ event, reverseColumns, isFullPage }) => {
           {isFullPage ? (
             <h1 className="event-detail__title">{event.title}</h1>
           ) : (
-            <Link href={{pathname: event.link}}>
-              <a className="event-detail__title">{event.title}</a>
+            <Link href={{ pathname: event.link }} className="event-detail__title">
+              {event.title}
             </Link>
           )}
 

@@ -55,14 +55,12 @@ const Header = () => {
     <header className="header">
       <div className="header__content">
         <div className="header__logo">
-          <Link href={ROUTES.HOME.path}>
-            <a className="header__home-link">
-              <GitHubLogo />
-              {getLiteral(isMobile ? 'page:title-mobile' : 'page:title')}
-            </a>
+          <Link href={ROUTES.HOME.path} className="header__home-link">
+            <GitHubLogo />
+            {getLiteral(isMobile ? 'page:title-mobile' : 'page:title')}
           </Link>
 
-          <p className={yearClasses}>{year||getLiteral('page:date')}</p>
+          <p className={yearClasses}>{year || getLiteral('page:date')}</p>
         </div>
 
         <nav className="header__navigation">
@@ -71,60 +69,48 @@ const Header = () => {
               <Link
                 href={ROUTES.NEWS.getPath(year)}
                 aria-label={getLiteral('navigation:news')}
+                className={clsx('header__link', {
+                  ['is-active']: pathname === ROUTES.SCHEDULE.getPath(year),
+                })}
               >
-                <a
-                  className={clsx('header__link', {
-                    ['is-active']: pathname === ROUTES.SCHEDULE.getPath(year),
-                  })}
-                  aria-label={getLiteral('navigation:news')}
-                >
-                  <IconBell />
-                  <span className="header__link-text">
-                    {getLiteral('navigation:news')}
-                  </span>
-                </a>
+                <IconBell />
+                <span className="header__link-text">
+                  {getLiteral('navigation:news')}
+                </span>
               </Link>
             </li>
             <li>
               <Link
                 href={ROUTES.SCHEDULE.getPath(year)}
                 aria-label={getLiteral('navigation:schedule')}
+                className={clsx('header__link', {
+                  ['is-active']: pathname === ROUTES.SCHEDULE.getPath(year),
+                })}
               >
-                <a
-                  className={clsx('header__link', {
-                    ['is-active']: pathname === ROUTES.SCHEDULE.getPath(year),
-                  })}
-                  aria-label={getLiteral('navigation:schedule')}
-                >
-                  <IconCalendar />
-                  <span className="header__link-text">
-                    {getLiteral('navigation:schedule')}
-                  </span>
-                </a>
+                <IconCalendar />
+                <span className="header__link-text">
+                  {getLiteral('navigation:schedule')}
+                </span>
               </Link>
             </li>
             <li>
               <Link
                 href={ROUTES.LIBRARY.getPath(year)}
                 aria-label={getLiteral('navigation:library')}
+                className={clsx('header__link', {
+                  ['is-active']: pathname === ROUTES.LIBRARY.getPath(year),
+                })}
               >
-                <a
-                  className={clsx('header__link', {
-                    ['is-active']: pathname === ROUTES.LIBRARY.getPath(year),
-                  })}
-                  aria-label={getLiteral('navigation:library')}
-                >
-                  <IconBooks />
-                  <span className="header__link-text">
-                    {getLiteral('navigation:library')}
-                  </span>
-                </a>
+                <IconBooks />
+                <span className="header__link-text">
+                  {getLiteral('navigation:library')}
+                </span>
               </Link>
             </li>
           </ul>
         </nav>
       </div>
-    </header>
+    </header >
   )
 }
 
