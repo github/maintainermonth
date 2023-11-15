@@ -7,10 +7,9 @@ const ButtonLink = ({ href, isExternal, children }) => {
       href={href}
       target={isExternal ? '_blank' : undefined}
       rel={isExternal ? 'noreferrer' : undefined}
+      className="button-link"
     >
-      <a className="button-link">
-        {children} <IconArrowRight />
-      </a>
+      {children} <IconArrowRight />
     </Link>
   )
 }

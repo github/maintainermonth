@@ -14,7 +14,7 @@ jobs:
       - name: Install, Test, and Build 🔧
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '>=18.17.0'
 
       - name: Install, Test, and Build 🔧
         run: |
