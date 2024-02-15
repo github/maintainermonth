@@ -29,6 +29,13 @@ const Footer = () => {
         >
           2022
         </a>
+
+        <a
+          className="footer__link"
+          href={ROUTES.Y2023.path}
+        >
+          2023
+        </a>
         <a
           className="footer__link"
           href={getLiteral('footer:repository-url')}
