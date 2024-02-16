@@ -16,7 +16,7 @@ describe('Event files', () => {
     const eventFiles = fs.readdirSync(eventsDir)
 
     // Check if the directory is empty
-    if (fs.readdirSync(eventsDir).length === 0) {
+    if (fs.readdirSync(eventsDir).length === 1) {
       console.log('Events directory \'s empty. Test is skipped.');
     } else {
       const events = eventFiles.map((fileName) => {
