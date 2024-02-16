@@ -12,21 +12,11 @@ const Council = () => {
     <section className="about">
       <div className="about__content">
         <div className="about__column">
-          <h2 className="about__title">Maintainer Month 2023 Advisory Council</h2>
+          <h2 className="about__title">Maintainer Month 2024 Advisory Council</h2>
         </div>
 
         <div className="about__text">
-        <ul>
-          <li>Abigail Cabunoc Mayes, GitHub</li>
-          <li>Ana Jimenez, TODO Group</li>
-          <li>Duane O’Brien</li>
-          <li>Josh Simmons</li>
-          <li>Julia Ferraioli, Open Source Stories</li>
-          <li>Kara Sowles, GitHub</li>
-          <li>Melissa Mendonça, Quansight</li>
-          <li>Richard Littauer, Open Source Collective</li>
-          <li>Ruth Ikegah, CHAOSS</li>
-        </ul>
+        <p>TBD</p>
         </div>
       </div>
     </section>
