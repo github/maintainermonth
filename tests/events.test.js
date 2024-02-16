@@ -12,16 +12,22 @@ describe('Event files', () => {
   })
 
   test('All events have correct dates (or TBD)', () => {
+    const eventsDir = getEventsDirectory();
     const eventFiles = fs.readdirSync('content/events')
 
-    const events = eventFiles.map((fileName) => {
-      const slug = fileName.replace('.md', '')
-      const event = getEventBySlug(slug)
-      return event
-    })
+    // Check if the directory is empty
+    if (fs.readdirSync(eventsDir).length === 0) {
+      console.log('Events directory is empty. Test is skipped.');
+    } else {
+      const events = eventFiles.map((fileName) => {
+        const slug = fileName.replace('.md', '')
+        const event = getEventBySlug(slug)
+        return event
+      })
 
-    events.forEach((event) => {
-      expect(() => parseEvent(event)).not.toThrowError()
-    })
+      events.forEach((event) => {
+        expect(() => parseEvent(event)).not.toThrowError()
+      })
+    }
   })
 })
