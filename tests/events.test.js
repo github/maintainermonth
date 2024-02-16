@@ -6,7 +6,7 @@ describe('Event files', () => {
   test('All event files have ".md" extension', () => {
     const eventFiles = fs.readdirSync('content/events')
 
-    const areAllValid = eventFiles.every((fileName) => fileName.endsWith('.md'))
+    const areAllValid = eventFiles.every((fileName) => fileName.endsWith('.md') || fileName === '.gitkeep');
 
     expect(areAllValid).toBe(true)
   })
