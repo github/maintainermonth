@@ -17,7 +17,7 @@ describe('Event files', () => {
 
     // Check if the directory is empty
     if (fs.readdirSync(eventsDir).length === 0) {
-      console.log('Events directory 's empty. Test is skipped.');
+      console.log('Events directory \'s empty. Test is skipped.');
     } else {
       const events = eventFiles.map((fileName) => {
         const slug = fileName.replace('.md', '')
