@@ -24,7 +24,7 @@ Maintainer Month is an open source project — anyone can jump in and contribute
 - Join the Maintainer Community: [request an invitation to the Maintainer Community](https://maintainers.github.com/), a private space for maintainers to connect with peers, preview GitHub features, and learn from each other. [LINK]
 
 ### **For Organizations, Podcasts, Companies, Foundations, and others:**
-- Highlight maintainers
+- Highlight maintainers, in blog posts, social, and other channels you have!
 - Feature open source maintainers on your podcast / stream / social media with #MaintainerMonth during the month of May. If you would like us share potential maintainers you can feature, [let us know](https://docs.google.com/forms/d/e/1FAIpQLSf7ENmSvtbSGU5_IFzR3NqVsr66-MHdegvrcWAJDVL6NJHtiw/viewform).
 - [Add your event to our calendar or share stories in the library](https://github.com/github/maintainermonth/issues/new)!
 - Host events to convene maintainers
