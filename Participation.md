@@ -3,7 +3,7 @@
 ...a month for open source maintainers to gather, share, and be celebrated.
 Open source runs the world, but who runs open source? Open source maintainers are behind the software we use everyday, but they don't always have the community or support they need. That's why we're celebrating open source maintainers all month long.
 
-The 2024 Maintainer Month is, of course, in **May**! You're invited to participate in whatever ways you'd like. 
+The 2024 Maintainer Month is, of course, in **May**! You're invited to participate in whatever ways you'd like, and list what you're doing on the public [Maintainer Month site](please reach out).
 
 ## Themes for 2024
 
