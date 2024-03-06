@@ -30,6 +30,7 @@ Maintainer Month is an open source project — anyone can jump in and contribute
 - Host events to convene maintainers
 - Host an event that brings maintainers together! Give them space to connect and learn from each other. Submit an issue to get your event listed on our website.
 - Pay maintainers: Launch a FOSS Fund or sponsorship program to pay the maintainers of the software you depend on. We’d love to help, [please reach out](mailto:karasowles@github.com).
+- Feel free to [reach out to Kara Sowles](mailto:karasowles@github.com) if you're thinking of doing something, or if you're looking for support!
 
 ### **More stuff to check out:**
 - Starting a FOSS Fund? Join FOSS Funders: https://fossfunders.com/
