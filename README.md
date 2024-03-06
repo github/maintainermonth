@@ -1,4 +1,4 @@
-# GitHub Maintainer Month
+# Maintainer Month
 
 A month for open source maintainers to gather, share, and be celebrated. 🥳
 
@@ -53,6 +53,10 @@ See the [contributing guide](CONTRIBUTING.md) for more details.
 ## Code of Conduct
 
 Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
+
+## Maintainer Month Origins
+
+Maintainer Month was created, and is maintained, by GitHub, starting in 2021 as Maintainer Week. It was simaeltaneously conceived of by Kara Sowles and Josh Simmons, who called each other to tell each other the same idea. It's intended as an industry-wide event that isn't owned by GitHub - that belongs to anyone who wants to contribute or participate. In includes an Advisory Council from folks across the industry that shape what it is.
 
 ## License
 
