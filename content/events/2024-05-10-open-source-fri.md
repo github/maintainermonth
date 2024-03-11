@@ -3,8 +3,8 @@ title: "Open Source Friday stream: Bloom"
 metaTitle: "Trauma Support Software from Chayn"
 metaDesc: 'Join us for Open Source Friday'
 date: '05/10'
-UTCStartTime: '05:00'
-UTCEndTime: '06:00'
+UTCStartTime: '17:00'
+UTCEndTime: '18:00'
 type: 'stream'
 userName: 'Open Source Friday'
 userLink: 'https://www.twitch.tv/github'
