@@ -6,7 +6,7 @@ date: '05/17'
 UTCStartTime: '15:00'
 UTCEndTime: '20:00'
 type: 'conference'
-userName: 'PyCon'
+userName: 'PyCon US'
 userLink: 'https://us.pycon.org/2024/events/maintainers-summit/'
 linkUrl: 'https://us.pycon.org/2024/events/maintainers-summit/'
 ---
