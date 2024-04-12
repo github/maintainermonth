@@ -16,7 +16,13 @@ const Council = () => {
         </div>
 
         <div className="about__text">
-        <p>TBD</p>
+        <p>
+  Kara Sowles - GitHub
+  Josh Simmons - The Matrix.org Foundation
+  Julia Ferraioli	- Amazon Web Services
+  Richard Littauer - SustainOSS
+  Melissa Mendonça - Quansight
+        </p>
         </div>
       </div>
     </section>
