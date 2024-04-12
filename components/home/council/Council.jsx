@@ -14,15 +14,12 @@ const Council = () => {
         <div className="about__column">
           <h2 className="about__title">Maintainer Month 2024 Advisory Council</h2>
         </div>
-
         <div className="about__text">
-        <p>
-  Kara Sowles - GitHub
-  Josh Simmons - The Matrix.org Foundation
-  Julia Ferraioli	- Amazon Web Services
-  Richard Littauer - SustainOSS
-  Melissa Mendonça - Quansight
-        </p>
+  <p>Kara Sowles - GitHub </p> 
+  <p>Josh Simmons - The Matrix.org Foundation </p>
+  <p>Julia Ferraioli	- Amazon Web Services</p>
+  <p>Richard Littauer - SustainOSS</p>
+  <p>Melissa Mendonça - Quansight</p>
         </div>
       </div>
     </section>
