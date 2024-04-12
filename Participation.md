@@ -7,11 +7,14 @@ The 2024 Maintainer Month is, of course, in **May**! You're invited to participa
 
 ## Themes for 2024
 
-**Theme For Maintainers**
-TBD for this year pending Advisory Committee recommendations. 2023's theme was 'Finding balance, stepping back, and succession planning as leaders.'
+**Theme for Maintainers**
+
+Every open source project starts with a human spark of creativity, of curiosity, of problem-solving. Sharing software is an act of hope and generosity. As a maintainer, what sparks the fire of your joy for open source? If your fire is burning low, how do you find your way back to what sparked joy about open source?
+
+Last year we focused on burnout, a serious issue maintainers frequently face. This year, we’re talking about the flip side: the energizing aspects of open source.
 
 **Theme For Companies**
-TBD for this year pending Advisory Committee recommendations. 2023's theme was 'Now is the time to double down on funding open source.'
+Maintainers keep the software ecosystem running, but they’re humans, not machines. Do you know who the maintainers you rely on are? Do you know what kind of support those individuals actually need? Ask what you can do for them, and be ready to listen.
 
 ## How To Get Involved
 Maintainer Month is an open source project — anyone can jump in and contribute! Whether you're a maintainer, an organization, or a fan or open source, you're invited to participate! Here are a few ways you can jump in:
