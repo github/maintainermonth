@@ -42,7 +42,7 @@ body:
   - id: type
     type: input
     attributes:
-      label: Conent type
+      label: Content type
     validations:
       required: true
 
