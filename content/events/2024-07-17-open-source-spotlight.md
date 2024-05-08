@@ -5,8 +5,6 @@ metaDesc: 'Showcase your open source projects at the Open Source Spotlight in Be
 date: '07/17'
 UTCStartTime: 'TBD'
 UTCEndTime: 'TBD'
-UTCStartTime: 'TBD'
-UTCEndTime: 'TBD'
 type: 'conference'
 linkUrl: 'https://www.wearedevelopers.com/world-congress/github-open-source-spotlight'
 ---
