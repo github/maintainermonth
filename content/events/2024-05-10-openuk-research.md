@@ -1,6 +1,6 @@
 ---
-title: 'OpenUK Research and Reporting Show and Tel'
-metaTitle: 'OpenUK Research and Reporting Show and Tel'
+title: 'OpenUK Research and Reporting Show and Tell'
+metaTitle: 'OpenUK Research and Reporting Show and Tell'
 metaDesc: 'Opportunity to see the best of global research and reporting in open source software.'
 date: '05/10'
 type: 'conference'
