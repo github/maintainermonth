@@ -12,4 +12,5 @@ linkUrl: 'https://www.twitch.tv/github'
 ---
 
 Join GitHub for Open Source Friday: a weekly celebration of open source projects, brought to you by the folks building them. 
-On May 24th, [Marlin](github.com/MarlinFirmware/Marlin) maintainer @thinkyhead will be joining hosts Kedasha Kerr and Andrea Griffiths. Marlin is an optimized firmware for RepRap 3D printers based on the Arduino platform.  [Sign up on Meetup](https://www.meetup.com/github/) for a reminder, and tune in on [Twitch](https://www.twitch.tv/github).
+
+On May 24th, indie software developer Scott Lahteine will join us to discuss [@MarlinFirmware](github.com/MarlinFirmware/Marlin), a project born out of the RepRap Project 12 years ago. Targeting Arduino micro-controllers, Marlin Firmware has evolved thanks to contributions from hundreds of developers and 3D printer enthusiasts worldwide. Join us to learn about the project's history, collaborative development, and impact on the 3D printing community!  [Sign up on Meetup](https://www.meetup.com/github/) for a reminder, and tune in on [Twitch](https://www.twitch.tv/github).
