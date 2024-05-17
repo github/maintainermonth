@@ -1,4 +1,3 @@
-
 ---
 title: "GitTogether Brasil"
 metaTitle: "Brazilian open source maintainer stream"
