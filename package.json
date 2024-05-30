@@ -35,7 +35,7 @@
     "sass-loader": "^13.3.2"
   },
   "overrides": {
-    "xml2js": "^0.5.0"
+    "xml2js": "^0.6.0"
   },
   "resolutions": {
     "jimp/@jimp/plugins/@jimp/plugin-print/load-bmfont/parse-bmfont-xml/xml2js": "^0.6.0"
