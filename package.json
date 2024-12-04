@@ -14,7 +14,7 @@
     "dayjs": "^1.11.10",
     "fathom-client": "^3.6.0",
     "gray-matter": "^4.0.3",
-    "jimp": "^0.22.12",
+    "jimp": "^1.6.0",
     "markdown-it": "^13.0.2",
     "next": "^14.2.10",
     "react": "18.2.0",

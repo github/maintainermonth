@@ -1,6 +1,5 @@
+import { Jimp } from "jimp";
 const { createHash } = require('crypto')
-
-var Jimp = require('jimp')
 
 async function getOgImage({ title, user, type }) {
   if (process.env.NODE_ENV === 'development') {
@@ -9,7 +8,7 @@ async function getOgImage({ title, user, type }) {
 
   const hash = createHash('md5').update(title).digest('hex')
 
-  Jimp.read(`public/images/og/templates/${type}.png`, (err, image) => {
+Jimp.read(`public/images/og/templates/${type}.png`, (err, image) => {
     if (err) throw err
 
     Promise.all([
