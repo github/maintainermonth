@@ -26,6 +26,6 @@ export const Y2022 = makePath('/2022')
 
 export const Y2023 = makePath('/2023')
 
-export const Y2023 = makePath('/2024')
+export const Y2024 = makePath('/2024')
 
 export const NEWS = makePath("/news")
