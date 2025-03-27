@@ -24,7 +24,7 @@ const Events = ({ title, list, connectionTitle, connectionButtonText }) => {
         </div>
       </div>
       <Connection title={connectionTitle} buttonText={connectionButtonText} />
-      <Council />
+      {/* <Council /> */}
     </section>
   )
 }
