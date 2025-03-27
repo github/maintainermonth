@@ -6,7 +6,7 @@ Repository for the official GitHub Maintainer Month website. You can access the 
 
 **Add your event!** See the [contributing guide](CONTRIBUTING.md) for details on how.
 
-**<p align="center"> ❇️ May 2024 ❇️ </p>**
+**<p align="center"> ❇️ May 2025 ❇️ </p>**
 
 ## Table of Contents
 
