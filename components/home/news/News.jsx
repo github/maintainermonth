@@ -12,7 +12,7 @@ const News = ({ title, news }) => {
 
   return (
     <section className="news">
-      <div className="news__content">
+      {/* <div className="news__content">
         <SectionDivider title={title} />
         <div className="news__items">
             <div className="news__item" key={news.title}>
@@ -32,7 +32,7 @@ const News = ({ title, news }) => {
             </ButtonLink>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }
