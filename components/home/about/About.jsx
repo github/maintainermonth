@@ -44,12 +44,8 @@ const About = ({ title, content, theme1, theme2 }) => {
         />
         <div className="about__themes">
           <div>
-            <h4 className="get-involved__example-subtitle">Theme For Maintainers</h4>
+            <h4 className="get-involved__example-subtitle">2025 Theme: Securing Open Source</h4>
             <p className="get-involved__text">{theme1}</p>
-          </div>
-          <div>
-            <h4 className="get-involved__example-subtitle">Theme For Companies</h4>
-            <p className="get-involved__text">{theme2}</p>
           </div>
         </div>
       </div>
