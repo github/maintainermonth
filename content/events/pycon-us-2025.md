@@ -2,7 +2,7 @@
 title: 'PyCon US 2025'
 metaTitle: 'PyCon US 2025'
 metaDesc: 'Join PyCon US 2025 for tutorials, talks, keynotes, and sprints hosted by the Python Software Foundation.'
-date: '05/14-05/22'
+date: '05/14'
 UTCStartTime: '13:00'
 UTCEndTime: '21:00'
 type: 'conference'
