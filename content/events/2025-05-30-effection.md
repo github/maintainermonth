@@ -5,7 +5,7 @@ metaDesc: 'Join Charles Lowell to discuss Effection - Structured Concurrency and
 date: '05/30'
 UTCStartTime: '6:00'
 UTCEndTime: '7:00'
-type: 'open-source-friday'
+type: 'stream'
 userName: 'cowboyd'
 userLink: 'https://github.com/cowboyd'
 linkUrl: 'https://github.com/githubevents/open-source-friday/issues/136'

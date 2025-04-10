@@ -5,7 +5,7 @@ metaDesc: 'Explore open-source AI products with Dhravya Shah, including Supermem
 date: '05/16'
 UTCStartTime: '6:00'
 UTCEndTime: '7:00'
-type: 'open-source-friday'
+type: 'stream'
 userName: 'Dhravya'
 userLink: 'https://github.com/Dhravya'
 linkUrl: 'https://github.com/githubevents/open-source-friday/issues/137'
