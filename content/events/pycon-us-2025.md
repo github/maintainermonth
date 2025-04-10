@@ -11,7 +11,7 @@ userLink: 'https://us.pycon.org/2025/'
 linkUrl: 'https://us.pycon.org/2025/'
 ---
 
-At PyCon US 2025, you will find an amazing program filled with pre-conference tutorials and sponsor presentations, 90+ of our community's best talks, which includes our Charlas track, brilliant keynote speakers, posters on display, a lively Expo Hall filled with our incredible Sponsors' booths, and our famed lightning talks on each main conference day.
+At PyCon US 2025, you will find an amazing program filled with pre-conference tutorials and sponsor presentations, 90+ of our community's best talks, which includes our Charlas track, brilliant keynote speakers, posters on display, a lively Expo Hall filled with our incredible Sponsors' booths, and our famed lightning talks on each main conference day. PyCon Us this year is May 14-22nd in Pittsburgh, Pennsylvania. 
 
 Following the conference days, there are 4 days of sprints that are free to all attendees and offer an opportunity for anyone to collaborate and contribute to a project even if it is their first time.
 
