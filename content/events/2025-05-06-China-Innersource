@@ -1,0 +1,14 @@
+---
+title: 'InnerSource in China: Past, Present, and Future'
+metaTitle: 'InnerSource in China: Past, Present, and Future'
+metaDesc: 'Join Jerry Tan of the China OSS Promotion Union for a talk on the history and development of InnerSource in China.'
+date: '05/06'
+UTCStartTime: '08:00'
+UTCEndTime: '09:00'
+type: 'talk'
+userName: 'InnerSource Commons'
+userLink: 'https://innersourcecommons.org'
+linkUrl: 'https://www.eventbrite.com/e/innersource-in-china-past-present-and-future-tickets-1306701983809'
+---
+
+In this talk, Jerry Tan of the China OSS Promotion Union will introduce the development and history of InnerSource in China. In China, InnerSource is often used as an incubator for external open source. As with open source, InnerSource maintainers need good documentation, including README and QuickStart, as well as good reviewers. Jerry will present several typical cases of InnerSource adoption by major Chinese companies, and look forward to the continued development prospects of InnerSource in China.
