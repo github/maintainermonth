@@ -1,6 +1,6 @@
 ---
-title: 'Open Source Friday: Diciotech'
-metaTitle: 'Open Source Friday: Diciotech'
+title: 'Open Source Friday Brasil: Diciotech'
+metaTitle: 'Open Source Friday Brasil: Diciotech'
 metaDesc: 'Join Leticia to explore Diciotech, a collaborative online tech dictionary built with HTML, SASS, and JavaScript.'
 date: '05/09'
 UTCStartTime: '16:00'
