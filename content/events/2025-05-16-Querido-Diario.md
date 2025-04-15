@@ -1,6 +1,6 @@
 ---
-title: 'Open Source Friday: Querido Diário'
-metaTitle: 'Open Source Friday: Querido Diário'
+title: 'Open Source Friday Brasil: Querido Diário'
+metaTitle: 'Open Source Friday Brasil: Querido Diário'
 metaDesc: 'Join Rebeca Almeida to discuss Querido Diário, making Brazilian government gazettes accessible to everyone.'
 date: '05/16'
 UTCStartTime: '16:00'
