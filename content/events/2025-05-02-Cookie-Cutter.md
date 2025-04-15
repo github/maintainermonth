@@ -1,6 +1,6 @@
 ---
-title: 'Open Source Friday: Cookie Cutter and FastAPI'
-metaTitle: 'Open Source Friday: Cookie Cutter and FastAPI'
+title: 'Open Source Friday Brasil: Cookie Cutter and FastAPI'
+metaTitle: 'Open Source Friday Brasil: Cookie Cutter and FastAPI'
 metaDesc: 'Join Arthur Henrique to discuss Cookiecutter template for FastAPI projects using Machine Learning, uv, GitHub Actions, and Pytests.'
 date: '05/02'
 UTCStartTime: '16:00'
