@@ -68,8 +68,7 @@ const EventsList = ({ events }) => {
           </div>
         </div>
       ))}
-      <br />
-      <div>
+      <div className="events-list__add">
         <ButtonLink href="https://github.com/github/maintainermonth/issues/new?assignees=&labels=&template=add-to-calendar.yml&title=EVENT_NAME">
           Add your own activity
         </ButtonLink>

@@ -134,4 +134,10 @@
     line-clamp: 7;
     -webkit-box-orient: vertical;
   }
+
+  &__add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
