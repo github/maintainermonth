@@ -17,9 +17,33 @@
             "topics": "Various projects"
         },
         {
+            "title": "From Contributor to Maintainer: My Journey in Open Source",
+            "author": "Ayu Adiati",
+            "description": "Special for Maintainer Month, Ayu shares their journey and experience from being a contributor to a maintainer, the ups and downs, and the joy of being a maintainer",
+            "link": "https://adiati.com/from-contributor-to-maintainer-my-journey-in-open-source",
+            "type": "Blog",
+            "topics": "Mainatiner"
+        },
+        {
+            "title": "Maintainer Burnout is a Problem. So, What Are We Going to Do About It?",
+            "author": "Katherine Druckman",
+            "description": "Open source maintainers talk about their struggles leading projects and how the industry needs to change",
+            "link": "https://www.intel.com/content/www/us/en/developer/articles/community/maintainer-burnout-a-problem-what-are-we-to-do.html",
+            "type": "Blog",
+            "topics": "Burnout"
+        },
+        {
+            "title": "Open Source Maintainership: The Highs, Lows, and Everything Inbetween",
+            "author": "Katherine Druckman, Karen Chu, and Sarah Christoff",
+            "description": "Katherine Druckman sat down with Sarah Christoph, lead maintainer of Porter, and Karen Chu, community manager for Helm, to discuss the realities of maintaining open source projects.",
+            "link": "https://open.spotify.com/episode/4NP3gJRYMsdZ9VXPXn29LV?si=kdICfqB5S36AZlauu71Pmw&nd=1&dlsi=aafe5ef1f767440b",
+            "type": "Podcast",
+            "topics": "Community building, Sustainable projects, Burnout"
+        },
+        {
             "title": "Sarah Boyce & David Blass",
             "author": "Sustain OSS",
-            "description": "",
+            "description": "Learn about TypeScript, open source, and clean interfaces for everyone.",
             "link": "https://podcast.sustainoss.org/172",
             "type": "Podcast",
             "topics": "Django, ArkType"
@@ -27,15 +51,15 @@
         {
             "title": "Kaleb Luedtke",
             "author": "Open at Microsoft",
-            "description": "",
+            "description": "Watch the team discuss how to contribute packages to the Windows Package Manager Community repository.",
             "link": "https://www.youtube.com/watch?v=zF3R3O2yzbs",
             "type": "Interviews",
             "topics": "Windows Package Manager"
         },
         {
-            "title": "Alyssa Wright, Chad Whitacre, and Duane O’Brien",
+            "title": "Alyssa Wright, Chad Whitacre, and Duane O'Brien",
             "author": "The Changelog Podcast",
-            "description": "",
+            "description": "Open source runs the world, but who runs open source? Maintainers.",
             "link": "https://changelog.com/podcast/539",
             "type": "Podcast",
             "topics": "Companies sponsoring OSS"
