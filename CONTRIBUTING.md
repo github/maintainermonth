@@ -35,6 +35,7 @@ type: 'meetup'
 userName: 'github'
 userLink: 'https://www.meetup.com/GitHub-Africa/'
 linkUrl: 'https://www.meetup.com/GitHub-Africa/'
+location: 'Virtual'
 ---
 
 Join GitHub users across Africa to talk about open source project maintainership!
@@ -54,6 +55,7 @@ All fields included in the _frontmatter_ are mandatory:
 - `userName`: user name or organization organizing the event.
 - `userLink`: link to user or organization profile.
 - `linkUrl`: Button link with external link to the event.
+- `location`: event location, either `Virtual` or `In-person` or the location itself.
 
 After these fields, on the line following `---`, you can add the event description, in markdown format.
 

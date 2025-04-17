@@ -33,6 +33,7 @@ const EventDetail = ({ event, reverseColumns, isFullPage }) => {
           <div className="event-detail__column">
             <Chip label={event.formattedDate.date} />
             <EventTypeChip type={event.type} />
+            {event.location && <Chip label={event.location} />}
           </div>
           <DateTimeChip
             date={event.formattedDate.date}
@@ -52,7 +53,10 @@ const EventDetail = ({ event, reverseColumns, isFullPage }) => {
           {isFullPage ? (
             <h1 className="event-detail__title">{event.title}</h1>
           ) : (
-            <Link href={{ pathname: event.link }} className="event-detail__title">
+            <Link
+              href={{ pathname: event.link }}
+              className="event-detail__title"
+            >
               {event.title}
             </Link>
           )}
