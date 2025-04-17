@@ -52,6 +52,7 @@ All fields included in the _frontmatter_ are mandatory:
 - `UTCStartTime`: start time in UTC, in `HH:MM` format.
 - `UTCStartTime`: end time in UTC, in `HH:MM` format.
 - `type`: one of the following `podcast`, `stream`, `talk`, `meetup`, `fundraising`, `conference`, `misc`.
+- `language`: primary language of the event (e.g., English, Spanish, Mandarin).
 - `userName`: user name or organization organizing the event.
 - `userLink`: link to user or organization profile.
 - `linkUrl`: Button link with external link to the event.

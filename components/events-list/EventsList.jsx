@@ -30,6 +30,7 @@ const EventsList = ({ events }) => {
           <div className="events-list__event">
             <div className="events-list__chips">
               <EventTypeChip type={event.type} />
+              {event.language && <Chip label={event.language} />}
               {event.location && <Chip label={event.location} />}
             </div>
             <DateTimeChip

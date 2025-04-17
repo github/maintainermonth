@@ -33,6 +33,7 @@ const EventDetail = ({ event, reverseColumns, isFullPage }) => {
           <div className="event-detail__column">
             <Chip label={event.formattedDate.date} />
             <EventTypeChip type={event.type} />
+            {event.language && <Chip label={event.language} />}
             {event.location && <Chip label={event.location} />}
           </div>
           <DateTimeChip

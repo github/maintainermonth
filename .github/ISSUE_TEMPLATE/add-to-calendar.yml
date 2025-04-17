@@ -57,6 +57,14 @@ body:
     validations:
       required: true
 
+  - id: language
+    type: input
+    attributes:
+      label: Event Language
+      description: "Primary language of the event (e.g., English, Spanish, Mandarin)"
+    validations:
+      required: true
+
   - id: userName
     type: input
     attributes:
