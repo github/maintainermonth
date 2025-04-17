@@ -16,7 +16,7 @@
     "gray-matter": "^4.0.3",
     "jimp": "^1.6.0",
     "markdown-it": "^13.0.2",
-    "next": "^14.2.21",
+    "next": "^14.2.26",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "smoothscroll-polyfill": "^0.4.4"
