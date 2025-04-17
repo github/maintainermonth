@@ -12,6 +12,11 @@
   border-radius: 27px;
   cursor: default;
 
+  &[data-location] {
+    background-color: #2b5797;
+    color: white;
+  }
+
   &__icon {
     height: 18px;
     width: 18px;

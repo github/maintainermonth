@@ -30,13 +30,7 @@ const EventsList = ({ events }) => {
           <div className="events-list__event">
             <div className="events-list__chips">
               <EventTypeChip type={event.type} />
-              <Link
-                href={{ pathname: event.link }}
-                aria-label={getLiteral('navigation:schedule')}
-                className="events-list__more"
-              >
-                {getLiteral('actions:view-more')}
-              </Link>
+              {event.location && <Chip label={event.location} />}
             </div>
             <DateTimeChip
               startTime={event.formattedDate.startTime}
@@ -53,7 +47,10 @@ const EventsList = ({ events }) => {
                 {event.userName}
               </a>
 
-              <Link href={{ pathname: event.link }} className="events-list__link">
+              <Link
+                href={{ pathname: event.link }}
+                className="events-list__link"
+              >
                 {event.title}
               </Link>
             </div>
@@ -71,9 +68,11 @@ const EventsList = ({ events }) => {
           </div>
         </div>
       ))}
-      < br />
+      <br />
       <div>
-        <ButtonLink href="https://github.com/github/maintainermonth/issues/new?assignees=&labels=&template=add-to-calendar.yml&title=EVENT_NAME">Add your own activity</ButtonLink>
+        <ButtonLink href="https://github.com/github/maintainermonth/issues/new?assignees=&labels=&template=add-to-calendar.yml&title=EVENT_NAME">
+          Add your own activity
+        </ButtonLink>
       </div>
     </section>
   )

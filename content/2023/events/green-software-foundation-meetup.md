@@ -1,11 +1,12 @@
 ---
-title: "Ottawa Green Software Foundation Meetup - Hybrid Event"
-metaTitle: "Ottawa Green Software Foundation Meetup - Hybrid Event"
+title: 'Ottawa Green Software Foundation Meetup - Hybrid Event'
+metaTitle: 'Ottawa Green Software Foundation Meetup - Hybrid Event'
 metaDesc: "This is the first Green Software Foundation meetup in Ottawa. We'll have insightful talks on the Principles of Sustainable Green Software as well as Sustainable DevOps. You'll also learn about how you can help the Green Software Foundation maintain projects and patterns which will help reduce the carbon impact of software. Don't miss out on this opportunity to learn, connect, and engage; mark your calendars and prepare for an exciting morning of discussions, and connections!"
 date: '05/24'
 UTCStartTime: '13:00'
 UTCEndTime: '14:30'
 type: 'meetup'
+location: 'Hybrid - Microsoft Ottawa Office & Virtual'
 userName: 'Green Software Foundation'
 userLink: 'https://greensoftware.foundation'
 linkUrl: 'https://www.meetup.com/gsf-canada/events/293112123'
