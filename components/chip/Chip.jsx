@@ -7,7 +7,7 @@ const Chip = ({ label, icon, customColor }) => {
 
   // Check for spoken language indicators
   const isSpokenLanguage = label.toLowerCase().startsWith('in ') || 
-                          ['english', 'spanish', 'portuguese', 'mandarin', 'french']
+                          ['english', 'spanish', 'portuguese', 'mandarin', 'french', 'chinese']
                             .some(lang => label.toLowerCase().includes(lang));
 
   return (
