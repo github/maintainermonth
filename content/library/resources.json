@@ -3,7 +3,7 @@
         {
             "title": "The Changelog Podcast",
             "author": "Changelog",
-            "description": "",
+            "description": "A podcast discussing the latest in open source, software development, and the people behind it.",
             "link": "https://changelog.com/podcast",
             "type": "Interviews",
             "topics": "Various projects"
@@ -11,7 +11,7 @@
         {
             "title": "The ReadME Project",
             "author": "GitHub",
-            "description": "",
+            "description": "Stories and interviews highlighting the work and journeys of developers in the open source community.",
             "link": "https://github.com/readme",
             "type": "Interviews",
             "topics": "Various projects"
@@ -40,15 +40,15 @@
             "type": "Podcast",
             "topics": "Community building, Maintainer Journey, Burnout"
         },
-                {
+        {
             "title": "Another JavaScript Framework: Ryan Carniato",
             "author": "Brian Douglas",
-            "description": "Ryan Carniato is a frontend performance enthusiast and Fine-Grained Reactivity super fan. Author of the SolidJS UI library and MarkoJS Core Team Member, Ryan joins Brian Douglas to take us on a journey from playing in a band to becoming who he is today.",
+            "description": "Ryan Carniato shares his journey from music to open source, discussing SolidJS and MarkoJS.",
             "link": "https://github.com/github/maintainermonth/issues/177",
             "type": "Podcast",
             "topics": "Maintainer Journey"
         },
-                {
+        {
             "title": "From India to Open Source Intelligence: My Journey to Becoming a Maintainer",
             "author": "Kade Morton",
             "description": "Kade Morton talks about their journey to starting a company that uses and maintains open source software.",
@@ -59,7 +59,7 @@
         {
             "title": "Sarah Boyce & David Blass",
             "author": "Sustain OSS",
-            "description": "Learn about TypeScript, open source, and clean interfaces for everyone.",
+            "description": "A podcast exploring TypeScript, open source, and creating user-friendly interfaces.",
             "link": "https://podcast.sustainoss.org/172",
             "type": "Podcast",
             "topics": "Django, ArkType"
@@ -67,7 +67,7 @@
         {
             "title": "Kaleb Luedtke",
             "author": "Open at Microsoft",
-            "description": "Watch the team discuss how to contribute packages to the Windows Package Manager Community repository.",
+            "description": "Insights on contributing to the Windows Package Manager Community repository.",
             "link": "https://www.youtube.com/watch?v=zF3R3O2yzbs",
             "type": "Interviews",
             "topics": "Windows Package Manager"
@@ -75,7 +75,7 @@
         {
             "title": "Alyssa Wright, Chad Whitacre, and Duane O'Brien",
             "author": "The Changelog Podcast",
-            "description": "Open source runs the world, but who runs open source? Maintainers.",
+            "description": "Exploring the role of maintainers in the open source ecosystem and their impact.",
             "link": "https://changelog.com/podcast/539",
             "type": "Podcast",
             "topics": "Companies sponsoring OSS"
@@ -83,7 +83,7 @@
         {
             "title": "Bob Killen & Navendu Pottekkat",
             "author": "Sustain OSS",
-            "description": "",
+            "description": "Conversations on Kubernetes, Apache APISIX, and their contributions to open source.",
             "link": "https://podcast.sustaingitoss.org/174",
             "type": "Podcast",
             "topics": "Kubernetes, Apache APISIX"
@@ -91,7 +91,7 @@
         {
             "title": "Mark Fussell",
             "author": "Open at Microsoft",
-            "description": "",
+            "description": "Guidance on getting involved with the Dapr community and its projects.",
             "link": "https://learn.microsoft.com/en-ca/shows/open-at-microsoft/how-to-get-involved-with-the-dapr-community",
             "type": "Interviews",
             "topics": "Dapr"
@@ -99,7 +99,7 @@
         {
             "title": "Joff Tiquez",
             "author": "OSSPH",
-            "description": "",
+            "description": "An exploration of the story behind Open Source Software Philippines (OSSPH).",
             "link": "https://blog.ossph.org/the-story-of-open-source-software-ph-ossph/",
             "type": "Blog",
             "topics": "Open Source Software Philippines"
@@ -107,7 +107,7 @@
         {
             "title": "Rushmore Mushambi",
             "author": "SurrealDB",
-            "description": "",
+            "description": "Behind-the-scenes insights into contributions to SurrealDB during Maintainer Month 2023.",
             "link": "https://surrealdb.com/blog/maintainer-month-2023-behind-the-scenes-with-rushmore-mushambi",
             "type": "Blog",
             "topics": "SurrealDB"
@@ -115,7 +115,7 @@
         {
             "title": "4 Tips to Transition from Contributorhood to Maintainership",
             "author": "Chrissy Codes",
-            "description": "",
+            "description": "Advice for contributors aspiring to take on the role of maintainers in open source projects.",
             "link": "https://chrissycodes.hashnode.dev/4-tips-to-transition-from-contributorhood-to-maintainership",
             "type": "Blog",
             "topics": "Contributorhood to Maintainership"
@@ -131,7 +131,7 @@
         {
             "title": "Open Source Friday: Susan Spencer of Seamly",
             "author": "Open Source Friday",
-            "description": "",
+            "description": "A video session discussing open source contributions and the journey of Seamly.",
             "link": "https://www.youtube.com/watch?v=YQAzB11POQ0&list=PL0lo9MOBetEFmtstItnKlhJJVmMghxc0P&index=2",
             "type": "Video",
             "topics": "Maintainer Journey"
@@ -139,7 +139,7 @@
         {
             "title": "The critical human infrastructure of open source with Duane O’Brien",
             "author": "Open Source Stories",
-            "description": "",
+            "description": "A discussion about the essential human factors that keep the open source ecosystem thriving.",
             "link": "https://www.opensourcestories.org/stories/2023/critical-human-infrastructure/",
             "type": "Interviews",
             "topics": "Critical Human Infrastructure"
@@ -147,7 +147,7 @@
         {
             "title": "Erik Ejlskov Jensen",
             "author": "Open at Microsoft",
-            "description": "",
+            "description": "Exploring what's next for Entity Framework Core Power Tools.",
             "link": "https://learn.microsoft.com/en-us/shows/open-at-microsoft/whats-next-for-entity-framework-core-power-tools",
             "type": "Interviews",
             "topics": "Entity Framework Core Power Tools"
@@ -155,7 +155,7 @@
         {
             "title": "Russell Keith-Magee & Uriel Ofir",
             "author": "Sustain OSS",
-            "description": "",
+            "description": "A podcast highlighting the BeeWare Project and Ma'akaf initiatives.",
             "link": "https://learn.microsoft.com/en-us/shows/open-at-microsoft/whats-next-for-entity-framework-core-power-tools",
             "type": "Podcast",
             "topics": "BeeWare Project, Ma’akaf"
@@ -163,7 +163,7 @@
         {
             "title": "Jessica Tegner",
             "author": "Open Source Stories",
-            "description": "",
+            "description": "Insights into Jessica's journey to becoming a maintainer for the pypandoc project.",
             "link": "https://www.opensourcestories.org/stories/2023/journey-to-maintainership/",
             "type": "Interviews",
             "topics": "pypandoc"
@@ -171,7 +171,7 @@
         {
             "title": "Roberto Perez",
             "author": "Open at Microsoft",
-            "description": "",
+            "description": "An introduction to Azure Redis and its open source contributions.",
             "link": "https://learn.microsoft.com/shows/open-at-microsoft/introduction-to-azure-redis",
             "type": "Interviews",
             "topics": "Redis"
@@ -179,7 +179,7 @@
         {
             "title": "Predrag Gruevski & Kingsley Mkpandiok",
             "author": "Sustain OSS",
-            "description": "",
+            "description": "Discussions on Rust and open source design contributions.",
             "link": "https://podcast.sustainoss.org/178",
             "type": "Podcast",
             "topics": "Rust, Open Source Design"
@@ -187,7 +187,7 @@
         {
             "title": "Martin Woodward",
             "author": "Sustain OSS",
-            "description": "",
+            "description": "A podcast episode focused on the significance of Maintainer Month and its impact.",
             "link": "https://podcast.sustainoss.org/179",
             "type": "Podcast",
             "topics": "Maintainer Month"
@@ -195,7 +195,7 @@
         {
             "title": "Ed Warnicke",
             "author": "Open at Microsoft",
-            "description": "",
+            "description": "An introduction to OmniBOR and how it benefits open source projects.",
             "link": "https://learn.microsoft.com/shows/open-at-microsoft/introduction-to-omnibor",
             "type": "Interviews",
             "topics": "OmniBOR"
@@ -203,7 +203,7 @@
         {
             "title": "Yusuke Kuoka",
             "author": "SurrealDB",
-            "description": "",
+            "description": "Behind-the-scenes insights into contributions to SurrealDB during Maintainer Month 2023.",
             "link": "https://surrealdb.com/blog/maintainer-month-2023-behind-the-scenes-with-yusuke-kuoka",
             "type": "Blog",
             "topics": "SurrealDB"
@@ -211,11 +211,10 @@
         {
             "title": "Maintainer Maintainers",
             "author": "The Changelog Podcast",
-            "description": "Stormy Peters, Dr. Dawn Foster, Angie Byron join the Changelog Podcast to talk about Maintaining Maintainers",
+            "description": "Stormy Peters, Dr. Dawn Foster, and Angie Byron discuss the challenges and rewards of maintaining maintainers.",
             "link": "https://changelog.com/podcast/542",
             "type": "Podcast",
             "topics": "Maintainer Journey"
         }
-
     ]
 }
