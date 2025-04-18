@@ -1,9 +1,10 @@
 .chip {
   padding: spacing(1) spacing(1.5);
-
   display: inline-flex;
   align-items: center;
   column-gap: 6px;
+  flex-shrink: 0;
+  white-space: nowrap;
 
   background-color: $white;
   @extend %subtitle-1;
@@ -17,9 +18,15 @@
     color: white;
   }
 
+  &[data-spoken-language] {
+    background-color: #9C27B0; // Rich purple for language indicator
+    color: white;
+  }
+
   &__icon {
     height: 18px;
     width: 18px;
+    flex-shrink: 0;
 
     svg {
       height: 100%;
