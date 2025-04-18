@@ -18,6 +18,7 @@
 
   svg path {
     transition: fill 0.2s ease;
+    fill: $white;
   }
 
   &:hover svg path {
