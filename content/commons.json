@@ -73,6 +73,7 @@
 
     "schedule:title": "Schedule",
     "schedule:description": "List of all events to be organized during GitHub Maintainer Month",
+    "schedule:add-event": "Add your activity",
 
     "share:event": "Check out this GitHub Maintainer Month event",
 

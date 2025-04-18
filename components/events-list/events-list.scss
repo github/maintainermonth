@@ -1,110 +1,114 @@
 .events-list {
   $self: &;
-
-  padding: spacing(8) spacing(5);
-
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  row-gap: spacing(3);
+  padding: spacing(4) spacing(3);
+  max-width: 1600px; // Increased to accommodate more columns
+  margin: 0 auto;
 
   @media (min-width: $md) {
-    grid-template-columns: repeat(2, 1fr);
+    padding: spacing(6) spacing(5);
   }
 
-  @media (min-width: $lg) {
-    grid-template-columns: repeat(3, 1fr);
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: spacing(6);
+    gap: spacing(4);
+    flex-wrap: wrap;
+
+    @media (max-width: $sm) {
+      flex-direction: column;
+      align-items: stretch;
+    }
   }
 
-  @media (min-width: $xl) {
-    grid-template-columns: repeat(4, 1fr);
+  &__title {
+    @extend %header-1;
+    margin: 0;
+  }
+
+  &__grid {
+    display: grid;
+    gap: spacing(3);
+    grid-template-columns: 1fr;
+    
+    @media (min-width: $sm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media (min-width: $lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    @media (min-width: 1440px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 
   &__card {
     position: relative;
-
     display: flex;
     flex-direction: column;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease, background 0.2s ease;
+    height: 100%; // Make all cards same height
 
-    @media (min-width: $md) {
-      margin-left: spacing(2);
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateY(-2px);
     }
 
     &.same-date {
-      margin-left: 0;
-
-      #{ $self }__date > * {
-        opacity: 0;
+      .events-list__date {
+        opacity: 0.5;
       }
     }
   }
 
   &__date {
-    width: 100%;
-    padding-bottom: spacing(3);
+    padding: spacing(2) spacing(3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   &__event {
     padding: spacing(3);
     flex: 1;
-
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    row-gap: spacing(4);
+    gap: spacing(3);
+  }
 
-    @extend %background-filter;
-    border-top: 1px solid $white-50;
-
-    a {
-      z-index: $index-event-link;
-    }
-
-    &:hover {
-      background: $white-20;
-      transition: background $simple-fade;
-    }
+  &__meta {
+    display: flex;
+    flex-direction: column;
+    gap: spacing(2);
   }
 
   &__chips {
     display: flex;
     flex-wrap: wrap;
-    gap: spacing(1);
-    margin-bottom: spacing(1);
+    gap: spacing(2);
+    align-items: flex-start;
 
     > * {
-      margin-right: spacing(1);
-
-      &:last-child {
-        margin-left: auto;
-        margin-right: 0;
-      }
+      flex-shrink: 0;
     }
   }
 
-  &__more {
-    padding: spacing(1) spacing(2);
-
-    display: flex;
-    align-items: center;
-
-    @extend %subtitle-1;
-
-    @extend %background-filter-white;
-    border-radius: 155px;
-
-    transition: background $simple-fade, color $simple-fade;
-
-    &:hover {
-      background: $white;
-      color: $purple;
-    }
+  &__info {
+    margin-top: auto;
+    padding-top: spacing(3);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   &__user {
-    margin-bottom: spacing(2);
-    display: block;
+    margin: 0;
     @extend %header-5;
-
+    color: $white-80;
+    
     &:hover {
       text-decoration: underline;
     }
@@ -112,26 +116,36 @@
 
   &__link {
     @extend %header-3;
-
-    &::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
+    color: $white;
+    text-decoration: none;
+    display: block;
+    margin-top: spacing(1);
+    
+    &:hover {
+      text-decoration: underline;
     }
   }
 
   &__text {
     @extend %body-1;
     color: $white-80;
-
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 7;
-    line-clamp: 7;
-    -webkit-box-orient: vertical;
+    
+    a {
+      color: $white;
+      text-decoration: underline;
+      
+      &:hover {
+        color: $white-80;
+      }
+    }
   }
 }

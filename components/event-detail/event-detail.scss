@@ -2,17 +2,20 @@
   $self: &;
 
   @extend %grid;
-
   position: relative;
+  width: 100%;
+  min-width: 0;
 
   &__user {
     margin-bottom: spacing(2);
     display: block;
-
     font-family: $inter;
     font-weight: $regular;
     font-size: 1.25rem;
     line-height: 1.4;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
     &:hover {
       text-decoration: underline;
@@ -21,6 +24,9 @@
 
   &__title {
     @extend %header-1;
+    margin-bottom: spacing(3);
+    width: 100%;
+    min-width: 0;
 
     &[href]::after {
       content: '';
@@ -42,17 +48,38 @@
     }
   }
 
+  &__chips {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: spacing(3);
+    overflow-x: auto;
+    padding-bottom: spacing(1);
+    gap: spacing(2);
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    min-width: 0;
+    
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;
+    
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    > * {
+      flex-shrink: 0;
+    }
+  }
+
   &__info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
-    row-gap: spacing(4);
-
     width: 100%;
-    height: auto;
+    min-width: 0;
     box-sizing: border-box;
-
     grid-column: 1 / 5;
 
     @media (min-width: $md) {
