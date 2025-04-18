@@ -18,6 +18,7 @@
 
   svg path {
     transition: fill 0.2s ease;
+    fill: $white;
   }
 
   &:hover svg path {
@@ -29,6 +30,7 @@
     background: $white;
     color: $purple;
     font-weight: 600;
+    margin-top: spacing(1);
 
     svg path {
       fill: $purple;
