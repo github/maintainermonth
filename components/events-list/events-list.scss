@@ -9,14 +9,47 @@
 
   @media (min-width: $md) {
     grid-template-columns: repeat(2, 1fr);
+
+    > :last-child:nth-child(2n + 1) {
+      grid-column: span 2;
+    }
+    > :last-child:nth-child(2n + 2) {
+      grid-column: span 1;
+    }
+    > :last-child:nth-child(2n + 3) {
+      grid-column: span 2;
+    }
   }
 
   @media (min-width: $lg) {
     grid-template-columns: repeat(3, 1fr);
+
+    > :last-child:nth-child(3n + 1) {
+      grid-column: span 3;
+    }
+    > :last-child:nth-child(3n + 2) {
+      grid-column: span 2;
+    }
+    > :last-child:nth-child(3n + 3) {
+      grid-column: span 1;
+    }
   }
 
   @media (min-width: $xl) {
     grid-template-columns: repeat(4, 1fr);
+
+    /* These classes will fix the add activity button position
+     * as long as the button is the last child in the grid
+     */
+    > :last-child:nth-child(4n + 1) {
+      grid-column: span 4;
+    }
+    > :last-child:nth-child(4n + 2) {
+      grid-column: span 3;
+    }
+    > :last-child:nth-child(4n + 3) {
+      grid-column: span 2;
+    }
   }
 
   &__card {
@@ -135,6 +168,7 @@
     -webkit-box-orient: vertical;
   }
 
+  /* Add your own activity button */
   &__add {
     display: flex;
     align-items: center;
