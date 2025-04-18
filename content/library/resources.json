@@ -22,7 +22,7 @@
             "description": "Special for Maintainer Month, Ayu shares their journey and experience from being a contributor to a maintainer, the ups and downs, and the joy of being a maintainer",
             "link": "https://adiati.com/from-contributor-to-maintainer-my-journey-in-open-source",
             "type": "Blog",
-            "topics": "Maintainer"
+            "topics": "Maintainer Journey"
         },
         {
             "title": "Maintainer Burnout is a Problem. So, What Are We Going to Do About It?",
@@ -38,7 +38,23 @@
             "description": "Katherine Druckman sat down with Sarah Christoph, lead maintainer of Porter, and Karen Chu, community manager for Helm, to discuss the realities of maintaining open source projects.",
             "link": "https://open.spotify.com/episode/4NP3gJRYMsdZ9VXPXn29LV?si=kdICfqB5S36AZlauu71Pmw&nd=1&dlsi=aafe5ef1f767440b",
             "type": "Podcast",
-            "topics": "Community building, Sustainable projects, Burnout"
+            "topics": "Community building, Maintainer Journey, Burnout"
+        },
+                {
+            "title": "Another JavaScript Framework: Ryan Carniato",
+            "author": "Brian Douglas",
+            "description": "Ryan Carniato is a frontend performance enthusiast and Fine-Grained Reactivity super fan. Author of the SolidJS UI library and MarkoJS Core Team Member, Ryan joins Brian Douglas to take us on a journey from playing in a band to becoming who he is today.",
+            "link": "https://github.com/github/maintainermonth/issues/177",
+            "type": "Podcast",
+            "topics": "Maintainer Journey"
+        },
+                {
+            "title": "From India to Open Source Intelligence: My Journey to Becoming a Maintainer",
+            "author": "Kade Morton",
+            "description": "Kade Morton talks about their journey to starting a company that uses and maintains open source software.",
+            "link": "https://arachnedigital.medium.com/from-india-to-open-source-intelligence-my-journey-to-becoming-a-maintainer-ee9f7d06b8f6",
+            "type": "Blog",
+            "topics": "Maintainer Journey, Cybersecurity"
         },
         {
             "title": "Sarah Boyce & David Blass",
@@ -105,23 +121,23 @@
             "topics": "Contributorhood to Maintainership"
         },
         {
-            "title": "Kelsey Hightower",
+            "title": "Kelsey Hightower: Present",
             "author": "The ReadME Podcast",
-            "description": "",
+            "description": "Kelsey shares his origin story, insights on the future of Kubernetes, and advice on making complicated technology easier to understand.",
             "link": "https://github.com/readme/podcast/kelsey-hightower",
             "type": "Podcast",
-            "topics": "Kubernetes"
+            "topics": "Maintainer Journey, Kubernetes"
         },
         {
-            "title": "Susan Spencer",
+            "title": "Open Source Friday: Susan Spencer of Seamly",
             "author": "Open Source Friday",
             "description": "",
             "link": "https://www.youtube.com/watch?v=YQAzB11POQ0&list=PL0lo9MOBetEFmtstItnKlhJJVmMghxc0P&index=2",
             "type": "Video",
-            "topics": "Seamly"
+            "topics": "Maintainer Journey"
         },
         {
-            "title": "Duane O’Brien",
+            "title": "The critical human infrastructure of open source with Duane O’Brien",
             "author": "Open Source Stories",
             "description": "",
             "link": "https://www.opensourcestories.org/stories/2023/critical-human-infrastructure/",
@@ -193,12 +209,12 @@
             "topics": "SurrealDB"
         },
         {
-            "title": "Stormy Peters, Dr. Dawn Foster, Angie Byron",
+            "title": "Maintainer Maintainers",
             "author": "The Changelog Podcast",
-            "description": "",
+            "description": "Stormy Peters, Dr. Dawn Foster, Angie Byron join the Changelog Podcast to talk about Maintaining Maintainers",
             "link": "https://changelog.com/podcast/542",
             "type": "Podcast",
-            "topics": "Maintainer Maintainers"
+            "topics": "Maintainer Journey"
         }
 
     ]
