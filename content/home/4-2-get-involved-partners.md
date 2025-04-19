@@ -9,4 +9,4 @@ Host an event that brings maintainers together! Give them space to connect and l
 
 #### Pay maintainers
 
-Launch a FOSS Fund or sponsorship program to pay the maintainers of the software you depend on. We’d love to help, [please reach out](mailto:devrel@github.com).
+Launch a FOSS Fund or sponsorship program to pay the maintainers of the software you depend on, or contribute resources to our Partner Pack. We’d love to help, [please reach out](mailto:maintainermonth@github.com).
