@@ -44,14 +44,14 @@
     "footer:github-label": "Follow us on GitHub",
     "footer:github-url": "https://github.com/github/maintainermonth",
 
-    "hero:image-description": "Illustration inspired by M. C. Escher",
+    "hero:image-description": "Illustration by Ariel Davis, of a surreal geometric assortment of hands and shapes implying collaboration",
     
     "library:title": "Library",
-    "library:description": "List of all the resources that will be useful during GitHub Maintainer Month.",
+    "library:description": "List of all maintainer resources and storiesh.",
 
     "meta:title": "Maintainer Month 2025",
     "meta:description": "A month for open source maintainers to gather, share, and be celebrated.",
-    "meta:event-description": "Check out this GitHub Maintainer Month event",
+    "meta:event-description": "Check out this Maintainer Month event",
 
     "message:tbd": "TBD",
 
@@ -72,10 +72,10 @@
     "page:date": "May 2025",
 
     "schedule:title": "Schedule",
-    "schedule:description": "List of all events to be organized during GitHub Maintainer Month",
+    "schedule:description": "List of all events organized during this year's Maintainer Month",
     "schedule:add-event": "Add your activity",
 
-    "share:event": "Check out this GitHub Maintainer Month event",
+    "share:event": "Check out this Maintainer Month event",
 
     "timezone:utc": "UTC",
     "timezone:pt": "PT"
