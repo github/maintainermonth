@@ -12,7 +12,7 @@ const TYPES = {
   podcast: {
     label: getLiteral('event-type:podcast'),
     icon: <IconPodcast />,
-    color: '#FA0087',
+    color: '#E6007A',
   },
   stream: {
     label: getLiteral('event-type:stream'),
@@ -22,12 +22,12 @@ const TYPES = {
   talk: {
     label: getLiteral('event-type:talk'),
     icon: <IconTalk />,
-    color: '#1FD19F',
+    color: '#138162',
   },
   meetup: {
     label: getLiteral('event-type:meetup'),
     icon: <IconMeetup />,
-    color: '#F42F36',
+    color: '#C70A11',
   },
   fundraising: {
     label: getLiteral('event-type:fundraising'),
