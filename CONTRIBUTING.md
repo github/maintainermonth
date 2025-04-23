@@ -32,10 +32,11 @@ date: '06/16'
 UTCStartTime: '12:00'
 UTCEndTime: '15:00'
 type: 'meetup'
+language: 'English'
+location: 'Virtual'
 userName: 'github'
 userLink: 'https://www.meetup.com/GitHub-Africa/'
 linkUrl: 'https://www.meetup.com/GitHub-Africa/'
-location: 'Virtual'
 ---
 
 Join GitHub users across Africa to talk about open source project maintainership!
@@ -53,10 +54,10 @@ All fields included in the _frontmatter_ are mandatory:
 - `UTCStartTime`: end time in UTC, in `HH:MM` format.
 - `type`: one of the following `podcast`, `stream`, `talk`, `meetup`, `fundraising`, `conference`, `misc`.
 - `language`: primary language of the event (e.g., English, Spanish, Mandarin).
+- `location`: event location, either `Virtual` or the location itself.
 - `userName`: user name or organization organizing the event.
 - `userLink`: link to user or organization profile.
 - `linkUrl`: Button link with external link to the event.
-- `location`: event location, either `Virtual` or `In-person` or the location itself.
 
 After these fields, on the line following `---`, you can add the event description, in markdown format.
 
