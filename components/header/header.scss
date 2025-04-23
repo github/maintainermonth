@@ -4,11 +4,7 @@
 
   padding: 0 spacing(2);
 
-  background: linear-gradient(
-    180deg,
-    rgba(107, 0, 207, 0.4) 0%,
-    rgba(107, 0, 207, 0) 100%
-  );
+  background: $purple;
 
   z-index: $index-header;
 
