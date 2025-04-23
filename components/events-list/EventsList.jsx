@@ -21,7 +21,7 @@ const EventsList = ({ events }) => {
           <h1 className="events-list__title">{getLiteral('schedule:title')}</h1>
           <p className="events-list__subtitle">{getLiteral('schedule:description')}</p>
           <ButtonLink 
-            href="https://github.com/github/maintainermonth/issues/new?assignees=&labels=&template=add-event.yaml&title=New+Event" 
+            href="https://github.com/github/maintainermonth/issues/new?template=add-to-calendar.yml" 
             isExternal={true}
             className="events-list__add-button"
           >
