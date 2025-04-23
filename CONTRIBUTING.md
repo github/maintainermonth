@@ -2,7 +2,7 @@
 
 :+1::tada: First off, thanks for taking the time to contribute! :tada::+1:
 
-This document provides guidelines and instructions for contributing to the GitHub Maintainer Month website.
+This document provides guidelines and instructions for contributing to the Maintainer Month website.
 
 ## Quick Navigation
 
@@ -140,3 +140,7 @@ Other content files are organized as follows:
 - `content/commons.json`: Common website text (menu, footer, page titles, etc.)
 
 When editing these files, maintain the existing structure and frontmatter fields.
+
+### Questions?
+
+The Maintainer Month website is maintained by the Open Source team at GitHub. You can reach out at <maintainermonth @ github .com>
