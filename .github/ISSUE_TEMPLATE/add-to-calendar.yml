@@ -65,6 +65,14 @@ body:
     validations:
       required: true
 
+  - id: location
+    type: input
+    attributes:
+      label: Event Location
+      description: "Primary location of the event - either Virtual or a City + Country"
+    validations:
+      required: true
+
   - id: userName
     type: input
     attributes:
