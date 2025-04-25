@@ -61,7 +61,7 @@ describe('Event files', () => {
     })
   })
 
-  test('An event with an invalid start time retunrs TBD', () => {
+  test('An event with an invalid start time returns TBD', () => {
     const event = testTypewindEvent
     const parsedEvent = parseEvent(event)
     expect(parsedEvent).toEqual(
