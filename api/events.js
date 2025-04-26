@@ -14,7 +14,7 @@ dayjs.extend(timezone)
 const TBD = 'TBD'
 
 export const getEvents = (year) => {
-  const events_path = year ? `content/${year}/events` : 'content/events';
+  const events_path = year ? `content/${year}/events` : 'content/events'
   const eventFiles = fs.readdirSync(events_path)
 
   const events = eventFiles
@@ -30,13 +30,15 @@ export const getEvents = (year) => {
 }
 
 export const getEventBySlug = (slug, year) => {
-  const event = getDataFromMD(year?`content/${year}/events/${slug}.md`:`content/events/${slug}.md`)
-  const link = year? `/${year}/schedule/${slug}` : `/schedule/${slug}`;
+  const event = getDataFromMD(
+    year ? `content/${year}/events/${slug}.md` : `content/events/${slug}.md`,
+  )
+  const link = year ? `/${year}/schedule/${slug}` : `/schedule/${slug}`
 
   return {
     slug,
     ...event,
-    link
+    link,
   }
 }
 
@@ -59,6 +61,7 @@ export const parseEvent = (event) => {
     event.date,
     event.UTCStartTime,
     event.UTCEndTime,
+    event.endDate,
   )
 
   return {
@@ -68,9 +71,14 @@ export const parseEvent = (event) => {
 }
 
 // TODO: refactor
-const formatEventDateTime = (date = dayjs.utc(), startTime, endTime) => {
+const formatEventDateTime = (
+  startDate = dayjs.utc(),
+  startTime,
+  endTime,
+  endDate,
+) => {
   // Date
-  const [month, day] = date.split('/')
+  const [month, day] = startDate.split('/')
 
   if (isNaN(month) || isNaN(day)) {
     throw new TypeError('date must be in mm/dd format (e.g. 06/12).')
@@ -80,55 +88,71 @@ const formatEventDateTime = (date = dayjs.utc(), startTime, endTime) => {
     .utc()
     .date(day)
     .month(month - 1)
+
   const formattedDate = UTCDate.format('MMM D')
 
-  // Start time
-  let formattedStartTime = {}
+  let formattedEndDate = null
 
-  if (startTime && startTime !== TBD) {
+  if (endDate && endDate !== startDate) {
+    const [endMonth, endDay] = endDate.split('/')
+
+    if (isNaN(endMonth) || isNaN(endDay)) {
+      throw new TypeError('date must be in mm/dd format (e.g. 06/12).')
+    }
+
+    const endUTCDate = dayjs
+      .utc()
+      .date(endDay)
+      .month(endMonth - 1)
+
+    formattedEndDate = endUTCDate.format('MMM D')
+  }
+
+  // Start time
+  let formattedStartTime = {
+    utc: TBD,
+    pt: TBD,
+  }
+
+  if (startTime) {
     const [startHour, startMinute] = startTime.split(':')
 
     const UTCStartTime = UTCDate.hour(startHour).minute(startMinute)
 
-    if (isNaN(UTCStartTime)) {
-      throw new TypeError(
-        'UTCStartTime must be in hh:mm format (e.g. 12:30) or be "TDB".',
-      )
-    }
+    if (!isNaN(UTCStartTime)) {
+      const PTStartTime = UTCStartTime.tz('America/Los_Angeles')
 
-    const PTStartTime = UTCStartTime.tz('America/Los_Angeles')
+      const formattedUTCStartTime = UTCStartTime.format('HH:mm a')
+      const formattedPTStartTime = PTStartTime.format('HH:mm a')
 
-    const formattedUTCStartTime = UTCStartTime.format('HH:mm a')
-    const formattedPTStartTime = PTStartTime.format('HH:mm a')
-
-    formattedStartTime = {
-      utc: formattedUTCStartTime,
-      pt: formattedPTStartTime,
+      formattedStartTime = {
+        utc: formattedUTCStartTime,
+        pt: formattedPTStartTime,
+      }
     }
   }
 
   // End time
-  let formattedEndTime = {}
+  let formattedEndTime = {
+    utc: TBD,
+    pt: TBD,
+  }
 
   if (endTime && endTime !== TBD) {
     const [endHour, endMinute] = endTime.split(':')
 
     const UTCEndTime = UTCDate.hour(endHour).minute(endMinute)
 
-    if (isNaN(UTCEndTime)) {
-      throw new TypeError(
-        'UTCEndTime must be in hh:mm format (e.g. 12:30) or be "TDB".',
-      )
-    }
+    if (!isNaN(UTCEndTime)) {
+      const PTEndTime = UTCEndTime.tz('America/Los_Angeles')
 
-    const PTEndTime = UTCEndTime.tz('America/Los_Angeles')
+      const formattedUTCEndTime = UTCEndTime.format('HH:mm a')
+      const formattedPTEndTime = PTEndTime.format('HH:mm a')
 
-    const formattedUTCEndTime = UTCEndTime.format('HH:mm a')
-    const formattedPTEndTime = PTEndTime.format('HH:mm a')
-
-    formattedEndTime = {
-      utc: formattedUTCEndTime,
-      pt: formattedPTEndTime,
+      formattedEndTime = {
+        utc: formattedUTCEndTime,
+        pt: formattedPTEndTime,
+      }
     }
   }
 
@@ -136,5 +160,6 @@ const formatEventDateTime = (date = dayjs.utc(), startTime, endTime) => {
     date: formattedDate,
     startTime: formattedStartTime,
     endTime: formattedEndTime,
+    endDate: formattedEndDate,
   }
 }

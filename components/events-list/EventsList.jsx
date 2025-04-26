@@ -12,16 +12,20 @@ import DateTimeChip from '../date-time-chip/DateTimeChip'
 import EventTypeChip from '../event-type-chip/EventTypeChip'
 import PlayLink from '../play-link/PlayLink'
 import Chip from '../chip/Chip'
-
 const EventsList = ({ events }) => {
+  const dateLabel = (event) =>
+    `${event.formattedDate.date} to ${event.formattedDate.endDate}`
+
   return (
     <section className="events-list">
       <div className="events-list__header">
         <div className="events-list__header-content">
           <h1 className="events-list__title">{getLiteral('schedule:title')}</h1>
-          <p className="events-list__subtitle">{getLiteral('schedule:description')}</p>
-          <ButtonLink 
-            href="https://github.com/github/maintainermonth/issues/new?template=add-to-calendar.yml" 
+          <p className="events-list__subtitle">
+            {getLiteral('schedule:description')}
+          </p>
+          <ButtonLink
+            href="https://github.com/github/maintainermonth/issues/new?template=add-to-calendar.yml"
             isExternal={true}
             className="events-list__add-button"
           >
@@ -39,7 +43,11 @@ const EventsList = ({ events }) => {
             })}
           >
             <div className="events-list__date">
-              <Chip label={event.formattedDate.date} />
+              {event.formattedDate.endDate ? (
+                <Chip label={dateLabel(event)} />
+              ) : (
+                <Chip label={event.formattedDate.date} />
+              )}
             </div>
 
             <div className="events-list__event">
@@ -68,7 +76,7 @@ const EventsList = ({ events }) => {
               </div>
 
               <div className="events-list__info">
-                <p 
+                <p
                   className="events-list__text"
                   dangerouslySetInnerHTML={{
                     __html: md().render(event.description || ''),
@@ -80,7 +88,7 @@ const EventsList = ({ events }) => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default EventsList;
+export default EventsList
