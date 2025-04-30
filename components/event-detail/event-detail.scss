@@ -160,6 +160,7 @@
     justify-content: space-between;
     align-items: flex-start;
     row-gap: spacing(2.5);
+    padding-bottom: spacing(2);
 
     @media (min-width: $md) {
       flex-direction: row;
@@ -173,7 +174,8 @@
     align-items: flex-start;
     justify-content: space-between;
     row-gap: spacing(2);
-    
+    flex-wrap: wrap;
+
     @media (min-width: $md) {
       flex-direction: column;
     }
