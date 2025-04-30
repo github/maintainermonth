@@ -51,7 +51,7 @@ export default function Home({ hero, about, news, getInvolved, events, connectio
         />
         <meta
           name="twitter:image"
-          content="https://maintainermonth.github.com/images/og/generic.png?year=2023"
+          content="https://maintainermonth.github.com/images/og/generic.png"
         />
       </Head>
 
