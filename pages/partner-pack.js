@@ -27,7 +27,7 @@ export default function PartnerPack({ content, frontmatter, partnerOffers, addit
         <meta property="og:description" content={frontmatter.metaDesc} />
         <meta
           property="og:image"
-          content="https://maintainermonth.github.com/images/og/generic.png"
+          content="https://maintainermonth.github.com/images/og/partner-pack.png"
         />
 
         {/* <!-- Twitter Meta Tags --> */}
@@ -36,7 +36,7 @@ export default function PartnerPack({ content, frontmatter, partnerOffers, addit
         <meta name="twitter:description" content={frontmatter.metaDesc} />
         <meta
           name="twitter:image"
-          content="https://maintainermonth.github.com/images/og/generic.png"
+          content="https://maintainermonth.github.com/images/og/partner-pack.png"
         />
       </Head>
 

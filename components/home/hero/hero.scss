@@ -144,4 +144,14 @@
       line-height: 1.5;
     }
   }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: spacing(2);
+
+    @media (min-width: $md) {
+      flex-direction: row;
+    }
+  }
 }
