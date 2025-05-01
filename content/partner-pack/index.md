@@ -5,7 +5,7 @@ metaTitle: "Maintainer Month 2025 Partner Pack | Resources for Open Source Maint
 metaDesc: "Exclusive perks, tools, and resources for open source maintainers during Maintainer Month 2025."
 ---
 
-To celebrate Maintainer Month, we’re spotlighting the people who power open source — and giving back. We’ve teamed up with partners across the ecosystem to offer perks, tools, and resources especially for maintainers.
+To celebrate Maintainer Month, we’re spotlighting the people who power open source — and giving back. We’ve teamed up with partners across the ecosystem to offer perks, tools, and resources for maintainers.
 
 Check back throughout May as we add even more!
 

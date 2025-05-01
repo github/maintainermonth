@@ -1,9 +1,9 @@
 ---
 name: "Linux Foundation Education"
 logo: "lfeducation.png"
-headline: "Expand your skills with expert-led courses."
-description: "Get 20% off the entire Linux Foundation Education course catalog."
-secondaryCta: "(Redemption code and link coming soon)"
+headline: "Expand your skills with expert-led courses and certifications"
+description: "Get 25% off the entire Linux Foundation Education course catalog."
+secondaryCta: "Use code: 25MAYMAINTAINER25"
 ctaText: "Learn more"
-ctaLink: "#"
+ctaLink: "https://training.linuxfoundation.org/full-catalog/"
 ---
