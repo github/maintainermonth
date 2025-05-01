@@ -43,11 +43,12 @@ export default function PartnerPack({ content, frontmatter, partnerOffers, addit
       <div className="container page-content partner-pack">
         <div className="partner-pack__hero">
           <h1 className="partner-pack__title">{frontmatter.title}</h1>
-          <p className="partner-pack__subtitle">{frontmatter.subtitle}</p>
+          {/* <p className="partner-pack__subtitle">{frontmatter.subtitle}</p> */}
+          <p className="partner-pack__subtitle">Coming soon!</p>
         </div>
         <div className="partner-pack__content">
-          <div dangerouslySetInnerHTML={{ __html: content }}></div>
-          <Offers partnerOffers={partnerOffers} additionalSections={additionalSections} />
+          {/* <div dangerouslySetInnerHTML={{ __html: content }}></div>
+          <Offers partnerOffers={partnerOffers} additionalSections={additionalSections} /> */}
         </div>
       </div>
     </div>
