@@ -1,0 +1,122 @@
+.partner-pack {
+  padding: 2rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &__hero {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding: 3rem 1rem;
+    position: relative;
+    overflow: hidden;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.3), transparent);
+    }
+  }
+
+  &__title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 25%;
+      width: 50%;
+      height: 3px;
+      background: var(--color-primary);
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    color: var(--color-text-secondary);
+    margin: 1.5rem 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__content {
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.9;
+    
+    .offers-grid-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-family: 'JetBrains Mono', monospace;
+      margin-top: 2.5rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: var(--color-primary);
+      }
+    }
+
+    h3 {
+      font-family: 'JetBrains Mono', monospace;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--color-primary);
+      text-decoration: underline;
+      font-weight: 500;
+
+      &:hover {
+        text-decoration: underline;
+        opacity: 0.8;
+      }
+    }
+
+    img {
+      max-width: 200px;
+      height: auto;
+      margin: 1rem 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.5rem 1.25rem;
+    
+    &__hero {
+      padding: 2rem 0.5rem;
+    }
+    
+    &__content {
+      padding: 0 0.5rem;
+    }
+  }
+}

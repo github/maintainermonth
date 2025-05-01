@@ -60,6 +60,7 @@
     
     "navigation:schedule": "Schedule",
     "navigation:library": "Library",
+    "navigation:partner-pack": "Partner Pack",
 
     "page:title": "Maintainer Month",
     "page:title-mobile": "MM",

@@ -10,6 +10,7 @@ import useWindowSize from '../../hooks/useWindowSize'
 import GitHubLogo from '../../public/icons/github-logo'
 import IconCalendar from '../../public/icons/calendar'
 import IconBooks from '../../public/icons/books'
+import BoxGift from '../../public/icons/box-gift'
 import { BREAKPOINTS } from '../../common/constants'
 
 const Header = () => {
@@ -66,6 +67,21 @@ const Header = () => {
           <ul className="header__list">
             <li>
               <Link
+                href={ROUTES.PARTNER_PACK.getPath(year)}
+                aria-label={getLiteral('navigation:partner-pack')}
+                className={clsx('header__link', {
+                  ['is-active']: pathname === ROUTES.PARTNER_PACK.getPath(year),
+                })}
+              >
+                <BoxGift />
+                <span className="header__link-text">
+                  {getLiteral('navigation:partner-pack')}
+                </span>
+              </Link>
+            </li>
+            <li>
+              <Link
+
                 href={ROUTES.SCHEDULE.getPath(year)}
                 aria-label={getLiteral('navigation:schedule')}
                 className={clsx('header__link', {
