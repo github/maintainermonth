@@ -13,7 +13,6 @@ import GetInvolved from '../components/home/get-involved/GetInvolved'
 import Events from '../components/home/events/Events'
 import AnchorNavigation from '../components/home/anchor-navigation/AnchorNavigation'
 import { useBackground } from '../contexts/BackgroundContext'
-import News from '../components/home/news/News'
 
 export default function Home({ hero, about, news, getInvolved, events, connection, maintainerOptions, partnerOptions, newsList }) {
   const containerRef = useRef(null)
@@ -51,7 +50,7 @@ export default function Home({ hero, about, news, getInvolved, events, connectio
         />
         <meta
           name="twitter:image"
-          content="https://maintainermonth.github.com/images/og/generic.png?year=2023"
+          content="https://maintainermonth.github.com/images/og/generic.png"
         />
       </Head>
 
@@ -66,10 +65,6 @@ export default function Home({ hero, about, news, getInvolved, events, connectio
             buttonLink={ROUTES.SCHEDULE.path}
           />
           <About title={about.title} content={about.content} theme1={about.theme1} theme2={about.theme2}/>
-          <News
-            news={newsList.slice(-1)[0]}
-            title={news.title}
-          />
           <GetInvolved
             title={getInvolved.title}
             content={getInvolved.content}
@@ -95,8 +90,6 @@ export default function Home({ hero, about, news, getInvolved, events, connectio
 export async function getStaticProps() {
   const hero = getDataFromMD('content/home/1-hero.md')
   const about = getDataFromMD('content/home/2-about.md')
-  const news = getDataFromMD('content/home/3-news.md')
-  const newsList = getDataFromMD('content/news/index.md').news
   const getInvolved = parseGetInvolvedData(
     getDataFromMD('content/home/4-get-involved.md'),
   )
@@ -118,9 +111,7 @@ export async function getStaticProps() {
       },
       connection,
       maintainerOptions,
-      partnerOptions,
-      news,
-      newsList
+      partnerOptions
     },
   }
 }
