@@ -61,6 +61,7 @@
     "navigation:schedule": "Schedule",
     "navigation:library": "Library",
     "navigation:partner-pack": "Partner Pack",
+    "navigation:security-challenge": "Challenge",
 
     "page:title": "Maintainer Month",
     "page:title-mobile": "MM",
