@@ -11,6 +11,7 @@ import GitHubLogo from '../../public/icons/github-logo'
 import IconCalendar from '../../public/icons/calendar'
 import IconBooks from '../../public/icons/books'
 import BoxGift from '../../public/icons/box-gift'
+import IconShield from '../../public/icons/shield'
 import { BREAKPOINTS } from '../../common/constants'
 
 const Header = () => {
@@ -81,7 +82,20 @@ const Header = () => {
             </li>
             <li>
               <Link
-
+                href={ROUTES.SECURITY_CHALLENGE.getPath(year)}
+                aria-label={getLiteral('navigation:security-challenge')}
+                className={clsx('header__link', {
+                  ['is-active']: pathname === ROUTES.SECURITY_CHALLENGE.getPath(year),
+                })}
+              >
+                <IconShield />
+                <span className="header__link-text">
+                  {getLiteral('navigation:security-challenge')}
+                </span>
+              </Link>
+            </li>
+            <li>
+              <Link
                 href={ROUTES.SCHEDULE.getPath(year)}
                 aria-label={getLiteral('navigation:schedule')}
                 className={clsx('header__link', {

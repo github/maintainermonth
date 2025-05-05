@@ -31,3 +31,5 @@ export const Y2024 = makePath('/2024')
 export const NEWS = makePath("/news")
 
 export const PARTNER_PACK = makePath('/partner-pack')
+
+export const SECURITY_CHALLENGE = makePath('/security-challenge')
