@@ -52,7 +52,7 @@ Once you've finished all three, [fill out this form](https://forms.gle/HhPm3VofY
 🗓️ Deadline: Submit your form by May 31, 2025 to be eligible for the exam voucher.
 
 ### Step 3. Take the Certification Exam!
-We'll email you a voucher (valued at $99 USD) to register for the GitHub Advanced Security certification exam. Successfully passing the exam will earn you an official GitHub certification that showcases your security expertise!
+We'll email you a voucher (valued at $99 USD) to register for the GitHub Advanced Security certification exam in June 2025 after we review all submissions. Successfully passing the exam will earn you an official GitHub certification that showcases your security expertise!
 
 ## Why This Matters
 Maintainers often carry the responsibility of software security—but don't always have access to the right training or recognition. This challenge helps you build real-world skills and gives you an opportunity to earn a GitHub-backed credential that showcases your expertise.
