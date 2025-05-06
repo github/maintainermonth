@@ -23,6 +23,11 @@ This document provides **guidelines** and **instructions** for contributing to t
     ](#setting-up-your-enviroment)
   - [Code Style](#code-style)
   - [Testing](#testing)
+- [Content Guidelines](#content-guidelines)
+  - [Frontmatter Fields](#frontmatter-fields)
+  - [Event Fields](#event-fields)
+  - [Library Resource Fields](#library-resource-fields)
+  - [Static Content](#static-content)
 - [Questions](#questions)
 
 ## 🧩 How to Contribute
@@ -45,39 +50,24 @@ Each event is documented in a markdown file for each one. So, to create one:
 2. Create a new **markdown file** with a descriptive name (e.g., `2025-05-20-your-event-name.md` )
 3. Use the **following template** to add the event details:
 
-```
+```markdown
 ---
-title: 'GitHub Virtual Meetup: Africa'
-metaTitle: 'GitHub Virtual Meetup: Africa'
-metaDesc: 'Join GitHub users across Africa to talk about open source project maintainership!'
-date: '06/16'
-UTCStartTime: '12:00'
-UTCEndTime: '15:00'
+title: 'Your Event Title'
+metaTitle: 'Your Event Title'
+metaDesc: 'A brief description of your event'
+date: 'MM/DD'
+UTCStartTime: 'HH:MM'
+UTCEndTime: 'HH:MM'
 type: 'meetup'
-userName: 'github'
-userLink: 'https://www.meetup.com/GitHub-Africa/'
-linkTitle: 'Join the GitHub Africa meetup'
-linkUrl: 'https://www.meetup.com/GitHub-Africa/'
+language: 'English'
+location: 'Virtual or Physical Location'
+userName: 'organizationName'
+userLink: 'https://link-to-organization.com'
+linkUrl: 'https://link-to-event.com'
 ---
 
-Join GitHub users across Africa to talk about open source project maintainership!
-
-Speakers TBD, follow along on the Meetup page for announcements.
+Detailed description of your event goes here. You can use markdown formatting.
 ```
-
-📌 All fields included in the _frontmatter_ are **mandator**y:
-
-- `title`: event title.
-- `metaTitle`: title to use as meta tag.
-- `metaDesc`: description to use as meta tag.
-- `date`: date of event, in `MM/DD` format.
-- `UTCStartTime`: start time in UTC, in `HH:MM` format.
-- `UTCStartTime`: end time in UTC, in `HH:MM` format.
-- `type`: one of the following `podcast`, `stream`, `talk`, `meetup`, `fundraising`, `conference`, `misc`.
-- `userName`: user name or organization organizing the event.
-- `userLink`: link to user or organization profile.
-- `linkTitle`: button text with external link to the event.
-- `linkUrl`: Button link with external link to the event.
 
 After these fields, on the line following `---`, **add the event description** in markdown format, then submit a **PR** with your changes.
 
@@ -149,6 +139,47 @@ git clone https://github.com/iambel/maintainermonth.git
 
 - Run tests with `npm test` before submitting changes
 - Add new tests for new functionality when appropriate
+
+## 📚 Content Guidelines
+
+Here you’ll find **explanations** and **instructions** for filling out **content template**s. Following these guidelines helps keep everything **organized** and **easy** to review!
+
+## → Frontmatter Fields
+
+> **📌 Important:** Do not modify variable names in frontmatter sections (between `---`). These are required for the website to function properly.
+
+## → Event Fields
+
+- `title`: Event title
+- `metaTitle`: Title for SEO meta tags
+- `metaDesc`: Description for SEO meta tags
+- `date`: Event date in `MM/DD` format
+- `UTCStartTime`: Start time in UTC, in `HH:MM` format
+- `UTCEndTime`: End time in UTC, in `HH:MM` format
+- `type`: One of: `podcast`, `stream`, `talk`, `meetup`, `fundraising`, `conference`, `misc`
+- `language`: Primary language of the event
+- `location`: `Virtual` or physical location
+- `userName`: Organizer/organization name
+- `userLink`: Link to organizer profile/website
+- `linkUrl`: Direct link to the event
+
+## → Library Resource Fields
+
+- `title`: Resource title
+- `author`: Author or creator name
+- `description`: Brief description (max 200 characters)
+- `link`: URL to the resource
+- `type`: Content type (e.g., `video`, `article`, `tutorial`)
+- `topics`: Relevant topic tags
+
+## → Static Content
+
+Other content files are organized as follows:
+
+- `content/home/`: Content for the homepage sections
+- `content/commons.json`: Common website text (menu, footer, page titles, etc.)
+
+When editing these files, maintain the existing structure and frontmatter fields.
 
 ## ❓Questions
 
