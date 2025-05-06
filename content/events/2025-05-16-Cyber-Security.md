@@ -13,7 +13,7 @@ userLink: 'https://www.arachne.digital/'
 linkUrl: 'https://www.eventbrite.co.nz/e/open-source-cyber-security-co-creating-our-futures-tickets-1324671641539?aff=erelexpmlt'
 ---
 
-This panel will explore the evolving relationship between open source, cybersecurity, and governance during #MaintainerMonth with Github. We are working to bring together voices from the open-source community, startup space, and the public sector.
+This panel will explore the evolving relationship between open source, cybersecurity, and governance during #MaintainerMonth with GitHub. We are working to bring together voices from the open-source community, startup space, and the public sector.
 
 In alignment with Maintainer Month, the goal is to spark dialogue around collective responsibility, innovation, and sustainability.
 
