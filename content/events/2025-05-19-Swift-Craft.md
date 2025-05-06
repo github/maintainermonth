@@ -8,7 +8,7 @@ UTCEndTime: '17:00'
 type: 'conference'
 language: 'English'
 location: 'Folkestone, England'
-userName: 'Phil Nash (Shaved Yaks Ltd)'
+userName: 'Shaved Yaks Ltd'
 userLink: 'https://shavedyaks.com/'
 linkUrl: 'https://swiftcraft.uk'
 ---
