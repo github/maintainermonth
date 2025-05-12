@@ -1,14 +1,14 @@
 # Contributing to GitHub Maintainer Month
 
-### Hey there! 👋
+## Hey there! 👋
 
 First off, thanks for taking the time to contribute! 🎉✨
 
-This document provides **guidelines** and **instructions** for contributing to the **Maintainer Month** website.
+This document provides guidelines and instruction for contributing to the **Maintainer Month** website.
 
-🎇 Don't worry if you're new here, we appreciate supporting and giving chances for **first-time contributions**! If you have any questions, **feel free to reach out for help** and we'll try to answer as soon as possible! 💚🚀
+Don't worry if you're new here, we appreciate and support everyone here! If you have any questions, **feel free to reach out for help** and we'll try to answer as soon as possible!
 
-## 🗺️ SUMMARY
+## SUMMARY
 
 - [How to Contribute](#how-to-contribute)
 - [Contribution Walkthrough](#contribution-walkthrough)
@@ -30,25 +30,25 @@ This document provides **guidelines** and **instructions** for contributing to t
   - [Static Content](#static-content)
 - [Questions](#questions)
 
-## 🧩 How to Contribute
+## How to Contribute
 
-If you want to **contribute to the project**, follow the instructions below:
+If you want to contribute to the project, follow the instructions below:
 
-1. **Fork the repository** and create your branch from `main`
-2. **Make your changes** following the guidelines at [Contribution Walkthrough](#contribution-walkthrough).
-3. **Test your changes** locally before committing, if possible.
-4. **Submit a Pull Request (PR)** with a **clear description of your changes**, follow the instructions at [Contribution Walkthrough](#contribution-walkthrough).
+1. Fork the repository and create your branch from `main`
+2. Make your changes following the guidelines at [Contribution Walkthrough](#contribution-walkthrough).
+3. Test your changes locally before committing, if possible.
+4. Submit a Pull Request (PR) with a clear description of your changes, follow the instructions at [Contribution Walkthrough](#contribution-walkthrough).
 
-## 📜 Contribution Walkthrough
+## Contribution Walkthrough
 
 ### → Adding a New Event
 
-If you want to add a new event, go to the **`content/events/` folder**.
+If you want to add a new event, go to the `content/events/` folder.
 
 Each event is documented in a markdown file for each one. So, to create one:
 
-2. Create a new **markdown file** with a descriptive name (e.g., `2025-05-20-your-event-name.md` )
-3. Use the **following template** to add the event details:
+2. Create a new markdown file with a descriptive name (e.g., `2025-05-20-your-event-name.md` )
+3. Use the following template to add the event details:
 
 ```markdown
 ---
@@ -69,14 +69,14 @@ linkUrl: 'https://link-to-event.com'
 Detailed description of your event goes here. You can use markdown formatting.
 ```
 
-After these fields, on the line following `---`, **add the event description** in markdown format, then submit a **PR** with your changes.
+After these fields, on the line following `---`, add the event description in markdown format, then submit a PR with your changes.
 
 ### → Adding a New Resource
 
 If you want to add a new resource (podcasts, articles, video, etc.) to the Library page (where links can be added and edited), you should:
 
-1. Open the **`content/library/resources.json` file**
-2. Add a new entry to the `resources` array following this **format** below:
+1. Open the `content/library/resources.json` file
+2. Add a new entry to the `resources` array following this format below:
 
 ```json
 {
@@ -89,13 +89,13 @@ If you want to add a new resource (podcasts, articles, video, etc.) to the Libra
 }
 ```
 
-3. Submit a **PR** with your changes
+3. Submit a PR with your changes
 
 ### → Fixing Typos or Content Issues
 
 Found a grammatical mistake? A broken link? Or even something more technical, like outdated information? Firstly, you should:
 
-1. **Locate the file** with the content that needs correction
+1. Locate the file with the content that needs correction
 
    - **Website text** is in the `content/` directory
    - For **events**, check `content/events/`
@@ -104,25 +104,25 @@ Found a grammatical mistake? A broken link? Or even something more technical, li
    - **Common website text** (menu, footer, page titles, etc.) `content/commons.json`
 
 2. Make your corrections
-3. Submit a **PR** describing what you fixed
+3. Submit a PR describing what you fixed
 
 ### → Making Code Changes
 
-If you believe there's a **feature or functionality that could be improved** or even a **better way to perform a certain task**, here's what you should do:
+If you believe there's a feature or functionality that could be improved or even a better way to perform a certain task, here's what you should do:
 
-1. For **structural** code changes, please **open an issue first to discuss your proposal**
-2. Follow the **project's coding style** and patterns
-3. **Test** your changes locally before submitting
-4. Include **clear documentation** for any new functionality
+1. For structural code changes, please open an issue first to discuss your proposal
+2. Follow the project's coding style and patterns
+3. Test your changes locally before submitting
+4. Include clear documentation for any new functionality
 
-## 🛠️ Development Guidelines
+## Development Guidelines
 
 ### → Setting Up Your Environment
 
 1. Clone the repository
 
 ```bash
-git clone https://github.com/iambel/maintainermonth.git
+git clone https://github.com/YOUR-USERNAME/maintainermonth.git
 ```
 
 2. Install dependencies: `npm install`
@@ -131,22 +131,23 @@ git clone https://github.com/iambel/maintainermonth.git
 
 ### → Code Style
 
-- Follow the **existing code style** and **patterns**
-- Use **descriptive** variable and function names
-- **Write comments** for complex logic
+- Follow the existing code style and patterns
+- Use descriptive variable and function names
+- Write comments for complex logic
 
 ### → Testing
 
 - Run tests with `npm test` before submitting changes
 - Add new tests for new functionality when appropriate
 
-## 📚 Content Guidelines
+## Content Guidelines
 
-Here you’ll find **explanations** and **instructions** for filling out **content template**s. Following these guidelines helps keep everything **organized** and **easy** to review!
+Here you’ll find explanations and instructions for filling out content templates. Following these guidelines helps keep everything organized and easy to review!
 
 ## → Frontmatter Fields
 
-> **📌 Important:** Do not modify variable names in frontmatter sections (between `---`). These are required for the website to function properly.
+> [!IMPORTANT]
+> Do not modify variable names in frontmatter sections (between `---`). These are required for the website to function properly.
 
 ## → Event Fields
 
@@ -181,6 +182,6 @@ Other content files are organized as follows:
 
 When editing these files, maintain the existing structure and frontmatter fields.
 
-## ❓Questions
+## Questions
 
-The **Maintainer Month** website is maintained by the **Open Source team at GitHub**. You can reach out at <maintainermonth@github.com> 💚
+The Maintainer Month website is maintained by the Open Source team at GitHub. You can reach out at <maintainermonth@github.com>. ✨
