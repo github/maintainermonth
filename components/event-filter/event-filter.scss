@@ -1,0 +1,38 @@
+.events-list__controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: spacing(2);
+}
+
+.events-list__select {
+    appearance: none;
+    -webkit-appearance: none;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 12px 10px;
+    margin-top: 8px;
+    border-radius: 100px;
+    border: none;
+
+    color: $white;
+    text-align: center;
+    @extend %subtitle-1;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background: $white;
+        color: $purple;
+        transform: translateY(-1px);
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px $purple;
+    }
+
+    option {
+        background: $purple;
+        color: $white;
+    }
+}
