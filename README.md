@@ -25,7 +25,7 @@ Repository for the official GitHub Maintainer Month website. You can access the 
 Run the following command before any other to install all the project's dependencies.
 
 ```
-yarn install
+npm install
 ```
 
 ### Usage
@@ -33,7 +33,7 @@ yarn install
 To start application in development mode at [http://localhost:3000](http://localhost:3000) run the following command.
 
 ```
-yarn start
+npm start
 ```
 
 ### Build
@@ -41,7 +41,7 @@ yarn start
 To generate the application build run the following command
 
 ```
-yarn build
+npm run build
 ```
 
 This will create an `out` folder in the repository root with the static files.

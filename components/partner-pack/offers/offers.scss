@@ -1,0 +1,168 @@
+// Override the section-divider styling for the partner pack page
+.partner-pack {
+  .section-divider {
+    &__content {
+      @media (min-width: $md) {
+        grid-column: 1 / 9;
+      }
+      
+      @media (min-width: $lg) {
+        grid-column: 1 / 13;
+      }
+    }
+  }
+}
+
+.offers-grid {
+  display: grid;
+  gap: spacing(3);
+  grid-template-columns: 1fr;
+  margin: 2rem 0 4rem 0;
+  
+  @media (min-width: $sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media (min-width: $lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.offer-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease, background 0.2s ease;
+  height: 100%;
+  border: none;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    box-shadow: none;
+  }
+
+  &__logo {
+    padding: spacing(2) spacing(3);
+    height: 90px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    img {
+      max-height: 60px;
+      max-width: 180px;
+    }
+  }
+
+  &__description {
+    padding: spacing(3);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: spacing(2);
+    
+    h3 {
+      font-family: 'JetBrains Mono', monospace;
+      margin: 0;
+    }
+    
+    p {
+      font-size: 1rem; // Back to normal size
+      line-height: 1.5;
+      color: rgba(255, 255, 255, 0.75);
+      
+      strong {
+        color: rgba(255, 255, 255, 0.9);
+      }
+    }
+  }
+
+  a, a:hover, a:focus, a:visited {
+    text-decoration: none !important;
+  }
+
+  &__cta-container {
+    margin-top: auto;
+    padding: spacing(3);
+    padding-top: spacing(2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+  }
+
+  &__cta {
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+    padding: 0;
+    border-radius: 0;
+    text-align: left;
+    font-weight: 500;
+    transition: color 0.2s ease;
+    font-family: 'Inter', sans-serif;
+    box-shadow: none;
+    text-decoration: none !important;
+    font-size: 1.125rem;
+
+    &:hover, &:focus, &:visited {
+      background-color: transparent;
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none !important;
+      transform: none;
+      box-shadow: none;
+    }
+  }
+}
+
+.partner-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  width: 100%;
+
+  img {
+    max-width: 120px;
+    max-height: 60px;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: filter 0.3s, opacity 0.3s;
+
+    &:hover {
+      filter: grayscale(0%);
+      opacity: 1;
+    }
+  }
+}
+
+.become-partner-note {
+  margin-top: 2.5rem;
+  text-align: center;
+  
+  p {
+    font-size: 0.9rem;
+    color: var(--color-text-primary);
+    opacity: 0.8;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: underline;
+    
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .offers-grid {
+    grid-template-columns: 1fr;
+  }
+}

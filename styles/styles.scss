@@ -4,6 +4,7 @@
 @import './fonts';
 @import './helpers';
 @import './base';
+@import './partner-pack';
 
 // Components
 @import '../components/button-link/button-link';
@@ -29,6 +30,8 @@
 @import '../components/library-links/library-links';
 
 @import '../components/not-found/not-found';
+
+@import '../components/partner-pack/offers/offers';
 
 @import '../components/play-link/play-link';
 

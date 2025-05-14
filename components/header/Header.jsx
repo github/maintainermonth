@@ -10,7 +10,8 @@ import useWindowSize from '../../hooks/useWindowSize'
 import GitHubLogo from '../../public/icons/github-logo'
 import IconCalendar from '../../public/icons/calendar'
 import IconBooks from '../../public/icons/books'
-import IconBell from '../../public/icons/bell'
+import BoxGift from '../../public/icons/box-gift'
+import IconShield from '../../public/icons/shield'
 import { BREAKPOINTS } from '../../common/constants'
 
 const Header = () => {
@@ -67,15 +68,29 @@ const Header = () => {
           <ul className="header__list">
             <li>
               <Link
-                href={ROUTES.NEWS.getPath(year)}
-                aria-label={getLiteral('navigation:news')}
+                href={ROUTES.PARTNER_PACK.getPath(year)}
+                aria-label={getLiteral('navigation:partner-pack')}
                 className={clsx('header__link', {
-                  ['is-active']: pathname === ROUTES.SCHEDULE.getPath(year),
+                  ['is-active']: pathname === ROUTES.PARTNER_PACK.getPath(year),
                 })}
               >
-                <IconBell />
+                <BoxGift />
                 <span className="header__link-text">
-                  {getLiteral('navigation:news')}
+                  {getLiteral('navigation:partner-pack')}
+                </span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={ROUTES.SECURITY_CHALLENGE.getPath(year)}
+                aria-label={getLiteral('navigation:security-challenge')}
+                className={clsx('header__link', {
+                  ['is-active']: pathname === ROUTES.SECURITY_CHALLENGE.getPath(year),
+                })}
+              >
+                <IconShield />
+                <span className="header__link-text">
+                  {getLiteral('navigation:security-challenge')}
                 </span>
               </Link>
             </li>

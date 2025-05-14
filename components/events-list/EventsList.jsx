@@ -49,7 +49,11 @@ const EventsList = ({ events }) => {
             })}
           >
             <div className="events-list__date">
-              <Chip label={event.formattedDate.date} />
+              {event.formattedDate.endDate ? (
+                <Chip label={dateLabel(event)} />
+              ) : (
+                <Chip label={event.formattedDate.date} />
+              )}
             </div>
 
             <div className="events-list__event">
@@ -90,7 +94,7 @@ const EventsList = ({ events }) => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default EventsList;
+export default EventsList
