@@ -215,6 +215,46 @@
             "link": "https://changelog.com/podcast/542",
             "type": "Podcast",
             "topics": "Maintainer Journey"
+        },
+        {
+            "title": "Maintaining the Bluesky MCP Server",
+            "author": "host @EbonyLouis, guest Brian Ellin",
+            "description": "A conversation between Ebony Louis and Brian Ellin on building and maintaining the Bluesky MCP server—and what it takes to build with open protocols.",
+            "link": "https://www.youtube.com/watch?v=G8DEF_xCUfs",
+            "type": "Livestream VOD",
+            "topics": "AI agent, MCP, open source"
+        },
+        {
+            "title": "How We Built the Confluence MCP Server",
+            "author": "Rizel Scarlett @blackgirlbytes",
+            "description": "Rizel Scarlett speaks with Sean Falconer and Edward V., maintainers of the Confluence MCP server, about building it and how it democratizes real-time data streaming.",
+            "link": "https://www.youtube.com/watch?v=ivlzvZzFeZM",
+            "type": "Livestream VOD",
+            "topics": "AI agent, MCP server, goose, confluence"
+        },
+        {
+            "title": "Collaborative Maintainership in Motion: Improving the mbot MCP Server",
+            "author": "Ian Douglas @iandouglas",
+            "description": "To help an AI agent drive a robot, contributor Ian Douglas became a maintainer by extending an existing MCP server—highlighting the power of shared ownership and open source collaboration.",
+            "link": "https://block.github.io/goose/blog/2025/05/20/goose-gets-a-drivers-license/",
+            "type": "Blog",
+            "topics": "AI agent, MCP server, robot, open source"
+        },
+        {
+            "title": "What It Takes to Maintain Local AI: Goose + Qwen3",
+            "author": "Mic Neale @michaelneale",
+            "description": "Mic Neale shares his perspective as a maintainer on building tools that respect developer autonomy while building local-first AI tools.",
+            "link": "https://block.github.io/goose/blog/2025/05/12/local-goose-qwen3/",
+            "type": "Blog",
+            "topics": "AI agent, open source"
+        },
+        {
+            "title": "Swastik Baranwal Open Source Journey",
+            "author": "Swastik Baranwal",
+            "description": "Hear about Swastik Baranwal's open source story through the Open Source Initiative (OSI), where he tells his story and how he inspires new people to get involved in open source.",
+            "link": "https://opensource.org/maintainers/delta456",
+            "type": "blog",
+            "topics": "open source, story, maintainer"
         }
     ]
 }
