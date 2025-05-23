@@ -255,6 +255,14 @@
             "link": "https://opensource.org/maintainers/delta456",
             "type": "blog",
             "topics": "open source, story, maintainer"
+        },
+        {
+            "title": "Scaling Security: Inside the GitHub Securing Open Source Software Fund",
+            "author": "OpenSSF",
+            "description": "In this episode of What’s in the SOSS?, CRob sits down with Kevin Crosby and Xavier René-Corail from GitHub to unpack the GitHub Secure Open Source (SOS) Fund.",
+            "link": "https://openssf.org/podcast/2025/05/13/whats-in-the-soss-podcast-30-s2e07-scaling-security-inside-the-github-securing-open-source-software-fund/",
+            "type": "podcast",
+            "topics": "open source, security, funding"
         }
     ]
 }
