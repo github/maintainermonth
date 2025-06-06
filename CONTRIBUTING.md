@@ -4,6 +4,25 @@
 
 This document provides guidelines and instructions for contributing to the Maintainer Month website.
 
+## Getting Started - What do you want to do?
+
+Choose your contribution type to jump to the right section:
+
+### 🎉 **Add a New Event**
+Want to showcase your maintainer-focused event during Maintainer Month? → [Jump to Adding a New Event](#adding-a-new-event)
+
+### 📚 **Add a New Resource** 
+Have a helpful resource for maintainers (article, video, tutorial)? → [Jump to Adding a New Resource](#adding-a-new-resource)
+
+### ✏️ **Fix Typos or Content Issues**
+Spotted a typo or content error that needs fixing? → [Jump to Fixing Typos or Content Issues](#fixing-typos-or-content-issues)
+
+### 🔧 **Make Code Changes**
+Want to improve the website functionality or structure? → [Jump to Making Code Changes](#making-code-changes)
+
+### 🚀 **Set Up Development Environment**
+Need to run the website locally for testing? → [Jump to Development Guidelines](#development-guidelines)
+
 ## Quick Navigation
 
 - [How to Contribute](#how-to-contribute)
@@ -68,19 +87,61 @@ Detailed description of your event goes here. You can use markdown formatting.
 
 ### Fixing Typos or Content Issues
 
+Found something that needs fixing? We appreciate your help! Here's how to contribute corrections:
+
+#### What to Fix
+- Spelling or grammar errors
+- Broken links
+- Outdated information
+- Formatting issues
+- Missing or incorrect event details
+
+#### Where to Look
+- **Website text:** Files in the `content/` directory
+- **Event information:** Files in `content/events/`
+- **Resource library:** `content/library/resources.json`
+- **Homepage content:** Files in `content/home/`
+- **General site text:** `content/commons.json`
+
+#### How to Fix
 1. Locate the file with the content that needs correction
-   - Website text is in the `content/` directory
-   - For events, check `content/events/`
-   - For library resources, check `content/library/resources.json`
-2. Make your corrections
-3. Submit a PR describing what you fixed
+2. Make your corrections (keep existing formatting and structure)
+3. For events, be careful not to modify frontmatter variable names (between `---`)
+4. Submit a PR with a clear description of what you fixed
+
+**Quick Tip:** For simple typos, you can even edit directly on GitHub by clicking the pencil icon on any file!
 
 ### Making Code Changes
 
-1. For structural code changes, please open an issue first to discuss your proposal
-2. Follow the project's coding style and patterns
-3. Test your changes locally before submitting
-4. Include clear documentation for any new functionality
+We welcome both minor improvements and structural changes, but the process differs:
+
+#### Minor Code Changes
+For small improvements like:
+- Bug fixes
+- UI/UX tweaks
+- Performance optimizations
+- Code cleanup or refactoring
+
+**Process:**
+1. Fork the repository and create a branch
+2. Make your changes following existing code patterns
+3. Test locally with `npm run dev` and `npm test`
+4. Submit a PR with a clear description
+
+#### Structural Code Changes
+For significant changes like:
+- New features or pages
+- Major architectural changes
+- New dependencies or build processes
+- Breaking changes to existing functionality
+
+**Process:**
+1. **Open an issue first** to discuss your proposal with maintainers
+2. Wait for feedback and approval before starting work
+3. Follow the project's coding style and patterns
+4. Test your changes thoroughly locally
+5. Include clear documentation for any new functionality
+6. Submit a PR referencing the issue
 
 ## Development Guidelines
 
