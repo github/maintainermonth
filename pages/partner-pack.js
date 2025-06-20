@@ -47,7 +47,12 @@ export default function PartnerPack({ content, frontmatter, partnerOffers, addit
         </div>
         <div className="partner-pack__content">
           <div dangerouslySetInnerHTML={{ __html: content }}></div>
-          <Offers partnerOffers={partnerOffers} additionalSections={additionalSections} />
+          {/* Offers component commented out until Maintainer Month 2026
+          <Offers partnerOffers={partnerOffers} additionalSections={additionalSections} /> */}
+          <div className="partner-pack__message">
+            <h2>Partner Pack Offers</h2>
+            <p>Thank you for your interest! Maintainer Month 2025 has concluded. Please check back next year for new partner offers and opportunities.</p>
+          </div>
         </div>
       </div>
     </div>
