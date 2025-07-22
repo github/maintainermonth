@@ -22,13 +22,13 @@ export default function SecurityChallenge() {
     {
       title: "Secure Your Repository's Supply Chain",
       description: "Learn how to secure your repository's supply chain with proper dependency management",
-      link: "https://github.com/skills/secure-repository-supply-chain",
+      link: "https://github.com/skills-dev/secure-repository-supply-chain",
       icon: "🔒"
     },
     {
       title: "Introduction to Secret Scanning",
       description: "Learn how to prevent accidental secret leaks and secure your repositories",
-      link: "https://github.com/skills/introduction-to-secret-scanning",
+      link: "https://github.com/skills-dev/introduction-to-secret-scanning",
       icon: "🔍"
     }
   ]
