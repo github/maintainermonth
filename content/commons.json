@@ -44,6 +44,8 @@
     "footer:github-url": "https://github.com/github/maintainermonth",
     "footer:twitch-label": "Follow us on Twitch",
     "footer:twitch-url": "https://www.twitch.tv/github",
+    "footer:bluesky-label": "Follow us on Bluesky",
+    "footer:bluesky-url": "https://bsky.app/profile/github.com",
 
     "hero:image-description": "Illustration by Ariel Davis, of a surreal geometric assortment of hands and shapes implying collaboration",
     

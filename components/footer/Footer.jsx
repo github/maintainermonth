@@ -8,11 +8,12 @@ import * as ROUTES from '../../common/routes'
 import { getLiteral } from '../../common/i18n'
 
 import IconTwitter from '../../public/icons/twitter'
+import IconBluesky from '../../public/icons/bluesky'
 import IconFacebook from '../../public/icons/facebook'
 import IconYouTube from '../../public/icons/youtube'
+import IconTwitch from '../../public/icons/twitch'
 import IconLinkedIn from '../../public/icons/linkedin'
 import IconGitHub from '../../public/icons/github'
-import IconTwitch from '../../public/icons/twitch'
 
 const Footer = () => {
   const { pathname } = useRouter()
@@ -48,6 +49,17 @@ const Footer = () => {
           >
             <span aria-hidden="true">
               <IconTwitter />
+            </span>
+          </a>
+          <a
+            className="footer__button"
+            href={getLiteral('footer:bluesky-url')}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={getLiteral('footer:bluesky-label')}
+          >
+            <span aria-hidden="true">
+              <IconBluesky />
             </span>
           </a>
           <a
