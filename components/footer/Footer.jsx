@@ -12,6 +12,7 @@ import IconFacebook from '../../public/icons/facebook'
 import IconYouTube from '../../public/icons/youtube'
 import IconLinkedIn from '../../public/icons/linkedin'
 import IconGitHub from '../../public/icons/github'
+import IconTwitch from '../../public/icons/twitch'
 
 const Footer = () => {
   const { pathname } = useRouter()
@@ -69,6 +70,17 @@ const Footer = () => {
           >
             <span aria-hidden="true">
               <IconYouTube />
+            </span>
+          </a>
+          <a
+            className="footer__button"
+            href={getLiteral('footer:twitch-url')}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={getLiteral('footer:twitch-label')}
+          >
+            <span aria-hidden="true">
+              <IconTwitch />
             </span>
           </a>
           <a
