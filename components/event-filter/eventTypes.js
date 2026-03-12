@@ -9,6 +9,6 @@ const eventTypes = [
   { value: 'meetup', label: literals['event-type:meetup'] },
   { value: 'fundraising', label: literals['event-type:fundraising'] },
   { value: 'misc', label: literals['event-type:misc'] },
-];
+]
 
 export default eventTypes
