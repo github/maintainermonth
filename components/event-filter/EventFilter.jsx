@@ -20,4 +20,4 @@ const EventFilter = ({ selectedType, setSelectedType, eventTypes }) => {
   );
 };
 
-export default EventFilter;
+export default EventFilter
