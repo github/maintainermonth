@@ -2,8 +2,8 @@ import React from 'react';
 
 const EventFilter = ({ selectedType, setSelectedType, eventTypes }) => {
   const handleChange = (e) => {
-    setSelectedType(e.target.value);
-  };
+    setSelectedType(e.target.value)
+  }
 
   return (
       <select
@@ -17,7 +17,7 @@ const EventFilter = ({ selectedType, setSelectedType, eventTypes }) => {
           </option>
         ))}
       </select>
-  );
-};
+  )
+}
 
 export default EventFilter
