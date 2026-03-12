@@ -1,4 +1,4 @@
-import literals from '../../content/commons.json';
+import literals from '../../content/commons.json'
 
 const eventTypes = [
   { value: 'all', label: 'All Events' },
@@ -11,4 +11,4 @@ const eventTypes = [
   { value: 'misc', label: literals['event-type:misc'] },
 ];
 
-export default eventTypes;
+export default eventTypes
