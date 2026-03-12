@@ -1,41 +1,52 @@
+import React, { useState } from 'react'
 import md from 'markdown-it'
 import clsx from 'clsx'
-
 import Link from 'next/link'
 
 import ButtonLink from '../button-link/ButtonLink'
-
+import EventFilter from '../event-filter/EventFilter'
+import eventTypes from '../event-filter/eventTypes'
 import { getLiteral } from '../../common/i18n'
 import * as ROUTES from '../../common/routes'
-
 import DateTimeChip from '../date-time-chip/DateTimeChip'
 import EventTypeChip from '../event-type-chip/EventTypeChip'
 import PlayLink from '../play-link/PlayLink'
 import Chip from '../chip/Chip'
+
 const EventsList = ({ events }) => {
   const dateLabel = (event) =>
     `${event.formattedDate.date} to ${event.formattedDate.endDate}`
+
+  const [selectedType, setSelectedType] = useState('all')
+  const filteredEvents = selectedType === 'all'
+    ? events
+    : events.filter((event) => event.type === selectedType)
 
   return (
     <section className="events-list">
       <div className="events-list__header">
         <div className="events-list__header-content">
           <h1 className="events-list__title">{getLiteral('schedule:title')}</h1>
-          <p className="events-list__subtitle">
-            {getLiteral('schedule:description')}
-          </p>
-          <ButtonLink
-            href="https://github.com/github/maintainermonth/issues/new?template=add-to-calendar.yml"
-            isExternal={true}
-            className="events-list__add-button"
-          >
-            {getLiteral('schedule:add-event')}
-          </ButtonLink>
+          <p className="events-list__subtitle">{getLiteral('schedule:description')}</p>
+          <div className="events-list__controls">
+            <ButtonLink
+              href="https://github.com/github/maintainermonth/issues/new?template=add-to-calendar.yml"
+              isExternal={true}
+              className="events-list__add-button"
+            >
+              {getLiteral('schedule:add-event')}
+            </ButtonLink>
+            <EventFilter
+              selectedType={selectedType}
+              setSelectedType={setSelectedType}
+              eventTypes={eventTypes}
+            />
+          </div>
         </div>
       </div>
 
       <div className="events-list__grid">
-        {events.map((event, index) => (
+        {filteredEvents.map((event, index) => (
           <div
             key={event.slug}
             className={clsx('events-list__card', {
@@ -49,7 +60,6 @@ const EventsList = ({ events }) => {
                 <Chip label={event.formattedDate.date} />
               )}
             </div>
-
             <div className="events-list__event">
               <div className="events-list__meta">
                 <a
@@ -68,13 +78,11 @@ const EventsList = ({ events }) => {
                   endTime={event.formattedDate.endTime}
                 />
               </div>
-
               <div className="events-list__chips">
                 <EventTypeChip type={event.type} />
                 {event.language && <Chip label={event.language} />}
                 {event.location && <Chip label={event.location} />}
               </div>
-
               <div className="events-list__info">
                 <p
                   className="events-list__text"
