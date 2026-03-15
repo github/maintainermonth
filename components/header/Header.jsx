@@ -82,20 +82,6 @@ const Header = () => {
             </li>
             <li>
               <Link
-                href={ROUTES.SECURITY_CHALLENGE.getPath(year)}
-                aria-label={getLiteral('navigation:security-challenge')}
-                className={clsx('header__link', {
-                  ['is-active']: pathname === ROUTES.SECURITY_CHALLENGE.getPath(year),
-                })}
-              >
-                <IconShield />
-                <span className="header__link-text">
-                  {getLiteral('navigation:security-challenge')}
-                </span>
-              </Link>
-            </li>
-            <li>
-              <Link
                 href={ROUTES.SCHEDULE.getPath(year)}
                 aria-label={getLiteral('navigation:schedule')}
                 className={clsx('header__link', {
