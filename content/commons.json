@@ -71,6 +71,8 @@
     "schedule:title": "Schedule",
     "schedule:description": "List of all events organized during this year's Maintainer Month",
     "schedule:add-event": "Add your activity",
+    "schedule:ics-download": "Subscribe to calendar",
+    "schedule:ics-label": "Download .ics file with all Maintainer Month events",
 
     "share:event": "Check out this Maintainer Month event",
 

@@ -52,7 +52,7 @@ export default function Schedule({ events }) {
 }
 
 export async function getStaticProps() {
-  const events = parseEvents(getEvents('2022'))
+  const events = parseEvents(getEvents('2024'))
 
   return {
     props: {

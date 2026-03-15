@@ -64,7 +64,7 @@ const Header = () => {
           <p className={yearClasses}>{year || getLiteral('page:date')}</p>
         </div>
 
-        <nav className="header__navigation">
+        <nav className="header__navigation" aria-label="Main navigation">
           <ul className="header__list">
             <li>
               <Link

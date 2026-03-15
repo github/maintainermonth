@@ -21,7 +21,7 @@ const Footer = () => {
   const classes = clsx('footer', { 'is-home': isHome })
 
   return (
-    <footer className={classes}>
+    <footer className={classes} role="contentinfo">
       <div className="footer__copyright">
         <a
           className="footer__link"

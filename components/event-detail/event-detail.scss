@@ -194,6 +194,11 @@
     }
   }
 
+  &__title-wrapper {
+    margin: 0;
+    font: inherit;
+  }
+
   &__link-wrapper {
     margin-top: spacing(3);
 

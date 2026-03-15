@@ -1,8 +1,11 @@
 import { useEffect } from 'react'
+import fs from 'fs'
+import path from 'path'
 import Head from 'next/head'
 
 import { getLiteral } from '../../common/i18n'
 import { getEvents, parseEvents } from '../../api/events'
+import { generateICS } from '../../api/calendar'
 import { useBackground } from '../../contexts/BackgroundContext'
 
 import EventsList from '../../components/events-list/EventsList'
@@ -53,6 +56,10 @@ export default function Schedule({ events }) {
 
 export async function getStaticProps() {
   const events = parseEvents(getEvents())
+
+  const icsContent = generateICS(events)
+  const icsPath = path.join(process.cwd(), 'public', 'maintainer-month-2026.ics')
+  fs.writeFileSync(icsPath, icsContent, 'utf-8')
 
   return {
     props: {

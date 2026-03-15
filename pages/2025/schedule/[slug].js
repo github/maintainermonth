@@ -40,7 +40,7 @@ export default function EventDetailPage({ event, ogImage }) {
 }
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync('content/2023/events')
+  const files = fs.readdirSync('content/2025/events')
 
   const paths = files.map((fileName) => ({
     params: {
@@ -55,7 +55,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
-  const event = getEventBySlug(slug, '2023')
+  const event = getEventBySlug(slug, '2025')
   const parsedEvent = parseEvent(event)
 
   const ogImage = await getOgImage({
