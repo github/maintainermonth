@@ -13,10 +13,25 @@ const useIncomingEvents = (events) => {
       const currentMonth = currentDate.getUTCMonth() + 1
       const currentDay = currentDate.getUTCDate()
 
-      return (
-        (eventMonth === currentMonth && eventDay >= currentDay) ||
-        eventMonth > currentMonth
-      )
+      const startIsUpcoming =
+        eventMonth > currentMonth ||
+        (eventMonth === currentMonth && eventDay >= currentDay)
+
+      if (startIsUpcoming) return true
+
+      if (event.endDate) {
+        const [endMonth, endDay] = event.endDate
+          .split('/')
+          .map((data) => parseInt(data))
+
+        const endIsUpcoming =
+          endMonth > currentMonth ||
+          (endMonth === currentMonth && endDay >= currentDay)
+
+        if (endIsUpcoming) return true
+      }
+
+      return false
     })
 
     return sortedEvents.slice(0, MAX_HOME_EVENTS)

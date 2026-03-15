@@ -31,15 +31,21 @@ const EventDetail = ({ event, reverseColumns, isFullPage }) => {
       <div className="event-detail__info">
         <div className="event-detail__meta">
           <div className="event-detail__column">
-            <Chip label={event.formattedDate.date} />
+            <Chip
+              label={
+                event.formattedDate.endDate
+                  ? `${event.formattedDate.date} - ${event.formattedDate.endDate}`
+                  : event.formattedDate.date
+              }
+            />
             <EventTypeChip type={event.type} />
             {event.language && <Chip label={event.language} />}
             {event.location && <Chip label={event.location} />}
           </div>
           <DateTimeChip
-            date={event.formattedDate.date}
             startTime={event.formattedDate.startTime}
             endTime={event.formattedDate.endTime}
+            timeDisplay={event.formattedDate.timeDisplay}
           />
         </div>
         <div>

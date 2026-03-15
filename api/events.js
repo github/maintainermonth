@@ -12,6 +12,14 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 
 const TBD = 'TBD'
+const ALL_DAY = 'All Day'
+
+const isTBDValue = (value) =>
+  !value || (typeof value === 'string' && value.toUpperCase() === 'TBD')
+
+const isAllDayValue = (value) =>
+  typeof value === 'string' &&
+  value.toLowerCase().replace(/[\s\-_]/g, '') === 'allday'
 
 export const getEvents = (year) => {
   const events_path = year ? `content/${year}/events` : 'content/events'
@@ -108,13 +116,26 @@ const formatEventDateTime = (
     formattedEndDate = endUTCDate.format('MMM D')
   }
 
+  // All-day events
+  if (isAllDayValue(startTime) || isAllDayValue(endTime)) {
+    return {
+      date: formattedDate,
+      startTime: { utc: ALL_DAY, pt: ALL_DAY },
+      endTime: { utc: ALL_DAY, pt: ALL_DAY },
+      endDate: formattedEndDate,
+      timeDisplay: 'all-day',
+    }
+  }
+
   // Start time
   let formattedStartTime = {
     utc: TBD,
     pt: TBD,
   }
 
-  if (startTime) {
+  let hasSpecificStartTime = false
+
+  if (!isTBDValue(startTime)) {
     const [startHour, startMinute] = startTime.split(':')
 
     const UTCStartTime = UTCDate.hour(startHour).minute(startMinute)
@@ -122,13 +143,11 @@ const formatEventDateTime = (
     if (!isNaN(UTCStartTime)) {
       const PTStartTime = UTCStartTime.tz('America/Los_Angeles')
 
-      const formattedUTCStartTime = UTCStartTime.format('HH:mm a')
-      const formattedPTStartTime = PTStartTime.format('HH:mm a')
-
       formattedStartTime = {
-        utc: formattedUTCStartTime,
-        pt: formattedPTStartTime,
+        utc: UTCStartTime.format('HH:mm a'),
+        pt: PTStartTime.format('HH:mm a'),
       }
+      hasSpecificStartTime = true
     }
   }
 
@@ -138,7 +157,9 @@ const formatEventDateTime = (
     pt: TBD,
   }
 
-  if (endTime && endTime !== TBD) {
+  let hasSpecificEndTime = false
+
+  if (!isTBDValue(endTime)) {
     const [endHour, endMinute] = endTime.split(':')
 
     const UTCEndTime = UTCDate.hour(endHour).minute(endMinute)
@@ -146,20 +167,22 @@ const formatEventDateTime = (
     if (!isNaN(UTCEndTime)) {
       const PTEndTime = UTCEndTime.tz('America/Los_Angeles')
 
-      const formattedUTCEndTime = UTCEndTime.format('HH:mm a')
-      const formattedPTEndTime = PTEndTime.format('HH:mm a')
-
       formattedEndTime = {
-        utc: formattedUTCEndTime,
-        pt: formattedPTEndTime,
+        utc: UTCEndTime.format('HH:mm a'),
+        pt: PTEndTime.format('HH:mm a'),
       }
+      hasSpecificEndTime = true
     }
   }
+
+  const timeDisplay =
+    hasSpecificStartTime || hasSpecificEndTime ? 'specific' : 'tbd'
 
   return {
     date: formattedDate,
     startTime: formattedStartTime,
     endTime: formattedEndTime,
     endDate: formattedEndDate,
+    timeDisplay,
   }
 }

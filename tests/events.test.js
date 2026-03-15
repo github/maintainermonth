@@ -71,6 +71,7 @@ describe('Event files', () => {
             pt: 'TBD',
             utc: 'TBD',
           },
+          timeDisplay: 'specific',
         }),
       }),
     )

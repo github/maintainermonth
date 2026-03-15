@@ -53,6 +53,7 @@
     "meta:event-description": "Check out this Maintainer Month event",
 
     "message:tbd": "TBD",
+    "message:all-day": "All Day",
 
     "not-found:title": "Oops!",
     "not-found:subtitle": "Page not found",
