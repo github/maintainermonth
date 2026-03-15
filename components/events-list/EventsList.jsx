@@ -109,6 +109,19 @@ const EventsList = ({ events }) => {
           </div>
         ))}
       </div>
+
+      {events.length === 0 && (
+        <p className="events-list__empty">
+          {getLiteral('schedule:empty-no-events')}{' '}
+          <a
+            href="https://github.com/github/maintainermonth/issues/new?assignees=&labels=&template=add-to-calendar.yml&title=EVENT_NAME"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {getLiteral('schedule:empty-host-link')}
+          </a>
+        </p>
+      )}
     </section>
   )
 }

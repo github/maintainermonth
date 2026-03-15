@@ -73,6 +73,9 @@
     "schedule:add-event": "Add your activity",
     "schedule:ics-download": "Subscribe to calendar",
     "schedule:ics-label": "Download .ics file with all Maintainer Month events",
+    "schedule:empty-no-events": "Events for Maintainer Month 2026 are coming soon! Want to host one?",
+    "schedule:empty-host-link": "Submit your event here.",
+    "schedule:empty-no-matches": "No events match the selected filters.",
 
     "share:event": "Check out this Maintainer Month event",
 
