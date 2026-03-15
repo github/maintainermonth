@@ -26,6 +26,10 @@ const Ships = ({ ships }) => {
 
   return (
     <section className="ships">
+      <div className="ships__intro">
+        <h2 className="ships__heading">Recent ships for maintainers</h2>
+        <p className="ships__subtitle">GitHub features and updates that make maintaining open source projects easier. Shipped recently or coming soon.</p>
+      </div>
       <div className="ships__grid">
         {sorted.map((ship) => (
           <article key={ship.url} className="ships__card">

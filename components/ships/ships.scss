@@ -9,6 +9,22 @@
     padding-right: spacing(4);
   }
 
+  &__intro {
+    margin-bottom: spacing(5);
+    max-width: 640px;
+  }
+
+  &__heading {
+    @extend %header-2;
+    color: $white;
+    margin-bottom: spacing(2);
+  }
+
+  &__subtitle {
+    @extend %body-1;
+    color: $white-50;
+  }
+
   &__empty {
     text-align: center;
     padding: spacing(8) spacing(2);
