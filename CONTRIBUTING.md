@@ -42,7 +42,7 @@ Need to run the website locally for testing? → [Jump to Development Guidelines
 ### Adding a New Event
 
 1. Navigate to the `content/events/` folder
-2. Create a new markdown file with a descriptive name (e.g., `2025-05-20-your-event-name.md`)
+2. Create a new markdown file with a descriptive name (e.g., `2026-05-20-your-event-name.md`)
 3. Use the following template:
 
 ```markdown

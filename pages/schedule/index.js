@@ -20,9 +20,7 @@ export default function Schedule({ events }) {
   return (
     <div>
       <Head>
-        <title>
-          {getLiteral('schedule:title')} - {getLiteral('meta:title')}
-        </title>
+        <title>{`${getLiteral('schedule:title')} - ${getLiteral('meta:title')}`}</title>
         <meta name="description" content={getLiteral('schedule:description')} />
 
         {/* <!-- Facebook Meta Tags --> */}

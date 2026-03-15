@@ -12,9 +12,7 @@ export default function EventDetailPage({ event, ogImage }) {
   return (
     <>
       <Head>
-        <title>
-          {event.title} - {getLiteral('meta:title')}
-        </title>
+        <title>{`${event.title} - ${getLiteral('meta:title')}`}</title>
         <meta
           name="description"
           content={getLiteral('meta:event-description')}

@@ -19,9 +19,7 @@ export default function ShipsPage() {
   return (
     <div>
       <Head>
-        <title>
-          {getLiteral('ships:title')} - {getLiteral('meta:title')}
-        </title>
+        <title>{`${getLiteral('ships:title')} - ${getLiteral('meta:title')}`}</title>
         <meta name="description" content={getLiteral('ships:description')} />
 
         {/* <!-- Facebook Meta Tags --> */}

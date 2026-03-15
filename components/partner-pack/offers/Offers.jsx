@@ -19,6 +19,7 @@ const OfferCard = ({ offer }) => {
   return (
     <div className="offer-card">
       <div className="offer-card__logo">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={`/images/partners/${logo}`} alt={`${name} Logo`} />
       </div>
       <div className="offer-card__description">
@@ -80,6 +81,7 @@ const Offers = ({ partnerOffers, additionalSections }) => {
       
       <div className="partner-logos">
         {sortedPartnerOffers.map((offer, index) => (
+          /* eslint-disable-next-line @next/next/no-img-element */
           <img 
             key={index} 
             src={`/images/partners/${offer.logo}`} 

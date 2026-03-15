@@ -45,6 +45,11 @@ export default function News({ data }) {
       </Head>
 
       <div>
+        <section className="library-links">
+          <p className="library-links__empty">
+            News content will be updated for Maintainer Month 2026. The entries below are from previous years.
+          </p>
+        </section>
         <LibraryLinks links={data} />
       </div>
     </div>

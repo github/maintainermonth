@@ -62,7 +62,7 @@ export default function Home({ hero, about, getInvolved, events, connection }) {
             date={hero.date}
             title={hero.title}
             buttonText={hero.buttonText}
-            buttonLink={ROUTES.SCHEDULE.getPath("2022")}
+            buttonLink={ROUTES.SCHEDULE.getPath("2024")}
           />
           <About title={about.title} content={about.content} />
           <GetInvolved
@@ -84,15 +84,15 @@ export default function Home({ hero, about, getInvolved, events, connection }) {
 }
 
 export async function getStaticProps() {
-  const hero = getDataFromMD('content/2022/home/1-hero.md')
-  const about = getDataFromMD('content/2022/home/2-about.md')
+  const hero = getDataFromMD('content/2023/home/1-hero.md')
+  const about = getDataFromMD('content/2023/home/2-about.md')
   const getInvolved = parseGetInvolvedData(
-    getDataFromMD('content/2022/home/3-get-involved.md'),
+    getDataFromMD('content/2023/home/4-get-involved.md'),
   )
-  const events = getDataFromMD('content/2022/home/4-events.md')
-  const connection = getDataFromMD('content/2022/home/5-connection.md')
+  const events = getDataFromMD('content/2023/home/5-events.md')
+  const connection = getDataFromMD('content/2023/home/6-connection.md')
 
-  const eventsList = parseEvents(getEvents('2022'))
+  const eventsList = parseEvents(getEvents('2024'))
 
   return {
     props: {
