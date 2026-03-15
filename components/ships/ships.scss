@@ -3,6 +3,7 @@
   padding-bottom: spacing(4);
   max-width: 1440px;
   margin: 0 auto;
+  box-sizing: border-box;
 
   @media (min-width: $lg) {
     padding-left: spacing(4);
@@ -18,6 +19,7 @@
     @extend %header-2;
     color: $white;
     margin-bottom: spacing(2);
+    overflow-wrap: break-word;
   }
 
   &__subtitle {
@@ -50,6 +52,7 @@
     background: $white-20;
     border-radius: 12px;
     transition: background $simple-fade;
+    min-width: 0;
 
     @extend %background-filter;
 
@@ -77,6 +80,8 @@
     display: flex;
     align-items: baseline;
     gap: spacing(1);
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 
   &__external-icon {
