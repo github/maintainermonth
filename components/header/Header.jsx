@@ -12,6 +12,7 @@ import IconCalendar from '../../public/icons/calendar'
 import IconBooks from '../../public/icons/books'
 import BoxGift from '../../public/icons/box-gift'
 import IconShield from '../../public/icons/shield'
+import Rocket from '../../public/icons/rocket'
 import { BREAKPOINTS } from '../../common/constants'
 
 const Header = () => {
@@ -77,6 +78,20 @@ const Header = () => {
                 <BoxGift />
                 <span className="header__link-text">
                   {getLiteral('navigation:partner-pack')}
+                </span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={ROUTES.SHIPS.getPath(year)}
+                aria-label={getLiteral('navigation:ships')}
+                className={clsx('header__link', {
+                  ['is-active']: pathname === ROUTES.SHIPS.getPath(year),
+                })}
+              >
+                <Rocket />
+                <span className="header__link-text">
+                  {getLiteral('navigation:ships')}
                 </span>
               </Link>
             </li>
