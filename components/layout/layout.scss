@@ -164,6 +164,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    max-width: 100%;
+    overflow-x: hidden;
 
     z-index: $index-content;
   }

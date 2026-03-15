@@ -1,8 +1,8 @@
 ---
-title: "Maintainer Month 2025 Partner Pack"
+title: "Maintainer Month 2026 Partner Pack"
 subtitle: "Real support for the people behind open source"
-metaTitle: "Maintainer Month 2025 Partner Pack | Resources for Open Source Maintainers"
-metaDesc: "Exclusive perks, tools, and resources for open source maintainers during Maintainer Month 2025."
+metaTitle: "Maintainer Month 2026 Partner Pack | Resources for Open Source Maintainers"
+metaDesc: "Exclusive perks, tools, and resources for open source maintainers during Maintainer Month 2026."
 ---
 
 To celebrate Maintainer Month, we’re spotlighting the people who power open source — and giving back. We’ve teamed up with partners across the ecosystem to offer perks, tools, and resources for maintainers.

@@ -6,7 +6,7 @@ Repository for the official GitHub Maintainer Month website. You can access the 
 
 **Add your event!** See the [contributing guide](CONTRIBUTING.md) for details on how.
 
-**<p align="center"> ❇️ May 2025 ❇️ </p>**
+**<p align="center"> ❇️ May 2026 ❇️ </p>**
 
 ## Table of Contents
 
@@ -20,9 +20,9 @@ Repository for the official GitHub Maintainer Month website. You can access the 
 
 ## Getting Started
 
-### Installation
+Requires [Node.js](https://nodejs.org/) v18.18 or later.
 
-Run the following command before any other to install all the project's dependencies.
+### Installation
 
 ```
 npm install
@@ -30,21 +30,19 @@ npm install
 
 ### Usage
 
-To start application in development mode at [http://localhost:3000](http://localhost:3000) run the following command.
+Start the development server at [http://localhost:3000](http://localhost:3000):
 
 ```
-npm start
+npm run dev
 ```
 
 ### Build
 
-To generate the application build run the following command
+Generate a production build (static export to the `out` folder):
 
 ```
 npm run build
 ```
-
-This will create an `out` folder in the repository root with the static files.
 
 ## Contributing
 
