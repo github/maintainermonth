@@ -54,11 +54,12 @@
     flex-direction: column;
     width: 100%;
     min-width: 0;
+    box-sizing: border-box;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
     overflow: hidden;
     transition: transform 0.2s ease, background 0.2s ease;
-    height: 100%; // Make all cards same height
+    height: 100%;
 
     &:hover {
       background: rgba(255, 255, 255, 0.1);
@@ -146,6 +147,11 @@
     overflow: hidden;
     text-overflow: ellipsis;
     
+    p {
+      margin: 0;
+      display: inline;
+    }
+
     a {
       color: $white;
       text-decoration: underline;
