@@ -1,7 +1,6 @@
-import fs from 'fs'
 import Head from 'next/head'
 
-import { getEventBySlug, parseEvent } from '../../api/events'
+import { getEvents, getEventBySlug, parseEvent } from '../../api/events'
 import { getLiteral } from '../../common/i18n'
 
 import EventDetail from '../../components/event-detail/EventDetail'
@@ -38,11 +37,11 @@ export default function EventDetailPage({ event, ogImage }) {
 }
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync('content/events')
+  const events = getEvents()
 
-  const paths = files.map((fileName) => ({
+  const paths = events.map((event) => ({
     params: {
-      slug: fileName.replace('.md', ''),
+      slug: event.slug,
     },
   }))
 

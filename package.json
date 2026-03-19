@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "cross-env NODE_ENV=production next build",
-    "start": "npx serve out",
+    "start": "serve out",
     "lint": "next lint",
     "test": "jest"
   },
