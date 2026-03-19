@@ -1,4 +1,5 @@
 import Chip from '../chip/Chip'
+import { getLiteral } from '../../common/i18n'
 
 const formatDate = (dateString) => {
   const date = new Date(dateString + 'T00:00:00')
@@ -14,7 +15,7 @@ const Ships = ({ ships }) => {
     return (
       <section className="ships">
         <p className="ships__empty">
-          No ships listed yet. Check back soon!
+          {getLiteral('ships:empty')}
         </p>
       </section>
     )
@@ -27,8 +28,8 @@ const Ships = ({ ships }) => {
   return (
     <section className="ships">
       <div className="ships__intro">
-        <h2 className="ships__heading">Recent ships for maintainers</h2>
-        <p className="ships__subtitle">GitHub features and updates that make maintaining open source projects easier. Shipped recently or coming soon.</p>
+        <h2 className="ships__heading">{getLiteral('ships:title')}</h2>
+        <p className="ships__subtitle">{getLiteral('ships:description')}</p>
       </div>
       <div className="ships__grid">
         {sorted.map((ship) => (

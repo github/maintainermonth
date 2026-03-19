@@ -101,7 +101,7 @@ const EventsList = ({ events }) => {
                 <p
                   className="events-list__text"
                   dangerouslySetInnerHTML={{
-                    __html: md().render(event.description || ''),
+                    __html: md().render(event.metaDesc || ''),
                   }}
                 />
               </div>

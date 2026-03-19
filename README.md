@@ -20,7 +20,7 @@ Repository for the official GitHub Maintainer Month website. You can access the 
 
 ## Getting Started
 
-Requires [Node.js](https://nodejs.org/) v18.18 or later.
+Requires [Node.js](https://nodejs.org/) v20 or later.
 
 ### Installation
 
@@ -58,5 +58,5 @@ Maintainer Month was created, and is maintained, by GitHub, starting in 2021 as 
 
 ## License
 
-Copyright © 2025 [GitHub](https://github.com/github).<br />
+Copyright © 2026 [GitHub](https://github.com/github).<br />
 This project is [MIT](LICENSE) licensed.

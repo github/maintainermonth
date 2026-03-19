@@ -1,6 +1,4 @@
 import { useEffect } from 'react'
-import fs from 'fs'
-import path from 'path'
 import Head from 'next/head'
 
 import { getLiteral } from '../../common/i18n'
@@ -53,6 +51,9 @@ export default function Schedule({ events }) {
 }
 
 export async function getStaticProps() {
+  const fs = require('fs')
+  const path = require('path')
+
   const events = parseEvents(getEvents())
 
   const icsContent = generateICS(events)

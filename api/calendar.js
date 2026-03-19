@@ -22,7 +22,7 @@ function toICSEvent(event) {
 
   const icsEvent = {
     title: event.title,
-    description: event.description || '',
+    description: event.metaDesc || '',
     location: event.location || '',
     url: event.linkUrl || '',
     calName: 'Maintainer Month 2026',
@@ -63,7 +63,13 @@ function toICSEvent(event) {
         endDate.getUTCDate(),
       ]
     } else {
-      icsEvent.end = [EVENT_YEAR, startMonth, startDay + 1]
+      // Use Date math to handle month boundary rollover
+      const endDate = new Date(Date.UTC(EVENT_YEAR, startMonth - 1, startDay + 1))
+      icsEvent.end = [
+        endDate.getUTCFullYear(),
+        endDate.getUTCMonth() + 1,
+        endDate.getUTCDate(),
+      ]
     }
   }
 

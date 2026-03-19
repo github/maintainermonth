@@ -23,6 +23,7 @@ const isAllDayValue = (value) =>
 
 export const getEvents = (year) => {
   const events_path = year ? `content/${year}/events` : 'content/events'
+  if (!fs.existsSync(events_path)) return []
   const eventFiles = fs.readdirSync(events_path)
 
   const events = eventFiles
@@ -144,8 +145,8 @@ const formatEventDateTime = (
       const PTStartTime = UTCStartTime.tz('America/Los_Angeles')
 
       formattedStartTime = {
-        utc: UTCStartTime.format('HH:mm a'),
-        pt: PTStartTime.format('HH:mm a'),
+        utc: UTCStartTime.format('h:mm a'),
+        pt: PTStartTime.format('h:mm a'),
       }
       hasSpecificStartTime = true
     }
@@ -168,8 +169,8 @@ const formatEventDateTime = (
       const PTEndTime = UTCEndTime.tz('America/Los_Angeles')
 
       formattedEndTime = {
-        utc: UTCEndTime.format('HH:mm a'),
-        pt: PTEndTime.format('HH:mm a'),
+        utc: UTCEndTime.format('h:mm a'),
+        pt: PTEndTime.format('h:mm a'),
       }
       hasSpecificEndTime = true
     }

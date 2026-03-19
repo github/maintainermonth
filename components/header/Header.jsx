@@ -11,7 +11,6 @@ import GitHubLogo from '../../public/icons/github-logo'
 import IconCalendar from '../../public/icons/calendar'
 import IconBooks from '../../public/icons/books'
 import BoxGift from '../../public/icons/box-gift'
-import IconShield from '../../public/icons/shield'
 import Rocket from '../../public/icons/rocket'
 import { BREAKPOINTS } from '../../common/constants'
 
