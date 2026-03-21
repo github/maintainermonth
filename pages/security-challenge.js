@@ -47,7 +47,7 @@ Each one takes about 1 hour
     // Convert markdown content to HTML
   const content_end = marked(`
 ### Thank you for your interest!
-The 2026 Security Challenge submission period has ended. Form submissions closed on May 31, 2026. We are currently reviewing submissions and will be distributing vouchers to eligible participants in June 2026.
+The 2025 Security Challenge submission period has ended. Form submissions closed on May 31, 2025. We are currently reviewing submissions and will be distributing vouchers to eligible participants in June 2025.
 
 > **Please check back during Maintainer Month 2026 for next year's security challenge opportunities!**
 
@@ -73,12 +73,12 @@ If you have any questions about the challenge or certification exam, please reac
   return (
     <div>
       <Head>
-        <title>Security Challenge - Maintainer Month 2026</title>
-        <meta name="description" content="Complete security courses and earn a free GitHub Advanced Security certification during Maintainer Month 2026!" />
+        <title>Security Challenge - Maintainer Month 2025</title>
+        <meta name="description" content="Complete security courses and earn a free GitHub Advanced Security certification during Maintainer Month 2025!" />
 
         {/* <!-- Facebook Meta Tags --> */}
-        <meta property="og:title" content="Security Challenge - Maintainer Month 2026" />
-        <meta property="og:description" content="Complete security courses and earn a free GitHub Advanced Security certification during Maintainer Month 2026!" />
+        <meta property="og:title" content="Security Challenge - Maintainer Month 2025" />
+        <meta property="og:description" content="Complete security courses and earn a free GitHub Advanced Security certification during Maintainer Month 2025!" />
         <meta
           property="og:image"
           content="https://maintainermonth.github.com/images/og/generic.png"
@@ -86,8 +86,8 @@ If you have any questions about the challenge or certification exam, please reac
 
         {/* <!-- Twitter Meta Tags --> */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Security Challenge - Maintainer Month 2026" />
-        <meta name="twitter:description" content="Complete security courses and earn a free GitHub Advanced Security certification during Maintainer Month 2026!" />
+        <meta name="twitter:title" content="Security Challenge - Maintainer Month 2025" />
+        <meta name="twitter:description" content="Complete security courses and earn a free GitHub Advanced Security certification during Maintainer Month 2025!" />
         <meta
           name="twitter:image"
           content="https://maintainermonth.github.com/images/og/generic.png"

@@ -84,6 +84,7 @@ export default function Home({ hero, about, getInvolved, events, connection }) {
 }
 
 export async function getStaticProps() {
+  // No content/2024/home/ exists; 2023 is the closest year with home content
   const hero = getDataFromMD('content/2023/home/1-hero.md')
   const about = getDataFromMD('content/2023/home/2-about.md')
   const getInvolved = parseGetInvolvedData(
