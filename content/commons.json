@@ -48,7 +48,7 @@
     "library:title": "Library",
     "library:description": "List of all maintainer resources and stories.",
 
-    "meta:title": "Maintainer Month 2025",
+    "meta:title": "Maintainer Month 2026",
     "meta:description": "A month for open source maintainers to gather, share, and be celebrated.",
     "meta:event-description": "Check out this Maintainer Month event",
 
@@ -67,7 +67,7 @@
 
     "page:title": "Maintainer Month",
     "page:title-mobile": "MM",
-    "page:date": "May 2025",
+    "page:date": "May 2026",
 
     "ships:title": "Ships for Maintainers",
     "ships:description": "GitHub features and updates built for open source maintainers.",
