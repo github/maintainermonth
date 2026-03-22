@@ -8,8 +8,10 @@ import * as ROUTES from '../../common/routes'
 import { getLiteral } from '../../common/i18n'
 
 import IconTwitter from '../../public/icons/twitter'
+import IconBluesky from '../../public/icons/bluesky'
 import IconFacebook from '../../public/icons/facebook'
 import IconYouTube from '../../public/icons/youtube'
+import IconTwitch from '../../public/icons/twitch'
 import IconLinkedIn from '../../public/icons/linkedin'
 import IconGitHub from '../../public/icons/github'
 
@@ -51,6 +53,17 @@ const Footer = () => {
           </a>
           <a
             className="footer__button"
+            href={getLiteral('footer:bluesky-url')}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={getLiteral('footer:bluesky-label')}
+          >
+            <span aria-hidden="true">
+              <IconBluesky />
+            </span>
+          </a>
+          <a
+            className="footer__button"
             href={getLiteral('footer:facebook-url')}
             target="_blank"
             rel="noreferrer"
@@ -69,6 +82,17 @@ const Footer = () => {
           >
             <span aria-hidden="true">
               <IconYouTube />
+            </span>
+          </a>
+          <a
+            className="footer__button"
+            href={getLiteral('footer:twitch-url')}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={getLiteral('footer:twitch-label')}
+          >
+            <span aria-hidden="true">
+              <IconTwitch />
             </span>
           </a>
           <a
