@@ -16,7 +16,7 @@ const ExampleCard = ({ image, imageDescription, title, subtitle }) => {
     >
       <img className="get-involved__image" src={image} alt={imageDescription} />
       <div>
-        <h2 className="get-involved__example-subtitle">{subtitle}</h2>
+        <h3 className="get-involved__example-subtitle">{subtitle}</h3>
         <p className="get-involved__text">{title}</p>
       </div>
     </div>

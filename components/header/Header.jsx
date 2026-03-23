@@ -11,7 +11,7 @@ import GitHubLogo from '../../public/icons/github-logo'
 import IconCalendar from '../../public/icons/calendar'
 import IconBooks from '../../public/icons/books'
 import BoxGift from '../../public/icons/box-gift'
-import IconShield from '../../public/icons/shield'
+import Rocket from '../../public/icons/rocket'
 import { BREAKPOINTS } from '../../common/constants'
 
 const Header = () => {
@@ -64,7 +64,7 @@ const Header = () => {
           <p className={yearClasses}>{year || getLiteral('page:date')}</p>
         </div>
 
-        <nav className="header__navigation">
+        <nav className="header__navigation" aria-label="Main navigation">
           <ul className="header__list">
             <li>
               <Link
@@ -82,15 +82,15 @@ const Header = () => {
             </li>
             <li>
               <Link
-                href={ROUTES.SECURITY_CHALLENGE.getPath(year)}
-                aria-label={getLiteral('navigation:security-challenge')}
+                href={ROUTES.SHIPS.getPath(year)}
+                aria-label={getLiteral('navigation:ships')}
                 className={clsx('header__link', {
-                  ['is-active']: pathname === ROUTES.SECURITY_CHALLENGE.getPath(year),
+                  ['is-active']: pathname === ROUTES.SHIPS.getPath(year),
                 })}
               >
-                <IconShield />
+                <Rocket />
                 <span className="header__link-text">
-                  {getLiteral('navigation:security-challenge')}
+                  {getLiteral('navigation:ships')}
                 </span>
               </Link>
             </li>

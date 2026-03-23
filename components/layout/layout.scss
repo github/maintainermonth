@@ -164,11 +164,17 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    max-width: 100%;
+    overflow-x: clip;
 
     z-index: $index-content;
   }
 
   main {
     flex-grow: 1;
+
+    &:focus {
+      outline: none;
+    }
   }
 }

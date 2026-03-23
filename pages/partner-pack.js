@@ -50,8 +50,9 @@ export default function PartnerPack({ content, frontmatter, partnerOffers, addit
           {/* Offers component commented out until Maintainer Month 2026
           <Offers partnerOffers={partnerOffers} additionalSections={additionalSections} /> */}
           <div className="partner-pack__message">
-            <h2>Partner Pack Offers</h2>
-            <p>Thank you for your interest! Maintainer Month 2025 has concluded. Please check back next year for new partner offers and opportunities.</p>
+            <h2>Become a Maintainer Month 2026 Partner</h2>
+            <p>We&apos;re looking for partners to offer exclusive perks, tools, and resources to open source maintainers during Maintainer Month 2026. If your company wants to support the maintainers behind the software we all depend on, we&apos;d love to hear from you.</p>
+            <p>Get in touch at <a href="mailto:maintainermonth@github.com">maintainermonth@github.com</a>.</p>
           </div>
         </div>
       </div>

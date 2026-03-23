@@ -3,6 +3,7 @@
   position: relative;
   margin-top: -$header-height;
   padding-top: $header-height;
+  overflow: hidden;
 
   &__grid {
     @extend %grid;
@@ -16,7 +17,7 @@
     content: '';
     position: absolute;
     height: 100%;
-    width: 100vw;
+    width: 100%;
     top: 0;
     left: 0;
 
@@ -39,11 +40,19 @@
 
   &__background {
     @extend %grid;
-    padding-top: calc(42vh);
+    padding-top: calc(68vh);
 
     position: absolute;
     top: 0;
     left: 0;
+
+    @media (min-width: $sm) {
+      padding-top: calc(58vh);
+    }
+
+    @media (min-width: $md) {
+      padding-top: calc(48vh);
+    }
 
     @media (min-width: $lg) {
       padding-top: calc(34vh);
@@ -61,6 +70,7 @@
     overflow: hidden;
 
     grid-column: 1 / 5;
+    max-width: 100%;
 
     box-sizing: border-box;
 
@@ -92,6 +102,7 @@
 
     grid-column: 1 / 5;
 
+    position: relative;
     z-index: $index-content;
 
     @media (min-width: $md) {
@@ -126,12 +137,17 @@
   }
 
   &__title {
-    margin-bottom: spacing(4);
+    margin-bottom: spacing(3);
 
     @extend %header-1;
     text-shadow: 32px 4px 47px rgba(30, 0, 57, 0.61);
+    overflow-wrap: break-word;
+    word-break: break-word;
+    font-size: 1.25rem;
+    line-height: 1.4;
 
     @media (min-width: $sm) {
+      margin-bottom: spacing(4);
       font-family: $jetbrains;
       font-weight: $regular;
       font-size: 2.25rem;
@@ -148,7 +164,11 @@
   &__buttons {
     display: flex;
     flex-direction: column;
-    gap: spacing(2);
+    gap: spacing(1.5);
+
+    @media (min-width: $sm) {
+      gap: spacing(2);
+    }
 
     @media (min-width: $md) {
       flex-direction: row;

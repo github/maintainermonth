@@ -12,14 +12,18 @@ const Layout = ({ children }) => {
 
   return (
     <div className={classes}>
-      <div className="layout__bubbles">
+      <a className="skip-to-content" href="#main-content">
+        Skip to main content
+      </a>
+
+      <div className="layout__bubbles" aria-hidden="true">
         <span className="layout__back-bubble" />
         <span className="layout__front-bubble" />
       </div>
 
       <div className="layout__content">
         <Header />
-        <main>{children}</main>
+        <main id="main-content" role="main" tabIndex="-1">{children}</main>
         <Footer />
       </div>
     </div>

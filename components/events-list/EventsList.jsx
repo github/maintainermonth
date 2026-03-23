@@ -24,13 +24,32 @@ const EventsList = ({ events }) => {
           <p className="events-list__subtitle">
             {getLiteral('schedule:description')}
           </p>
-          <ButtonLink
-            href="https://github.com/github/maintainermonth/issues/new?template=add-to-calendar.yml"
-            isExternal={true}
-            className="events-list__add-button"
-          >
-            {getLiteral('schedule:add-event')}
-          </ButtonLink>
+          <div className="events-list__header-actions">
+            <ButtonLink
+              href="https://github.com/github/maintainermonth/issues/new?template=add-to-calendar.yml"
+              isExternal={true}
+              className="events-list__add-button"
+            >
+              {getLiteral('schedule:add-event')}
+            </ButtonLink>
+            <a
+              href="/maintainer-month-2026.ics"
+              download
+              className="events-list__ics-button"
+              aria-label={getLiteral('schedule:ics-label')}
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path d="M4.75 0a.75.75 0 0 1 .75.75V2h5V.75a.75.75 0 0 1 1.5 0V2H13a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h.75V.75A.75.75 0 0 1 4.75 0ZM3.5 7v6a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5V7h-9Z" />
+              </svg>
+              {getLiteral('schedule:ics-download')}
+            </a>
+          </div>
         </div>
       </div>
 
@@ -60,12 +79,15 @@ const EventsList = ({ events }) => {
                 >
                   {event.userName}
                 </a>
-                <Link href={event.link} className="events-list__link">
-                  {event.title}
-                </Link>
+                <h3 className="events-list__event-title">
+                  <Link href={event.link} className="events-list__link">
+                    {event.title}
+                  </Link>
+                </h3>
                 <DateTimeChip
                   startTime={event.formattedDate.startTime}
                   endTime={event.formattedDate.endTime}
+                  timeDisplay={event.formattedDate.timeDisplay}
                 />
               </div>
 
@@ -79,7 +101,7 @@ const EventsList = ({ events }) => {
                 <p
                   className="events-list__text"
                   dangerouslySetInnerHTML={{
-                    __html: md().render(event.description || ''),
+                    __html: md().render(event.metaDesc || ''),
                   }}
                 />
               </div>
@@ -87,6 +109,19 @@ const EventsList = ({ events }) => {
           </div>
         ))}
       </div>
+
+      {events.length === 0 && (
+        <p className="events-list__empty">
+          {getLiteral('schedule:empty-no-events')}{' '}
+          <a
+            href="https://github.com/github/maintainermonth/issues/new?assignees=&labels=&template=add-to-calendar.yml&title=EVENT_NAME"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {getLiteral('schedule:empty-host-link')}
+          </a>
+        </p>
+      )}
     </section>
   )
 }

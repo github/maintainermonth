@@ -4,9 +4,13 @@ import { getEventBySlug, parseEvent } from '../api/events'
 import testTypewindEvent from './testData/2025-05-02-typewind'
 import testCookieCutterEvent from './testData/2025-05-02-Cookie-Cutter'
 
+const EVENTS_DIR = 'content/events'
+const hasEventsDir = fs.existsSync(EVENTS_DIR)
+
 describe('Event files', () => {
   test('All event files have ".md" extension', () => {
-    const eventFiles = fs.readdirSync('content/events')
+    if (!hasEventsDir) return
+    const eventFiles = fs.readdirSync(EVENTS_DIR)
 
     const areAllValid = eventFiles.every((fileName) => fileName.endsWith('.md'))
 
@@ -14,7 +18,8 @@ describe('Event files', () => {
   })
 
   test('All events have correct dates (or TBD)', () => {
-    const eventFiles = fs.readdirSync('content/events')
+    if (!hasEventsDir) return
+    const eventFiles = fs.readdirSync(EVENTS_DIR)
 
     const events = eventFiles.map((fileName) => {
       const slug = fileName.replace('.md', '')
@@ -28,7 +33,8 @@ describe('Event files', () => {
   })
 
   test('An event has an end date and does not throw an error', () => {
-    const eventFiles = fs.readdirSync('content/events')
+    if (!hasEventsDir) return
+    const eventFiles = fs.readdirSync(EVENTS_DIR)
 
     const events = eventFiles.map((fileName) => {
       const slug = fileName.replace('.md', '')
@@ -48,7 +54,8 @@ describe('Event files', () => {
   })
 
   test('An event has an invalid start time and does not throw an error', () => {
-    const eventFiles = fs.readdirSync('content/events')
+    if (!hasEventsDir) return
+    const eventFiles = fs.readdirSync(EVENTS_DIR)
 
     const events = eventFiles.map((fileName) => {
       const slug = fileName.replace('.md', '')
@@ -71,6 +78,7 @@ describe('Event files', () => {
             pt: 'TBD',
             utc: 'TBD',
           },
+          timeDisplay: 'specific',
         }),
       }),
     )

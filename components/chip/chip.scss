@@ -3,8 +3,10 @@
   display: inline-flex;
   align-items: center;
   column-gap: 6px;
-  flex-shrink: 0;
   white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   background-color: $white;
   @extend %subtitle-1;

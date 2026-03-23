@@ -12,9 +12,7 @@ export default function EventDetailPage({ event, ogImage }) {
   return (
     <>
       <Head>
-        <title>
-          {event.title} - {getLiteral('meta:title')}
-        </title>
+        <title>{`${event.title} - ${getLiteral('meta:title')}`}</title>
         <meta
           name="description"
           content={getLiteral('meta:event-description')}
@@ -40,7 +38,7 @@ export default function EventDetailPage({ event, ogImage }) {
 }
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync('content/2022/events')
+  const files = fs.readdirSync('content/2024/events')
 
   const paths = files.map((fileName) => ({
     params: {
@@ -55,7 +53,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
-  const event = getEventBySlug(slug, '2022')
+  const event = getEventBySlug(slug, '2024')
   const parsedEvent = parseEvent(event)
 
   const ogImage = await getOgImage({

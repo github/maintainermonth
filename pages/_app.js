@@ -3,8 +3,6 @@ import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import * as Fathom from 'fathom-client';
 
-import smoothscroll from 'smoothscroll-polyfill'
-
 import Layout from '../components/layout/Layout'
 import { BackgroundProvider } from '../contexts/BackgroundContext'
 import useViewportHeight from '../hooks/useViewportHeight'
@@ -20,8 +18,6 @@ function App({ Component, pageProps }) {
       includedDomains: ['maintainermonth.github.com'],
 
     });
-    smoothscroll.polyfill()
-
     const handleRouteChange = () => {
       Fathom.trackPageview();
       window.scroll({

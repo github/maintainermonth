@@ -17,9 +17,7 @@ export default function Schedule({ events }) {
   return (
     <div>
       <Head>
-        <title>
-          {getLiteral('schedule:title')} - {getLiteral('meta:title')}
-        </title>
+        <title>{`${getLiteral('schedule:title')} - ${getLiteral('meta:title')}`}</title>
         <meta name="description" content={getLiteral('schedule:description')} />
 
         {/* <!-- Facebook Meta Tags --> */}
@@ -52,7 +50,7 @@ export default function Schedule({ events }) {
 }
 
 export async function getStaticProps() {
-  const events = parseEvents(getEvents('2022'))
+  const events = parseEvents(getEvents('2024'))
 
   return {
     props: {

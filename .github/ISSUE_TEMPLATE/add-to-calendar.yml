@@ -37,17 +37,19 @@ body:
     type: input
     attributes:
       label: Start time in UTC
+      description: 'Use HH:MM format (e.g., 14:00). Enter "TBD" if time is not yet confirmed, or "all-day" for all-day events.'
       placeholder: '14:00'
     validations:
-      required: true
+      required: false
 
   - id: UTCEndTime
     type: input
     attributes:
       label: End time in UTC
+      description: 'Use HH:MM format (e.g., 15:00). Leave blank if start time is TBD or all-day.'
       placeholder: '15:00'
     validations:
-      required: true
+      required: false
 
   - id: type
     type: dropdown
@@ -61,6 +63,7 @@ body:
         - talk
         - meetup
         - fundraising
+        - workshop
         - misc
     validations:
       required: true

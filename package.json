@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "NODE_ENV=production next build",
-    "start": "next start",
+    "build": "cross-env NODE_ENV=production next build",
+    "start": "serve out",
     "lint": "next lint",
     "test": "jest"
   },
@@ -14,26 +14,28 @@
     "dayjs": "^1.11.10",
     "fathom-client": "^3.6.0",
     "gray-matter": "^4.0.3",
+    "ics": "^3.8.1",
     "jimp": "^1.6.0",
     "markdown-it": "^14.1.1",
     "marked": "^15.0.11",
     "next": "^15.5.14",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "smoothscroll-polyfill": "^0.4.4"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.23.3",
     "@testing-library/jest-dom": "^6.1.4",
     "@testing-library/react": "^14.1.0",
     "babel-jest": "^29.7.0",
+    "cross-env": "^10.1.0",
     "eslint": "8.53.0",
     "eslint-config-next": "^15.5.12",
     "jest": "^29.7.0",
     "jest-css-modules": "^2.1.0",
     "jest-environment-jsdom": "^30.3.0",
     "sass": "^1.69.5",
-    "sass-loader": "^13.3.2"
+    "sass-loader": "^13.3.2",
+    "serve": "^14.2.6"
   },
   "overrides": {
     "xml2js": "^0.6.0"

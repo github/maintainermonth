@@ -123,7 +123,9 @@
 
   &__social {
     display: flex;
-    column-gap: spacing(1);
+    flex-wrap: wrap;
+    gap: spacing(1);
+    justify-content: center;
   }
 
   &__button span {

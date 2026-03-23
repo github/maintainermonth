@@ -1,8 +1,11 @@
 .events-list {
   $self: &;
   padding: spacing(4) spacing(3);
-  max-width: 1600px; // Increased to accommodate more columns
+  max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
+  box-sizing: border-box;
+  overflow-x: hidden;
 
   @media (min-width: $md) {
     padding: spacing(6) spacing(5);
@@ -27,6 +30,41 @@
     margin: 0;
   }
 
+  &__header-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: spacing(2);
+    align-items: center;
+  }
+
+  &__ics-button {
+    display: inline-flex;
+    align-items: center;
+    gap: spacing(1);
+    padding: spacing(1) spacing(2);
+    border-radius: 27px;
+    border: 1px solid $white-40;
+    background: transparent;
+    color: $white-80;
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    white-space: nowrap;
+
+    &:hover {
+      background: $white-20;
+      border-color: $white-80;
+      color: $white;
+    }
+
+    svg {
+      flex-shrink: 0;
+    }
+  }
+
   &__grid {
     display: grid;
     gap: spacing(3);
@@ -39,8 +77,8 @@
     @media (min-width: $lg) {
       grid-template-columns: repeat(3, 1fr);
     }
-    
-    @media (min-width: 1440px) {
+
+    @media (min-width: $xl) {
       grid-template-columns: repeat(4, 1fr);
     }
   }
@@ -50,11 +88,13 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
     overflow: hidden;
     transition: transform 0.2s ease, background 0.2s ease;
-    height: 100%; // Make all cards same height
+    height: 100%;
 
     &:hover {
       background: rgba(255, 255, 255, 0.1);
@@ -90,11 +130,12 @@
   &__chips {
     display: flex;
     flex-wrap: wrap;
-    gap: spacing(2);
+    gap: spacing(1);
     align-items: flex-start;
+    min-width: 0;
 
-    > * {
-      flex-shrink: 0;
+    @media (min-width: $md) {
+      gap: spacing(2);
     }
   }
 
@@ -120,10 +161,22 @@
     text-decoration: none;
     display: block;
     margin-top: spacing(1);
+    overflow-wrap: break-word;
+    word-break: break-word;
     
     &:hover {
       text-decoration: underline;
     }
+
+    &:focus-visible {
+      outline: 2px solid $green;
+      outline-offset: 2px;
+    }
+  }
+
+  &__event-title {
+    margin: 0;
+    font: inherit;
   }
 
   &__text {
@@ -139,6 +192,11 @@
     overflow: hidden;
     text-overflow: ellipsis;
     
+    p {
+      margin: 0;
+      display: inline;
+    }
+
     a {
       color: $white;
       text-decoration: underline;

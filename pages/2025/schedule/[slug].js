@@ -1,11 +1,12 @@
+import fs from 'fs'
 import Head from 'next/head'
 
-import { getEvents, getEventBySlug, parseEvent } from '../../api/events'
-import { getLiteral } from '../../common/i18n'
+import { getEventBySlug, parseEvent } from '../../../api/events'
+import { getLiteral } from '../../../common/i18n'
 
-import EventDetail from '../../components/event-detail/EventDetail'
-import EventDetailWrapper from '../../components/event-detail/EventDetailWrapper'
-import getOgImage from '../../components/og-image/getOgImage'
+import EventDetail from '../../../components/event-detail/EventDetail'
+import EventDetailWrapper from '../../../components/event-detail/EventDetailWrapper'
+import getOgImage from '../../../components/og-image/getOgImage'
 
 export default function EventDetailPage({ event, ogImage }) {
   return (
@@ -37,11 +38,11 @@ export default function EventDetailPage({ event, ogImage }) {
 }
 
 export async function getStaticPaths() {
-  const events = getEvents()
+  const files = fs.readdirSync('content/2025/events')
 
-  const paths = events.map((event) => ({
+  const paths = files.map((fileName) => ({
     params: {
-      slug: event.slug,
+      slug: fileName.replace('.md', ''),
     },
   }))
 
@@ -52,7 +53,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
-  const event = getEventBySlug(slug)
+  const event = getEventBySlug(slug, '2025')
   const parsedEvent = parseEvent(event)
 
   const ogImage = await getOgImage({

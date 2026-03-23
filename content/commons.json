@@ -50,13 +50,14 @@
     "hero:image-description": "Illustration by Ariel Davis, of a surreal geometric assortment of hands and shapes implying collaboration",
     
     "library:title": "Library",
-    "library:description": "List of all maintainer resources and storiesh.",
+    "library:description": "List of all maintainer resources and stories.",
 
-    "meta:title": "Maintainer Month 2025",
+    "meta:title": "Maintainer Month 2026",
     "meta:description": "A month for open source maintainers to gather, share, and be celebrated.",
     "meta:event-description": "Check out this Maintainer Month event",
 
     "message:tbd": "TBD",
+    "message:all-day": "All Day",
 
     "not-found:title": "Oops!",
     "not-found:subtitle": "Page not found",
@@ -66,14 +67,24 @@
     "navigation:library": "Library",
     "navigation:partner-pack": "Partner Pack",
     "navigation:security-challenge": "Challenge",
+    "navigation:ships": "Ships",
 
     "page:title": "Maintainer Month",
     "page:title-mobile": "MM",
-    "page:date": "May 2025",
+    "page:date": "May 2026",
+
+    "ships:title": "Ships for Maintainers",
+    "ships:description": "GitHub features and updates built for open source maintainers.",
+    "ships:empty": "No ships listed yet. Check back soon!",
 
     "schedule:title": "Schedule",
     "schedule:description": "List of all events organized during this year's Maintainer Month",
     "schedule:add-event": "Add your activity",
+    "schedule:ics-download": "Subscribe to calendar",
+    "schedule:ics-label": "Download .ics file with all Maintainer Month events",
+    "schedule:empty-no-events": "Events for Maintainer Month 2026 are coming soon! Want to host one?",
+    "schedule:empty-host-link": "Submit your event here.",
+    "schedule:empty-no-matches": "No events match the selected filters.",
 
     "share:event": "Check out this Maintainer Month event",
 

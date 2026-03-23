@@ -42,7 +42,7 @@ Need to run the website locally for testing? → [Jump to Development Guidelines
 ### Adding a New Event
 
 1. Navigate to the `content/events/` folder
-2. Create a new markdown file with a descriptive name (e.g., `2025-05-20-your-event-name.md`)
+2. Create a new markdown file with a descriptive name (e.g., `2026-05-20-your-event-name.md`)
 3. Use the following template:
 
 ```markdown
@@ -51,6 +51,7 @@ title: 'Your Event Title'
 metaTitle: 'Your Event Title'
 metaDesc: 'A brief description of your event'
 date: 'MM/DD'
+endDate: 'MM/DD'
 UTCStartTime: 'HH:MM'
 UTCEndTime: 'HH:MM'
 type: 'meetup'
@@ -64,7 +65,7 @@ linkUrl: 'https://link-to-event.com'
 Detailed description of your event goes here. You can use markdown formatting.
 ```
 
-4. All frontmatter fields (between `---`) are mandatory
+> **Note:** `UTCStartTime` and `UTCEndTime` are optional. If omitted, the event will display "TBD" for the time. You can also set them to `'TBD'` explicitly or use `'all-day'` for events that span an entire day. Use `endDate` for multi-day events.
 5. Submit a PR with your changes
 
 ### Adding a New Resource
@@ -175,8 +176,9 @@ For significant changes like:
 - `metaTitle`: Title for SEO meta tags
 - `metaDesc`: Description for SEO meta tags
 - `date`: Event date in `MM/DD` format
-- `UTCStartTime`: Start time in UTC, in `HH:MM` format
-- `UTCEndTime`: End time in UTC, in `HH:MM` format
+- `endDate`: _(optional)_ End date in `MM/DD` format, for multi-day events (e.g., a conference running May 16-18 would use `date: '05/16'` and `endDate: '05/18'`). Multi-day events display a date range and remain listed as upcoming until the end date passes.
+- `UTCStartTime`: _(optional)_ Start time in UTC, in `HH:MM` format. Omit or set to `'TBD'` if the time is not yet confirmed. Set to `'all-day'` for events without a specific start time.
+- `UTCEndTime`: _(optional)_ End time in UTC, in `HH:MM` format. Same rules as `UTCStartTime`.
 - `type`: One of: `podcast`, `stream`, `talk`, `meetup`, `fundraising`, `conference`, `misc`
 - `language`: Primary language of the event
 - `location`: `Virtual` or physical location

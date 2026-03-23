@@ -1,6 +1,16 @@
 import Chip from '../chip/Chip'
 
 const LibraryLinks = ({ links }) => {
+  if (!links || links.length === 0) {
+    return (
+      <section className="library-links">
+        <p className="library-links__empty">
+          No resources yet. Check back soon!
+        </p>
+      </section>
+    )
+  }
+
   return (
     <section className="library-links">
       {links.map((link) => (

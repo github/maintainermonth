@@ -1,0 +1,67 @@
+{
+  "ships": [
+    {
+      "url": "https://github.blog/changelog/2026-03-05-hierarchy-view-improvements-and-file-uploads-in-issue-forms/",
+      "title": "Hierarchy view improvements and file uploads in issue forms",
+      "description": "Issue forms now support file uploads, and the hierarchy view for sub-issues has been improved with better navigation and visibility.",
+      "date": "2026-03-05",
+      "category": "Issues"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-02-26-improved-search-on-the-issues-dashboard",
+      "title": "Improved search on the issues dashboard",
+      "description": "The issues dashboard search now supports more filters and delivers faster, more relevant results.",
+      "date": "2026-02-26",
+      "category": "Issues"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-02-25-github-copilot-cli-is-now-generally-available",
+      "title": "GitHub Copilot CLI is now generally available",
+      "description": "Copilot CLI brings AI-powered coding assistance directly to your terminal with agentic capabilities and MCP extensibility.",
+      "date": "2026-02-25",
+      "category": "Copilot"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-02-19-access-all-pull-request-comments-without-leaving-the-new-files-changed-page",
+      "title": "Access all pull request comments without leaving the Files Changed page",
+      "description": "View and navigate all PR comments inline on the Files Changed page without switching tabs.",
+      "date": "2026-02-19",
+      "category": "Pull Requests"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-02-13-new-repository-settings-for-configuring-pull-request-access/",
+      "title": "New repository settings for configuring pull request access",
+      "description": "Maintainers can now configure who has access to create and manage pull requests directly from repository settings.",
+      "date": "2026-02-13",
+      "category": "Repository Management"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-02-13-github-agentic-workflows-are-now-in-technical-preview",
+      "title": "GitHub agentic workflows are now in technical preview",
+      "description": "Agentic workflows let AI agents autonomously plan, execute, and iterate on tasks across your repositories.",
+      "date": "2026-02-13",
+      "category": "Copilot"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-02-05-improved-pull-request-files-changed-february-5-updates",
+      "title": "Improved pull request Files Changed page",
+      "description": "The Files Changed experience has been redesigned with better performance, navigation, and review tools.",
+      "date": "2026-02-05",
+      "category": "Pull Requests"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-02-05-pinned-comments-on-github-issues",
+      "title": "Pinned comments on GitHub Issues",
+      "description": "Maintainers can now pin important comments to the top of an issue for better visibility and context.",
+      "date": "2026-02-05",
+      "category": "Issues"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-01-22-faster-loading-for-github-issues",
+      "title": "Faster loading for GitHub Issues",
+      "description": "Issues now load significantly faster with improved rendering and data fetching.",
+      "date": "2026-01-22",
+      "category": "Issues"
+    }
+  ]
+}

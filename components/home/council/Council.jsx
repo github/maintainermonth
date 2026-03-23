@@ -12,7 +12,7 @@ const Council = () => {
     <section className="about">
       <div className="about__content">
         <div className="about__column">
-          <h2 className="about__title">Maintainer Month 2025 Advisory Council</h2>
+          <h2 className="about__title">Maintainer Month 2026 Advisory Council</h2>
         </div>
         <div className="about__text">
   <p>Kara Sowles - GitHub </p> 
