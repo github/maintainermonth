@@ -62,6 +62,104 @@
       "description": "Issues now load significantly faster with improved rendering and data fetching.",
       "date": "2026-01-22",
       "category": "Issues"
+    },
+    {
+      "url": "https://github.blog/changelog/2025-07-24-github-consistently-maintains-user-defined-tab-width-preferences/",
+      "title": "User-defined tab width applied consistently across GitHub",
+      "description": "Your tab-width preference now applies everywhere code is rendered, including diffs, blame views, and embedded snippets.",
+      "date": "2025-07-24",
+      "category": "Code View"
+    },
+    {
+      "url": "https://github.blog/changelog/2025-08-07-default-tab-size-changed-from-eight-to-four/",
+      "title": "Default tab size changed from eight to four",
+      "description": "The default tab display width is now four spaces instead of eight, matching what most developers use in their editors.",
+      "date": "2025-08-07",
+      "category": "Code View"
+    },
+    {
+      "url": "https://github.blog/changelog/2025-08-07-contributing-guidelines-now-visible-in-repository-tab-and-sidebar/",
+      "title": "Contributing guidelines added to repo tab and sidebar",
+      "description": "Repositories with a CONTRIBUTING.md now show it in the repo tab bar and sidebar so new contributors can find it immediately.",
+      "date": "2025-08-07",
+      "category": "Repository Management"
+    },
+    {
+      "url": "https://github.blog/changelog/2025-08-14-clearer-pull-request-reviewer-status-and-enhanced-email-filtering/",
+      "title": "Clearer distinction for pull request reviewer status and approvals",
+      "description": "Required reviewers are now grouped at the top of the sidebar with accessible visual cues replacing color-only indicators.",
+      "date": "2025-08-14",
+      "category": "Pull Requests"
+    },
+    {
+      "url": "https://github.blog/changelog/2025-08-14-clearer-pull-request-reviewer-status-and-enhanced-email-filtering/",
+      "title": "Custom headers added to Issue and PR email notifications",
+      "description": "Notification emails now include metadata headers for labels, assignees, milestones, and issue types for easier filtering.",
+      "date": "2025-08-14",
+      "category": "Notifications"
+    },
+    {
+      "url": "https://github.blog/changelog/2025-08-28-added-support-for-webp-images/",
+      "title": "Added support for WebP images",
+      "description": "WebP files now display inline in issues, PRs, discussions, gists, and repository file views instead of forcing a download.",
+      "date": "2025-08-28",
+      "category": "Code View"
+    },
+    {
+      "url": "https://github.blog/changelog/2025-09-04-improved-file-navigation-and-editing-in-the-web-ui/",
+      "title": "Improved file navigation and editing in the web UI",
+      "description": "Files found via search can now be edited directly on the default branch, and a new button navigates back from commits.",
+      "date": "2025-09-04",
+      "category": "Repository Management"
+    },
+    {
+      "url": "https://github.blog/changelog/",
+      "title": "Improved relative/absolute time threshold in Actions workflow executions",
+      "description": "Workflow run timestamps now switch from relative to absolute format after one hour for easier debugging and correlation.",
+      "date": "2025-09-18",
+      "category": "Actions"
+    },
+    {
+      "url": "https://github.blog/changelog/2025-10-02-one-click-merge-conflict-resolution-now-in-the-web-interface/",
+      "title": "One-click merge conflict resolution in the web UI",
+      "description": "Accept current, incoming, or both changes with a single click when resolving merge conflicts directly in the browser.",
+      "date": "2025-10-02",
+      "category": "Pull Requests"
+    },
+    {
+      "url": "https://github.blog/changelog/2025-10-09-improved-blocked-users-view-in-organization-and-personal-settings/",
+      "title": "Improved blocked users view in organization and personal settings",
+      "description": "The blocked users page now shows when each user was blocked, who blocked them, and supports longer descriptions.",
+      "date": "2025-10-09",
+      "category": "Moderation"
+    },
+    {
+      "url": "https://github.blog/changelog/2025-12-08-removing-notifications-for-mentions-in-commit-messages/",
+      "title": "Removed notifications from @mentions in commit messages",
+      "description": "Mentions in commit messages no longer trigger notifications, reducing noise from automated and bulk commits.",
+      "date": "2025-12-08",
+      "category": "Notifications"
+    },
+    {
+      "url": "https://github.blog/changelog/",
+      "title": "New org-level setting to control repo admin permissions for installing GitHub Apps",
+      "description": "Organization owners can now restrict whether repo admins can install GitHub Apps, adding a layer of governance.",
+      "date": "2025-11-01",
+      "category": "Organization Management"
+    },
+    {
+      "url": "https://github.blog/changelog/2025-12-04-notifications-triggered-by-spam-accounts-are-now-correctly-hidden/",
+      "title": "Notifications sidebar counter improved to remove spam notifications",
+      "description": "Spam-triggered notifications are now hidden from the feed and counter, cleaning up nearly 6 million ghost notifications.",
+      "date": "2025-12-04",
+      "category": "Notifications"
+    },
+    {
+      "url": "https://github.blog/changelog/",
+      "title": "Block org members from requesting GitHub App installations",
+      "description": "Organization owners can now prevent members from submitting GitHub App installation requests.",
+      "date": "2025-11-15",
+      "category": "Organization Management"
     }
   ]
 }
