@@ -1,0 +1,218 @@
+.academia-list {
+  padding: spacing(7) spacing(2) 0;
+
+  @media (min-width: $lg) {
+    padding-left: spacing(3);
+    padding-right: spacing(3);
+  }
+
+  &__intro {
+    padding: spacing(3);
+    margin-bottom: spacing(2);
+
+    h1 {
+      @extend %header-2;
+      margin-bottom: spacing(1.5);
+    }
+
+    p {
+      @extend %body-1;
+      color: $white-80;
+      max-width: 820px;
+    }
+  }
+
+  &__empty {
+    @extend %body-1;
+    color: $white-80;
+    padding: spacing(3);
+    border-top: 1px solid $white-50;
+  }
+
+  &__item {
+    position: relative;
+    padding: spacing(3);
+    border-top: 1px solid $white-50;
+
+    @extend %background-filter;
+  }
+
+  &__main {
+    text-align: right;
+
+    @media screen and (max-width: $xl) {
+      text-align: left;
+    }
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__flex div, &__flex p {
+    max-width: 740px;
+  }
+
+  &__title {
+    @extend %header-2;
+    margin-bottom: spacing(1);
+  }
+
+  &__subtitle {
+    @extend %header-5;
+    margin-bottom: spacing(2);
+  }
+
+  &__badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: spacing(1);
+    margin-bottom: spacing(2);
+  }
+
+  &__description {
+    @extend %body-1;
+    color: $white-80;
+    margin-bottom: spacing(2.5);
+  }
+}
+
+.academia-post {
+  max-width: 920px;
+  margin: spacing(6) auto;
+  padding: 0 spacing(2);
+
+  @media (min-width: $md) {
+    padding: 0 spacing(3);
+  }
+
+  @media (min-width: $lg) {
+    margin: spacing(8) auto spacing(10);
+    padding: 0 spacing(4);
+  }
+
+  &__back-link {
+    @extend %subtitle-1;
+    display: inline-block;
+    margin-bottom: spacing(3);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__title {
+    @extend %header-1;
+    margin-bottom: spacing(2);
+  }
+
+  &__subtitle {
+    @extend %header-5;
+    color: $white-80;
+    margin-bottom: spacing(3);
+  }
+
+  &__divider {
+    border: 0;
+    border-top: 1px solid $white-50;
+    margin: spacing(3) 0;
+  }
+
+  &__meta {
+    margin: 0;
+  }
+
+  &__meta-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: spacing(0.5);
+    margin-bottom: spacing(2);
+
+    @media (min-width: $md) {
+      grid-template-columns: 180px 1fr;
+      column-gap: spacing(1);
+      align-items: baseline;
+    }
+
+    dt {
+      @extend %subtitle-1;
+      color: $white;
+    }
+
+    dd {
+      margin: 0;
+      @extend %body-1;
+      color: $white-80;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: spacing(1);
+  }
+
+  &__content {
+    @extend %markdown;
+    @extend %body-1;
+
+    color: $white-80;
+    text-align: justify;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: $jetbrains;
+      font-weight: $regular;
+      color: $white;
+      margin: spacing(3) 0 spacing(1.5);
+      line-height: 1.5;
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    h4,
+    h5,
+    h6 {
+      font-size: 1.25rem;
+    }
+
+    p,
+    li {
+      line-height: 1.8;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  &__footer-links {
+    @extend %body-1;
+    color: $white-80;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
