@@ -3,5 +3,30 @@ VERSION:2.0
 CALSCALE:GREGORIAN
 PRODID:adamgibbons/ics
 METHOD:PUBLISH
+X-WR-CALNAME:Maintainer Month 2026
 X-PUBLISHED-TTL:PT1H
+BEGIN:VEVENT
+UID:bIVpAixZlqH1_FiyqJ1qT
+SUMMARY:Discussion: How should corporations support OSS maintainers?
+DTSTAMP:20260425T055006Z
+DTSTART:20260514T190000Z
+DTEND:20260514T200000Z
+DESCRIPTION:An open discussion on how corporations can support OSS maintain
+	ers\, including which programs work today\, how they can improve\, and wha
+	t is missing.
+URL:https://meet.google.com/asd-hucu-syf
+LOCATION:Virtual
+END:VEVENT
+BEGIN:VEVENT
+UID:_CLF2FpNFpu-qw8ZzFdwN
+SUMMARY:Open Source Assistive Technology Hackathon
+DTSTAMP:20260425T055006Z
+DTSTART:20260521T090000Z
+DTEND:20260522T070000Z
+DESCRIPTION:A two-day hackathon focused on helping participants build skill
+	s and make contributions to open source assistive technology projects.
+URL:https://www.eventbrite.com/e/open-source-assistive-technology-hackathon
+	-tickets-1984064378967
+LOCATION:88 Colin P Kelly Junior Street\, San Francisco\, CA 94107
+END:VEVENT
 END:VCALENDAR
