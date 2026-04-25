@@ -38,6 +38,14 @@ jobs:
 
       - name: Ensure workflow labels
         run: |
+          gh label create "add event" \
+            --color 5319E7 \
+            --description "Event submission issue" \
+            || true
+          gh label create approved-for-calendar \
+            --color 0E8A16 \
+            --description "Approved to generate a calendar event PR" \
+            || true
           gh label create calendar-pr-created \
             --color 0E8A16 \
             --description "A calendar event PR has been created for this issue" \

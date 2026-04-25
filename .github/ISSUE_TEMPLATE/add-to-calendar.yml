@@ -1,6 +1,8 @@
 name: 💁🏽‍♀️ Add an event for maintainers to the calendar 🎙
 description: Use this form to add an event for maintainers or highlighting maintainers to the Maintainer Month calendar.
 title: 'EVENT_NAME'
+labels:
+  - add event
 
 body:
   - type: markdown
