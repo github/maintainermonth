@@ -1,6 +1,125 @@
 {
   "ships": [
     {
+      "url": "https://github.blog/changelog/2026-04-23-global-pull-requests-dashboard-moves-to-opt-out-public-preview",
+      "title": "Global pull requests dashboard moves to opt-out public preview",
+      "description": "The global pull requests dashboard is now on by default, with an inbox, org and repo filters, saved views, and clearer review sections.",
+      "date": "2026-04-23",
+      "category": "Pull Requests"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-04-23-disable-commit-comments-across-your-organization",
+      "title": "Disable commit comments across your organization",
+      "description": "Organization owners can now disable commit comments across all repositories from one setting, reducing noise on old commits.",
+      "date": "2026-04-23",
+      "category": "Moderation"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-04-23-dependabot-graphs-for-python",
+      "title": "Dependabot-based dependency graphs for Python",
+      "description": "Python projects now get more complete dependency graphs and SBOMs for pip, uv, and Poetry without using Actions minutes.",
+      "date": "2026-04-23",
+      "category": "Supply Chain Security"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-04-14-link-code-scanning-alerts-to-github-issues",
+      "title": "Link code scanning alerts to GitHub Issues",
+      "description": "Code scanning alerts can now be linked to GitHub Issues so maintainers can track security remediation with their existing planning workflow.",
+      "date": "2026-04-14",
+      "category": "Application Security"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-04-09-new-low-quality-option-in-the-hide-comment-menu",
+      "title": "New Low Quality option in the Hide comment menu",
+      "description": "Moderators can now classify hidden comments as Low Quality across issues, discussions, pull requests, and commits.",
+      "date": "2026-04-09",
+      "category": "Moderation"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-04-09-new-sort-by-control-added-to-notifications",
+      "title": "New Sort by control added to Notifications",
+      "description": "Notifications can now be sorted newest-to-oldest or oldest-to-newest, making it easier to work through maintainer backlogs.",
+      "date": "2026-04-09",
+      "category": "Notifications"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-04-09-repository-member-role-labels-now-in-pull-request-list-view",
+      "title": "Repository member role labels now in pull request list view",
+      "description": "Maintainers can now see contributor role labels directly in public repository pull request lists before opening each PR.",
+      "date": "2026-04-09",
+      "category": "Pull Requests"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-04-09-release-info-in-issue-sidebar-and-project-defaults",
+      "title": "Release information in issue sidebar and default values for project fields",
+      "description": "Issues now show release information for linked pull requests, and project fields can set default values for new items.",
+      "date": "2026-04-09",
+      "category": "Issues"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-04-07-code-scanning-batch-apply-security-alert-suggestions-on-pull-requests",
+      "title": "Code scanning: Batch apply security alert suggestions on pull requests",
+      "description": "Maintainers can now batch multiple code scanning fixes into one pull request commit, reducing review and remediation time.",
+      "date": "2026-04-07",
+      "category": "Application Security"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-04-07-dependabot-version-updates-now-support-the-nix-ecosystem",
+      "title": "Dependabot version updates now support the Nix ecosystem",
+      "description": "Dependabot can now monitor Nix flakes and open version update pull requests for outdated flake inputs.",
+      "date": "2026-04-07",
+      "category": "Supply Chain Security"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-04-06-npm-trusted-publishing-now-supports-circleci",
+      "title": "npm trusted publishing now supports CircleCI",
+      "description": "npm maintainers publishing from CircleCI can now use trusted publishing with OIDC instead of storing long-lived credentials.",
+      "date": "2026-04-06",
+      "category": "Supply Chain Security"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-03-31-dependabot-now-supports-xcode-projects-using-swiftpm-with-xcodeproj-manifests",
+      "title": "Dependabot now supports Xcode projects using SwiftPM with .xcodeproj manifests",
+      "description": "Dependabot can now detect and update Swift package dependencies in Xcode projects without a top-level Package.swift file.",
+      "date": "2026-03-31",
+      "category": "Supply Chain Security"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-03-19-view-code-and-comments-side-by-side-in-pull-request-files-changed-page",
+      "title": "View code and comments side-by-side in pull request Files changed page",
+      "description": "Pull request reviewers can now keep comments, overview, merge status, and alerts open alongside the diff.",
+      "date": "2026-03-19",
+      "category": "Pull Requests"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-03-17-dependabot-now-detects-malware-in-npm-dependencies",
+      "title": "Dependabot now detects malware in npm dependencies",
+      "description": "Dependabot can now alert maintainers when repositories depend on npm packages with known malicious versions.",
+      "date": "2026-03-17",
+      "category": "Supply Chain Security"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-03-12-issue-fields-structured-issue-metadata-is-in-public-preview",
+      "title": "Issue fields: Structured issue metadata is in public preview",
+      "description": "Issue fields add typed, organization-wide metadata for priority, effort, dates, and other issue triage data.",
+      "date": "2026-03-12",
+      "category": "Issues"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-03-10-dependabot-now-supports-pre-commit-hooks",
+      "title": "Dependabot now supports pre-commit hooks",
+      "description": "Dependabot can now update pre-commit hooks from .pre-commit-config.yaml using the same workflow as other dependency updates.",
+      "date": "2026-03-10",
+      "category": "Supply Chain Security"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-03-05-quick-access-to-merge-status-in-pull-requests-in-public-preview",
+      "title": "Quick access to merge status in pull requests is in public preview",
+      "description": "Pull requests now show merge readiness at the top of the page so maintainers can spot blockers and missing approvals faster.",
+      "date": "2026-03-05",
+      "category": "Pull Requests"
+    },
+    {
       "url": "https://github.blog/changelog/2026-03-05-hierarchy-view-improvements-and-file-uploads-in-issue-forms/",
       "title": "Hierarchy view improvements and file uploads in issue forms",
       "description": "Issue forms now support file uploads, and the hierarchy view for sub-issues has been improved with better navigation and visibility.",
@@ -8,10 +127,10 @@
       "category": "Issues"
     },
     {
-      "url": "https://github.blog/changelog/2026-02-26-improved-search-on-the-issues-dashboard",
-      "title": "Improved search on the issues dashboard",
-      "description": "The issues dashboard search now supports more filters and delivers faster, more relevant results.",
-      "date": "2026-02-26",
+      "url": "https://github.blog/changelog/2026-04-02-improved-search-for-github-issues-is-now-generally-available",
+      "title": "Improved search for GitHub Issues is now generally available",
+      "description": "Natural language issue search is now generally available across GitHub Issues and accessible through the API.",
+      "date": "2026-04-02",
       "category": "Issues"
     },
     {
