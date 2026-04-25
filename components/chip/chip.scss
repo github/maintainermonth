@@ -19,6 +19,14 @@
   &[data-location] {
     background-color: #2b5797;
     color: white;
+    white-space: normal;
+
+    .chip__label {
+      overflow: visible;
+      overflow-wrap: anywhere;
+      text-overflow: clip;
+      white-space: normal;
+    }
   }
 
   &[data-spoken-language] {
