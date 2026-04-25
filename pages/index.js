@@ -64,7 +64,7 @@ export default function Home({ hero, about, news, getInvolved, events, connectio
             buttonText={hero.buttonText}
             buttonLink={ROUTES.SCHEDULE.path}
           />
-          <About title={about.title} content={about.content} theme1={about.theme1} theme2={about.theme2}/>
+          <About title={about.title} content={about.content}/>
           <GetInvolved
             title={getInvolved.title}
             content={getInvolved.content}

@@ -8,7 +8,7 @@ import useParallax from '../../../hooks/useParallax'
 import ExampleCard from '../get-involved/ExampleCard'
 
 
-const About = ({ title, content, theme1, theme2 }) => {
+const About = ({ title, content }) => {
   const image1 = useRef(null)
   const image2 = useRef(null)
 
@@ -42,12 +42,6 @@ const About = ({ title, content, theme1, theme2 }) => {
         <div
           dangerouslySetInnerHTML={{ __html: md().render(content) }}
         />
-        <div className="about__themes">
-          <div>
-            <h3 className="get-involved__example-subtitle">2026 Theme: Coming Soon</h3>
-            <p className="get-involved__text">{theme1}</p>
-          </div>
-        </div>
       </div>
       </div>
     </section>
