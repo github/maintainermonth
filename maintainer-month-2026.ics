@@ -6,9 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Maintainer Month 2026
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
-UID:8n1a8D5wQYBjGbu9sTB4G
+UID:wqQOv5vJmb7zP5lh5es8V
 SUMMARY:Discussion: How should corporations support OSS maintainers?
-DTSTAMP:20260425T060058Z
+DTSTAMP:20260425T060307Z
 DTSTART:20260514T190000Z
 DTEND:20260514T200000Z
 DESCRIPTION:An open discussion on how corporations can support OSS maintain
@@ -18,9 +18,9 @@ URL:https://meet.google.com/asd-hucu-syf
 LOCATION:Virtual
 END:VEVENT
 BEGIN:VEVENT
-UID:hwv5-B-Vtsg7fmB_6ZXpC
+UID:sK8B0i_gLzi95IUUpHSTp
 SUMMARY:Open Source Assistive Technology Hackathon
-DTSTAMP:20260425T060058Z
+DTSTAMP:20260425T060307Z
 DTSTART:20260521T090000Z
 DTEND:20260522T070000Z
 DESCRIPTION:A two-day hackathon focused on helping participants build skill
