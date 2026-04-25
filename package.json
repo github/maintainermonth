@@ -16,7 +16,7 @@
     "fathom-client": "^3.6.0",
     "gray-matter": "^4.0.3",
     "ics": "^3.8.1",
-    "jimp": "^1.6.0",
+    "jimp": "^1.6.1",
     "markdown-it": "^14.1.1",
     "marked": "^15.0.11",
     "next": "^15.5.14",
