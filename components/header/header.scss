@@ -62,6 +62,7 @@
     background: $white;
     box-sizing: border-box;
     border-radius: 27px;
+    white-space: nowrap;
 
     @extend %subtitle-1;
     color: $purple;
