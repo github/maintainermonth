@@ -49,13 +49,15 @@ Use the "Add an event for maintainers to the calendar" issue form if you want th
 
 1. Open a new event submission issue.
 2. Fill out the event name, date, UTC time, type, language, location, organizer, public event URL, and description.
-3. A maintainer reviews the submission. If the event is approved, they apply the `approved-for-calendar` label.
-4. Automation creates a pull request with the generated event markdown file.
-5. The event appears on the site and in the ICS feed after the pull request is reviewed and merged.
+3. Automation labels the issue `add event` and checks whether the required event fields are valid. If anything is missing or invalid, it applies `needs-info`.
+4. A maintainer reviews the submission. If the event is approved, they apply the `approved-for-calendar` label.
+5. Automation creates a pull request with the generated event markdown file.
+6. The event appears on the site and in the ICS feed after the pull request is reviewed and merged.
 
 Maintainers use these labels for the automated flow:
 
 - `approved-for-calendar`: create or update the generated event pull request.
+- `add event`: event submission received through the issue form.
 - `calendar-pr-created`: the generated pull request exists.
 - `needs-info`: the issue is missing required or valid event details.
 
