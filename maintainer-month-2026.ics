@@ -6,9 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Maintainer Month 2026
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
-UID:YBikc1qWbA5npLVW4w00j
+UID:8kWYFcbMnHZR_SeDNbpWQ
 SUMMARY:Open Source Friday - Welcome to Maintainer Month 2026
-DTSTAMP:20260425T173918Z
+DTSTAMP:20260425T174506Z
 DTSTART:20260501T150000Z
 DTEND:20260501T160000Z
 DESCRIPTION:Kicking off Maintainer Month 2026 with a special Open Source Fr
@@ -17,9 +17,9 @@ URL:https://www.youtube.com/watch?v=Ro_VMXWbLt8
 LOCATION:Virtual
 END:VEVENT
 BEGIN:VEVENT
-UID:X_He2t1sRL72RTPU3cWsD
+UID:TkfC__wcnjlVAISkRjIZi
 SUMMARY:Rubber Duck Thursday: Maintainer Month Edition
-DTSTAMP:20260425T173918Z
+DTSTAMP:20260425T174506Z
 DTSTART;VALUE=DATE:20260507
 DTEND;VALUE=DATE:20260508
 DESCRIPTION:Live coding with maintainers as part of Maintainer Month 2026.
@@ -27,9 +27,9 @@ URL:https://gh.io/rubberduckthursdays
 LOCATION:Virtual
 END:VEVENT
 BEGIN:VEVENT
-UID:izR2jss9m-E2L0jN3hriY
+UID:wLx-sqelDekEAeAwr9ulT
 SUMMARY:Discussion: How should corporations support OSS maintainers?
-DTSTAMP:20260425T173918Z
+DTSTAMP:20260425T174506Z
 DTSTART:20260514T190000Z
 DTEND:20260514T200000Z
 DESCRIPTION:An open discussion on how corporations can support OSS maintain
@@ -39,9 +39,9 @@ URL:https://meet.google.com/asd-hucu-syf
 LOCATION:Virtual
 END:VEVENT
 BEGIN:VEVENT
-UID:EFqqGC53ZIm2chFLOUTJg
+UID:jf5myO_HL_bJq4-JuF98A
 SUMMARY:Rubber Duck Thursday: Maintainer Month Edition
-DTSTAMP:20260425T173918Z
+DTSTAMP:20260425T174506Z
 DTSTART;VALUE=DATE:20260514
 DTEND;VALUE=DATE:20260515
 DESCRIPTION:Live coding with maintainers as part of Maintainer Month 2026.
@@ -49,9 +49,9 @@ URL:https://gh.io/rubberduckthursdays
 LOCATION:Virtual
 END:VEVENT
 BEGIN:VEVENT
-UID:tgUU8FMAb_0lUOjEdHgyA
+UID:JgMOf1_yW4RYwso-gHSWE
 SUMMARY:Open Source Assistive Technology Hackathon
-DTSTAMP:20260425T173918Z
+DTSTAMP:20260425T174506Z
 DTSTART:20260521T090000Z
 DTEND:20260522T070000Z
 DESCRIPTION:A two-day hackathon focused on helping participants build skill
@@ -61,9 +61,9 @@ URL:https://www.eventbrite.com/e/open-source-assistive-technology-hackathon
 LOCATION:San Francisco\, CA
 END:VEVENT
 BEGIN:VEVENT
-UID:6QrzS-g-yb-Pjhfo7mCAm
+UID:XAHdqBH1RA8nUa6Xgc0OJ
 SUMMARY:Rubber Duck Thursday: Maintainer Month Edition
-DTSTAMP:20260425T173918Z
+DTSTAMP:20260425T174506Z
 DTSTART;VALUE=DATE:20260521
 DTEND;VALUE=DATE:20260522
 DESCRIPTION:Live coding with maintainers as part of Maintainer Month 2026.
@@ -71,9 +71,9 @@ URL:https://gh.io/rubberduckthursdays
 LOCATION:Virtual
 END:VEVENT
 BEGIN:VEVENT
-UID:OFbZL1h_Qh4mMR4Nsmh1c
+UID:NHhRfOKUiKbXdiXlyWU5Q
 SUMMARY:Rubber Duck Thursday: Maintainer Month Edition
-DTSTAMP:20260425T173918Z
+DTSTAMP:20260425T174506Z
 DTSTART;VALUE=DATE:20260528
 DTEND;VALUE=DATE:20260529
 DESCRIPTION:Live coding with maintainers as part of Maintainer Month 2026.
