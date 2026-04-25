@@ -1,0 +1,120 @@
+name: create-event-submission-pr
+
+on:
+  issues:
+    types:
+      - labeled
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  create-event-pr:
+    if: github.event.label.name == 'approved-for-calendar'
+    runs-on: ubuntu-latest
+
+    env:
+      BRANCH_NAME: event-submission-${{ github.event.issue.number }}
+      GH_TOKEN: ${{ secrets.MAINTAINER_MONTH_BOT_TOKEN || github.token }}
+      ISSUE_NUMBER: ${{ github.event.issue.number }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.MAINTAINER_MONTH_BOT_TOKEN || github.token }}
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Ensure workflow labels
+        run: |
+          gh label create calendar-pr-created \
+            --color 0E8A16 \
+            --description "A calendar event PR has been created for this issue" \
+            || true
+          gh label create needs-info \
+            --color D93F0B \
+            --description "More information is needed before this event can be added" \
+            || true
+
+      - name: Prepare event branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git fetch origin "$BRANCH_NAME" || true
+          if git show-ref --verify --quiet "refs/remotes/origin/$BRANCH_NAME"; then
+            git switch -C "$BRANCH_NAME" "refs/remotes/origin/$BRANCH_NAME"
+          else
+            git switch -c "$BRANCH_NAME"
+          fi
+
+      - name: Generate event file
+        id: generate
+        continue-on-error: true
+        run: |
+          node scripts/event-from-issue.js \
+            --repo "$GITHUB_REPOSITORY" \
+            --issue "$ISSUE_NUMBER" \
+            --summary-file "$RUNNER_TEMP/event-pr-body.md"
+
+      - name: Mark issue as needing info
+        if: steps.generate.outcome == 'failure'
+        run: |
+          gh issue edit "$ISSUE_NUMBER" --add-label needs-info
+          gh issue edit "$ISSUE_NUMBER" --remove-label approved-for-calendar || true
+          exit 1
+
+      - name: Validate generated event
+        run: |
+          npm test
+          npm run build
+          git restore -- public/maintainer-month-2026.ics || true
+
+      - name: Commit generated event
+        id: commit
+        run: |
+          git add content/events
+
+          if git diff --cached --quiet; then
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          git commit -m "Add Maintainer Month event from #$ISSUE_NUMBER"
+          git push --set-upstream origin "$BRANCH_NAME"
+          echo "has_changes=true" >> "$GITHUB_OUTPUT"
+
+      - name: Create or update pull request
+        run: |
+          title="Add Maintainer Month event from #$ISSUE_NUMBER"
+
+          if gh pr view "$BRANCH_NAME" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh pr edit "$BRANCH_NAME" \
+              --repo "$GITHUB_REPOSITORY" \
+              --title "$title" \
+              --body-file "$RUNNER_TEMP/event-pr-body.md"
+          else
+            gh pr create \
+              --repo "$GITHUB_REPOSITORY" \
+              --base main \
+              --head "$BRANCH_NAME" \
+              --title "$title" \
+              --body-file "$RUNNER_TEMP/event-pr-body.md"
+          fi
+
+      - name: Mark issue as PR created
+        run: |
+          gh issue edit "$ISSUE_NUMBER" --add-label calendar-pr-created
+          gh issue edit "$ISSUE_NUMBER" --remove-label approved-for-calendar || true
+          gh issue edit "$ISSUE_NUMBER" --remove-label needs-info || true

@@ -92,6 +92,13 @@ body:
     validations:
       required: true
 
+  - id: userLink
+    type: input
+    attributes:
+      label: Organizer URL
+      description: Optional web URL for the organizer
+      placeholder: 'https://'
+
   - id: linkUrl
     type: input
     attributes:
