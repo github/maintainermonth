@@ -6,9 +6,15 @@
 
   &__time {
     display: inline-flex;
-    align-items: center;
-    white-space: nowrap;
+    align-items: flex-start;
+    min-width: 0;
+    margin: 0;
     color: $white-80;
+  }
+
+  &__label {
+    min-width: 0;
+    line-height: 1.4;
   }
 
   &__timezone {

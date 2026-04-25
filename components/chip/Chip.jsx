@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 
-const Chip = ({ label, icon, customColor }) => {
+const Chip = ({ label, icon, customColor, variant }) => {
   const classes = clsx('chip', {
     'custom-color': customColor,
   })
@@ -13,7 +13,11 @@ const Chip = ({ label, icon, customColor }) => {
   return (
     <div
       className={classes}
-      data-location={label.toLowerCase().includes('virtual') ? true : undefined}
+      data-location={
+        variant === 'location' || label.toLowerCase().includes('virtual')
+          ? true
+          : undefined
+      }
       data-spoken-language={isSpokenLanguage ? true : undefined}
       style={{ backgroundColor: customColor }}
     >

@@ -46,6 +46,21 @@ describe('Event parsing - TBD and All Day times', () => {
     expect(parsed.formattedDate.endDate).toBeTruthy()
   })
 
+  test('Event with endDate formats end time on the end date', () => {
+    const parsed = parseEvent({
+      ...baseEvent,
+      date: '05/21',
+      endDate: '05/22',
+      UTCStartTime: '09:00',
+      UTCEndTime: '07:00',
+    })
+
+    expect(parsed.formattedDate.startTime.utcDate).toBe('May 21')
+    expect(parsed.formattedDate.endTime.utcDate).toBe('May 22')
+    expect(parsed.formattedDate.startTime.ptDate).toBe('May 21')
+    expect(parsed.formattedDate.endTime.ptDate).toBe('May 22')
+  })
+
   test('Event without title throws', () => {
     expect(() => parseEvent({ ...baseEvent, title: undefined })).toThrow()
   })
