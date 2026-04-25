@@ -17,14 +17,16 @@ const LibraryLinks = ({ links }) => {
         <article key={link.title} className="library-links__item">
           <div className="library-links__info">
             <p className="library-links__author">{link.author}</p>
-            <a
-              className="library-links__link"
-              href={link.link}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {link.title}
-            </a>
+            <h2 className="library-links__title">
+              <a
+                className="library-links__link"
+                href={link.link}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {link.title}
+              </a>
+            </h2>
           </div>
           <p className="library-links__description">{link.description}</p>
           <div className="library-links__chips">
