@@ -7,7 +7,7 @@ metaDesc: >-
 date: 05/21
 type: misc
 language: English
-location: '88 Colin P Kelly Junior Street, San Francisco, CA 94107'
+location: 'San Francisco, CA'
 userName: Maria Lamardo
 endDate: 05/22
 UTCStartTime: '09:00'
