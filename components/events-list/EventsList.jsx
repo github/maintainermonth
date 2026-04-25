@@ -1,3 +1,4 @@
+import { useMemo, useState } from 'react'
 import md from 'markdown-it'
 import clsx from 'clsx'
 
@@ -9,12 +10,35 @@ import { getLiteral } from '../../common/i18n'
 import * as ROUTES from '../../common/routes'
 
 import DateTimeChip from '../date-time-chip/DateTimeChip'
+import EventFilter from '../event-filter/EventFilter'
+import TYPES from '../event-type-chip/types'
 import EventTypeChip from '../event-type-chip/EventTypeChip'
 import PlayLink from '../play-link/PlayLink'
 import Chip from '../chip/Chip'
 const EventsList = ({ events }) => {
   const dateLabel = (event) =>
     `${event.formattedDate.date} to ${event.formattedDate.endDate}`
+
+  const [selectedType, setSelectedType] = useState('all')
+
+  const eventTypeOptions = useMemo(() => {
+    const counts = events.reduce((acc, event) => {
+      acc[event.type] = (acc[event.type] || 0) + 1
+      return acc
+    }, {})
+
+    return Object.keys(TYPES)
+      .filter((type) => counts[type])
+      .map((type) => ({
+        value: type,
+        count: counts[type],
+      }))
+  }, [events])
+
+  const filteredEvents =
+    selectedType === 'all'
+      ? events
+      : events.filter((event) => event.type === selectedType)
 
   return (
     <section className="events-list">
@@ -50,15 +74,22 @@ const EventsList = ({ events }) => {
               {getLiteral('schedule:ics-download')}
             </a>
           </div>
+          <EventFilter
+            eventTypes={eventTypeOptions}
+            selectedType={selectedType}
+            onSelectType={setSelectedType}
+            totalEvents={events.length}
+          />
         </div>
       </div>
 
       <div className="events-list__grid">
-        {events.map((event, index) => (
+        {filteredEvents.map((event, index) => (
           <div
             key={event.slug}
             className={clsx('events-list__card', {
-              'same-date': index > 0 && event.date === events[index - 1].date,
+              'same-date':
+                index > 0 && event.date === filteredEvents[index - 1].date,
             })}
           >
             <div className="events-list__date">
@@ -112,7 +143,7 @@ const EventsList = ({ events }) => {
         ))}
       </div>
 
-      {events.length === 0 && (
+      {events.length === 0 ? (
         <p className="events-list__empty">
           {getLiteral('schedule:empty-no-events')}{' '}
           <a
@@ -123,7 +154,13 @@ const EventsList = ({ events }) => {
             {getLiteral('schedule:empty-host-link')}
           </a>
         </p>
-      )}
+      ) : null}
+
+      {events.length > 0 && filteredEvents.length === 0 ? (
+        <p className="events-list__empty">
+          {getLiteral('schedule:empty-no-matches')}
+        </p>
+      ) : null}
     </section>
   )
 }
