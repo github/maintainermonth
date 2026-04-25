@@ -67,7 +67,7 @@
 
   &__grid {
     display: grid;
-    gap: spacing(3);
+    gap: spacing(2);
     grid-template-columns: 1fr;
     
     @media (min-width: $sm) {
@@ -109,22 +109,22 @@
   }
 
   &__date {
-    padding: spacing(2) spacing(3);
+    padding: spacing(2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   &__event {
-    padding: spacing(3);
+    padding: spacing(2);
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: spacing(3);
+    gap: spacing(2);
   }
 
   &__meta {
     display: flex;
     flex-direction: column;
-    gap: spacing(2);
+    gap: spacing(1.5);
   }
 
   &__chips {
@@ -141,7 +141,7 @@
 
   &__info {
     margin-top: auto;
-    padding-top: spacing(3);
+    padding-top: spacing(2);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
 
@@ -156,13 +156,20 @@
   }
 
   &__link {
-    @extend %header-3;
+    font-family: $inter;
+    font-weight: $semibold;
+    font-size: 1.125rem;
+    line-height: 1.35;
     color: $white;
     text-decoration: none;
     display: block;
-    margin-top: spacing(1);
+    margin-top: spacing(0.5);
     overflow-wrap: break-word;
     word-break: break-word;
+
+    @media (min-width: $md) {
+      font-size: 1.25rem;
+    }
     
     &:hover {
       text-decoration: underline;

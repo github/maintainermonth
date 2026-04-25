@@ -1,16 +1,46 @@
 import { getLiteral } from '../../common/i18n'
 import IconClock from '../../public/icons/clock'
 
+const TimeRow = ({ children, timezone }) => (
+  <p className="datetime-chip__time">
+    <span className="datetime-chip__icon">
+      <IconClock />
+    </span>
+    <span className="datetime-chip__label">
+      {children}
+      {timezone ? (
+        <>
+          {' '}
+          <span className="datetime-chip__timezone">{timezone}</span>
+        </>
+      ) : null}
+    </span>
+  </p>
+)
+
+const formatRange = (startTime, endTime, timezone) => {
+  const start = startTime?.[timezone]
+  const end = endTime?.[timezone]
+
+  if (!start || !end) return null
+
+  const startDate = startTime?.[`${timezone}Date`]
+  const endDate = endTime?.[`${timezone}Date`]
+
+  if (startDate && endDate && startDate !== endDate) {
+    return `${startDate}, ${start} - ${endDate}, ${end}`
+  }
+
+  return `${start} - ${end}`
+}
+
 const DateTimeChip = ({ startTime, endTime, timeDisplay }) => {
   if (timeDisplay === 'all-day') {
     return (
       <div className="datetime-chip">
-        <p className="datetime-chip__time">
-          <span className="datetime-chip__icon">
-            <IconClock />
-          </span>
+        <TimeRow>
           {getLiteral('message:all-day')}
-        </p>
+        </TimeRow>
       </div>
     )
   }
@@ -18,40 +48,24 @@ const DateTimeChip = ({ startTime, endTime, timeDisplay }) => {
   if (timeDisplay === 'tbd') {
     return (
       <div className="datetime-chip">
-        <p className="datetime-chip__time">
-          <span className="datetime-chip__icon">
-            <IconClock />
-          </span>
+        <TimeRow>
           {getLiteral('message:tbd')}
-        </p>
+        </TimeRow>
       </div>
     )
   }
 
+  const utcRange = formatRange(startTime, endTime, 'utc')
+  const ptRange = formatRange(startTime, endTime, 'pt')
+
   return (
     <div className="datetime-chip">
-      {startTime ? (
-        <p className="datetime-chip__time">
-          <span className="datetime-chip__icon">
-            <IconClock />
-          </span>
-          {`${startTime.utc} - ${endTime.utc}`}
-          <span className="datetime-chip__timezone">
-            {getLiteral('timezone:utc')}
-          </span>
-        </p>
+      {utcRange ? (
+        <TimeRow timezone={getLiteral('timezone:utc')}>{utcRange}</TimeRow>
       ) : null}
 
-      {endTime ? (
-        <p className="datetime-chip__time">
-          <span className="datetime-chip__icon">
-            <IconClock />
-          </span>
-          {`${startTime.pt} - ${endTime.pt}`}
-          <span className="datetime-chip__timezone">
-            {getLiteral('timezone:pt')}
-          </span>
-        </p>
+      {ptRange ? (
+        <TimeRow timezone={getLiteral('timezone:pt')}>{ptRange}</TimeRow>
       ) : null}
     </div>
   )

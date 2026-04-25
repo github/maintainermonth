@@ -94,11 +94,13 @@ const EventsList = ({ events }) => {
               <div className="events-list__chips">
                 <EventTypeChip type={event.type} />
                 {event.language && <Chip label={event.language} />}
-                {event.location && <Chip label={event.location} />}
+                {event.location && (
+                  <Chip label={event.location} variant="location" />
+                )}
               </div>
 
               <div className="events-list__info">
-                <p
+                <div
                   className="events-list__text"
                   dangerouslySetInnerHTML={{
                     __html: md().render(event.metaDesc || ''),

@@ -21,6 +21,32 @@ const isAllDayValue = (value) =>
   typeof value === 'string' &&
   value.toLowerCase().replace(/[\s\-_]/g, '') === 'allday'
 
+const getUTCMonthDay = (month, day) =>
+  dayjs
+    .utc()
+    .date(1)
+    .month(month - 1)
+    .date(day)
+    .hour(0)
+    .minute(0)
+    .second(0)
+    .millisecond(0)
+
+const formatTime = (date, hour, minute) => {
+  const UTCTime = date.hour(hour).minute(minute)
+
+  if (isNaN(UTCTime)) return null
+
+  const PTTime = UTCTime.tz('America/Los_Angeles')
+
+  return {
+    utc: UTCTime.format('h:mm a'),
+    pt: PTTime.format('h:mm a'),
+    utcDate: UTCTime.format('MMM D'),
+    ptDate: PTTime.format('MMM D'),
+  }
+}
+
 export const getEvents = (year) => {
   const events_path = year ? `content/${year}/events` : 'content/events'
   if (!fs.existsSync(events_path)) return []
@@ -93,14 +119,11 @@ const formatEventDateTime = (
     throw new TypeError('date must be in mm/dd format (e.g. 06/12).')
   }
 
-  const UTCDate = dayjs
-    .utc()
-    .date(day)
-    .month(month - 1)
-
+  const UTCDate = getUTCMonthDay(month, day)
   const formattedDate = UTCDate.format('MMM D')
 
   let formattedEndDate = null
+  let endUTCDate = UTCDate
 
   if (endDate && endDate !== startDate) {
     const [endMonth, endDay] = endDate.split('/')
@@ -109,11 +132,7 @@ const formatEventDateTime = (
       throw new TypeError('date must be in mm/dd format (e.g. 06/12).')
     }
 
-    const endUTCDate = dayjs
-      .utc()
-      .date(endDay)
-      .month(endMonth - 1)
-
+    endUTCDate = getUTCMonthDay(endMonth, endDay)
     formattedEndDate = endUTCDate.format('MMM D')
   }
 
@@ -121,8 +140,18 @@ const formatEventDateTime = (
   if (isAllDayValue(startTime) || isAllDayValue(endTime)) {
     return {
       date: formattedDate,
-      startTime: { utc: ALL_DAY, pt: ALL_DAY },
-      endTime: { utc: ALL_DAY, pt: ALL_DAY },
+      startTime: {
+        utc: ALL_DAY,
+        pt: ALL_DAY,
+        utcDate: formattedDate,
+        ptDate: formattedDate,
+      },
+      endTime: {
+        utc: ALL_DAY,
+        pt: ALL_DAY,
+        utcDate: formattedEndDate || formattedDate,
+        ptDate: formattedEndDate || formattedDate,
+      },
       endDate: formattedEndDate,
       timeDisplay: 'all-day',
     }
@@ -138,16 +167,10 @@ const formatEventDateTime = (
 
   if (!isTBDValue(startTime)) {
     const [startHour, startMinute] = startTime.split(':')
+    const parsedStartTime = formatTime(UTCDate, startHour, startMinute)
 
-    const UTCStartTime = UTCDate.hour(startHour).minute(startMinute)
-
-    if (!isNaN(UTCStartTime)) {
-      const PTStartTime = UTCStartTime.tz('America/Los_Angeles')
-
-      formattedStartTime = {
-        utc: UTCStartTime.format('h:mm a'),
-        pt: PTStartTime.format('h:mm a'),
-      }
+    if (parsedStartTime) {
+      formattedStartTime = parsedStartTime
       hasSpecificStartTime = true
     }
   }
@@ -162,16 +185,10 @@ const formatEventDateTime = (
 
   if (!isTBDValue(endTime)) {
     const [endHour, endMinute] = endTime.split(':')
+    const parsedEndTime = formatTime(endUTCDate, endHour, endMinute)
 
-    const UTCEndTime = UTCDate.hour(endHour).minute(endMinute)
-
-    if (!isNaN(UTCEndTime)) {
-      const PTEndTime = UTCEndTime.tz('America/Los_Angeles')
-
-      formattedEndTime = {
-        utc: UTCEndTime.format('h:mm a'),
-        pt: PTEndTime.format('h:mm a'),
-      }
+    if (parsedEndTime) {
+      formattedEndTime = parsedEndTime
       hasSpecificEndTime = true
     }
   }

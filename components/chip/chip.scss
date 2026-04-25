@@ -4,6 +4,7 @@
   align-items: center;
   column-gap: 6px;
   white-space: nowrap;
+  min-width: 0;
   max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -46,5 +47,11 @@
     path {
       fill: $white;
     }
+  }
+
+  &__label {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
