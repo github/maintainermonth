@@ -6,9 +6,30 @@ METHOD:PUBLISH
 X-WR-CALNAME:Maintainer Month 2026
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
-UID:JmWWOy2CZg4QZC230EK-J
+UID:gSXGCUqizZ3glks4XIeS2
+SUMMARY:Open Source Friday - Welcome to Maintainer Month 2026
+DTSTAMP:20260425T170252Z
+DTSTART:20260501T150000Z
+DTEND:20260501T160000Z
+DESCRIPTION:Kicking off Maintainer Month 2026 with a special Open Source Fr
+	iday livestream on the GitHub YouTube channel.
+URL:https://www.youtube.com/watch?v=Ro_VMXWbLt8
+LOCATION:Virtual
+END:VEVENT
+BEGIN:VEVENT
+UID:lyuwzmMWnwmo4GCrk2xX6
+SUMMARY:Rubber Duck Thursday: Maintainer Month Edition - May 7
+DTSTAMP:20260425T170252Z
+DTSTART;VALUE=DATE:20260507
+DTEND;VALUE=DATE:20260508
+DESCRIPTION:Live coding with maintainers as part of Maintainer Month 2026.
+URL:https://gh.io/rubberduckthursdays
+LOCATION:Virtual
+END:VEVENT
+BEGIN:VEVENT
+UID:gbHmlguJBeMQViXzTj6UG
 SUMMARY:Discussion: How should corporations support OSS maintainers?
-DTSTAMP:20260425T164040Z
+DTSTAMP:20260425T170252Z
 DTSTART:20260514T190000Z
 DTEND:20260514T200000Z
 DESCRIPTION:An open discussion on how corporations can support OSS maintain
@@ -18,9 +39,19 @@ URL:https://meet.google.com/asd-hucu-syf
 LOCATION:Virtual
 END:VEVENT
 BEGIN:VEVENT
-UID:KEpDzXKDT2HxilvrJ0Nty
+UID:H0RnhOM5LBVwEMrddsVG4
+SUMMARY:Rubber Duck Thursday: Maintainer Month Edition - May 14
+DTSTAMP:20260425T170252Z
+DTSTART;VALUE=DATE:20260514
+DTEND;VALUE=DATE:20260515
+DESCRIPTION:Live coding with maintainers as part of Maintainer Month 2026.
+URL:https://gh.io/rubberduckthursdays
+LOCATION:Virtual
+END:VEVENT
+BEGIN:VEVENT
+UID:oBL8kjTWjP6S9KOL4R7Li
 SUMMARY:Open Source Assistive Technology Hackathon
-DTSTAMP:20260425T164040Z
+DTSTAMP:20260425T170252Z
 DTSTART:20260521T090000Z
 DTEND:20260522T070000Z
 DESCRIPTION:A two-day hackathon focused on helping participants build skill
@@ -28,5 +59,25 @@ DESCRIPTION:A two-day hackathon focused on helping participants build skill
 URL:https://www.eventbrite.com/e/open-source-assistive-technology-hackathon
 	-tickets-1984064378967
 LOCATION:88 Colin P Kelly Junior Street\, San Francisco\, CA 94107
+END:VEVENT
+BEGIN:VEVENT
+UID:0swiMShlWQ4ndb9prACn-
+SUMMARY:Rubber Duck Thursday: Maintainer Month Edition - May 21
+DTSTAMP:20260425T170252Z
+DTSTART;VALUE=DATE:20260521
+DTEND;VALUE=DATE:20260522
+DESCRIPTION:Live coding with maintainers as part of Maintainer Month 2026.
+URL:https://gh.io/rubberduckthursdays
+LOCATION:Virtual
+END:VEVENT
+BEGIN:VEVENT
+UID:ozMjzUNvbZBaJRDx3I-c5
+SUMMARY:Rubber Duck Thursday: Maintainer Month Edition - May 28
+DTSTAMP:20260425T170252Z
+DTSTART;VALUE=DATE:20260528
+DTEND;VALUE=DATE:20260529
+DESCRIPTION:Live coding with maintainers as part of Maintainer Month 2026.
+URL:https://gh.io/rubberduckthursdays
+LOCATION:Virtual
 END:VEVENT
 END:VCALENDAR
