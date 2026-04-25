@@ -1,5 +1,8 @@
+import { useMemo, useState } from 'react'
+
 import Chip from '../chip/Chip'
 import { getLiteral } from '../../common/i18n'
+import ShipsFilter from './ShipsFilter'
 
 const formatDate = (dateString) => {
   const date = new Date(dateString + 'T00:00:00')
@@ -11,6 +14,29 @@ const formatDate = (dateString) => {
 }
 
 const Ships = ({ ships }) => {
+  const [selected, setSelected] = useState('all')
+
+  const sorted = useMemo(
+    () =>
+      ships
+        ? [...ships].sort((a, b) => new Date(b.date) - new Date(a.date))
+        : [],
+    [ships]
+  )
+
+  const categories = useMemo(() => {
+    const counts = sorted.reduce((acc, ship) => {
+      const value = ship.category
+      if (!value) return acc
+      acc[value] = (acc[value] || 0) + 1
+      return acc
+    }, {})
+
+    return Object.keys(counts)
+      .sort((a, b) => a.localeCompare(b))
+      .map((value) => ({ value, count: counts[value] }))
+  }, [sorted])
+
   if (!ships || ships.length === 0) {
     return (
       <section className="ships">
@@ -21,19 +47,29 @@ const Ships = ({ ships }) => {
     )
   }
 
-  const sorted = [...ships].sort(
-    (a, b) => new Date(b.date) - new Date(a.date)
-  )
+  const filtered =
+    selected === 'all' ? sorted : sorted.filter((s) => s.category === selected)
 
   return (
     <section className="ships">
       <div className="ships__intro">
         <h2 className="ships__heading">{getLiteral('ships:title')}</h2>
         <p className="ships__subtitle">{getLiteral('ships:description')}</p>
+        <ShipsFilter
+          categories={categories}
+          selected={selected}
+          onSelect={setSelected}
+          totalShips={sorted.length}
+        />
       </div>
-      <div className="ships__grid">
-        {sorted.map((ship) => (
-          <article key={ship.url} className="ships__card">
+      {filtered.length === 0 ? (
+        <p className="ships__empty">
+          {getLiteral('ships:empty-no-matches')}
+        </p>
+      ) : (
+        <div className="ships__grid">
+          {filtered.map((ship) => (
+          <article key={`${ship.url}-${ship.title}`} className="ships__card">
             <a
               className="ships__link"
               href={ship.url}
@@ -61,8 +97,9 @@ const Ships = ({ ships }) => {
               </div>
             </a>
           </article>
-        ))}
-      </div>
+          ))}
+        </div>
+      )}
     </section>
   )
 }

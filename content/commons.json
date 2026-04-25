@@ -76,6 +76,9 @@
     "ships:title": "Ships for Maintainers",
     "ships:description": "GitHub features and updates built for open source maintainers.",
     "ships:empty": "No ships listed yet. Check back soon!",
+    "ships:empty-no-matches": "No ships in this category yet.",
+    "ships:filter-label": "Filter by category",
+    "ships:filter-all": "All",
 
     "schedule:title": "Schedule",
     "schedule:description": "List of all events organized during this year's Maintainer Month",
