@@ -1,5 +1,5 @@
 ---
-title: 'Rubber Duck Thursday: Maintainer Month Edition - May 28'
+title: 'Rubber Duck Thursday: Maintainer Month Edition'
 metaTitle: 'Rubber Duck Thursday: Maintainer Month Edition'
 metaDesc: 'Live coding with maintainers as part of Maintainer Month 2026.'
 date: '05/28'
