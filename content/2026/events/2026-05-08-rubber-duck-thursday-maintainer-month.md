@@ -1,8 +1,8 @@
 ---
-title: 'Rubber Duck Thursday: Maintainer Month Edition — May 8'
+title: 'Rubber Duck Thursday: Maintainer Month Edition — May 7'
 metaTitle: 'Rubber Duck Thursday: Maintainer Month Edition'
 metaDesc: 'Live coding with maintainers as part of Maintainer Month 2026.'
-date: '05/08'
+date: '05/07'
 type: 'stream'
 language: 'English'
 location: 'Virtual'
