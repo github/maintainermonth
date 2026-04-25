@@ -47,6 +47,7 @@ export default function Library() {
       </Head>
 
       <div className="library-links">
+        <h1 className="library-links__heading">{getLiteral('library:title')}</h1>
         <div className="library-links__intro">
         Stories and interviews featuring maintainers of your favourite open source projects! Have a maintainer story to share? <a href="https://github.com/github/maintainermonth/issues/new?assignees=&labels=&template=add-to-library.yaml&title=TITLE">Add it here!</a>
         </div>

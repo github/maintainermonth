@@ -18,7 +18,7 @@ const GetInvolved = ({ title, examplesTitle, examples, content, maintainersTitle
 
         <div className="get-involved__header">
           <div className="get-involved__title">
-          <h2 >{maintainersTitle}</h2>
+          <h3>{maintainersTitle}</h3>
 
           <img
             className="get-involved__image"
@@ -36,7 +36,7 @@ const GetInvolved = ({ title, examplesTitle, examples, content, maintainersTitle
 
         <div className="get-involved__header">
           <div className="get-involved__title">
-          <h2 >{partnersTitle}</h2>
+          <h3>{partnersTitle}</h3>
 
           <img
             className="get-involved__image"

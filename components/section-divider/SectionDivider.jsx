@@ -4,7 +4,7 @@ const SectionDivider = ({ title }) => {
   return (
     <div className="section-divider">
       <div className="section-divider__content">
-        <h3 className="section-divider__title">{title}</h3>
+        <h2 className="section-divider__title">{title}</h2>
         <IconArrowRight />
       </div>
     </div>

@@ -7,12 +7,25 @@
         padding-right: spacing(3);
     }
 
+    &__heading {
+        padding: 0 spacing(3);
+        margin-bottom: spacing(2);
+
+        @extend %header-1;
+    }
+
     &__intro {
         position: relative;
         padding: spacing(3);
     }
     &__intro a {
         text-decoration:underline;
+    }
+
+    &__title {
+        margin: 0;
+        font: inherit;
+        color: inherit;
     }
 
     &__item {
