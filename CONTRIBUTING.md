@@ -41,6 +41,30 @@ Need to run the website locally for testing? → [Jump to Development Guidelines
 
 ### Adding a New Event
 
+There are two supported paths for adding events.
+
+#### Submit an event with the issue form
+
+Use the "Add an event for maintainers to the calendar" issue form if you want the Maintainer Month team to create the event file for you.
+
+1. Open a new event submission issue.
+2. Fill out the event name, date, UTC time, type, language, location, organizer, public event URL, and description.
+3. A maintainer reviews the submission. If the event is approved, they apply the `approved-for-calendar` label.
+4. Automation creates a pull request with the generated event markdown file.
+5. The event appears on the site and in the ICS feed after the pull request is reviewed and merged.
+
+Maintainers use these labels for the automated flow:
+
+- `approved-for-calendar`: create or update the generated event pull request.
+- `calendar-pr-created`: the generated pull request exists.
+- `needs-info`: the issue is missing required or valid event details.
+
+The automation runs `npm test` and `npm run build` before opening the PR. If maintainers want generated PRs to also trigger the normal `pull_request` workflow, configure a `MAINTAINER_MONTH_BOT_TOKEN` repository secret with a GitHub App token or PAT. Without that secret, the workflow falls back to `GITHUB_TOKEN`.
+
+#### Submit an event with a pull request
+
+You can also open a pull request directly.
+
 1. Navigate to the `content/events/` folder
 2. Create a new markdown file with a descriptive name (e.g., `2026-05-20-your-event-name.md`)
 3. Use the following template:
@@ -66,7 +90,15 @@ Detailed description of your event goes here. You can use markdown formatting.
 ```
 
 > **Note:** `UTCStartTime` and `UTCEndTime` are optional. If omitted, the event will display "TBD" for the time. You can also set them to `'TBD'` explicitly or use `'all-day'` for events that span an entire day. Use `endDate` for multi-day events.
-5. Submit a PR with your changes
+4. Submit a PR with your changes
+
+Event PR reviewers should check that:
+
+- The event link is intended to be public.
+- The date and UTC time are correct.
+- The type, language, location, and organizer are correct.
+- The description reads well on the schedule page.
+- `npm test` and `npm run build` pass.
 
 ### Adding a New Resource
 
@@ -179,7 +211,7 @@ For significant changes like:
 - `endDate`: _(optional)_ End date in `MM/DD` format, for multi-day events (e.g., a conference running May 16-18 would use `date: '05/16'` and `endDate: '05/18'`). Multi-day events display a date range and remain listed as upcoming until the end date passes.
 - `UTCStartTime`: _(optional)_ Start time in UTC, in `HH:MM` format. Omit or set to `'TBD'` if the time is not yet confirmed. Set to `'all-day'` for events without a specific start time.
 - `UTCEndTime`: _(optional)_ End time in UTC, in `HH:MM` format. Same rules as `UTCStartTime`.
-- `type`: One of: `podcast`, `stream`, `talk`, `meetup`, `fundraising`, `conference`, `misc`
+- `type`: One of: `podcast`, `stream`, `talk`, `meetup`, `fundraising`, `conference`, `workshop`, `misc`
 - `language`: Primary language of the event
 - `location`: `Virtual` or physical location
 - `userName`: Organizer/organization name
