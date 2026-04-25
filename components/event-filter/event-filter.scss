@@ -1,0 +1,61 @@
+.event-filter {
+  display: flex;
+  flex-direction: column;
+  gap: spacing(1);
+  margin-top: spacing(3);
+
+  &__label {
+    @extend %subtitle-2;
+    color: $white-80;
+  }
+
+  &__options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: spacing(1);
+  }
+
+  &__option {
+    display: inline-flex;
+    align-items: center;
+    gap: spacing(1);
+    padding: spacing(1) spacing(1.5);
+    border: 1px solid $white-40;
+    border-radius: 27px;
+    background: transparent;
+    color: $white-80;
+    @extend %subtitle-2;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+
+    &:hover,
+    &:focus-visible,
+    &[data-active] {
+      background: $white;
+      border-color: $white;
+      color: $purple;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $green;
+      outline-offset: 2px;
+    }
+  }
+
+  &__count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.5em;
+    padding: 0 spacing(0.5);
+    border-radius: 999px;
+    background: $white-20;
+    font-size: 0.75rem;
+  }
+
+  &__option[data-active] &__count,
+  &__option:hover &__count,
+  &__option:focus-visible &__count {
+    background: rgba($purple, 0.12);
+  }
+}
