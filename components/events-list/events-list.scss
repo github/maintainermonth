@@ -192,12 +192,7 @@
     margin: 0;
     font-size: 0.875rem;
     line-height: 1.5;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    overflow-wrap: break-word;
     
     p {
       margin: 0;
