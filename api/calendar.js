@@ -24,8 +24,11 @@ function toICSEvent(event) {
     title: event.title,
     description: event.metaDesc || '',
     location: event.location || '',
-    url: event.linkUrl || '',
     calName: 'Maintainer Month 2026',
+  }
+
+  if (event.linkUrl) {
+    icsEvent.url = event.linkUrl
   }
 
   if (hasTime) {
