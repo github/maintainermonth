@@ -15,7 +15,7 @@
     "fathom-client": "^3.6.0",
     "gray-matter": "^4.0.3",
     "ics": "^3.8.1",
-    "jimp": "^1.6.0",
+    "jimp": "^1.6.1",
     "markdown-it": "^14.1.1",
     "marked": "^15.0.11",
     "next": "^15.5.15",
@@ -39,7 +39,6 @@
   },
   "overrides": {
     "xml2js": "^0.6.0",
-    "file-type": "^21.3.1",
     "lodash": "^4.18.0"
   },
   "resolutions": {
