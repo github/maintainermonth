@@ -28,7 +28,7 @@ The main tool is a VS Code extension that records changes to files in an open di
 
 Recently, I added an AI tutor to playbacks so learners can ask questions that the author has not addressed. The AI tutor is like having a helpful guide right by your side. It can also generate multiple choice questions and project ideas based on the code in the playback. This makes learning from code playbacks more interactive and fun.
 
-You can see an example in this short video: https://youtu.be/WAPql5KZFR4
+[You can see an example in this short video](https://youtu.be/WAPql5KZFR4)
 
 ## How does this project connect to your academic work?
 
