@@ -155,7 +155,7 @@ At this rate, I expect to add an additional 50,000 Bible quotations by the end o
 
 This doesn't just work for Bible verses. Once those are complete, I will use the same process for marking citations of Patristic authors and uses of Canon Law.
 
-GIF: [https://s3.amazonaws.com/lum-faculty-jcwitt-public/2026-03-19-providence/bibleMarkingProcess.gif](https://s3.amazonaws.com/lum-faculty-jcwitt-public/2026-03-19-providence/bibleMarkingProcess.gif)
+GIF: <img width="50%" src="https://s3.amazonaws.com/lum-faculty-jcwitt-public/2026-03-19-providence/bibleMarkingProcess.gif" alt="A gif demonstrating the new AI process and tools" />
 
 Slide deck: [https://jeffreycwitt.com/slides/2026-03-19-providence/#/3/20](https://jeffreycwitt.com/slides/2026-03-19-providence/#/3/20)
 
