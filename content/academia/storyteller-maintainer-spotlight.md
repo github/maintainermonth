@@ -74,6 +74,38 @@ Through documentation, social media outreach, and direct engagement.
 
 Learning how to program is hard. My goal has always been to allow learners to see and hear the narrative that experts have in their heads when they are writing code. Code playbacks combine the best parts of books, tutorials, and videos together. Plus, learning to read code and understand it is now an important skill that all of us have to excel at, I believe code playbacks will help us all become better code readers. I want more people to create code playbacks and share them with others.
 
+## Do you use AI tools in your day to day work on this project? If so, how?
+
+I use an AI coding assistant every day when developing features. I always explain my desired features in a spec document and ask the AI assistant for a plan before writing any code. I often discuss the plan interactively before signing off on it. Then, I check its work when it's done.
+
+## Do you implement AI into your classroom or coursework (if applicable)? If so, what does that look like in practice?
+
+I have slowly been integrating AI into my classroom and coursework. My 'code playback' platform integrates a helpful AI tutor into the medium. I am also encouraging students to have a tab open to ask questions while coding, but I encourage them to do as much of the coding as possible the old fashioned way.
+
+## Has AI changed how you maintain or manage your project?
+
+I can definitely add new features quite a bit faster than in the past. However, there is a real risk of losing sight of the big picture when I do this. I am still struggling to find the right mix of AI use and hand-writing my own code.
+
+## Have you experimented with AI driven or automated workflows in your project? What has that looked like?
+
+I love having the AI assistant examine my code and write documentation from it.
+
+## How do you see your contributors using AI when working on your project?
+
+I am the primary developer on this project.
+
+## What concerns or challenges, if any, do you have about the use of AI in your project or field?
+
+I definitely have preferences for how I like my code structured, designed, and written. I developed these preferences and practices over many years of programming. I believe that I have a great deal of valuable experience. I struggle to ensure the AI assistant follows my lead so that I can put my name on the code. I still want the code to read as if it is mine.
+
+## How has your approach to maintaining this project evolved over time?
+
+The introduction of AI assistants has definitely been the biggest change in my process in my entire career. Things are moving so fast sometimes I worry about people coming up and frankly, I don't know what the future holds. These are exciting times!
+
+## How do you see AI shaping the future of your project or field?
+
+I am now planning a project where my students will use an AI assistant to help them build their projects and then create their own code playbacks describing the changes. I'll grade their explanation of the code in the code playback instead of the code itself, as I did previously. I see this as one answer to the problem of teaching computer programming in the AI era.
+
 ## Anything else you'd like to share?
 
 GitHub has been a key platform for hosting and sharing the project.
