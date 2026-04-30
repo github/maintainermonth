@@ -99,7 +99,7 @@ I've been relying on scheduled workflows and automated dependency updates more.
 
 ## How do you see AI shaping the future of your project or field?
 
-Coding LLMs have certainly sped up the number of features an expert developer can ship in a fixed amount of time but it does not seem to me to have reached a level of maturity where it can make always sound architectural choices and this is particularly tricky to observe/understand/mitigate (before it's too late and a project as spiraled out of control) for the novice.
+Coding LLMs have certainly sped up the number of features an expert developer can ship in a fixed amount of time but it does not seem to me to have reached a level of maturity where it can make always sound architectural choices and this is particularly tricky to observe/understand/mitigate (before it's too late and a project has spiraled out of control) for the novice.
 
 ## Is there anything else you'd like to share?
 
