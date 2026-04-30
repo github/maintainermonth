@@ -82,7 +82,7 @@ Absolutely. The speed with which features go in has dramatically increased.
 
 ## How do you see your contributors using AI when working on your project?
 
-AI is another tool. Its efficacy is dictated by the one holding the reigns.
+AI is another tool. Its efficacy is dictated by the one holding the reins.
 
 ## What concerns or challenges, if any, do you have about the use of AI in your project or field?
 
