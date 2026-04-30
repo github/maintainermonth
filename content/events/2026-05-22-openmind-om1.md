@@ -8,8 +8,8 @@ UTCEndTime: '18:00'
 type: 'stream'
 language: 'English'
 location: 'Virtual'
-userName: 'GitHub'
-userLink: 'https://github.com/github'
+userName: 'prachi1615'
+userLink: 'https://github.com/prachi1615'
 linkUrl: 'https://www.youtube.com/@GitHub'
 ---
 
