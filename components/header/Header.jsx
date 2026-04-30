@@ -66,20 +66,7 @@ const Header = () => {
 
         <nav className="header__navigation" aria-label="Main navigation">
           <ul className="header__list">
-            <li>
-              <Link
-{/* HIDDEN FOR REVIEW -                 href={ROUTES.PARTNER_PACK.getPath(year)} */}
-{/* HIDDEN FOR REVIEW -                 aria-label={getLiteral('navigation:partner-pack')} */}
-{/* HIDDEN FOR REVIEW -                 className={clsx('header__link', { */}
-{/* HIDDEN FOR REVIEW -                   ['is-active']: pathname === ROUTES.PARTNER_PACK.getPath(year), */}
-{/* HIDDEN FOR REVIEW -                 })} */}
-{/* HIDDEN FOR REVIEW -               > */}
-{/* HIDDEN FOR REVIEW -                 <BoxGift /> */}
-{/* HIDDEN FOR REVIEW -                 <span className="header__link-text"> */}
-{/* HIDDEN FOR REVIEW -                   {getLiteral('navigation:partner-pack')} */}
-{/* HIDDEN FOR REVIEW -                 </span> */}
-{/* HIDDEN FOR REVIEW -               </Link> */}
-{/* HIDDEN FOR REVIEW -             </li> */}
+            {/* Partner Pack tab hidden until launch */}
             <li>
               <Link
                 href={ROUTES.SHIPS.getPath(year)}
