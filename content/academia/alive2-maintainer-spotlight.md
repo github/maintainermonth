@@ -7,7 +7,7 @@ projectRepo: https://github.com/AliveToolkit/alive2
 projectWebsite:
 maintainerProfiles:
   - github: https://github.com/nunoplopes
-  - orcid: https://scholar.google.com/citations?user=DQnsjaoAAAAJ
+  - scholar: https://scholar.google.com/citations?user=DQnsjaoAAAAJ
 badges: ["Academic Maintainer", "Associate Professor"]
 description: "A tool to automatically verify the correctness of LLVM optimizations, used by several companies and instrumental in finding hundreds of bugs in LLVM."
 ---
