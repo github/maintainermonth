@@ -4,7 +4,7 @@ institution: MLCommons
 department: Medical AI Working Group
 projectName: Generally Nuanced Deep Learning Framework (GaNDLF)
 projectRepo: https://github.com/mlcommons/GaNDLF/
-projectWebsite: gandlf.org
+projectWebsite: https://gandlf.org
 maintainerProfiles:
   - github: https://github.com/sarthakpati
   - orcid: https://orcid.org/0000-0003-2243-8487
