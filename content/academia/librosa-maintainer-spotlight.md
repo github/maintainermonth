@@ -86,7 +86,7 @@ I do not actively promote the project beyond small efforts, such as distributing
 
 ## Do you use AI tools in your day to day work on this project? If so, how?
 
-I wouldn't say daily, but I definitely use copilot code review as a backup or supplement to my own reviews on pull requests (including my own). Much less often—maybe every couple of months—I'll try out various coding agents to prototype new functionality or API designs, but almost always find it to be less efficient than just doing it myself in the first place. This probably owes to the somewhat niche nature of the functionality I'm often trying to design, which is probably rarely represented well in the training data for these models.
+I wouldn't say daily, but I definitely use Copilot code review as a backup or supplement to my own reviews on pull requests (including my own). Much less often—maybe every couple of months—I'll try out various coding agents to prototype new functionality or API designs, but almost always find it to be less efficient than just doing it myself in the first place. This probably owes to the somewhat niche nature of the functionality I'm often trying to design, which is probably rarely represented well in the training data for these models.
 
 Outside of coding agents, I do sometimes find use in running particularly obtuse error log dumps through a bot to more efficiently hone in on potential causes of failures. Success rates on this are hit-or-miss, as the kinds of errors I often encounter arise from recent updates to underlying software that haven't yet propagated through to the information available to bots.
 
