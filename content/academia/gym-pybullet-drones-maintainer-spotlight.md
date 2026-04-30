@@ -91,7 +91,7 @@ I have been seeing more small, code quality oriented PRs that seem to be suggest
 
 ## What concerns or challenges, if any, do you have about the use of AI in your project or field?
 
-As an educational project, the goal of this repo is to help human better master theoretical concepts (about flight dynamics and controls) rather than developing "working features passing unit and integration tests". The code itself (and not just its runtime) is supposed to be the human-centric product.
+As an educational project, the goal of this repo is to help humans better master theoretical concepts (about flight dynamics and controls) rather than developing "working features passing unit and integration tests". The code itself (and not just its runtime) is supposed to be the human-centric product.
 
 ## How has your approach to maintaining this project evolved over time?
 
