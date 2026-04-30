@@ -79,7 +79,7 @@ n/a
 
 ## Has AI changed how you maintain or manage your project?
 
-I do appreciate the in-PR coding quality suggestions (when the are single line changes) when using deprecated or non-standard syntax.
+I do appreciate the in-PR coding quality suggestions (when they are single line changes) when using deprecated or non-standard syntax.
 
 ## Have you experimented with AI driven or automated workflows in your project? What has that looked like?
 
