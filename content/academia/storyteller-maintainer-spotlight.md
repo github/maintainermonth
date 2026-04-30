@@ -60,7 +60,7 @@ It is mostly just me working on the project in my free time. I release new featu
 
 ## What have been the biggest challenges in maintaining the project?
 
-Time management, particularly alongside teaching responsibilities, is the biggest challenge. The project is transitioning from a small project to a medium sized project so it is starting to get hard to remember how all of the pieces fit together.
+Time management, particularly alongside teaching responsibilities, is the biggest challenge. The project is transitioning from a small project to a medium-sized project so it is starting to get hard to remember how all of the pieces fit together.
 
 ## How do you ensure the project remains sustainable over time?
 
