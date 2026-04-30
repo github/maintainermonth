@@ -66,20 +66,7 @@ const Header = () => {
 
         <nav className="header__navigation" aria-label="Main navigation">
           <ul className="header__list">
-            <li>
-              <Link
-                href={ROUTES.PARTNER_PACK.getPath(year)}
-                aria-label={getLiteral('navigation:partner-pack')}
-                className={clsx('header__link', {
-                  ['is-active']: pathname === ROUTES.PARTNER_PACK.getPath(year),
-                })}
-              >
-                <BoxGift />
-                <span className="header__link-text">
-                  {getLiteral('navigation:partner-pack')}
-                </span>
-              </Link>
-            </li>
+            {/* Partner Pack tab hidden until launch */}
             <li>
               <Link
                 href={ROUTES.SHIPS.getPath(year)}
