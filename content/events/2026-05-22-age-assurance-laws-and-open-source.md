@@ -9,8 +9,8 @@ type: 'stream'
 language: 'English'
 location: 'Virtual'
 userName: 'GitHub'
-userLink: 'https://github.com/github'
-linkUrl: 'https://www.youtube.com/@GitHub'
+userLink: 'https://github.com/margaret-tucker'
+linkUrl: 'https://www.youtube.com/watch?v=1yXuKjwIYEM'
 ---
 
 A Maintainer Month panel featuring voices from the FreeBSD Foundation, the Open Source Initiative (OSI), and GitHub exploring how age-assurance legislation could impact open source software development and distribution.
