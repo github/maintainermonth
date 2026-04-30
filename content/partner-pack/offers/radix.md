@@ -1,8 +1,8 @@
 ---
 name: "Radix / .Tech"
 logo: "radix.png"
-headline: "Domain names for the tech community."
-description: "Get a .tech domain to give your open source project a home on the web."
-ctaText: "Learn more"
+headline: "Free 1-year .tech domain for maintainers."
+description: "Claim a free 1-year .tech domain to give your open source project a home on the web."
+ctaText: "Claim domain"
 ctaLink: "https://get.tech/"
 ---
