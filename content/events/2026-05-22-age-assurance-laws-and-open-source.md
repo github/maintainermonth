@@ -1,7 +1,7 @@
 ---
 title: 'Maintainer Month Panel: Age Assurance Laws and Open Source'
 metaTitle: 'Maintainer Month Panel: Age Assurance Laws and Open Source'
-metaDesc: 'Maintainer Month panel with FreeBSD Foundation, OSI, and GitHub on age-assurance policy impact on open source software.'
+metaDesc: 'Anne Dickison (FreeBSD Foundation), Katie Steen-James (OSI), and Margaret Tucker (GitHub) on age-assurance laws and open source.'
 date: '05/22'
 UTCStartTime: '16:00'
 UTCEndTime: '17:00'
@@ -13,4 +13,4 @@ userLink: 'https://github.com/margaret-tucker'
 linkUrl: 'https://www.youtube.com/watch?v=1yXuKjwIYEM'
 ---
 
-A Maintainer Month panel featuring voices from the FreeBSD Foundation, the Open Source Initiative (OSI), and GitHub exploring how age-assurance legislation could impact open source software development and distribution.
+Age assurance laws are reaching down to operating systems and app stores. Anne Dickison (FreeBSD Foundation), Katie Steen-James (OSI), and Margaret Tucker (GitHub) break down what's happening across the US, Brazil, and Europe, and how maintainers can help shape policy that fits how open source actually works.
