@@ -68,18 +68,18 @@ const Header = () => {
           <ul className="header__list">
             <li>
               <Link
-                href={ROUTES.PARTNER_PACK.getPath(year)}
-                aria-label={getLiteral('navigation:partner-pack')}
-                className={clsx('header__link', {
-                  ['is-active']: pathname === ROUTES.PARTNER_PACK.getPath(year),
-                })}
-              >
-                <BoxGift />
-                <span className="header__link-text">
-                  {getLiteral('navigation:partner-pack')}
-                </span>
-              </Link>
-            </li>
+{/* HIDDEN FOR REVIEW -                 href={ROUTES.PARTNER_PACK.getPath(year)} */}
+{/* HIDDEN FOR REVIEW -                 aria-label={getLiteral('navigation:partner-pack')} */}
+{/* HIDDEN FOR REVIEW -                 className={clsx('header__link', { */}
+{/* HIDDEN FOR REVIEW -                   ['is-active']: pathname === ROUTES.PARTNER_PACK.getPath(year), */}
+{/* HIDDEN FOR REVIEW -                 })} */}
+{/* HIDDEN FOR REVIEW -               > */}
+{/* HIDDEN FOR REVIEW -                 <BoxGift /> */}
+{/* HIDDEN FOR REVIEW -                 <span className="header__link-text"> */}
+{/* HIDDEN FOR REVIEW -                   {getLiteral('navigation:partner-pack')} */}
+{/* HIDDEN FOR REVIEW -                 </span> */}
+{/* HIDDEN FOR REVIEW -               </Link> */}
+{/* HIDDEN FOR REVIEW -             </li> */}
             <li>
               <Link
                 href={ROUTES.SHIPS.getPath(year)}
