@@ -8,9 +8,9 @@ UTCEndTime: '21:00'
 type: 'stream'
 language: 'English'
 location: 'Virtual'
-userName: 'GitHub'
-userLink: 'https://github.com/github'
-linkUrl: 'https://www.youtube.com/@GitHub'
+userName: 'jeffrey-luszcz'
+userLink: 'https://github.com/jeffrey-luszcz'
+linkUrl: 'https://www.youtube.com/watch?v=DxiaRvBuqo8'
 ---
 
 Join Jeff Luszcz for a Maintainer Month Special on open source licensing, SBOMs, and supply chain security for maintainers in 2026.
