@@ -1,8 +1,10 @@
 ---
 name: "Render"
 logo: "render.png"
-headline: "$5,000 in cloud credits for open source maintainers."
-description: "Get $5,000 in Render credits, valid for 12 months. No qualification criteria."
-ctaText: "Claim credits"
-ctaLink: "https://render.com/startups/github-maintainer"
+headline: "Cloud credits for open source maintainers."
+description: "Render is offering cloud credits for open source maintainers. Details available in the private Maintainer Community."
+secondaryCta: "(Available to members of the private Maintainer Community)"
+ctaText: "Join the Maintainer Community"
+ctaLink: "https://maintainers.github.com"
+private: true
 ---
