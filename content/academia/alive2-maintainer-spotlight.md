@@ -4,7 +4,6 @@ institution: University of Lisbon
 department: Computer Science
 projectName: Alive2
 projectRepo: https://github.com/AliveToolkit/alive2
-projectWebsite:
 maintainerProfiles:
   - github: https://github.com/nunoplopes
   - scholar: https://scholar.google.com/citations?user=DQnsjaoAAAAJ
