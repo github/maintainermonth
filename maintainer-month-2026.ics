@@ -6,9 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Maintainer Month 2026
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
-UID:jq__TXWqoUuqUCvckAfXj
+UID:yDWmskYY4cBiT6fcCTS7i
 SUMMARY:Open Source Friday - Welcome to Maintainer Month 2026
-DTSTAMP:20260501T000041Z
+DTSTAMP:20260501T000920Z
 DTSTART:20260501T150000Z
 DTEND:20260501T160000Z
 DESCRIPTION:Kicking off Maintainer Month 2026 with a special Open Source Fr
@@ -17,9 +17,9 @@ URL:https://www.youtube.com/watch?v=Ro_VMXWbLt8
 LOCATION:Virtual
 END:VEVENT
 BEGIN:VEVENT
-UID:jdaAxkceu7KbrY2yuulsY
+UID:SFGtJo658XXSDU7TgiyTg
 SUMMARY:Rubber Duck Thursday: Maintainer Month Edition
-DTSTAMP:20260501T000041Z
+DTSTAMP:20260501T000920Z
 DTSTART;VALUE=DATE:20260507
 DTEND;VALUE=DATE:20260508
 DESCRIPTION:Live coding with maintainers as part of Maintainer Month 2026.
@@ -27,9 +27,9 @@ URL:https://gh.io/rubberduckthursdays
 LOCATION:Virtual
 END:VEVENT
 BEGIN:VEVENT
-UID:DROvSrxa48f_LPiQ1GLsu
+UID:d5vpDvr_2et_fVwv90IBT
 SUMMARY:Maintainers Meetup Delhi
-DTSTAMP:20260501T000041Z
+DTSTAMP:20260501T000920Z
 DTSTART:20260509T103000Z
 DTEND:20260509T133000Z
 DESCRIPTION:As part of MaintainersMay\, FOSS United Foundation is organisin
@@ -39,9 +39,9 @@ URL:https://fossunited.org/c/delhi/maintainers-meetup
 LOCATION:Delhi\, India
 END:VEVENT
 BEGIN:VEVENT
-UID:xc047Y-XmAjla3N0eVdha
+UID:PtPN6xlJEbqDs7nOLSrkG
 SUMMARY:What's wrong with AssertJ?!
-DTSTAMP:20260501T000041Z
+DTSTAMP:20260501T000920Z
 DTSTART:20260512T181500Z
 DTEND:20260512T193000Z
 DESCRIPTION:AssertJ maintainer Stefano Cordio explores the technical debt a
@@ -51,9 +51,21 @@ URL:https://www.jug.ch/html/events/2026/assertj.html
 LOCATION:Zurich\, Switzerland
 END:VEVENT
 BEGIN:VEVENT
-UID:eR-gj0Z2Qj68V9iaqt_dS
+UID:4j4IQyCc_1B1jcKrIgCeO
+SUMMARY:PyCon US 2026
+DTSTAMP:20260501T000920Z
+DTSTART;VALUE=DATE:20260513
+DTEND;VALUE=DATE:20260520
+DESCRIPTION:It's time to celebrate Python and the Pythonistas that help bui
+	ld our OSS ecosystem ❤️ Come check out our booth to learn about all of the 
+	exciting OSS projec...
+URL:https://us.pycon.org/2026/
+LOCATION:Long Beach\, CA\, USA
+END:VEVENT
+BEGIN:VEVENT
+UID:ABNz9xw2CjAn7UyOVg7-H
 SUMMARY:Discussion: How should corporations support OSS maintainers?
-DTSTAMP:20260501T000041Z
+DTSTAMP:20260501T000920Z
 DTSTART:20260514T190000Z
 DTEND:20260514T200000Z
 DESCRIPTION:An open discussion on how corporations can support OSS maintain
@@ -63,9 +75,9 @@ URL:https://meet.google.com/asd-hucu-syf
 LOCATION:Virtual
 END:VEVENT
 BEGIN:VEVENT
-UID:EbZorT5oIyHVDnA4nbapY
+UID:Xq3vxRVKOhukueLXsev3t
 SUMMARY:Rubber Duck Thursday: Maintainer Month Edition
-DTSTAMP:20260501T000041Z
+DTSTAMP:20260501T000920Z
 DTSTART;VALUE=DATE:20260514
 DTEND;VALUE=DATE:20260515
 DESCRIPTION:Live coding with maintainers as part of Maintainer Month 2026.
@@ -73,9 +85,9 @@ URL:https://gh.io/rubberduckthursdays
 LOCATION:Virtual
 END:VEVENT
 BEGIN:VEVENT
-UID:PK8WXTnnqLYsrF_RpC123
+UID:OL65JE0DBfChYyT1ozFK4
 SUMMARY:Maintainers Summit at PyCon US
-DTSTAMP:20260501T000041Z
+DTSTAMP:20260501T000920Z
 DTSTART:20260516T183000Z
 DTEND:20260517T003000Z
 DESCRIPTION:The Maintainers Summit at PyCon US is where the Python communit
@@ -85,9 +97,9 @@ URL:https://us.pycon.org/2026/events/maintainers-summit/
 LOCATION:Long Beach\, USA
 END:VEVENT
 BEGIN:VEVENT
-UID:FarcVMHCa-Mlu-1tqiaCk
+UID:EnaQjJAPqg57zlxqogY5j
 SUMMARY:Open Source Assistive Technology Hackathon
-DTSTAMP:20260501T000041Z
+DTSTAMP:20260501T000920Z
 DTSTART:20260521T090000Z
 DTEND:20260522T070000Z
 DESCRIPTION:A two-day hackathon focused on helping participants build skill
@@ -97,9 +109,9 @@ URL:https://www.eventbrite.com/e/open-source-assistive-technology-hackathon
 LOCATION:San Francisco\, CA
 END:VEVENT
 BEGIN:VEVENT
-UID:CXdbtAz_SbR6KIqIGmy7N
+UID:cwuqGUpo7o5_beCq5ZjqO
 SUMMARY:Rubber Duck Thursday: Maintainer Month Edition
-DTSTAMP:20260501T000041Z
+DTSTAMP:20260501T000920Z
 DTSTART;VALUE=DATE:20260521
 DTEND;VALUE=DATE:20260522
 DESCRIPTION:Live coding with maintainers as part of Maintainer Month 2026.
@@ -107,9 +119,9 @@ URL:https://gh.io/rubberduckthursdays
 LOCATION:Virtual
 END:VEVENT
 BEGIN:VEVENT
-UID:LsK1d5b_OKDFcIfHi8846
+UID:ntXZTWWrz7yKQZsho28ic
 SUMMARY:Introducing Project Pods on For Good First Issue
-DTSTAMP:20260501T000041Z
+DTSTAMP:20260501T000920Z
 DTSTART:20260528T150000Z
 DTEND:20260528T153000Z
 DESCRIPTION:Open source nonprofits often struggle to get end to end project
@@ -118,9 +130,9 @@ DESCRIPTION:Open source nonprofits often struggle to get end to end project
 LOCATION:Virtual
 END:VEVENT
 BEGIN:VEVENT
-UID:3vLEu4CKfPINHYjoxPMeK
+UID:L6UZw-szr2yJs7gE-1r-o
 SUMMARY:Rubber Duck Thursday: Maintainer Month Edition
-DTSTAMP:20260501T000041Z
+DTSTAMP:20260501T000920Z
 DTSTART;VALUE=DATE:20260528
 DTEND;VALUE=DATE:20260529
 DESCRIPTION:Live coding with maintainers as part of Maintainer Month 2026.
