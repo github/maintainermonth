@@ -138,6 +138,29 @@ const EventDetail = ({ event, reverseColumns, isFullPage }) => {
               }}
             />
           ) : null}
+          {isFullPage && (getGoogleCalendarUrl(event) || getIcsContent(event)) ? (
+            <div className="event-detail__calendar-links">
+              {getGoogleCalendarUrl(event) && (
+                <a
+                  className="event-detail__calendar-link"
+                  href={getGoogleCalendarUrl(event)}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Add to Google Calendar
+                </a>
+              )}
+              {getIcsContent(event) && (
+                <button
+                  className="event-detail__calendar-link"
+                  onClick={() => downloadIcs(event)}
+                  type="button"
+                >
+                  Download .ics
+                </button>
+              )}
+            </div>
+          ) : null}
         </div>
         {!isFullPage ? (
           <PlayLink href={event.linkUrl}>
@@ -155,27 +178,6 @@ const EventDetail = ({ event, reverseColumns, isFullPage }) => {
           >
             {getLiteral(`event-button:${event.type}`)} <IconArrowRight />
           </a>
-          <div className="event-detail__calendar-links">
-            {getGoogleCalendarUrl(event) && (
-              <a
-                className="event-detail__calendar-link"
-                href={getGoogleCalendarUrl(event)}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Add to Google Calendar
-              </a>
-            )}
-            {getIcsContent(event) && (
-              <button
-                className="event-detail__calendar-link"
-                onClick={() => downloadIcs(event)}
-                type="button"
-              >
-                Download .ics
-              </button>
-            )}
-          </div>
         </div>
       ) : null}
     </article>
