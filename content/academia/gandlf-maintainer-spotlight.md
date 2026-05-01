@@ -2,19 +2,19 @@
 name: Sarthak Pati
 institution: MLCommons
 department: Medical AI Working Group
-projectName: Generally Nuanced Deep Learning Framework (GaNDLF)
+projectName: GaNDLF
 projectRepo: https://github.com/mlcommons/GaNDLF/
 projectWebsite: https://gandlf.org
 maintainerProfiles:
   - github: https://github.com/sarthakpati
   - orcid: https://orcid.org/0000-0003-2243-8487
-badges: ["Academic Maintainer", "Vice Chair for Algorithm Development and Benchmarking"]
+badges: ["Academic Maintainer", "Vice Chair for Algorithm Development & Benchmarking"]
 description: "A framework designed to make deep learning development, training, and inference more stable, reproducible, interpretable, and scalable for computational precision medicine — without requiring an extensive technical background."
 ---
 
 ## What is GaNDLF, and what does it help people do?
 
-GaNDLF is a framework designed to make deep learning (DL) development, training, and inference more stable, reproducible, interpretable, and scalable, without requiring an extensive technical background. It provides an end-to-end solution for DL-related tasks in computational precision medicine.
+Generally Nuanced Deep Learning Framework (GaNDLF) is a framework designed to make deep learning (DL) development, training, and inference more stable, reproducible, interpretable, and scalable, without requiring an extensive technical background. It provides an end-to-end solution for DL-related tasks in computational precision medicine.
 
 GaNDLF supports the analysis of both radiology and histology images, with built-in features such as k-fold cross-validation, data augmentation, support for multiple modalities, and multiple output classes. Its performance across a wide range of use cases and computational tasks demonstrates its potential as a robust framework for deployment in clinical workflows.
 
