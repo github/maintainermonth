@@ -11,6 +11,9 @@ badges: ["Academic Maintainer", "Associate Professor"]
 description: "A tool to automatically verify the correctness of LLVM optimizations, used by several companies and instrumental in finding hundreds of bugs in LLVM."
 ---
 
+<img width="295" height="242" alt="alive2" src="https://github.com/user-attachments/assets/4225ea27-9c0d-4823-98e0-a6c4794c9c69" />
+
+
 ## What is Alive2, and what does it help people do?
 
 Alive2 is a tool to automatically verify the correctness of LLVM optimizations.
