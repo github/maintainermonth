@@ -14,6 +14,62 @@ import DateTimeChip from '../date-time-chip/DateTimeChip'
 import Chip from '../chip/Chip'
 import PlayLink from '../play-link/PlayLink'
 
+
+const CURRENT_YEAR = 2026
+
+const buildCalendarDate = (dateStr, timeStr) => {
+  if (!dateStr || !timeStr || timeStr === 'TBD') return null
+  const [month, day] = dateStr.split('/')
+  const [hour, minute] = timeStr.split(':')
+  const d = new Date(Date.UTC(CURRENT_YEAR, parseInt(month) - 1, parseInt(day), parseInt(hour), parseInt(minute)))
+  return d.toISOString().replace(/[-:]/g, '').replace('.000', '').replace(/\.\d{3}/, '')
+}
+
+const getGoogleCalendarUrl = (event) => {
+  const start = buildCalendarDate(event.date, event.UTCStartTime)
+  const end = buildCalendarDate(event.endDate || event.date, event.UTCEndTime)
+  if (!start || !end) return null
+  const params = new URLSearchParams({
+    action: 'TEMPLATE',
+    text: event.title,
+    dates: `${start}/${end}`,
+    details: event.content ? event.content.substring(0, 500) : '',
+    location: event.location || '',
+  })
+  if (event.linkUrl) params.set('details', `${event.linkUrl}\n\n${params.get('details')}`)
+  return `https://calendar.google.com/calendar/render?${params.toString()}`
+}
+
+const getIcsContent = (event) => {
+  const start = buildCalendarDate(event.date, event.UTCStartTime)
+  const end = buildCalendarDate(event.endDate || event.date, event.UTCEndTime)
+  if (!start || !end) return null
+  const description = event.linkUrl ? `${event.linkUrl}\n\n${(event.content || '').substring(0, 500)}` : (event.content || '').substring(0, 500)
+  return `BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+DTSTART:${start}
+DTEND:${end}
+SUMMARY:${event.title}
+DESCRIPTION:${description.replace(/\n/g, '\\n')}
+LOCATION:${event.location || ''}
+URL:${event.linkUrl || ''}
+END:VEVENT
+END:VCALENDAR`
+}
+
+const downloadIcs = (event) => {
+  const ics = getIcsContent(event)
+  if (!ics) return
+  const blob = new Blob([ics], { type: 'text/calendar;charset=utf-8' })
+  const url = URL.createObjectURL(blob)
+  const a = document.createElement('a')
+  a.href = url
+  a.download = `${event.title.replace(/[^a-zA-Z0-9]/g, '-')}.ics`
+  a.click()
+  URL.revokeObjectURL(url)
+}
+
 const EventDetail = ({ event, reverseColumns, isFullPage }) => {
   const { setAnimationStep } = useBackground()
 
@@ -95,6 +151,27 @@ const EventDetail = ({ event, reverseColumns, isFullPage }) => {
           >
             {getLiteral(`event-button:${event.type}`)} <IconArrowRight />
           </a>
+          <div className="event-detail__calendar-links">
+            {getGoogleCalendarUrl(event) && (
+              <a
+                className="event-detail__calendar-link"
+                href={getGoogleCalendarUrl(event)}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Add to Google Calendar
+              </a>
+            )}
+            {getIcsContent(event) && (
+              <button
+                className="event-detail__calendar-link"
+                onClick={() => downloadIcs(event)}
+                type="button"
+              >
+                Download .ics
+              </button>
+            )}
+          </div>
         </div>
       ) : null}
     </article>
