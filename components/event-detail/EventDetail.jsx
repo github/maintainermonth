@@ -17,11 +17,15 @@ import PlayLink from '../play-link/PlayLink'
 
 const CURRENT_YEAR = 2026
 
+const isTBDOrAllDay = (val) => !val || val === 'TBD' || val.toLowerCase().replace(/[\s\-_]/g, '') === 'allday'
+
 const buildCalendarDate = (dateStr, timeStr) => {
-  if (!dateStr || !timeStr || timeStr === 'TBD') return null
+  if (!dateStr || isTBDOrAllDay(timeStr)) return null
   const [month, day] = dateStr.split('/')
   const [hour, minute] = timeStr.split(':')
+  if (isNaN(hour) || isNaN(minute)) return null
   const d = new Date(Date.UTC(CURRENT_YEAR, parseInt(month) - 1, parseInt(day), parseInt(hour), parseInt(minute)))
+  if (isNaN(d.getTime())) return null
   return d.toISOString().replace(/[-:]/g, '').replace('.000', '').replace(/\.\d{3}/, '')
 }
 
