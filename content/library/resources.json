@@ -193,6 +193,14 @@
             "topics": "Maintainer Month"
         },
         {
+            "title": "Maintainers in Academia",
+            "author": "Academia Maintainers",
+            "description": "Maintainer stories from researchers and educators building open source in universities and institutions around the world.",
+            "link": "https://maintainermonth.github.com/academia",
+            "type": "Interviews",
+            "topics": "Various Projects"
+        },
+        {
             "title": "Ed Warnicke",
             "author": "Open at Microsoft",
             "description": "An introduction to OmniBOR and how it benefits open source projects.",
