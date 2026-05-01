@@ -22,6 +22,10 @@ const Footer = () => {
 
   const classes = clsx('footer', { 'is-home': isHome })
 
+  if (typeof window !== 'undefined') {
+    console.log('%c git blame %c https://gh.io/maintainer-tea', 'background:#1a1a1a;color:#d4a017;padding:2px 6px;font-weight:bold', 'color:#888')
+  }
+
   return (
     <footer className={classes} role="contentinfo">
       <div className="footer__copyright">
@@ -32,6 +36,16 @@ const Footer = () => {
           rel="noreferrer"
         >
           {getLiteral('footer:repository-title')}
+        </a>
+        <span className="footer__divider" />
+
+        <a
+          className="footer__link footer__blame"
+          href="https://gh.io/maintainer-tea"
+          target="_blank"
+          rel="noreferrer"
+        >
+          git blame
         </a>
         <span className="footer__divider" />
 

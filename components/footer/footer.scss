@@ -157,4 +157,11 @@
       }
     }
   }
+
+  &__blame {
+    opacity: 0.4;
+    font-family: monospace;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+  }
 }
