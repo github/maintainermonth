@@ -1,7 +1,7 @@
 ---
-title: 'Maintainer Month Special: Jeff Luszcz'
-metaTitle: 'Maintainer Month Special: Jeff Luszcz'
-metaDesc: 'Open source licensing, SBOMs, and supply chain security for maintainers in 2026.'
+title: 'What Maintainers need to know about Open Source Licensing, SBOMs and Security'
+metaTitle: 'What Maintainers need to know about Open Source Licensing, SBOMs and Security'
+metaDesc: 'Join Jeff Luszcz from the GitHub Open Source Programs Office as he reviews what every maintainer should know about open source licensing, SBOMs, and their impacts on supply chain security; and what users are expecting in 2026.'
 date: '05/27'
 UTCStartTime: '20:00'
 UTCEndTime: '21:00'
@@ -13,4 +13,4 @@ userLink: 'https://github.com/jeffrey-luszcz'
 linkUrl: 'https://www.youtube.com/watch?v=DxiaRvBuqo8'
 ---
 
-Join Jeff Luszcz for a Maintainer Month Special on open source licensing, SBOMs, and supply chain security for maintainers in 2026.
+Join Jeff Luszcz from the GitHub Open Source Programs Office as he reviews what every maintainer should know about open source licensing, SBOMs, and their impacts on supply chain security; and what users are expecting in 2026.
