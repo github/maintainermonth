@@ -291,3 +291,23 @@
     }
   }
 }
+.event-detail__calendar-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.event-detail__calendar-link {
+  font-size: 14px;
+  color: var(--color-fg-muted, #656d76);
+  text-decoration: underline;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+
+  &:hover {
+    color: var(--color-fg-default, #1f2328);
+  }
+}
