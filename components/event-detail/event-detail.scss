@@ -293,21 +293,25 @@
 }
 .event-detail__calendar-links {
   display: flex;
-  gap: 16px;
-  margin-top: 12px;
+  gap: 12px;
+  margin-top: 24px;
+  flex-wrap: wrap;
 }
 
 .event-detail__calendar-link {
-  font-size: 14px;
-  color: var(--color-fg-muted, #656d76);
-  text-decoration: underline;
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
+  font-size: 0.875rem;
   font-family: inherit;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 100px;
+  padding: 8px 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
 
   &:hover {
-    color: var(--color-fg-default, #1f2328);
+    background: rgba(255, 255, 255, 0.95);
+    color: #6e40c9;
   }
 }
