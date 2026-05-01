@@ -8,7 +8,7 @@ date: 05/21
 type: misc
 language: English
 location: 'San Francisco, CA'
-userName: Maria Lamardo
+userName: GitHub
 endDate: 05/22
 UTCStartTime: '09:00'
 UTCEndTime: '07:00'
