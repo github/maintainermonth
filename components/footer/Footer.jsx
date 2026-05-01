@@ -23,7 +23,7 @@ const Footer = () => {
   const classes = clsx('footer', { 'is-home': isHome })
 
   if (typeof window !== 'undefined') {
-    console.log('%c git blame %c https://gh.io/maintainer-tea', 'background:#1a1a1a;color:#d4a017;padding:2px 6px;font-weight:bold', 'color:#888')
+    console.log('%c☕%c https://gh.io/maintainer-tea', 'font-size:16px', 'color:#888;font-size:11px')
   }
 
   return (
@@ -45,7 +45,7 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
         >
-          git blame
+          &#9749;
         </a>
         <span className="footer__divider" />
 
