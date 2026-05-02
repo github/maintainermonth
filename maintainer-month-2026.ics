@@ -6,9 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Maintainer Month 2026
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
-UID:gES7kVqzrFic_R7iGzTqB
+UID:1zFktAPVwBmQfFFAd2LYt
 SUMMARY:Open Source Friday - Welcome to Maintainer Month 2026
-DTSTAMP:20260501T182643Z
+DTSTAMP:20260502T005738Z
 DTSTART:20260501T150000Z
 DTEND:20260501T160000Z
 DESCRIPTION:Kicking off Maintainer Month 2026 with a special Open Source Fr
@@ -17,9 +17,9 @@ URL:https://www.youtube.com/watch?v=Ro_VMXWbLt8
 LOCATION:Virtual
 END:VEVENT
 BEGIN:VEVENT
-UID:a6nuOmfwRZR6OYXr9-BaC
+UID:ywUw8gVVpWVdLpjfSw1Bg
 SUMMARY:Open Source Friday: Remotion
-DTSTAMP:20260501T182643Z
+DTSTAMP:20260502T005738Z
 DTSTART:20260501T180000Z
 DTEND:20260501T190000Z
 DESCRIPTION:Johnny Burger on Remotion\, an open source framework for creati
@@ -28,9 +28,9 @@ URL:https://www.youtube.com/@GitHub
 LOCATION:Virtual
 END:VEVENT
 BEGIN:VEVENT
-UID:jSdSDvg4MP7hEefJ4Lpeq
+UID:YYFYZNAH4gUtKKwGXZ_UB
 SUMMARY:Rubber Duck Thursday: Maintainer Month Edition
-DTSTAMP:20260501T182643Z
+DTSTAMP:20260502T005738Z
 DTSTART;VALUE=DATE:20260507
 DTEND;VALUE=DATE:20260508
 DESCRIPTION:Live coding with maintainers as part of Maintainer Month 2026.
@@ -38,9 +38,9 @@ URL:https://gh.io/rubberduckthursdays
 LOCATION:Virtual
 END:VEVENT
 BEGIN:VEVENT
-UID:ZvFSpy8Jldn2GHs7C2ReJ
+UID:24Z9t5DrEID8jhskB3tSd
 SUMMARY:The State of Open Source in 2026
-DTSTAMP:20260501T182643Z
+DTSTAMP:20260502T005738Z
 DTSTART:20260507T170000Z
 DTEND:20260507T180000Z
 DESCRIPTION:Open source software remains essential to enterprise technology
@@ -50,9 +50,9 @@ URL:https://ter.li/2kn3s1hb
 LOCATION:Virtual
 END:VEVENT
 BEGIN:VEVENT
-UID:glIreAvRYa5QzP-E1Wyil
+UID:QLXB4nkhm4k-OllJm7PPP
 SUMMARY:Open Source Friday: Spec Kit
-DTSTAMP:20260501T182643Z
+DTSTAMP:20260502T005738Z
 DTSTART:20260508T170000Z
 DTEND:20260508T180000Z
 DESCRIPTION:Manfred Riem (@mnriem) on Spec Kit\, an open source toolkit for
@@ -61,9 +61,9 @@ URL:https://www.youtube.com/@GitHub
 LOCATION:Virtual
 END:VEVENT
 BEGIN:VEVENT
-UID:nnLFeT-ZR6om_u_wvPfhP
+UID:bJ76kBhIYgZ7-QhtI5jxx
 SUMMARY:Maintainers Meetup Delhi
-DTSTAMP:20260501T182643Z
+DTSTAMP:20260502T005738Z
 DTSTART:20260509T103000Z
 DTEND:20260509T133000Z
 DESCRIPTION:As part of MaintainersMay\, FOSS United Foundation is organisin
@@ -73,9 +73,9 @@ URL:https://fossunited.org/c/delhi/maintainers-meetup
 LOCATION:Delhi\, India
 END:VEVENT
 BEGIN:VEVENT
-UID:1TzTFHDs5SZlVSbriuQgO
+UID:JKYznlCzFsE1poOCK_ct8
 SUMMARY:What's wrong with AssertJ?!
-DTSTAMP:20260501T182643Z
+DTSTAMP:20260502T005738Z
 DTSTART:20260512T181500Z
 DTEND:20260512T193000Z
 DESCRIPTION:AssertJ maintainer Stefano Cordio explores the technical debt a
@@ -85,9 +85,9 @@ URL:https://www.jug.ch/html/events/2026/assertj.html
 LOCATION:Zurich\, Switzerland
 END:VEVENT
 BEGIN:VEVENT
-UID:jTMhMBanFWcDVUwq7iQjf
+UID:xRCZnSuKpf4L9EjvvPr2g
 SUMMARY:PyCon US 2026
-DTSTAMP:20260501T182643Z
+DTSTAMP:20260502T005738Z
 DTSTART;VALUE=DATE:20260513
 DTEND;VALUE=DATE:20260520
 DESCRIPTION:It's time to celebrate Python and the Pythonistas that help bui
@@ -97,9 +97,9 @@ URL:https://us.pycon.org/2026/
 LOCATION:Long Beach\, CA\, USA
 END:VEVENT
 BEGIN:VEVENT
-UID:NQjGJVcw6gHFkBMZEW4SI
+UID:8KWOP2IYb5dnaPynTK4UG
 SUMMARY:Discussion: How should corporations support OSS maintainers?
-DTSTAMP:20260501T182643Z
+DTSTAMP:20260502T005738Z
 DTSTART:20260514T190000Z
 DTEND:20260514T200000Z
 DESCRIPTION:An open discussion on how corporations can support OSS maintain
@@ -109,9 +109,9 @@ URL:https://meet.google.com/asd-hucu-syf
 LOCATION:Virtual
 END:VEVENT
 BEGIN:VEVENT
-UID:-DbXiAtb5wKb_t_GuYFlI
+UID:M0J6Mg-h_7ZEhn6rAToIy
 SUMMARY:Rubber Duck Thursday: Maintainer Month Edition
-DTSTAMP:20260501T182643Z
+DTSTAMP:20260502T005738Z
 DTSTART;VALUE=DATE:20260514
 DTEND;VALUE=DATE:20260515
 DESCRIPTION:Live coding with maintainers as part of Maintainer Month 2026.
@@ -119,9 +119,9 @@ URL:https://gh.io/rubberduckthursdays
 LOCATION:Virtual
 END:VEVENT
 BEGIN:VEVENT
-UID:iPQFNfncLhqFiW2QuFUqQ
+UID:p_A2wzXH2pVqCJWV5rsmF
 SUMMARY:Maintainers Summit at PyCon US
-DTSTAMP:20260501T182643Z
+DTSTAMP:20260502T005738Z
 DTSTART:20260516T183000Z
 DTEND:20260517T003000Z
 DESCRIPTION:The Maintainers Summit at PyCon US is where the Python communit
@@ -131,9 +131,9 @@ URL:https://us.pycon.org/2026/events/maintainers-summit/
 LOCATION:Long Beach\, USA
 END:VEVENT
 BEGIN:VEVENT
-UID:f6AEmZ9PR6e5E30u_LViS
+UID:Mk2zFGpH6bJSD480yuje6
 SUMMARY:Open Source Summit North America
-DTSTAMP:20260501T182643Z
+DTSTAMP:20260502T005738Z
 DTSTART;VALUE=DATE:20260518
 DTEND;VALUE=DATE:20260521
 DESCRIPTION:Visit the GitHub activation inside the Microsoft booth to chat 
@@ -143,9 +143,9 @@ URL:https://events.linuxfoundation.org/open-source-summit-north-america/
 LOCATION:Denver\, CO\, USA
 END:VEVENT
 BEGIN:VEVENT
-UID:tY0SYd7eiO5Ysz6ueO3q1
+UID:YuitMQCHbkjvNjGM8-Y3U
 SUMMARY:Open Source Assistive Technology Hackathon
-DTSTAMP:20260501T182643Z
+DTSTAMP:20260502T005738Z
 DTSTART:20260521T090000Z
 DTEND:20260522T070000Z
 DESCRIPTION:A two-day hackathon focused on helping participants build skill
@@ -155,9 +155,9 @@ URL:https://www.eventbrite.com/e/open-source-assistive-technology-hackathon
 LOCATION:San Francisco\, CA
 END:VEVENT
 BEGIN:VEVENT
-UID:BRouXQsrMFb21-W1M3Zzi
+UID:M-MiH1nShiYW5akvRz0bU
 SUMMARY:Rubber Duck Thursday: Maintainer Month Edition
-DTSTAMP:20260501T182643Z
+DTSTAMP:20260502T005738Z
 DTSTART;VALUE=DATE:20260521
 DTEND;VALUE=DATE:20260522
 DESCRIPTION:Live coding with maintainers as part of Maintainer Month 2026.
@@ -165,9 +165,9 @@ URL:https://gh.io/rubberduckthursdays
 LOCATION:Virtual
 END:VEVENT
 BEGIN:VEVENT
-UID:MbNI8a783-5DNzZxVJZxn
+UID:DtFOGtxOGZR1ewu9l4xtP
 SUMMARY:Maintainer Month Panel: Age Assurance Laws and Open Source
-DTSTAMP:20260501T182643Z
+DTSTAMP:20260502T005738Z
 DTSTART:20260522T160000Z
 DTEND:20260522T170000Z
 DESCRIPTION:Anne Dickison (FreeBSD Foundation)\, Katie Steen-James (OSI)\, 
@@ -176,9 +176,9 @@ URL:https://www.youtube.com/watch?v=1yXuKjwIYEM
 LOCATION:Virtual
 END:VEVENT
 BEGIN:VEVENT
-UID:CkBEM4_wKq4Bafo_ZIsZ3
+UID:xPhFXytiriYpLG2f_712e
 SUMMARY:Open Source Friday: OpenMind (OM1)
-DTSTAMP:20260501T182643Z
+DTSTAMP:20260502T005738Z
 DTSTART:20260522T170000Z
 DTEND:20260522T180000Z
 DESCRIPTION:Prachi Sethi on OM1\, an open source\, hardware-agnostic cognit
@@ -187,10 +187,10 @@ URL:https://www.youtube.com/@GitHub
 LOCATION:Virtual
 END:VEVENT
 BEGIN:VEVENT
-UID:0OIGx0UJ_fCCBhTlKCGCk
+UID:_ZOM4Cy6QXIoVUCWZOUL_
 SUMMARY:What Maintainers need to know about Open Source Licensing\, SBOMs a
 	nd Security
-DTSTAMP:20260501T182643Z
+DTSTAMP:20260502T005738Z
 DTSTART:20260527T200000Z
 DTEND:20260527T210000Z
 DESCRIPTION:Join Jeff Luszcz from the GitHub Open Source Programs Office as
@@ -201,9 +201,9 @@ URL:https://www.youtube.com/watch?v=DxiaRvBuqo8
 LOCATION:Virtual
 END:VEVENT
 BEGIN:VEVENT
-UID:Wr2j0Vwo_8rkAv-BUTO9z
+UID:nZNq290Wos_hsfG8SiRjr
 SUMMARY:Introducing Project Pods on For Good First Issue
-DTSTAMP:20260501T182643Z
+DTSTAMP:20260502T005738Z
 DTSTART:20260528T220000Z
 DTEND:20260528T223000Z
 DESCRIPTION:Open source nonprofits often struggle to get end to end project
@@ -212,9 +212,9 @@ DESCRIPTION:Open source nonprofits often struggle to get end to end project
 LOCATION:Virtual
 END:VEVENT
 BEGIN:VEVENT
-UID:N1IYgfj4AJKy8CSwIQ8hN
+UID:wBHTLCDmz-D98LLb-c99v
 SUMMARY:Rubber Duck Thursday: Maintainer Month Edition
-DTSTAMP:20260501T182643Z
+DTSTAMP:20260502T005738Z
 DTSTART;VALUE=DATE:20260528
 DTEND;VALUE=DATE:20260529
 DESCRIPTION:Live coding with maintainers as part of Maintainer Month 2026.
@@ -222,9 +222,9 @@ URL:https://gh.io/rubberduckthursdays
 LOCATION:Virtual
 END:VEVENT
 BEGIN:VEVENT
-UID:sh-WjnBObvCiJi_JxgfER
+UID:vXHYMkbeeLtBpUXg6LtXG
 SUMMARY:Open Source Friday: dlt
-DTSTAMP:20260501T182643Z
+DTSTAMP:20260502T005738Z
 DTSTART:20260529T170000Z
 DTEND:20260529T180000Z
 DESCRIPTION:Vis Kahoro on dlt\, a Python SDK for production-grade data pipe
@@ -233,9 +233,9 @@ URL:https://www.youtube.com/@GitHub
 LOCATION:Virtual
 END:VEVENT
 BEGIN:VEVENT
-UID:iHLYb4zCaz2zzvmNU2l71
+UID:wEOzzTbqj_sKJ2YH5cse6
 SUMMARY:Nosso Open Source Summit
-DTSTAMP:20260501T182643Z
+DTSTAMP:20260502T005738Z
 DTSTART:20260530T123000Z
 DTEND:20260530T213000Z
 DESCRIPTION:🧾 Sobre O NOSS nasce de um incômodo\, que acompanha um sonho. V
