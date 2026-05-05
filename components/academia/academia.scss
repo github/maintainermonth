@@ -38,11 +38,7 @@
   }
 
   &__main {
-    text-align: right;
-
-    @media screen and (max-width: $xl) {
-      text-align: left;
-    }
+    text-align: left;
   }
 
   &__flex {
