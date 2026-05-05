@@ -77,7 +77,7 @@ In 2025, the project received approximately 150,000 USD in funding from the Digi
 
 ## How do you engage with your community?
 
-We actively engage with the community through Github's issues and PRs. At the same time, we maintain an active documentation, including videos and showcases of app uses and studies, as well as offering demos to researchers when helpful.
+We actively engage with the community through GitHub's issues and PRs. At the same time, we maintain an active documentation, including videos and showcases of app uses and studies, as well as offering demos to researchers when helpful.
 
 ## Have you taken part in any open source programs or events?
 
