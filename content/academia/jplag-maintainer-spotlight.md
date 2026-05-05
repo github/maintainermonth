@@ -19,7 +19,7 @@ JPlag is a powerful, open-source plagiarism detection tool for source code, desi
 
 JPlag supports more than 15 programming languages. The input code is processed entirely locally, ensuring GDPR–compliance. [Demo available here](https://demo.jplag.de/)
 
-<img width="3024" height="1664" alt="Screenshot of JPlag Main View" src="https://github.com/user-attachments/assets/29f58583-9ff4-490a-b2b6-13a375ccb146" />
+<img width="50%" alt="Screenshot of JPlag Main View" src="https://github.com/user-attachments/assets/29f58583-9ff4-490a-b2b6-13a375ccb146" />
 
 
 ## What inspired you to start this project?
@@ -30,7 +30,7 @@ JPlag was originally developed in 1996 at Karlsruhe Institute of Technology to a
 
 It serves both as a research subject and as a practical tool used in teaching.
 
-<img width="3024" height="1664" alt="screenshot JPlag Code View" src="https://github.com/user-attachments/assets/a16a70cf-60a6-40a4-a2da-1b0c90feee80" />
+<img width="50%" alt="screenshot JPlag Code View" src="https://github.com/user-attachments/assets/a16a70cf-60a6-40a4-a2da-1b0c90feee80" />
 
 
 ## Who contributes to the project?
@@ -53,7 +53,7 @@ Students gain real-world open-source experience and develop stronger software en
 
 JPlag is used in academic institutions around the world. We know of more than 300 universities that use it to uphold academic integrity in their courses. JPlag has more than 50,000 downloads, is widely cited in research publications and integrated into multiple educational platforms.
 
-<img width="3024" height="1664" alt="Screenshot JPlag Cluster View" src="https://github.com/user-attachments/assets/7a50b817-cdc0-48d7-9fc6-071b4ae6a66f" />
+<img width="50%" alt="Screenshot JPlag Cluster View" src="https://github.com/user-attachments/assets/7a50b817-cdc0-48d7-9fc6-071b4ae6a66f" />
 
 
 ## What does it take to maintain the project?
