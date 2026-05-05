@@ -25,13 +25,13 @@ The plugin's functionality is also available as standalone actions for GitHub an
 
 The project was initially created to visualise code quality within an industry team. It later expanded through community contributions and was adapted for teaching and grading purposes.
 
-<img width="2302" height="882" alt="Photo_1" src="https://github.com/user-attachments/assets/e59e2f07-5ca1-4d2c-ab4c-8bd64ca6dcde" />
+<img width="50%" alt="Photo_1" src="https://github.com/user-attachments/assets/e59e2f07-5ca1-4d2c-ab4c-8bd64ca6dcde" />
 
 ## How does this project connect to your academic work?
 
 It is used for grading student projects and teaching software engineering practices.
 
-<img width="2560" height="1407" alt="Photo_3" src="https://github.com/user-attachments/assets/b07adfe8-ef09-481f-a4b2-046a004288eb" />
+<img width="50%" alt="Photo_3" src="https://github.com/user-attachments/assets/b07adfe8-ef09-481f-a4b2-046a004288eb" />
 
 ## Who contributes to the project?
 
@@ -45,7 +45,7 @@ Students contribute tests and features as part of their thesis work. Since they 
 
 It is used in software engineering and testing courses. Students use the plugin to grade their projects and provide feedback on their code.
 
-<img width="2560" height="1455" alt="Photo_2" src="https://github.com/user-attachments/assets/2124a0d8-9b24-4673-bd22-55dcc064d077" />
+<img width="50%" alt="Photo_2" src="https://github.com/user-attachments/assets/2124a0d8-9b24-4673-bd22-55dcc064d077" />
 
 ## What impact has this project had on your students?
 
