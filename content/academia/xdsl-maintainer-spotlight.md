@@ -6,7 +6,7 @@ projectName: xDSL
 projectRepo: https://github.com/xdslproject/xdsl/
 projectWebsite: https://xdsl.dev/
 maintainerProfiles:
-  - github: http://github.com/tobiasgrosser
+  - github: https://github.com/tobiasgrosser
   - orcid: https://orcid.org/0000-0003-3874-6003
 badges: ["Academic Maintainer"]
 description: "An accessible, high-productivity compiler framework for experienced and new compiler developers, compatible with MLIR and used in academia and industry for teaching, research, and production compiler development."
