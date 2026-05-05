@@ -16,11 +16,15 @@ description: "A lightweight, pure-Python library for robotic kinematics, motion 
 
 Scikit-robot is a lightweight, pure-Python library for robotic kinematics, motion planning, visualization, and control. It is designed to make robotics more accessible by allowing users to easily simulate, control, and extend robots using Python. By lowering the barrier to entry, it helps students, researchers, and engineers quickly turn their ideas into working robotic systems without needing to deal with complex underlying implementations. Over the past year the library has grown to include a full-body inverse-kinematics solver that treats the floating base as a solved degree of freedom (via new PlanarJoint and FloatingJoint primitives), differentiable and batched kinematics implemented in JAX, ROS 2 robot interfaces (e.g., a parameterised PandaROS2RobotInterface for multi-arm setups), and humanoid models such as JAXON JVRC. This makes scikit-robot increasingly viable not only for educational use but also for whole-body humanoid and dual-arm research.
 
+<img width="522" height="436" alt="scikit-robot" src="https://github.com/user-attachments/assets/cd7371b6-5651-4284-b852-b94fa0c12a27" />
+
+
 ## What inspired you to start this project?
 
 The story behind Scikit-robot began with a desire to make robotics more accessible and approachable. At the Information Systems Engineering Laboratory, we had long relied on EusLisp, a powerful robot programming language, but it had limitations such as integration challenges and less accessible documentation.
 
 During my time as a graduate student, I started thinking about how to preserve EusLisp's strengths while combining them with Python's simplicity and ecosystem. Inspired by tools like NumPy and Scikit-learn, I saw the need for a robotics library that was easy to start with and versatile in its applications. This led to the creation of Scikit-robot.
+
 
 ## How does this project connect to your academic work?
 
