@@ -14,6 +14,9 @@ description: "An open-source hydrological model that simulates water quality and
 
 ## What is SWAT+, and what does it help people do?
 
+<img width="50%" alt="poster_board" src="https://github.com/user-attachments/assets/467ab702-52d0-4b8f-9be8-36f0ba3ec030" />
+
+
 This project focuses on the collaborative development of the Soil and Water Assessment Tool Plus (SWAT+) on GitHub. SWAT+ is an open-source hydrological model that simulates water quality and quantity, co-developed by the USDA Agricultural Research Service, Texas A&M AgriLife Research, Colorado State University, and other contributing institutions worldwide.
 
 We use GitHub to foster a community-driven process-based model, enabling researchers and developers to contribute through issues, pull requests, and shared documentation. This effort aims to enhance SWAT+'s capabilities for assessing soil erosion, non-point source pollution, and watershed management under changing land use and climate scenarios.
@@ -72,6 +75,9 @@ Because community adoption is so widespread, SWAT+ serves as a primary vehicle f
 
 We organize at least one international conference annually for the global SWAT community. This year's conference will be held in Thessaloniki, Greece, bringing together developers and users to share the latest innovations in the field.
 
+<img width="50%" alt="swat-conf-map-2025-10-19" src="https://github.com/user-attachments/assets/234f5ead-4e54-449b-8d84-8b958b09b098" />
+
+
 ## What does it take to maintain the project?
 
 Maintaining the SWAT+ GitHub repository is a continuous effort that balances core code stability with community-driven innovation. Sustaining the project requires:
@@ -95,6 +101,8 @@ Transitioning from isolated development to a collaborative, GitHub-based ecosyst
 We face a chronic shortage of personnel and funds with the niche qualifications required to bridge the gap between complex environmental science and robust code development.
 
 ## How do you ensure the project remains sustainable over time?
+
+<img width="50%" alt="total-articles-in-swat-l" src="https://github.com/user-attachments/assets/c538f757-9f97-4f66-9dfa-d9d4098d62b8" />
 
 We actively pursue dual-purpose research grants that fund both high-level model application and the underlying engine development.
 
@@ -177,3 +185,6 @@ My team and I are actively exploring these research directions; however, as with
 While the model carries a 45-year legacy of scientific development, our journey on GitHub is just beginning. We are currently in the process of transforming decades of world-class hydrological research into a modern, transparent, and community-driven ecosystem.
 
 It is a privilege to steward such a significant legacy project into the era of Open Science. We are excited to see how the global community will continue to build upon this foundation to solve the environmental challenges of the next 45 years. Thank you for providing a platform that recognises the value of both scientific rigour and open-source collaboration.
+
+<img width="50%" alt="headshot of Natalja Čerkasova" src="https://github.com/user-attachments/assets/15bce7e3-b201-497c-85a0-013eb7de4fb7" />
+
