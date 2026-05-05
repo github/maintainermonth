@@ -12,6 +12,7 @@ badges: ["Academic Maintainer", "Professor"]
 description: "A Jenkins plugin that automatically collects and visualizes warnings and errors from compilers and static analysis tools, supporting over 150 formats such as CheckStyle, SpotBugs, and StyleCop, with quality gates, trend charts, and Git forensic statistics."
 ---
 
+
 ## What is the Jenkins Warnings plugin, and what does it help people do?
 
 The Jenkins Warnings Plugin is a Jenkins plugin that automatically collects and visualizes warnings and errors from compilers and static analysis tools — supporting over 150 formats such as CheckStyle, SpotBugs, and StyleCop. After each build, teams get a detailed report showing new, fixed, and outstanding issues, filterable by severity, category, package, or module, with annotated source code views and trend charts over time. Quality gates can be defined to fail a build automatically when issue thresholds are exceeded, keeping code quality under continuous control.
@@ -24,9 +25,13 @@ The plugin's functionality is also available as standalone actions for GitHub an
 
 The project was initially created to visualise code quality within an industry team. It later expanded through community contributions and was adapted for teaching and grading purposes.
 
+<img width="2302" height="882" alt="Photo_1" src="https://github.com/user-attachments/assets/e59e2f07-5ca1-4d2c-ab4c-8bd64ca6dcde" />
+
 ## How does this project connect to your academic work?
 
 It is used for grading student projects and teaching software engineering practices.
+
+<img width="2560" height="1407" alt="Photo_3" src="https://github.com/user-attachments/assets/b07adfe8-ef09-481f-a4b2-046a004288eb" />
 
 ## Who contributes to the project?
 
@@ -40,6 +45,8 @@ Students contribute tests and features as part of their thesis work. Since they 
 
 It is used in software engineering and testing courses. Students use the plugin to grade their projects and provide feedback on their code.
 
+<img width="2560" height="1455" alt="Photo_2" src="https://github.com/user-attachments/assets/2124a0d8-9b24-4673-bd22-55dcc064d077" />
+
 ## What impact has this project had on your students?
 
 Student engagement increases, as their contributions become part of a real-world project.
@@ -47,6 +54,7 @@ Student engagement increases, as their contributions become part of a real-world
 ## What impact has the project had beyond the classroom or research?
 
 The plugin is used on approximately 10% of Jenkins instances worldwide. The GitHub companion is also used by many projects to monitor code quality and provide feedback on pull requests.
+
 
 ## What does it take to maintain the project?
 
@@ -67,6 +75,8 @@ I was a Jenkins governance board member over the past two years. I participate i
 ## Have you taken part in any open source programs or events?
 
 The project has participated in Hacktoberfest and Google Summer of Code.
+
+<img height="50%" width="50%" alt="Photo_5" src="https://github.com/user-attachments/assets/d0d7f7fd-cc37-43be-8b78-a205ab6dbcc4" />
 
 ## What would you love to achieve by showcasing your project?
 
