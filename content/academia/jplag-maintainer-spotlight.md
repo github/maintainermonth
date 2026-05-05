@@ -5,6 +5,7 @@ department: KASTEL – Institute of Information Security and Dependability
 projectName: JPlag
 projectRepo: https://github.com/jplag/JPlag
 projectWebsite: https://helmholtz.software/software/jplag
+projectDemo: https://demo.jplag.de/
 maintainerProfiles:
   - github: https://github.com/tsaglam
   - orcid: https://orcid.org/0000-0001-5983-4032
@@ -16,7 +17,10 @@ description: "A powerful, open-source plagiarism detection tool for source code 
 
 JPlag is a powerful, open-source plagiarism detection tool for source code, designed for educational institutions. It detects structural similarities among sets of programs and can identify plagiarism even when the program code has been obfuscated. It presents the results in an interactive report which allows educators to detect and inspect suspiciously similar programs. However, the final decision of identifying plagiarism is left to instructors, given the ethical considerations involved in this task.
 
-JPlag supports more than 15 programming languages. The input code is processed entirely locally, ensuring GDPR–compliance.
+JPlag supports more than 15 programming languages. The input code is processed entirely locally, ensuring GDPR–compliance. [Demo available here](https://demo.jplag.de/)
+
+<img width="3024" height="1664" alt="Screenshot of JPlag Main View" src="https://github.com/user-attachments/assets/29f58583-9ff4-490a-b2b6-13a375ccb146" />
+
 
 ## What inspired you to start this project?
 
@@ -25,6 +29,9 @@ JPlag was originally developed in 1996 at Karlsruhe Institute of Technology to a
 ## How does this project connect to your academic work?
 
 It serves both as a research subject and as a practical tool used in teaching.
+
+<img width="3024" height="1664" alt="screenshot JPlag Code View" src="https://github.com/user-attachments/assets/a16a70cf-60a6-40a4-a2da-1b0c90feee80" />
+
 
 ## Who contributes to the project?
 
@@ -45,6 +52,9 @@ Students gain real-world open-source experience and develop stronger software en
 ## What impact has the project had beyond the classroom or research?
 
 JPlag is used in academic institutions around the world. We know of more than 300 universities that use it to uphold academic integrity in their courses. JPlag has more than 50,000 downloads, is widely cited in research publications and integrated into multiple educational platforms.
+
+<img width="3024" height="1664" alt="Screenshot JPlag Cluster View" src="https://github.com/user-attachments/assets/7a50b817-cdc0-48d7-9fc6-071b4ae6a66f" />
+
 
 ## What does it take to maintain the project?
 
