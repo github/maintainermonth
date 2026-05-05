@@ -14,6 +14,10 @@ description: "A coupling library and ecosystem for general partitioned multi-phy
 
 ## What is preCICE, and what does it help people do?
 
+
+<img width="50%" alt="precice-overview" src="https://github.com/user-attachments/assets/433f50c4-bdbc-47c2-9e38-30096150f4cb" />
+
+
 preCICE is a coupling library and ecosystem for general partitioned multi-physics and multi-scale simulations, including surface and volume coupling. "Partitioned" means that preCICE couples existing programs or solvers capable of simulating a subpart of the complete physics involved in a simulation.
 
 This approach provides the flexibility needed to maintain a reasonable time-to-solution for complex coupled problems. The software offers convenient methods for transient equation coupling, communication, and data mapping.
