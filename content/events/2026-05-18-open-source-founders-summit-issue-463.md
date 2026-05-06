@@ -9,7 +9,7 @@ date: 05/18
 type: conference
 language: English
 location: 'Paris, France'
-userName: Emily Omier
+userName: 05F5
 endDate: 05/19
 UTCStartTime: '07:00'
 UTCEndTime: '15:00'
