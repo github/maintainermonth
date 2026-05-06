@@ -6,8 +6,8 @@ metaDesc: >-
   but the forces shaping how organizations adopt and manage OSS are evolving.
   The 2...
 date: 05/07
-type: podcast
-language: Enblish
+type: stream
+language: English
 location: Virtual
 userName: OpenLogic + Open Source Initiative + Eclipse Foundation
 endDate: 05/07
