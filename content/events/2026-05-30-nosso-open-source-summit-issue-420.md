@@ -7,6 +7,7 @@ type: conference
 language: Portuguese
 location: Virtual
 userName: Cumbuca Dev
+userLink: 'https://github.com/cumbucadev'
 endDate: 05/30
 UTCStartTime: '12:30'
 UTCEndTime: '21:30'
