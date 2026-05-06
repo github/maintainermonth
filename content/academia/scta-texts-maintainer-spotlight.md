@@ -44,7 +44,7 @@ They submit their work through pull requests, which I review. They then revise b
 
 ## How is the project used in teaching or coursework?
 
-At Loyola, this is generally an extracurricular activity. I run a small "text lab" and take on a few students each year as fellows.
+At Loyola, this is generally an extracurricular activity. I run a small "text lab" — supported by our ["Center for Humanities"](https://www.loyola.edu/department/center-humanities/) — and take on a few students each year as fellows.
 
 We also collaborate with partner projects across multiple countries. These contributors, often graduate students or faculty, work on editions relevant to their research. GitHub allows us to coordinate this decentralized work and bring it together into a connected corpus.
 
@@ -86,7 +86,7 @@ Much of the engagement happens through direct interaction. I meet weekly with un
 
 ## Have you taken part in any open source programs or events?
 
-No.
+I regularly collaborate with several open-source standards groups. Most notably, I’ve collaborated with the International Image Interoperability Framework ([https://iiif.io/](https://iiif.io/)) to access digital images of medieval manuscripts via the IIIF API. Using this open standard we can connect texts with their manuscript images and allow users to read texts and images side-by-side.
 
 ## What would you love to achieve by showcasing your project?
 
