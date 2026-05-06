@@ -40,7 +40,7 @@ Students contribute independent code components, small features, test cases, exa
 
 ## How is the project used in teaching or coursework?
 
-It is often used as a basis for theses and is offered as an option in project-based courses. We also draw examples from it for our Research Software Engineering courses at the University of Stuttgart and at the Technical University of Munich. Using the software is part of a training course delivered at workshops.
+It is often used as a basis for theses and is offered as an option in project-based courses. We also draw examples from it for our Research Software Engineering courses [at the University of Stuttgart](https://simulation-software-engineering.github.io/) and [at the Technical University of Munich](https://doi.org/10.14279/eceasst.v83.2615). Using the software is part of a [training course](https://precice.org/community-training.html) delivered at workshops.
 
 ## What impact has this project had on your students?
 
@@ -54,7 +54,7 @@ Today, preCICE is being used, for example, at the AWI Institute of Glaciology in
 
 ## What does it take to maintain the project?
 
-The team consists mostly of seven doctoral candidates across collaborating groups at the University of Stuttgart and the Technical University of Munich. We are multiple maintainers, each overlooking different parts of the project. For example, Frédéric Simonis (@fsimonis) is maintaining the core library repository, while I am making sure that the ecosystem we build around this library works together as a whole.
+The [team](https://precice.org/about.html) consists mostly of seven doctoral candidates across collaborating groups at the University of Stuttgart and the Technical University of Munich.  We are multiple maintainers, each overlooking different parts of the project. For example, Frédéric Simonis ([@fsimonis](https://github.com/fsimonis)) is maintaining the core library repository, while I am making sure that the ecosystem we build around this library works together as a whole.
 
 Since before COVID-19, the team has been collaborating online on GitHub, communicating via Matrix/Gitter, and holding short weekly video calls. We have in-person team meetings three to four times per year for three days. The core library is released every six months, with additional components released independently.
 
@@ -74,9 +74,9 @@ We also attract student projects, organize user workshops, engage new users at c
 
 ## How do you engage with your community?
 
-We host an active community forum on Discourse, organize yearly week-long workshops, and maintain extensive documentation, contribution guidelines, and a code of conduct.
+We host an active community forum on Discourse, organize yearly week-long [workshops](https://precice.org/precice-workshop.html), and maintain extensive documentation, contribution guidelines, and a code of conduct.
 
-We are also working on defining guidelines and best practices for developing and publishing community codes based on FAIR principles, and we discuss these with the community in a structured way.
+We are also working on defining guidelines and best practices for developing and publishing community codes based on [FAIR principles](https://doi.org/10.1038/s41597-022-01710-x), and we discuss these with the community in a structured way.
 
 ## Have you taken part in any open source programs or events?
 
