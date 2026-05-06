@@ -12,7 +12,7 @@ badges: ["Academic Maintainer"]
 description: "An accessible, high-productivity compiler framework for experienced and new compiler developers, compatible with MLIR and used in academia and industry for teaching, research, and production compiler development."
 ---
 
-<img width="116" height="165" alt="xDSL_logo" src="https://github.com/user-attachments/assets/6823da38-196d-4f7a-9418-d11a194bd90f" />
+<img width="200" alt="xDSL_Logo_White" src="https://github.com/user-attachments/assets/5debd7ff-7378-4f6b-9b5f-65542ff11f27" />
 
 
 ## What is xDSL, and what does it help people do?
