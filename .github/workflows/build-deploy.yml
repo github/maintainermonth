@@ -1,4 +1,5 @@
 name: build-and-deploy
+# Triggers CodeQL Actions analysis (org policy)
 on:
   push:
     branches:
