@@ -8,7 +8,7 @@ metaDesc: >-
 date: 05/18
 type: conference
 language: English
-location: 'Denver, CO, USA'
+location: 'Minneapolis, MN, USA'
 userName: GitHub
 endDate: 05/20
 UTCStartTime: all-day
