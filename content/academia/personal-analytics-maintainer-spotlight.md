@@ -146,4 +146,4 @@ Looking back, if there's one thing I'd encourage other academics to do, it's to 
 
 Looking ahead, I'm particularly excited about integrating local LLMs to provide personalized, data-driven insights – helping users make sense of their own patterns without compromising privacy.
 
-<img width="40%" alt="photo of Andre" src="https://github.com/user-attachments/assets/2ba2a011-e507-443b-847b-80c0877c8a08" />
+<img width="40%" alt="Photo of André Meyer" src="https://github.com/user-attachments/assets/2ba2a011-e507-443b-847b-80c0877c8a08" />
