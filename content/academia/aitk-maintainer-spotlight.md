@@ -1,11 +1,12 @@
 ---
-name: Lisa Meeden
+name: Douglas Blank, Lisa Meeden
 institution: Swarthmore College
 department: Computer Science
 projectName: Artificial Intelligence Toolkit (AITK)
 projectRepo: https://github.com/ArtificialIntelligenceToolkit/aitk
 maintainerProfiles:
   - github: https://github.com/lmeeden1
+  - github: https://github.com/dsblank
 badges: ["Academic Maintainer", "Professor"]
 description: "An open-source toolkit combining Python libraries and Jupyter notebooks to help diverse audiences explore AI systems, visualise their outputs, and understand their ethical implications."
 ---
@@ -17,6 +18,9 @@ Artificial Intelligence Toolkit (AITK) is an open-source project that combines P
 Users can explore how these systems function in more depth, visualise their outputs, and develop a better understanding of their ethical implications.
 
 ## What inspired you to start this project?
+
+<img width="50%" alt="network" src="https://github.com/user-attachments/assets/296052a7-dd33-44e9-8a79-55639832b971" />
+
 
 The co-authors of this toolkit have spent over 30 years teaching AI at small liberal arts colleges and wanted better pedagogical tools to give students a concrete, hands-on experience.
 
@@ -56,9 +60,11 @@ The notebooks in AITK are used as lab work in Responsible AI courses, while the 
 
 In course evaluations, students frequently mention AITK labs as their favourite and most engaging part of the course. Some students have used AITK to complete independent projects.
 
+<img width="50%" alt="robots" src="https://github.com/user-attachments/assets/a147c76d-5956-4f40-9076-425de65d90a6" />
+
 ## What impact has the project had beyond the classroom or research?
 
-The project contributed to a paper entitled "AI Toolkit: Libraries and Essays for Exploring the Technology and Ethics of AI", which was published at the Educational Advances in AI conference in March 2025.
+The project contributed to a paper entitled "[AI Toolkit: Libraries and Essays for Exploring the Technology and Ethics of AI](https://www.cs.swarthmore.edu/~meeden/papers/meeden.eaai25.pdf)", which was published at the Educational Advances in AI conference in March 2025.
 
 ## What does it take to maintain the project?
 
