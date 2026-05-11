@@ -1,5 +1,5 @@
 ---
-name: Andre Meyer
+name: André Meyer
 institution: University of Zurich
 department: Department of Informatics
 projectName: PersonalAnalytics
@@ -20,6 +20,9 @@ PersonalAnalytics is an open-source, privacy-focused self-monitoring tool for kn
 Researchers use it as a ready-made foundation for field studies: rather than building data collection infrastructure from scratch, they can fork the project, add their own trackers or interventions, and run studies with real participants. Individuals can also use it simply to reflect on their own work habits.
 
 The project started as a tool for studying software developers, but has since expanded to knowledge workers more broadly – and is now evolving into a full research platform enabling privacy-conscious data donation and cross-study collaboration.
+
+<img width="50%" alt="personal-analytics screenshots" src="https://github.com/user-attachments/assets/d8ea70be-8841-469d-9d61-0acb784bedf7" />
+
 
 ## What inspired this project?
 
@@ -142,3 +145,5 @@ Finally, as a software engineering community, we need to take expectation manage
 Looking back, if there's one thing I'd encourage other academics to do, it's to open-source your research tools. The paper gets cited; the tool gets used, extended, and occasionally inspires work you never anticipated.
 
 Looking ahead, I'm particularly excited about integrating local LLMs to provide personalized, data-driven insights – helping users make sense of their own patterns without compromising privacy.
+
+<img width="40%" alt="photo of Andre" src="https://github.com/user-attachments/assets/2ba2a011-e507-443b-847b-80c0877c8a08" />
