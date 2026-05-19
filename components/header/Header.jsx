@@ -125,10 +125,10 @@ const Header = () => {
             </li>
             <li>
               <Link
-                href={ROUTES.LOVE_LETTERS.getPath(year)}
+                href={ROUTES.LOVE_LETTERS.path}
                 aria-label="Love Letters"
                 className={clsx('header__link', {
-                  ['is-active']: pathname === ROUTES.LOVE_LETTERS.getPath(year),
+                  ['is-active']: pathname === ROUTES.LOVE_LETTERS.path,
                 })}
               >
                 <Heart />
