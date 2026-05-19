@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useMemo } from 'react'
 import md from 'markdown-it'
 
