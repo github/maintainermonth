@@ -11,6 +11,7 @@ import GitHubLogo from '../../public/icons/github-logo'
 import IconCalendar from '../../public/icons/calendar'
 import IconBooks from '../../public/icons/books'
 import BoxGift from '../../public/icons/box-gift'
+import Heart from '../../public/icons/heart'
 import Rocket from '../../public/icons/rocket'
 import { BREAKPOINTS } from '../../common/constants'
 
@@ -119,6 +120,20 @@ const Header = () => {
                 <BoxGift />
                 <span className="header__link-text">
                   {getLiteral('navigation:partner-pack')}
+                </span>
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={ROUTES.LOVE_LETTERS.path}
+                aria-label="Love Letters"
+                className={clsx('header__link', {
+                  ['is-active']: pathname === ROUTES.LOVE_LETTERS.path,
+                })}
+              >
+                <Heart />
+                <span className="header__link-text">
+                  Love Letters
                 </span>
               </Link>
             </li>

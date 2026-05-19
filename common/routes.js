@@ -34,4 +34,6 @@ export const SHIPS = makePath('/ships')
 
 export const PARTNER_PACK = makePath('/partner-pack')
 
+export const LOVE_LETTERS = makePath('/love-letters')
+
 export const SECURITY_CHALLENGE = makePath('/security-challenge')
