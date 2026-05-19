@@ -1,0 +1,89 @@
+.postcards {
+  padding: spacing(7) spacing(2);
+  padding-bottom: spacing(4);
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: $lg) {
+    padding-left: spacing(4);
+    padding-right: spacing(4);
+  }
+
+  &__intro {
+    margin-bottom: spacing(5);
+    max-width: 640px;
+  }
+
+  &__heading {
+    @extend %header-2;
+    color: $white;
+    margin-bottom: spacing(2);
+    overflow-wrap: break-word;
+  }
+
+  &__subtitle {
+    @extend %body-1;
+    color: $white-50;
+  }
+
+  &__empty {
+    text-align: center;
+    padding: spacing(8) spacing(2);
+    @extend %body-1;
+    color: $white-50;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: spacing(3);
+
+    @media (min-width: $md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: $lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__card {
+    background: $white-20;
+    border-radius: 12px;
+    overflow: hidden;
+
+    @extend %background-filter;
+  }
+
+  &__image-wrapper {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__quote {
+    padding: spacing(3);
+    @extend %body-1;
+    color: $white-80;
+    font-style: italic;
+    margin: 0;
+
+    a {
+      color: $white;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: opacity $simple-fade;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
