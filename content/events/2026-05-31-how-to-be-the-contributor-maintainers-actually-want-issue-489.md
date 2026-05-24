@@ -13,8 +13,8 @@ type: talk
 language: English
 location: Virtual
 userName: Ayushman Bhattacharya
-userLink: 'https://gdg.community.dev/gdg-on-campus-jis-university-kolkata-india/'
-linkUrl: 'https://gdg.community.dev/gdg-on-campus-jis-university-kolkata-india/'
+userLink: 'https://github.com/Circuit-Overtime'
+linkUrl: 'https://gdg.community.dev/e/mnntys/'
 ---
 
 **The pitch:** Every student wants to "contribute to open source." Almost nobody thinks about what it looks like from the other side of the PR. I'm a maintainer at [pollinations.ai](https://github.com/pollinations/pollinations) — a free, open generative AI platform — and in this 30-minute talk I'll show what 30 seconds of contributor effort can save a maintainer 30 minutes of work, with concrete examples from our repo.
