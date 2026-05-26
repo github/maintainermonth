@@ -1,10 +1,7 @@
 ---
 title: 'OSPO Alliance OnRamp - Topic: Setting up an institutional OSPO'
 metaTitle: 'OSPO Alliance OnRamp - Topic: Setting up an institutional OSPO'
-metaDesc: >-
-  Lucie Albaret, Librarian, Guillaume Comparato PhD at [Université Grenoble
-  Alpes] and Violaine Louvet, Research Engineer at the [CNRS’s Jean Kuntzmann
-  Laborat...
+metaDesc: 'Lessons from setting up an OSPO at Université Grenoble Alpes: origins, activities, and challenges of supporting open source research software.'
 date: 05/29
 type: talk
 language: English
