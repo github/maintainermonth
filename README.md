@@ -1,4 +1,4 @@
-# Maintainer Month
+simats# Maintainer Month
 
 A month for open source maintainers to gather, share, and be celebrated. 🥳
 
