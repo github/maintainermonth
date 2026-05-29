@@ -65,13 +65,7 @@ const Offers = ({ partnerOffers, additionalSections }) => {
   return (
     <div>
       <h2>Offers</h2>
-      <div className="offers-grid-container">
-        <div className="offers-grid">
-          {publicOffers.map((offer, index) => (
-            <OfferCard key={index} offer={offer} />
-          ))}
-        </div>
-      </div>
+      <p>Thank you for your interest! Maintainer Month 2026 has concluded. Please check back next year for new partner offers and opportunities.</p>
       
       <h2>{wantMoreTitle}</h2>
       <p dangerouslySetInnerHTML={{ __html: wantMoreContent }}></p>

@@ -1,4 +1,4 @@
 ---
 anchorNavSection: 'Schedule'
-title: 'Upcoming events 2026'
+title: 'Maintainer Month 2026 has concluded'
 ---

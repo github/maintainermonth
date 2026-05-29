@@ -45,8 +45,6 @@ const Hero = ({ date, title, buttonText, buttonLink }) => {
 
           <div className="hero__buttons">
             <ButtonLink href={buttonLink}>{buttonText}</ButtonLink>
-
-            <ButtonLink href={ROUTES.PARTNER_PACK.path}>Get the partner pack</ButtonLink>
           </div>
         </div>
       </div>

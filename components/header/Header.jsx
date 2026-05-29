@@ -123,20 +123,6 @@ const Header = () => {
                 </span>
               </Link>
             </li>
-            <li>
-              <Link
-                href={ROUTES.LOVE_LETTERS.path}
-                aria-label="Love Letters"
-                className={clsx('header__link', {
-                  ['is-active']: pathname === ROUTES.LOVE_LETTERS.path,
-                })}
-              >
-                <Heart />
-                <span className="header__link-text">
-                  Love Letters
-                </span>
-              </Link>
-            </li>
           </ul>
         </nav>
       </div>
