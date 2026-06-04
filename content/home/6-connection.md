@@ -1,5 +1,5 @@
 ---
 anchorNavSection: 'Connection'
-title: 'We have a full month of activities'
+title: 'We had an incredible month of activities'
 buttonText: 'Schedule'
 ---
