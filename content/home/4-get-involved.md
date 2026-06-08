@@ -35,4 +35,4 @@ maintainersTitle: "Calling maintainers!"
 partnersTitle: "Interested in Partnering?"
 ---
 
-Maintainer Month is an open source project — anyone can jump in and contribute! Whether you're a maintainer, an organization, or a fan or open source, you're invited to participate! Here are a few ways you can jump in:
+Maintainer Month is an open source project — anyone can jump in and contribute! Whether you're a maintainer, an organization, or a fan of open source, you're invited to participate! Here are a few ways you can jump in:
