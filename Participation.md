@@ -17,7 +17,7 @@ Last year we focused on burnout, a serious issue maintainers frequently face. Th
 Maintainers keep the software ecosystem running, but they’re humans, not machines. Do you know who the maintainers you rely on are? Do you know what kind of support those individuals actually need? Ask what you can do for them, and be ready to listen.
 
 ## How To Get Involved
-Maintainer Month is an open source project — anyone can jump in and contribute! Whether you're a maintainer, an organization, or a fan or open source, you're invited to participate! Here are a few ways you can jump in:
+Maintainer Month is an open source project — anyone can jump in and contribute! Whether you're a maintainer, an organization, or a fan of open source, you're invited to participate! Here are a few ways you can jump in:
 
 ### **For Maintainers:**
 - Share your story
