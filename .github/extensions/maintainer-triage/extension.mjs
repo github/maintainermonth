@@ -3,9 +3,23 @@ import { execSync } from "node:child_process";
 import { joinSession, createCanvas, CanvasError } from "@github/copilot-sdk/extension";
 
 const REPO = "github/maintainermonth";
+const STALE_DAYS = 7;
+const AGING_DAYS = 3;
+const MERGED_WINDOW_DAYS = 14;
 
 function ghExec(args) {
     return JSON.parse(execSync(`gh ${args} --repo ${REPO}`, { encoding: "utf8", timeout: 15000 }));
+}
+
+function daysSince(iso) {
+    return (Date.now() - new Date(iso).getTime()) / 86400000;
+}
+
+function stalenessClass(updatedAt) {
+    const age = daysSince(updatedAt);
+    if (age > STALE_DAYS) return "stale";
+    if (age > AGING_DAYS) return "aging";
+    return "fresh";
 }
 
 function fetchRepoData() {
@@ -15,7 +29,39 @@ function fetchRepoData() {
     const prs = ghExec(
         `pr list --state open --limit 30 --json number,title,labels,author,createdAt,updatedAt,reviewDecision,reviewRequests,changedFiles,additions,deletions,isDraft,assignees`
     );
-    return { issues, prs, fetchedAt: new Date().toISOString() };
+    // Merged PRs from the last MERGED_WINDOW_DAYS days
+    const since = new Date(Date.now() - MERGED_WINDOW_DAYS * 86400000).toISOString().slice(0, 10);
+    const merged = ghExec(
+        `pr list --state merged --search "merged:>${since}" --limit 20 --json number,title,author,mergedAt,labels,changedFiles,additions,deletions`
+    );
+
+    // Sort: needs-attention items first (no reviewer for PRs, no assignee for issues)
+    issues.sort((a, b) => {
+        const aNeedsAttention = a.assignees.length === 0 ? 0 : 1;
+        const bNeedsAttention = b.assignees.length === 0 ? 0 : 1;
+        return aNeedsAttention - bNeedsAttention;
+    });
+    prs.sort((a, b) => {
+        const aNeedsReview = !a.isDraft && !a.reviewDecision && a.reviewRequests.length === 0 ? 0 : 1;
+        const bNeedsReview = !b.isDraft && !b.reviewDecision && b.reviewRequests.length === 0 ? 0 : 1;
+        return aNeedsReview - bNeedsReview;
+    });
+
+    const staleIssues = issues.filter((i) => daysSince(i.updatedAt) > STALE_DAYS).length;
+    const stalePrs = prs.filter((p) => daysSince(p.updatedAt) > STALE_DAYS).length;
+
+    return {
+        issues,
+        prs,
+        merged,
+        stats: {
+            openIssues: issues.length,
+            openPrs: prs.length,
+            stale: staleIssues + stalePrs,
+            mergedRecently: merged.length,
+        },
+        fetchedAt: new Date().toISOString(),
+    };
 }
 
 // SSE clients per instance so /api/refresh can push updates to the iframe.
@@ -58,22 +104,39 @@ function reviewBadge(pr) {
     return `<span class="badge no-review">No reviewers</span>`;
 }
 
+function attentionFlag(item, type) {
+    if (type === "issue") {
+        if (item.assignees.length === 0) return `<span class="badge no-review">Unassigned</span>`;
+        const hasNeedsInfo = (item.labels || []).some((l) => l.name === "needs-info");
+        if (hasNeedsInfo) return `<span class="badge changes">Needs info</span>`;
+    }
+    if (type === "pr") {
+        if (!item.isDraft && !item.reviewDecision && item.reviewRequests.length === 0) {
+            return `<span class="badge no-review">No reviewers</span>`;
+        }
+    }
+    return "";
+}
+
 function issueCard(issue) {
     const labels = (issue.labels || []).map(labelChip).join(" ");
     const commentCount = Array.isArray(issue.comments) ? issue.comments.length : 0;
-    const assigned = (issue.assignees || []).map((a) => escHtml(a.login)).join(", ") || "—";
+    const assigned = (issue.assignees || []).map((a) => escHtml(a.login)).join(", ");
+    const staleness = stalenessClass(issue.updatedAt);
+    const attention = attentionFlag(issue, "issue");
     return `
 <a class="card-link" href="https://github.com/${REPO}/issues/${issue.number}" target="_blank">
-  <div class="card">
+  <div class="card card--${staleness}">
     <div class="card-meta">
       <span class="item-number">#${issue.number}</span>
+      ${attention}
       <span class="labels">${labels}</span>
     </div>
     <div class="card-title">${escHtml(issue.title)}</div>
     <div class="card-footer">
       <span class="avatar-chip">${escHtml(issue.author.login)}</span>
       ${commentCount > 0 ? `<span class="meta-pill">💬 ${commentCount}</span>` : ""}
-      <span class="meta-pill">Assigned: ${assigned}</span>
+      ${assigned ? `<span class="meta-pill">→ ${assigned}</span>` : ""}
       <span class="meta-pill age" data-ts="${escHtml(issue.updatedAt)}"></span>
     </div>
   </div>
@@ -83,12 +146,14 @@ function issueCard(issue) {
 function prCard(pr) {
     const labels = (pr.labels || []).map(labelChip).join(" ");
     const diffSign = `<span class="add">+${pr.additions}</span> <span class="del">-${pr.deletions}</span>`;
+    const staleness = stalenessClass(pr.updatedAt);
+    const attention = attentionFlag(pr, "pr");
     return `
 <a class="card-link" href="https://github.com/${REPO}/pull/${pr.number}" target="_blank">
-  <div class="card">
+  <div class="card card--${staleness}">
     <div class="card-meta">
       <span class="item-number">#${pr.number}</span>
-      ${reviewBadge(pr)}
+      ${attention || reviewBadge(pr)}
       <span class="labels">${labels}</span>
     </div>
     <div class="card-title">${escHtml(pr.title)}</div>
@@ -101,13 +166,40 @@ function prCard(pr) {
 </a>`;
 }
 
+function mergedCard(pr) {
+    const diffSign = `<span class="add">+${pr.additions}</span> <span class="del">-${pr.deletions}</span>`;
+    return `
+<a class="card-link" href="https://github.com/${REPO}/pull/${pr.number}" target="_blank">
+  <div class="card card--merged">
+    <div class="card-meta">
+      <span class="item-number">#${pr.number}</span>
+      <span class="badge merged">Merged</span>
+    </div>
+    <div class="card-title">${escHtml(pr.title)}</div>
+    <div class="card-footer">
+      <span class="avatar-chip">${escHtml(pr.author.login)}</span>
+      <span class="meta-pill">${diffSign} · ${pr.changedFiles} file${pr.changedFiles !== 1 ? "s" : ""}</span>
+      <span class="meta-pill age" data-ts="${escHtml(pr.mergedAt)}"></span>
+    </div>
+  </div>
+</a>`;
+}
+
+function statPill(value, label, urgent) {
+    return `<span class="stat-pill${urgent ? " stat-pill--urgent" : ""}"><strong>${value}</strong> ${label}</span>`;
+}
+
 function renderHtml(data) {
+    const { stats } = data;
     const issueCards = data.issues.length
         ? data.issues.map(issueCard).join("")
         : `<p class="empty">No open issues.</p>`;
     const prCards = data.prs.length
         ? data.prs.map(prCard).join("")
         : `<p class="empty">No open pull requests.</p>`;
+    const mergedCards = data.merged.length
+        ? data.merged.map(mergedCard).join("")
+        : `<p class="empty">Nothing merged in the last ${MERGED_WINDOW_DAYS} days.</p>`;
 
     return `<!doctype html>
 <html>
@@ -123,14 +215,13 @@ function renderHtml(data) {
     font-family: var(--font-sans, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
     font-size: var(--text-body-medium, 14px);
     line-height: var(--leading-body-medium, 20px);
-    padding: 0;
   }
 
   header {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 12px 16px;
+    padding: 10px 16px;
     border-bottom: 1px solid var(--border-color-default, #d0d7de);
     background: var(--background-color-default, #ffffff);
     position: sticky;
@@ -139,25 +230,19 @@ function renderHtml(data) {
   }
 
   header h1 {
-    font-size: var(--text-body-medium, 14px);
+    font-size: 13px;
     font-weight: var(--font-weight-semibold, 600);
     flex: 1;
     color: var(--text-color-default, #1f2328);
   }
 
-  header h1 span {
-    font-weight: 400;
-    color: var(--text-color-muted, #636c76);
-  }
+  header h1 span { font-weight: 400; color: var(--text-color-muted, #636c76); }
 
-  #last-updated {
-    font-size: 12px;
-    color: var(--text-color-muted, #636c76);
-  }
+  #last-updated { font-size: 11px; color: var(--text-color-muted, #636c76); }
 
   button#refresh-btn {
-    padding: 4px 10px;
-    font-size: 12px;
+    padding: 3px 9px;
+    font-size: 11px;
     font-family: inherit;
     cursor: pointer;
     border: 1px solid var(--border-color-default, #d0d7de);
@@ -165,35 +250,48 @@ function renderHtml(data) {
     background: var(--background-color-default, #ffffff);
     color: var(--text-color-default, #1f2328);
   }
+  button#refresh-btn:hover { background: var(--background-color-subtle, #f6f8fa); }
+  button#refresh-btn:disabled { opacity: 0.5; cursor: default; }
 
-  button#refresh-btn:hover {
+  /* Stats bar */
+  .stats-bar {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    padding: 8px 16px;
+    border-bottom: 1px solid var(--border-color-default, #d0d7de);
     background: var(--background-color-subtle, #f6f8fa);
   }
 
-  button#refresh-btn:disabled {
-    opacity: 0.5;
-    cursor: default;
+  .stat-pill {
+    font-size: 11px;
+    color: var(--text-color-muted, #636c76);
+    background: var(--background-color-default, #ffffff);
+    border: 1px solid var(--border-color-default, #d0d7de);
+    border-radius: 12px;
+    padding: 2px 8px;
   }
+  .stat-pill strong { color: var(--text-color-default, #1f2328); }
+  .stat-pill--urgent { border-color: #cf222e; }
+  .stat-pill--urgent strong { color: #cf222e; }
 
+  /* Layout */
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0;
-    min-height: calc(100vh - 45px);
   }
 
   .column {
-    padding: 12px 16px;
+    padding: 12px 14px;
     border-right: 1px solid var(--border-color-default, #d0d7de);
   }
-
   .column:last-child { border-right: none; }
 
   .column-header {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: var(--font-weight-semibold, 600);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
     color: var(--text-color-muted, #636c76);
     margin-bottom: 10px;
     display: flex;
@@ -216,111 +314,111 @@ function renderHtml(data) {
     color: var(--text-color-default, #1f2328);
   }
 
-  .card-link {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    margin-bottom: 8px;
-  }
+  /* Cards */
+  .card-link { text-decoration: none; color: inherit; display: block; margin-bottom: 7px; }
 
   .card {
     border: 1px solid var(--border-color-default, #d0d7de);
     border-radius: 6px;
-    padding: 10px 12px;
+    padding: 9px 11px 9px 14px;
     background: var(--background-color-default, #ffffff);
-    transition: border-color 0.15s;
+    border-left-width: 3px;
+    border-left-color: transparent;
+    transition: border-color 0.12s;
   }
 
-  .card-link:hover .card {
-    border-color: var(--color-accent-fg, #0969da);
-  }
+  .card-link:hover .card { border-color: var(--color-accent-fg, #0969da); }
+
+  /* Staleness border */
+  .card--fresh  { border-left-color: transparent; }
+  .card--aging  { border-left-color: #d4a72c; }
+  .card--stale  { border-left-color: #cf222e; }
+  .card--merged { border-left-color: #8250df; opacity: 0.75; }
 
   .card-meta {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 5px;
-    margin-bottom: 4px;
+    gap: 4px;
+    margin-bottom: 3px;
   }
 
-  .item-number {
-    font-size: 12px;
-    color: var(--text-color-muted, #636c76);
-    font-weight: var(--font-weight-semibold, 600);
-    flex-shrink: 0;
-  }
-
+  .item-number { font-size: 11px; color: var(--text-color-muted, #636c76); font-weight: 600; flex-shrink: 0; }
   .labels { display: flex; flex-wrap: wrap; gap: 3px; }
 
   .label-chip {
     display: inline-block;
     padding: 1px 6px;
     border-radius: 12px;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 500;
     line-height: 18px;
     white-space: nowrap;
   }
 
   .card-title {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: var(--font-weight-semibold, 600);
     color: var(--text-color-default, #1f2328);
-    margin-bottom: 6px;
+    margin-bottom: 5px;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
 
-  .card-footer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 5px;
-  }
+  .card-footer { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; }
 
-  .avatar-chip {
-    font-size: 11px;
-    font-weight: 500;
-    color: var(--text-color-muted, #636c76);
-  }
+  .avatar-chip { font-size: 11px; font-weight: 500; color: var(--text-color-muted, #636c76); }
 
-  .meta-pill {
-    font-size: 11px;
-    color: var(--text-color-muted, #636c76);
-  }
-
-  .meta-pill:not(:first-child)::before {
-    content: "·";
-    margin-right: 5px;
-    color: var(--border-color-default, #d0d7de);
-  }
+  .meta-pill { font-size: 11px; color: var(--text-color-muted, #636c76); }
+  .meta-pill:not(:first-child)::before { content: "·"; margin-right: 4px; color: var(--border-color-default, #d0d7de); }
 
   .add { color: #1a7f37; font-weight: 500; }
   .del { color: #cf222e; font-weight: 500; }
 
   .badge {
     display: inline-block;
-    padding: 1px 7px;
+    padding: 1px 6px;
     border-radius: 12px;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 500;
     line-height: 18px;
     white-space: nowrap;
   }
 
-  .badge.approved    { background: #dafbe1; color: #1a7f37; }
-  .badge.changes     { background: #fff0b3; color: #9a6700; }
-  .badge.pending     { background: #ddf4ff; color: #0969da; }
-  .badge.draft       { background: var(--background-color-subtle, #f6f8fa); color: var(--text-color-muted, #636c76); border: 1px solid var(--border-color-default, #d0d7de); }
-  .badge.no-review   { background: var(--background-color-subtle, #f6f8fa); color: var(--text-color-muted, #636c76); border: 1px solid var(--border-color-default, #d0d7de); }
+  .badge.approved  { background: #dafbe1; color: #1a7f37; }
+  .badge.changes   { background: #fff0b3; color: #9a6700; }
+  .badge.pending   { background: #ddf4ff; color: #0969da; }
+  .badge.merged    { background: #fbefff; color: #8250df; }
+  .badge.draft     { background: var(--background-color-subtle, #f6f8fa); color: var(--text-color-muted, #636c76); border: 1px solid var(--border-color-default, #d0d7de); }
+  .badge.no-review { background: #fff8c5; color: #9a6700; }
 
-  .empty {
-    color: var(--text-color-muted, #636c76);
-    font-size: 13px;
-    padding: 8px 0;
+  /* Recently merged section */
+  .merged-section {
+    border-top: 1px solid var(--border-color-default, #d0d7de);
+    padding: 12px 14px;
   }
+
+  .merged-section .column-header { margin-bottom: 10px; }
+
+  .empty { color: var(--text-color-muted, #636c76); font-size: 12px; padding: 6px 0; }
+
+  /* Staleness legend */
+  .legend {
+    display: flex;
+    gap: 10px;
+    padding: 6px 16px;
+    border-bottom: 1px solid var(--border-color-default, #d0d7de);
+    background: var(--background-color-subtle, #f6f8fa);
+  }
+  .legend-item { display: flex; align-items: center; gap: 5px; font-size: 11px; color: var(--text-color-muted, #636c76); }
+  .legend-dot {
+    width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+  }
+  .legend-dot--fresh  { background: var(--border-color-default, #d0d7de); }
+  .legend-dot--aging  { background: #d4a72c; }
+  .legend-dot--stale  { background: #cf222e; }
 </style>
 </head>
 <body>
@@ -329,20 +427,38 @@ function renderHtml(data) {
   <span id="last-updated"></span>
   <button id="refresh-btn">↻ Refresh</button>
 </header>
+
+<div class="stats-bar">
+  ${statPill(stats.openIssues, "open issue" + (stats.openIssues !== 1 ? "s" : ""), false)}
+  ${statPill(stats.openPrs, "open PR" + (stats.openPrs !== 1 ? "s" : ""), false)}
+  ${statPill(stats.stale, "stale", stats.stale > 0)}
+  ${statPill(stats.mergedRecently, `merged (${MERGED_WINDOW_DAYS}d)`, false)}
+</div>
+
+<div class="legend">
+  <span class="legend-item"><span class="legend-dot legend-dot--fresh"></span>fresh (&lt;${AGING_DAYS}d)</span>
+  <span class="legend-item"><span class="legend-dot legend-dot--aging"></span>aging (${AGING_DAYS}–${STALE_DAYS}d)</span>
+  <span class="legend-item"><span class="legend-dot legend-dot--stale"></span>stale (&gt;${STALE_DAYS}d)</span>
+</div>
+
 <div class="grid">
-  <div class="column" id="issues-col">
-    <div class="column-header">
-      Issues <span class="count-badge" id="issue-count">${data.issues.length}</span>
-    </div>
-    <div id="issues-list">${issueCards}</div>
+  <div class="column">
+    <div class="column-header">Issues <span class="count-badge">${data.issues.length}</span></div>
+    ${issueCards}
   </div>
-  <div class="column" id="prs-col">
-    <div class="column-header">
-      Pull Requests <span class="count-badge" id="pr-count">${data.prs.length}</span>
-    </div>
-    <div id="prs-list">${prCards}</div>
+  <div class="column">
+    <div class="column-header">Pull Requests <span class="count-badge">${data.prs.length}</span></div>
+    ${prCards}
   </div>
 </div>
+
+<div class="merged-section">
+  <div class="column-header">Merged last ${MERGED_WINDOW_DAYS} days <span class="count-badge">${data.merged.length}</span></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 14px;">
+    ${mergedCards}
+  </div>
+</div>
+
 <script>
   const FETCHED_AT = ${JSON.stringify(data.fetchedAt)};
 
@@ -372,17 +488,14 @@ function renderHtml(data) {
   updateLastUpdated();
   setInterval(() => { updateAges(); updateLastUpdated(); }, 30000);
 
-  // Refresh button
   const btn = document.getElementById("refresh-btn");
   btn.addEventListener("click", async () => {
     btn.disabled = true;
     btn.textContent = "…";
     await fetch("/api/refresh", { method: "POST" });
-    // SSE will push a reload event; if SSE is down, reload the page.
     setTimeout(() => { if (btn.disabled) window.location.reload(); }, 3000);
   });
 
-  // SSE for live updates pushed by the agent's refresh action or the button.
   const es = new EventSource("/events");
   es.onmessage = (e) => {
     const msg = JSON.parse(e.data);
