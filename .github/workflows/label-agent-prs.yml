@@ -31,7 +31,11 @@ jobs:
                 name: labelName,
               });
             } catch (error) {
-              if (error.status === 404) {
+              if (error.status !== 404) {
+                throw error;
+              }
+
+              try {
                 await github.rest.issues.createLabel({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
@@ -39,8 +43,11 @@ jobs:
                   color: labelColor,
                   description: labelDescription,
                 });
-              } else {
-                throw error;
+              } catch (createError) {
+                // Label may have been created by another concurrent run.
+                if (createError.status !== 422) {
+                  throw createError;
+                }
               }
             }
 
