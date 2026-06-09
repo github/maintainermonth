@@ -533,8 +533,9 @@ async function startServer(instanceId) {
                 res.setHeader("Content-Type", "application/json");
                 res.end(JSON.stringify({ ok: true, fetchedAt: cached.fetchedAt }));
             } catch (err) {
+                console.error("Failed to refresh repo data:", err);
                 res.statusCode = 500;
-                res.end(JSON.stringify({ ok: false, error: String(err) }));
+                res.end(JSON.stringify({ ok: false, error: "Internal server error" }));
             }
             return;
         }
