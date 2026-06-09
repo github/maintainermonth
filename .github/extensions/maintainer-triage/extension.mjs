@@ -18,7 +18,7 @@ function daysSince(iso) {
 function stalenessClass(updatedAt) {
     const age = daysSince(updatedAt);
     if (age > STALE_DAYS) return "stale";
-    if (age > AGING_DAYS) return "aging";
+    if (age >= AGING_DAYS) return "aging";
     return "fresh";
 }
 
@@ -71,7 +71,27 @@ function broadcast(instanceId, payload) {
     const clients = sseClients.get(instanceId);
     if (!clients) return;
     const line = `data: ${JSON.stringify(payload)}\n\n`;
-    for (const res of clients) res.write(line);
+    for (const res of clients) {
+        if (res.destroyed || res.writableEnded) {
+            clients.delete(res);
+            continue;
+        }
+        try {
+            res.write(line);
+        } catch {
+            clients.delete(res);
+        }
+    }
+}
+
+function closeSseClients(instanceId) {
+    const clients = sseClients.get(instanceId);
+    if (!clients) return;
+    for (const res of clients) {
+        if (!res.destroyed) res.destroy();
+    }
+    clients.clear();
+    sseClients.delete(instanceId);
 }
 
 function labelChip(label) {
@@ -120,12 +140,16 @@ function attentionFlag(item, type) {
 
 function issueCard(issue) {
     const labels = (issue.labels || []).map(labelChip).join(" ");
-    const commentCount = Array.isArray(issue.comments) ? issue.comments.length : 0;
+    const commentCount = typeof issue.comments === "number"
+        ? issue.comments
+        : Array.isArray(issue.comments)
+            ? issue.comments.length
+            : 0;
     const assigned = (issue.assignees || []).map((a) => escHtml(a.login)).join(", ");
     const staleness = stalenessClass(issue.updatedAt);
     const attention = attentionFlag(issue, "issue");
     return `
-<a class="card-link" href="https://github.com/${REPO}/issues/${issue.number}" target="_blank">
+<a class="card-link" href="https://github.com/${REPO}/issues/${issue.number}" target="_blank" rel="noopener noreferrer">
   <div class="card card--${staleness}">
     <div class="card-meta">
       <span class="item-number">#${issue.number}</span>
@@ -149,7 +173,7 @@ function prCard(pr) {
     const staleness = stalenessClass(pr.updatedAt);
     const attention = attentionFlag(pr, "pr");
     return `
-<a class="card-link" href="https://github.com/${REPO}/pull/${pr.number}" target="_blank">
+<a class="card-link" href="https://github.com/${REPO}/pull/${pr.number}" target="_blank" rel="noopener noreferrer">
   <div class="card card--${staleness}">
     <div class="card-meta">
       <span class="item-number">#${pr.number}</span>
@@ -169,7 +193,7 @@ function prCard(pr) {
 function mergedCard(pr) {
     const diffSign = `<span class="add">+${pr.additions}</span> <span class="del">-${pr.deletions}</span>`;
     return `
-<a class="card-link" href="https://github.com/${REPO}/pull/${pr.number}" target="_blank">
+<a class="card-link" href="https://github.com/${REPO}/pull/${pr.number}" target="_blank" rel="noopener noreferrer">
   <div class="card card--merged">
     <div class="card-meta">
       <span class="item-number">#${pr.number}</span>
@@ -187,6 +211,16 @@ function mergedCard(pr) {
 
 function statPill(value, label, urgent) {
     return `<span class="stat-pill${urgent ? " stat-pill--urgent" : ""}"><strong>${value}</strong> ${label}</span>`;
+}
+
+function refreshSummary(data) {
+    return {
+        issues: data.issues.length,
+        prs: data.prs.length,
+        merged: data.merged.length,
+        stale: data.stats.stale,
+        fetchedAt: data.fetchedAt,
+    };
 }
 
 function renderHtml(data) {
@@ -531,10 +565,11 @@ async function startServer(instanceId) {
                 cached = fetchRepoData();
                 broadcast(instanceId, { type: "reload" });
                 res.setHeader("Content-Type", "application/json");
-                res.end(JSON.stringify({ ok: true, fetchedAt: cached.fetchedAt }));
+                res.end(JSON.stringify({ ok: true, ...refreshSummary(cached) }));
             } catch (err) {
                 console.error("Failed to refresh repo data:", err);
                 res.statusCode = 500;
+                res.setHeader("Content-Type", "application/json");
                 res.end(JSON.stringify({ ok: false, error: "Internal server error" }));
             }
             return;
@@ -564,13 +599,10 @@ await joinSession({
                     handler: async (ctx) => {
                         const entry = servers.get(ctx.instanceId);
                         if (!entry) throw new CanvasError("not_open", "Canvas is not open.");
-                        const data = fetchRepoData();
-                        broadcast(ctx.instanceId, { type: "reload" });
-                        return {
-                            issues: data.issues.length,
-                            prs: data.prs.length,
-                            fetchedAt: data.fetchedAt,
-                        };
+                        const response = await fetch(new URL("/api/refresh", entry.url), { method: "POST" });
+                        const result = await response.json();
+                        if (!response.ok) throw new CanvasError("refresh_failed", result.error || "Refresh failed.");
+                        return result;
                     },
                 },
             ],
@@ -586,7 +618,7 @@ await joinSession({
                 const entry = servers.get(ctx.instanceId);
                 if (entry) {
                     servers.delete(ctx.instanceId);
-                    sseClients.delete(ctx.instanceId);
+                    closeSseClients(ctx.instanceId);
                     await new Promise((resolve) => entry.server.close(() => resolve()));
                 }
             },
