@@ -2,7 +2,7 @@
 name: Daniel Price
 institution: Monash University
 department: School of Physics and Astronomy
-projectName: phantom
+projectName: Phantom
 projectRepo: https://github.com/danieljprice/phantom
 projectWebsite: https://phantomsph.github.io/
 maintainerProfiles:
