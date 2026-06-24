@@ -112,13 +112,6 @@ Yes, AI has started to change our maintenance workflows. It helps us improve doc
 
 Yes. We have used GitHub Copilot to support pull request reviews, for example by helping to spot possible issues, improve readability, and support the review process. More recently, we have started using Codex to bring code development, evaluation, and optimization to a new level. This is particularly interesting for an HPC code like MPTRAC, where code quality, numerical correctness, and performance are all critical.
 
-## Have you explored GitHub Agentic Workflows? What has your experience been?
-
-We have only started exploring more agentic workflows recently, mainly through our use of Codex for code development, evaluation, and optimization. Our experience so far is promising. These workflows can help accelerate development and support more systematic evaluation of code changes, but they still require close human supervision.
-
-## If you use GitHub Agentic Workflows, do you prefer to create, debug, and modify them through an agent, or by manually editing the markdown file?
-
-At this stage, we are still experimenting and do not yet have a strong preference. For complex workflows, we still value the transparency and control of manual editing, but agent-assisted creation and debugging can be very helpful for speeding up iteration and identifying issues.
 
 ## How do you see your contributors using AI when working on your project?
 
