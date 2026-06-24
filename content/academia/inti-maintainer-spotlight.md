@@ -1,6 +1,6 @@
 ---
 name: Flavio Lozano-Isla
-institution: Universidad Nacional Toribio Rodriguez de Mendoza
+institution: Universidad Nacional Toribio Rodriguez de Mendozas (UNTRM)
 department: Agronomy Faculty
 projectName: "inti: Tools and Statistical Procedures in Plant Science"
 projectRepo: https://github.com/Flavjack/inti
@@ -9,13 +9,19 @@ maintainerProfiles:
   - github: https://github.com/Flavjack
   - orcid: https://orcid.org/0000-0002-0714-669X
   - linkedin: https://www.linkedin.com/in/flozanoisla/
-badges: ["Academic Maintainer", "Assistant Professor"]
+badges: ["Academic Maintainer", "Professor"]
 description: "An R package providing tools and statistical procedures for plant science and experimental design, supporting researchers from experimental planning through data analysis and technical writing."
 ---
+
+<img width="50%" alt="logo" src="https://github.com/user-attachments/assets/a5d368c6-9cc7-42d8-9a35-1562da841f6e" />
+
 
 ## What is inti: Tools and Statistical Procedures in Plant Science, and what does it help people do?
 
 The inti package is part of the inkaverse project, which was developed for support with tools and statistical procedures for plant science and experimental design. Its main goal is to support researchers throughout the full workflow, from experimental planning and data collection with `tarpuy()`, to data analysis and visualisation with `yupana()`, and technical writing. The project aims to make scientific analysis more accessible, reproducible, and efficient for students, researchers, and professionals.
+
+<img width="50%" alt="Inkaverse project overview" src="https://github.com/user-attachments/assets/991a11e7-a930-4226-8e72-89a408f470d0" />
+
 
 ## What inspired you to start this project?
 
