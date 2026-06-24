@@ -20,7 +20,7 @@ description: "An R package providing tools and statistical procedures for plant 
 
 The inti package is part of the inkaverse project, which was developed for support with tools and statistical procedures for plant science and experimental design. Its main goal is to support researchers throughout the full workflow, from experimental planning and data collection with `tarpuy()`, to data analysis and visualisation with `yupana()`, and technical writing. The project aims to make scientific analysis more accessible, reproducible, and efficient for students, researchers, and professionals.
 
-<img width="50%" alt="The Inkaverse Project: An Integrated Package of Statistical Tools and Experimental Design Applications for Plant Science Research" src="https://github.com/user-attachments/assets/991a11e7-a930-4226-8e72-89a408f470d0" />
+<img width="50%" alt="Inkaverse project overview" src="https://github.com/user-attachments/assets/991a11e7-a930-4226-8e72-89a408f470d0" />
 
 
 ## What inspired you to start this project?
