@@ -70,7 +70,7 @@ Through documentation, onboarding resources, contribution guides, and community 
 
 ## Have you taken part in any open source programs or events?
 
-Not yet, but we are planning to.
+Not yet, but we are planning to participate.
 
 ## What would you love to achieve by showcasing your project?
 
