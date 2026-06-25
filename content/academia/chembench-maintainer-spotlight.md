@@ -76,38 +76,6 @@ Not yet, but we are planning to.
 
 To attract new contributors and highlight the work of students involved in the project.
 
-## Do you use AI tools in your day to day work on this project? If so, how?
+## Is there anything else you'd like to share about your project or open source journey?
 
 GitHub tools such as Copilot and the Developer Pack have been invaluable.
-
-## Do you implement AI into your classroom or coursework (if applicable)? If so, what does that look like in practice?
-
-n/a
-
-## Has AI changed how you maintain or manage your project?
-
-n/a
-
-## Have you experimented with AI driven or automated workflows in your project? What has that looked like?
-
-n/a
-
-## How do you see your contributors using AI when working on your project?
-
-n/a
-
-## What concerns or challenges, if any, do you have about the use of AI in your project or field?
-
-n/a
-
-## How has your approach to maintaining this project evolved over time?
-
-n/a
-
-## How do you see AI shaping the future of your project or field?
-
-n/a
-
-## Is there anything else you'd like to share?
-
-No additional comments.
