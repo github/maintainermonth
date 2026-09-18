@@ -1,0 +1,63 @@
+name: label-agent-prs
+
+on:
+  pull_request_target:
+    types:
+      - opened
+      - reopened
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  label-agent-prs:
+    if: github.event.pull_request.user.type == 'Bot' || contains(github.event.pull_request.user.login, 'copilot')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ensure robot label exists
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const labelName = 'robot';
+            const labelColor = '5319E7';
+            const labelDescription = 'Pull request created by a bot or automated agent';
+
+            try {
+              await github.rest.issues.getLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                name: labelName,
+              });
+            } catch (error) {
+              if (error.status !== 404) {
+                throw error;
+              }
+
+              try {
+                await github.rest.issues.createLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  name: labelName,
+                  color: labelColor,
+                  description: labelDescription,
+                });
+              } catch (createError) {
+                // Label may have been created by another concurrent run.
+                if (createError.status !== 422) {
+                  throw createError;
+                }
+              }
+            }
+
+      - name: Add robot label to PR
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              labels: ['robot'],
+            });
